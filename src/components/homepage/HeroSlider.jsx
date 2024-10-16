@@ -15,20 +15,19 @@ const HeroSlider = () => {
 
   return (
     <>
-      <section className="w-full flex items-center justify-between bg-[#F7F7F7] poppin">
-        <div className="hidden sm:flex flex-col gap-64 pl-3">
+      <section className="w-full flex items-center justify-center sm:justify-between bg-[#F7F7F7] poppin">
+        <div className="hidden sm:flex flex-col gap-64 pl-[48px]">
           <img className="w-[40px]" src="images/curveOne.png" />
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveThree.png" />
         </div>
-        <div className="relative w-[90%] py-[80px]">
-        <div className="flex items-center flex-col gap-3">
-        <h1 className="text-4xl font-semibold text-center">
-                Trusted By Families Like Yours
-        </h1>
-        <div className="w-[100px] border border-black"></div>
-
-        </div>
+        <div className="relative w-[65%] py-[80px]">
+          <div className="flex items-center flex-col gap-3">
+            <h1 className="text-4xl font-semibold text-center">
+              Trusted By Families Like Yours
+            </h1>
+            <div className="w-[100px] border border-black"></div>
+          </div>
           {/* Swiper */}
           <Swiper
             cssMode={true}
@@ -55,7 +54,7 @@ const HeroSlider = () => {
                 needed was simple, and now she's happy and well taken care of.
                 It feels wonderful to see her content.
               </h2>
-                <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
+              <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
             </SwiperSlide>
 
             {/* Second Slide */}
@@ -67,7 +66,7 @@ const HeroSlider = () => {
                 needed was simple, and now she's happy and well taken care of.
                 It feels wonderful to see her content.
               </h2>
-                <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
+              <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
             </SwiperSlide>
 
             {/* Third Slide */}
@@ -79,7 +78,7 @@ const HeroSlider = () => {
                 needed was simple, and now she's happy and well taken care of.
                 It feels wonderful to see her content.
               </h2>
-                <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
+              <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
             </SwiperSlide>
           </Swiper>
           {/* buttons */}
@@ -97,7 +96,7 @@ const HeroSlider = () => {
           </div>
         </div>
 
-        <div className="hidden sm:flex flex-col gap-64 pr-3">
+        <div className="hidden sm:flex flex-col gap-64 pr-[48px]">
           <img className="w-[40px]" src="images/curveFour.png" />
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveFive.png" />

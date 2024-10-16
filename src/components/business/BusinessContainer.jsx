@@ -7,15 +7,16 @@ import FindCare from "../findcare/FindCare";
 import FindCareData from "../../data/FindCareData";
 import Slider from "../slider/Slider";
 import BusinessResults from "../businessResults/BusinessResults";
-import Banner from '../../../public/images/Banner.png'
+import Banner from "../../../public/images/Banner.png";
 import AccessContainer from "../acessCard/AccessContainer";
+import HouseIcon from "../../assets/icons/becomePartner/HouseIcon";
+import MoneyHandIcon from "../../assets/icons/becomePartner/MoneyHandIcon";
+import PeopleIcon from "../../assets/icons/becomePartner/PeopleIcon";
 
 const BusinessContainer = ({ title, description, Icon }) => {
   return (
     <>
-      <section className="">
-
-      </section>
+      <section className=""></section>
       {/* section 1 */}
       <section className=" flex justify-center flex-col">
         <div className="flex flex-col items-center pt-[80px]">
@@ -29,18 +30,21 @@ const BusinessContainer = ({ title, description, Icon }) => {
         </div>
         <div className="grid gap-10 sm:gap-0 sm:grid-cols-3 justify-center mt-12 justify-items-center">
           <div className="flex items-center flex-col gap-3 w-[60%]">
+            <PeopleIcon />
             <h1 className="text-6xl font-semibold">77M</h1>
             <p className="text-xl text-center text-[#5E5E6F]">
               Number of seniors by 2034
             </p>
           </div>
           <div className="flex items-center flex-col gap-3 w-[60%]">
+            <HouseIcon />
             <h1 className="text-6xl font-semibold">90%</h1>
             <p className="text-xl text-center text-[#5E5E6F]">
               Seniors showing desire to age in their homes
             </p>
           </div>
           <div className="flex items-center flex-col gap-3 w-[60%]">
+            <MoneyHandIcon />
             <h1 className="text-6xl font-semibold">$460B</h1>
             <p className="text-xl text-center text-[#5E5E6F]">
               Estimated to be worth of total home care market
