@@ -3,7 +3,7 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import LoginPages from "./pages/LoginPages";
 import ResetPassword from "./components/login/ResetPassword";
-import CheckYourEmail from "./components/Login/CheckEmail";
+import CheckYourEmail from "./components/login/CheckEmail";
 import NewPassword from "./components/Login/NewPassword";
 import GuidingHeroSection from "./pages/GuidingSection";
 import GuidingPlatform from "./components/guidingPageCompo/GuidingPlatform";
