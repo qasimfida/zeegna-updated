@@ -6,7 +6,7 @@ import BookingServices from "../assets/icons/helpcentericons/BookingServices";
 import PaymentsFees from "../assets/icons/helpcentericons/PaymentsFees";
 import AccountProfile from "../assets/icons/helpcentericons/AccountProfile";
 import TrustSafety from "../assets/icons/helpcentericons/TrustSafety";
-import FindingHelp from "../assets/icons/helpcentericons/Findinghelp";
+import FindingHelp from "../assets/icons/helpcentericons/FindingHelp";
 import LegalCompliance from "../assets/icons/helpcentericons/LegalCompliance";
 import ServiceListing from "../assets/icons/helpcentericons/ServiceListing";
 import MarketingVisibility from "../assets/icons/helpcentericons/MarketingVisibility";
