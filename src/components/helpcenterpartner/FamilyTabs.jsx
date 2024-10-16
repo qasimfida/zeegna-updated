@@ -4,15 +4,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import ChoosingProviders from "../../assets/icons/helpcentericons/Choosingproviders";
-import ServiceDetail from "../../assets/icons/helpcentericons/Servicedetails";
+import ChoosingProviders from "../../assets/icons/helpcentericons/ChoosingProviders";
+import ServiceDetail from "../../assets/icons/helpcentericons/ServiceDetails";
 import BookingServices from "../../assets/icons/helpcentericons/BookingServices";
 import ProviderInteraction from "../../assets/icons/helpcentericons/ProviderInteraction";
 import PaymentsFees from "../../assets/icons/helpcentericons/PaymentsFees";
 import AccountProfile from "../../assets/icons/helpcentericons/AccountProfile";
 import TrustSafety from "../../assets/icons/helpcentericons/TrustSafety";
-import FindingHelp from "../../assets/icons/helpcentericons/Findinghelp";
-import GettingStarted from "../../assets/icons/helpcentericons/Gettingstarted";
+import FindingHelp from "../../assets/icons/helpcentericons/FindingHelp";
+import GettingStarted from "../../assets/icons/helpcentericons/GettingStarted";
 
 import FamilyHelpCard from "./FamilyPartnerCards";
 import FamilyHelpData from "../../data/FamilyHelpData";
