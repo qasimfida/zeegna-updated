@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/icons/logo/logo";
+import Logo from "../../assets/icons/logo/Logo";
 import {
   Disclosure,
   DisclosureButton,
