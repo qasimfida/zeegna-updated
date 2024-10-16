@@ -1,5 +1,5 @@
 import GettingStarted from "../assets/icons/helpcentericons/GettingStarted";
-import ChoosingProviders from "../assets/icons/helpcentericons/Choosingproviders";
+import ChoosingProviders from "../assets/icons/helpcentericons/ChoosingProviders";
 import ServiceDetail from "../assets/icons/helpcentericons/Servicedetails";
 import ProviderInteraction from "../assets/icons/helpcentericons/ProviderInteraction";
 import BookingServices from "../assets/icons/helpcentericons/BookingServices";
