@@ -1,7 +1,7 @@
 import React from "react";
-import FaqsCard from "./Faqs";
 
 import { faqsData } from "../../data/FaqsData";
+import FaqsCard from "./Faqs";
 
 function FaqsContainer({ headingChange = " Got questions? We've answers" }) {
   return (
