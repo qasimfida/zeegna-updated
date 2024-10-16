@@ -1,4 +1,4 @@
-import GettingStarted from "../assets/icons/helpcentericons/Gettingstarted";
+import GettingStarted from "../assets/icons/helpcentericons/GettingStarted";
 import ChoosingProviders from "../assets/icons/helpcentericons/Choosingproviders";
 import ServiceDetail from "../assets/icons/helpcentericons/Servicedetails";
 import ProviderInteraction from "../assets/icons/helpcentericons/ProviderInteraction";
