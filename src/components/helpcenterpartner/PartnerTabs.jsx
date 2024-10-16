@@ -9,7 +9,7 @@ import PaymentsFees from "../../assets/icons/helpcentericons/PaymentsFees";
 import AccountProfile from "../../assets/icons/helpcentericons/AccountProfile";
 import TrustSafety from "../../assets/icons/helpcentericons/TrustSafety";
 
-import GettingStarted from "../../assets/icons/helpcentericons/Gettingstarted";
+import GettingStarted from "../../assets/icons/helpcentericons/GettingStarted";
 import ServiceListing from "../../assets/icons/helpcentericons/ServiceListing";
 import ClientInteraction from "../../assets/icons/helpcentericons/ClientInteraction";
 import MarketingVisibility from "../../assets/icons/helpcentericons/MarketingVisibility";
