@@ -1,0 +1,38 @@
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 22px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: black;
+    border: 1px solid #4CAF50;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    width: 6px;
+    height: 12px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.ql-container.ql-snow {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    height: 20vh;
+    margin: 0px;
+    position: relative;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
