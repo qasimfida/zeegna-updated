@@ -41,7 +41,7 @@ function PopularContainer() {
     <>
       <div className="bg-[#fffff] poppin mb-[80px]">
         <div className="max-w-7xl mx-auto max-sm:py-0">
-          <div className="text-center">
+          <div className="text-center max-sm:mt-10	">
             <h2 className="font-semibold text-xl md:text-4xl">
               Popular services in your area
             </h2>

@@ -19,7 +19,7 @@ const PartnerContainer = () => {
         </button>
       </div>
       <div className="mt-[30px] flex flex-col justify-between">
-        <div className="flex justify-between">
+        <div className="hidden sm:flex justify-between">
           <div className="relative top-[60px] left-[54px]">
             <img src={rating} className=""></img>
           </div>

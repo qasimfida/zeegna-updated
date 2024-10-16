@@ -21,7 +21,7 @@ const HeroSlider = () => {
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveThree.png" />
         </div>
-        <div className="relative w-[65%] py-[80px]">
+        <div className="relative w-[65%] max-sm-w-[100%] py-[80px]">
           <div className="flex items-center flex-col gap-3">
             <h1 className="text-4xl font-semibold text-center">
               Trusted By Families Like Yours
