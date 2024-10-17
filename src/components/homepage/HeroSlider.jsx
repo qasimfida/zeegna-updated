@@ -21,7 +21,7 @@ const HeroSlider = () => {
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveThree.png" />
         </div>
-        <div className="relative w-[65%] max-sm-w-[100%] py-[80px]">
+        <div className="relative w-full sm:w-[65%] py-[80px]">
           <div className="flex items-center flex-col gap-3">
             <h1 className="text-4xl font-semibold text-center">
               Trusted By Families Like Yours
@@ -43,7 +43,7 @@ const HeroSlider = () => {
             mousewheel={true}
             keyboard={true}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-            className="sm:w-[80%] h-[65vh] my-6"
+            className="sm:w-[80%] sm:h-[65vh] h-[85%] my-6"
           >
             {/* First Slide */}
             <SwiperSlide className="text-center flex flex-col items-center justify-center gap-4">
