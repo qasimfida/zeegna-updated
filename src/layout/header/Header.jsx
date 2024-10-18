@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 function Header({ styles = "" }) {
   return (
     <Disclosure as="nav" className="border-b poppin">
-      <div className=" px-[37px] sm:px-6 lg:px-[37px] bg-[##FFFDFD]">
+      <div className=" px-[37px] sm:px-6 lg:px-[37px] bg-[#FFFDFD]">
         <div className="flex py-[20px] justify-between">
           <Link to="/" className="flex">
             <div className="flex flex-shrink-0 items-center">

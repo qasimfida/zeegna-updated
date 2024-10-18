@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 function LoginPageHeader() {
   return (
     <header
-      className=" py-5 px-[37px] border-2   border-[#EAEAF1]	
-
-"
+      className=" py-5 px-[37px] border-2   border-[#EAEAF1]"
     >
       <div className=" mx-auto flex justify-between items-center ">
         <div className="font-bold text-2xl">

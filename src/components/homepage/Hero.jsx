@@ -7,10 +7,10 @@ function HomeSection() {
         <div className=" mx-auto text-center">
           {/* Left Image and Text */}
           <div
-            className="flex items-center pb-[36px] max-md:flex-col max-md:gap-10 max-sm:gap-7
+            className="flex  pb-[36px] max-md:flex-col max-md:gap-10 max-sm:gap-7
         "
           >
-            <div className=" flex flex-col items-center gap-3.5 mt-36 max-md:mt-6	max-sm:flex-row max-sm:items-start	">
+            <div className=" flex flex-col items-center gap-3.5 mt-[70px] max-md:mt-6	max-sm:flex-row max-sm:items-start	">
               <div className="text-center text-sm text-gray-600 bg-[#FDE7FF] py-2.5	px-2.5 rounded-2xl max-sm:py-1	max-sm:px-1			">
                 <p className="font-semibold max-sm:text-[12px]">
                   Kelly, Age 74
@@ -22,19 +22,20 @@ function HomeSection() {
               <img
                 src="images/HeroLeft.png"
                 alt=""
-                className="max-sm:w-[122px] max-sm:h-[122px]"
+                className="max-sm:w-[122px] max-sm:h-[122px] w-[391px] "
               />
             </div>
-            <div>
+            <div className="w-full">
               {/* Heading */}
               <h1 className="text-[64px] font-semibold text-gray-800 mb-5 max-sm:text-[28px] poppin max-md:text-4xl">
                 Comfort. Choice. Home
               </h1>
-              <p className="text-2xl	font-medium	 text-gray-600 mb-10 w-8/12 max-sm:w-full	mx-auto max-sm:text-lg max-md:text-xl	">
+              <p className="text-2xl	font-medium	 text-gray-600 mb-10 text-[#5E5E6F] max-sm:w-full	mx-auto max-sm:text-lg max-md:text-xl   leading-10		">
                 Find trusted vendors to help with{" "}
                 <span className="text-[#109088] font-semibold animate-fadeIn">
-                  Personal Care ` `
+                  Personal Care|
                 </span>
+                <br />
                 to live the best of your days at home.
               </p>
 
@@ -45,13 +46,13 @@ function HomeSection() {
             </div>
 
             {/* Content with Images */}
-            <div className="flex justify-center items-end  space-x-4 mt-36 max-md:mt-6 max-sm:flex-row">
+            <div className="flex justify-center items-end  space-x-4  mt-[70px] max-md:mt-6 max-sm:flex-row">
               {/* Right Image and Text */}
               <div className="flex flex-col items-end">
                 <img
                   src="images/HeroImage.png"
                   alt=""
-                  className="max-sm:w-[192px] max-sm:h-[235px]"
+                  className="max-sm:w-[192px] max-sm:h-[235px] w-[391px]"
                 />
               </div>
             </div>
