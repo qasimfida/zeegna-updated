@@ -1,5 +1,6 @@
 import React from "react";
 import EmailIcon from "../../assets/icons/loginIcons/EmailIcon";
+import LoginPageHeader from "../../layout/header/LoginPageHeader";
 
 function CheckYourEmail() {
   return (
