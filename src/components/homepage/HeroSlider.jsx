@@ -16,17 +16,17 @@ const HeroSlider = () => {
   return (
     <>
       <section className="w-full flex items-center justify-center sm:justify-between bg-[#F7F7F7] poppin">
-        <div className="hidden sm:flex flex-col gap-64 pl-[48px]">
+        <div className="hidden sm:flex flex-col gap-[12rem] pl-[48px]">
           <img className="w-[40px]" src="images/curveOne.png" />
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveThree.png" />
         </div>
-        <div className="relative w-full sm:w-[65%] py-[80px]">
-          <div className="flex items-center flex-col gap-3">
-            <h1 className="text-4xl font-semibold text-center">
-              Trusted By Families Like Yours
+        <div className="relative w-full sm:w-[55%] py-[80px]">
+          <div className="flex items-center flex-col gap-[5px]">
+            <h1 className="text-[32px] font-semibold text-center">
+              Trusted by families like yours
             </h1>
-            <div className="w-[100px] border border-black"></div>
+            <div className="w-[100px] h-[2px] border border-black"></div>
           </div>
           {/* Swiper */}
           <Swiper
@@ -43,60 +43,62 @@ const HeroSlider = () => {
             mousewheel={true}
             keyboard={true}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-            className="sm:w-[80%] sm:h-[65vh] h-[85%] my-6"
+            className="sm:w-[80%] sm:h-[65vh] md:h-[43vh] lg:h-[38vh] xl:h-[50vh]  mt-[55px]"
           >
             {/* First Slide */}
-            <SwiperSlide className="text-center flex flex-col items-center justify-center gap-4">
-              <img src={person} alt="person" />
-              <h2 className="text-lg font-semibold text-wrap w-[63%]">
+            <SwiperSlide className="text-center flex flex-col items-center">
+              <h2 className="text-[17px] font-semibold text-wrap w-[100%]">
                 We found the perfect caregiver for mom. She's kind and
                 incredibly helpful. The process of getting the care my mom
                 needed was simple, and now she's happy and well taken care of.
                 It feels wonderful to see her content.
               </h2>
-              <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
+              <img src={person} alt="person" className="pt-[30px]" />
+              <p className="text-[#5e5e6f] pt-[19px] text-[16px]">
+                Sara R. Charlotte, NC
+              </p>
             </SwiperSlide>
 
             {/* Second Slide */}
-            <SwiperSlide className="text-center flex flex-col items-center justify-center gap-4">
-              <img src={person} alt="person" />
-              <h2 className="text-lg font-semibold text-wrap w-[63%]">
+            <SwiperSlide className="text-center flex flex-col items-center gap-4">
+              <h2 className="text-[17px] font-semibold text-wrap w-[100%]">
                 We found the perfect caregiver for mom. She's kind and
                 incredibly helpful. The process of getting the care my mom
                 needed was simple, and now she's happy and well taken care of.
                 It feels wonderful to see her content.
               </h2>
+              <img src={person} alt="person" />
               <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
             </SwiperSlide>
 
             {/* Third Slide */}
-            <SwiperSlide className="text-center flex flex-col items-center justify-center gap-4">
-              <img src={person} alt="person" />
-              <h2 className="text-lg font-semibold text-wrap w-[63%]">
+            <SwiperSlide className="text-center flex flex-col items-center gap-4">
+              <h2 className="text-[17px] font-semibold text-wrap w-[100%]">
                 We found the perfect caregiver for mom. She's kind and
                 incredibly helpful. The process of getting the care my mom
                 needed was simple, and now she's happy and well taken care of.
                 It feels wonderful to see her content.
               </h2>
+              <img src={person} alt="person" />
               <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
             </SwiperSlide>
           </Swiper>
           {/* buttons */}
           <div
             ref={prevRef}
-            className="swiper-button-back absolute left-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer p-3 border border-black rounded-full flex items-center justify-center"
+            className="swiper-button-back absolute left-2 top-[89%] lg:top-[50%] transform -translate-y-[100%] z-10 cursor-pointer p-3 border border-black rounded-full flex items-center justify-center"
           >
             <IoArrowBack size={24} />
           </div>
           <div
             ref={nextRef}
-            className="swiper-button-fore absolute right-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer p-3 border border-black rounded-full flex items-center justify-center"
+            className="swiper-button-fore absolute right-2 top-[89%] lg:top-[50%] transform -translate-y-[100%] z-10 cursor-pointer p-3 border border-black rounded-full flex items-center justify-center"
           >
             <IoArrowForward size={24} />
           </div>
         </div>
 
-        <div className="hidden sm:flex flex-col gap-64 pr-[48px]">
+        <div className="hidden sm:flex flex-col gap-[12rem] pr-[48px]">
           <img className="w-[40px]" src="images/curveFour.png" />
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveFive.png" />

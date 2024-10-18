@@ -42,8 +42,8 @@ function PopularContainer() {
       <div className="bg-[#fffff] poppin mb-[80px]">
         <div className="max-w-7xl mx-auto max-sm:py-0">
           <div className="text-center max-sm:mt-10	">
-            <h2 className="font-semibold text-xl md:text-4xl">
-              Popular services in your area
+            <h2 className="font-semibold text-xl md:text-[32px] ">
+              Popular services
             </h2>
             <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>
           </div>
@@ -61,7 +61,7 @@ function PopularContainer() {
             </Slider>
           </div> */}
 
-          <div className=" md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-[50px]">
+          <div className=" md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-[50px]">
             {PopularData?.map((card) => (
               <PopularCard
                 key={card.id}

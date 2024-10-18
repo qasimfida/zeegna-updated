@@ -62,6 +62,26 @@ const PopularData = [
     bgColor: "bg-[#AADCF2]",
     chip: "Featured",
   },
+  {
+    id: 7,
+    image: "/images/Kitchen remodel.png",
+    title: "Kitchen remodel",
+    description:
+      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
+    Icon: PersonalCareIcon,
+    bgColor: "bg-[#AADCF2]",
+    chip: "Featured",
+  },
+  {
+    id: 8,
+    image: "/images/Popular-6.png",
+    title: "Financial advisory",
+    description:
+      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
+    Icon: PersonalCareIcon,
+    bgColor: "bg-[#AADCF2]",
+    chip: "Featured",
+  },
 ];
 
 export default PopularData;

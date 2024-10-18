@@ -3,11 +3,11 @@ import React from "react";
 function HomeSection() {
   return (
     <div className="">
-      <section className="bg-gradient-to-b from-[#FFFDFD] via-[#FFFDFD] to-[#F7E7E7] py-16 max-sm:py-0 max-sm:pb-16 px-4 relative xl-h-screen	poppin ">
+      <section className="bg-gradient-to-b from-[#FFFDFD] via-[#FFFDFD] to-[#F7E7E7] py-16 max-sm:py-0 max-sm:pb-16 px-[53px] relative xl-h-screen	poppin ">
         <div className=" mx-auto text-center">
           {/* Left Image and Text */}
           <div
-            className="flex items-center pb-6 max-md:flex-col max-md:gap-10 max-sm:gap-7
+            className="flex items-center pb-[36px] max-md:flex-col max-md:gap-10 max-sm:gap-7
         "
           >
             <div className=" flex flex-col items-center gap-3.5 mt-36 max-md:mt-6	max-sm:flex-row max-sm:items-start	">
@@ -39,7 +39,7 @@ function HomeSection() {
               </p>
 
               {/* Call to Action Button */}
-              <button className="bg-[#1C1C1C] text-white py-3.5	 px-9	 rounded-full font-medium  mb-10 max-sm:mb-0">
+              <button className="bg-[#1C1C1C] text-white py-3.5	 px-9	 rounded-full font-medium  mb-10 max-sm:mb-0 hover:text-black hover:bg-white hover:border-black hover:border-2">
                 Find the help you need
               </button>
             </div>
@@ -58,62 +58,70 @@ function HomeSection() {
           </div>
 
           {/* Form Section */}
-          <div className="px-10	py-6	 w-10/12	   mx-auto bg-white p-6 rounded-3xl	 shadow-md absolute	bottom-[-14%]   max-sm:mb-12 left-[8%] max-sm:bottom-[-44%] max-sm:left-0 max-sm:py-4	max-sm:px-4 max-sm:w-full">
-            <div>
-              <div className="grid grid-cols-4 gap-4 items-end	justify-items-end  max-sm:grid-cols-1 max-sm:justify-items-center	">
+          <div className="px-10 py-[30px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white p-6 rounded-3xl shadow-md absolute bottom-[-13%] left-0 right-0 max-sm:mb-12 max-sm:py-4 max-sm:px-4  flex max-xl:mx-[30px] max-sm:mx-[16px] items-center justify-center max-sm:bottom-[-45%] max-md:mb-38">
+            <div className="w-full">
+              <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between max-sm:justify-center">
                 {/* Left Section: Heading and Description */}
-                <div className="flex flex-col text-left		gap-2">
-                  <p className="font-semibold text-black text-xl 	">
-                    Find help now
-                  </p>
-                  <p className="text-gray-500 text-base font-medium	text-left		">
-                    Find trusted local providers to support your care needs
-                  </p>
+                <div>
+                  <div className="flex flex-col text-left gap-2 mb-4 lg:mb-0 ">
+                    <p className="font-semibold text-black text-xl">
+                      Find help now
+                    </p>
+                    <p className="text-gray-500 text-base font-medium w-full lg:w-[264px]">
+                      Find trusted local providers to support your care needs
+                    </p>
+                  </div>
                 </div>
 
                 {/* Middle Section: Dropdowns */}
+                <div className="md:flex gap-[30px] md:items-end w-full">
+                  <div className="flex flex-col md:flex-row items-center lg:flex-row gap-4 mb-4 lg:mb-0 w-full lg:w-auto">
+                    {/* First Dropdown */}
+                    <div className="flex flex-col gap-2 w-full lg:w-[280px] md:w-[270px]">
+                      <p className="text-left font-semibold text-[17px]">
+                        Who needs help?
+                      </p>
+                      <select
+                        className="border border-gray-300 rounded-lg px-4 py-3 text-gray-600 text-sm"
+                        defaultValue=""
+                      >
+                        <option value="" disabled>
+                          Myself
+                        </option>
+                        <option value="self">Self</option>
+                        <option value="family">Family</option>
+                        <option value="friend">Friend</option>
+                      </select>
+                    </div>
+                    <div className="w-full sm:w-full lg:w-[280px] md:w-[271px]">
+                      {/* Second Dropdown */}
+                      <div className="flex flex-col gap-2 ">
+                        <p className="text-left font-semibold text-[17px]">
+                          What kind of help do you need?
+                        </p>
+                        <select
+                          className="border border-gray-300 rounded-lg px-4 py-3 text-gray-600 text-sm"
+                          defaultValue=""
+                        >
+                          <option value="" disabled>
+                            Home care
+                          </option>
+                          <option value="self">Self</option>
+                          <option value="family">Family</option>
+                          <option value="friend">Friend</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
 
-                {/* First Dropdown Label */}
-                <div className="flex flex-col gap-2 w-full	">
-                  <p className=" text-left font-semibold	text-[17px]	">
-                    Who needs help?
-                  </p>
-                  <select
-                    className="border border-gray-300 rounded-lg px-4 py-3 text-gray-600 text-sm"
-                    defaultValue=""
-                  >
-                    <option value="" disabled>
-                      Myself
-                    </option>
-                    <option value="self">Self</option>
-                    <option value="family">Family</option>
-                    <option value="friend">Friend</option>
-                  </select>
-                </div>
-
-                {/* Second Dropdown Label */}
-                <div className="flex flex-col gap-2 w-full	">
-                  <p className=" text-left font-semibold	text-[17px]	">
-                    What kind of help do you need?
-                  </p>
-                  <select
-                    className="border border-gray-300 rounded-lg px-4 py-3	 text-gray-600 text-sm"
-                    defaultValue=""
-                  >
-                    <option value="" disabled>
-                      Home care
-                    </option>
-                    <option value="self">Self</option>
-                    <option value="family">Family</option>
-                    <option value="friend">Friend</option>
-                  </select>
-                </div>
-
-                {/* Right Section: Get Started Button */}
-                <div>
-                  <button className="border-2 border-black text-black py-3	 px-9	font-medium	 rounded-full">
-                    Get started
-                  </button>
+                  {/* Right Section: Get Started Button */}
+                  <div>
+                    <div className="text-center lg:text-right w-full">
+                      <button className="border-2 border-black text-black py-3 px-9 font-medium rounded-full hover:text-white hover:bg-black w-full">
+                        Get started
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 function Header({ styles = "" }) {
   return (
     <Disclosure as="nav" className="border-b poppin">
-      <div className=" px-[37px] sm:px-6 lg:px-[37px]">
+      <div className=" px-[37px] sm:px-6 lg:px-[37px] bg-[##FFFDFD]">
         <div className="flex py-[20px] justify-between">
           <Link to="/" className="flex">
             <div className="flex flex-shrink-0 items-center">
@@ -19,8 +19,8 @@ function Header({ styles = "" }) {
             </div>
           </Link>
 
-          <div className="hidden sm:ml-6 lg:hidden lg:space-x-8 text-lg font-semibold text-[#5E5E6F]"></div>
-          <div className="hidden sm:ml-6 lg:flex lg:space-x-8 text-[17px] font-semibold text-[#5E5E6F]">
+          <div className="hidden max-sm:ml-6 lg:hidden lg:space-x-8 text-lg font-semibold text-[#5E5E6F]"></div>
+          <div className="hidden max-sm:ml-6 lg:flex lg:space-x-8 text-[17px] font-semibold text-[#5E5E6F]">
             <Link
               to="/help-center"
               className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 hover:border-gray-300 hover:text-gray-700"
@@ -44,7 +44,7 @@ function Header({ styles = "" }) {
           <div className="hidden sm:ml-6 lg:flex lg:items-center">
             <Link
               to="/login"
-              className="border-2 border-black text-black font-medium hover:text-white hover:bg-gray-600 px-7 py-2 rounded-full transition"
+              className="border-2 border-black text-black font-medium hover:text-white hover:bg-black px-7 py-2 rounded-full transition"
             >
               Login
             </Link>
