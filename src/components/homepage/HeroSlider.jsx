@@ -61,7 +61,7 @@ const HeroSlider = () => {
                   <h2 className="text-black text-[19px] font-semibold text-wrap w-[78%]">
                     We found the perfect caregiver for mom. She's kind and
                     incredibly helpful. The process of getting the care my mom
-                    needed was simple, and now she's happy and well taken care
+                    needed was simple, and now she's happy <br></br> and well taken care
                     of. It feels wonderful to see her content.
                   </h2>
                   <img src={person} alt="person" className="pt-[30px]" />

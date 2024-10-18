@@ -22,6 +22,7 @@ import ScrollToTop from "./components/scroll/ScrollTop";
 import Getintouchpage from "./pages/Getintouchpage";
 
 import BecomePartner from "./pages/BecomePartner";
+import HomeCareSlider from "./components/homeCareSlider/HomeCareSlider";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -57,6 +58,7 @@ function App() {
         <Route path="/new-password" element={<NewPassword />} />
 
         <Route path="/help-sections" element={<HelpCard />} />
+        <Route path="/home-care-slider" element={<HomeCareSlider />} />
       </Routes>
     </Router>
   );

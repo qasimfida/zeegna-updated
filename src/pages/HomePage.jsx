@@ -10,6 +10,7 @@ import FaqsContainer from "../components/faqs/FaqsContainer";
 import KnowledgeContainer from "../components/knowledge/KnowledgeContainer";
 import PlacingHelpSection from "../components/placeing/placeing";
 import PopularContainer from "../components/popularserviceCard/PopularContainer";
+import HomeCareSlider from "../components/homeCareSlider/HomeCareSlider";
 
 function HomePage() {
   return (
@@ -25,6 +26,7 @@ function HomePage() {
 
       <KnowledgeContainer />
       <PlacingHelpSection />
+      <HomeCareSlider/>
     </>
   );
 }
