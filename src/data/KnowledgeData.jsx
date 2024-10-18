@@ -8,8 +8,7 @@ const KnowledgeData = [
   {
     id: 1,
     image: "/images/older.png",
-    title:
-      "'How to choose the right personal care provider for your loved one'",
+    title: "How to choose the right personal care provider for your loved one",
     description:
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: PersonalCareIcon,
@@ -65,36 +64,6 @@ const KnowledgeData = [
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: PersonalCareIcon,
     bgColor: "bg-[#AADCF2]",
-    chip: "Most Popular",
-  },
-  {
-    id: 7,
-    image: "/images/knowledge5.png",
-    title: "10 essential tips for aging gracefully and comfortably at home",
-    description:
-      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
-    Icon: PersonalCareIcon,
-    bgColor: "bg-[#AADCF2]",
-    chip: "Most Popular",
-  },
-  {
-    id: 8,
-    image: "/images/knowledge3.png",
-    title: "10 estate planning tips for older adults",
-    description:
-      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
-    Icon: MovingIcon,
-    bgColor: "bg-[#9DEFEB]",
-    chip: "Most Popular",
-  },
-  {
-    id: 9,
-    image: "/images/knowledge2.png",
-    title: "7 top home modifications that promote independence for seniors",
-    description:
-      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
-    Icon: CarIcon,
-    bgColor: "bg-[#A9EEB8]",
     chip: "Most Popular",
   },
 ];

@@ -11,7 +11,7 @@ function FaqsContainer({ headingChange = " Got questions? We've answers" }) {
           <h2 className="font-semibold text-[32px]">{headingChange}</h2>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 mt-[50px] justify-items-center	content-center	">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-[10px] mt-[50px] justify-items-center	content-center	">
           {faqsData.map((faq) => (
             <FaqsCard
               key={faq.id}

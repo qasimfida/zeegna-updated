@@ -25,13 +25,13 @@ function Footer() {
                   with grace in a more caring, connected community.
                 </p>
                 <div className="flex gap-11	items-center mt-5 cursor-pointer">
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     <LinkedinIcon />
                   </Link>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     <FacebookIcon />
                   </Link>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     <LinkedinIcon />
                   </Link>
                 </div>
@@ -46,27 +46,27 @@ function Footer() {
               </div>
               <ul class="leading-8 text-base mb-2.5	text-[#BBBBBB] font-medium		">
                 <li>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     Personal care
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     Home maintenance
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     Transportation
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     Moving and storage
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     Wellness
                   </Link>
                 </li>
@@ -80,27 +80,27 @@ function Footer() {
               </div>
               <ul class="leading-8 text-base mb-2.5	text-[#BBBBBB] font-medium	">
                 <li>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     Medical equipment
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     Professional services
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     Pet care
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     End-of-life planning{" "}
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" class="hover:text-blue-400">
+                  <Link to="#" class="hover:text-white">
                     All service categories{" "}
                   </Link>
                 </li>
@@ -114,32 +114,32 @@ function Footer() {
               </div>
               <ul class="leading-8 text-base mb-2.5	text-[#BBBBBB] font-medium	">
                 <li>
-                  <Link to="/recources-page" class="hover:text-blue-400">
+                  <Link to="/recources-page" class="hover:text-white">
                     Find help
                   </Link>
                 </li>
                 <li>
-                  <Link to="/recources-page" class="hover:text-blue-400">
+                  <Link to="/recources-page" class="hover:text-white">
                     Become a partner
                   </Link>
                 </li>
                 <li>
-                  <Link to="/recources-page" class="hover:text-blue-400">
+                  <Link to="/recources-page" class="hover:text-white">
                     Resources
                   </Link>
                 </li>
                 <li>
-                  <Link to="/guiding-hero" class="hover:text-blue-400">
+                  <Link to="/guiding-hero" class="hover:text-white">
                     Guiding principles
                   </Link>
                 </li>
                 <li>
-                  <Link to="/help-center" class="hover:text-blue-400">
+                  <Link to="/help-center" class="hover:text-white">
                     Help center
                   </Link>
                 </li>
                 <li>
-                  <Link to="/get-in-touch" class="hover:text-blue-400">
+                  <Link to="/get-in-touch" class="hover:text-white">
                     Get in touch
                   </Link>
                 </li>
@@ -148,7 +148,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div class=" md:flex md:flex-grow justify-center py-5	border-t border-b border-white">
+      <div class=" md:flex md:flex-grow justify-center py-5	border-t border-b border-[#484848]">
         <ul class="flex justify-center space-x-4 text-base	font-semibold	 text-[#BBBBBB]">
           <li>
             <Link to="/" class="hover:text-secondary">

@@ -59,16 +59,16 @@ function HomeSection() {
           </div>
 
           {/* Form Section */}
-          <div className="px-10 py-[30px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white p-6 rounded-3xl shadow-md absolute bottom-[-13%] left-0 right-0 max-sm:mb-12 max-sm:py-4 max-sm:px-4  flex max-xl:mx-[30px] max-sm:mx-[16px] items-center justify-center max-sm:bottom-[-45%] max-md:mb-38">
-            <div className="w-full">
+          <div className=" py-[30px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white  rounded-3xl shadow-md absolute bottom-[-13%] left-0 right-0 max-sm:mb-12 max-sm:py-4 max-sm:px-4  flex max-xl:mx-[30px] max-sm:mx-[16px] items-center justify-around max-sm:bottom-[-45%] max-md:mb-38">
+            <div className="">
               <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between max-sm:justify-center">
                 {/* Left Section: Heading and Description */}
                 <div>
-                  <div className="flex flex-col text-left gap-2 mb-4 lg:mb-0 ">
+                  <div className="flex flex-col text-left gap-2 mb-4 lg:mb-0 xl:mr-[45px] ">
                     <p className="font-semibold text-black text-xl">
                       Find help now
                     </p>
-                    <p className="text-gray-500 text-base font-medium w-full lg:w-[264px]">
+                    <p className="text-gray-500 text-base font-medium w-full lg:w-[238px]">
                       Find trusted local providers to support your care needs
                     </p>
                   </div>

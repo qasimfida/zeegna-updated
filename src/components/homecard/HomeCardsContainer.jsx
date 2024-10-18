@@ -15,7 +15,7 @@ function HomeCardsContainer() {
             Get professional, vetted help delivered to your home
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[50px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] mt-[50px]">
           {cardsData.map((card) => (
             <HomeCard
               key={card.id}
