@@ -12,10 +12,10 @@ function FaqsCard({ title, description }) {
     <div className="transition-all duration-200 bg-white border border-[#B6B9CE]  cursor-pointer hover:bg-gray-50 rounded-xl poppin	lg:w-[750px]">
       <button
         type="button"
-        className="flex items-center justify-between w-full p-3.5 sm:p-6"
+        className="flex items-center justify-between w-full px-[17px] py-[17px] max-sm:p-6"
         onClick={toggleFaq}
       >
-        <span className="flex text-lg font-semibold text-black">{title}</span>
+        <span className="flex text-lg font-semibold text-black ">{title}</span>
         <div
           className={`transform transition-transform duration-200 ${
             isOpen ? "rotate-180" : "rotate-0"

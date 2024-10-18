@@ -29,7 +29,7 @@ const PowerData = [
   {
     id: 3,
     title: "Free to use",
-    description: "Membership to Zyra is free. Access all services at no cost",
+    description: "Membership to Zeegna is free. Access all services at no cost",
     Icon: FreeUse,
     bgColor: "bg-[#9DEFEB]",
   },

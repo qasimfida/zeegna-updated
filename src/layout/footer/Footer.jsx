@@ -8,28 +8,21 @@ function Footer() {
   return (
     <footer className="bg-[#1C1C1C] pt-16	px-9 poppin">
       <div class=" 	 text-gray-400">
-        <div class="container px-4 mx-auto">
+        <div class=" px-4 mx-auto">
           <div class="-mx-4 flex flex-wrap justify-between">
-            <div class="px-4 my-4 w-full xl:w-2/4">
+            <div class="px-4 my-4 w-full xl:w-[550px]">
               <Link to="/" class="block w-56 mb-4">
                 <FooterLogo />
               </Link>
 
               <div>
-                <p class="text-justify text-sm	font-medium	text-white">
-                  At ZyraHealth, we're inspired by the strength and resilience
-                  of families who choose to age in their homes, where every
-                  memory and every familiar corner holds meaning. Aging in place
-                  is more than just staying home—it’s about preserving dignity,
-                  independence, and the love that defines us. Our mission is to
-                  make that choice easier for families, providing the support
-                  they need to navigate this journey with confidence and peace
-                  of mind. We're not just imagining a future where aging in your
-                  home is possible—we're creating a movement to reshape
-                  healthcare, so seniors can live with grace, and society
-                  embraces this important stage of life. Together, we can build
-                  a world where aging in your home is at the heart of a more
-                  caring, connected community.
+                <p class="text-justify text-sm	font-medium	text-[#BBBBBB] xl:w-[550px]">
+                  At Zeegna, we’re inspired by the strength of families choosing
+                  to age in their homes, where every memory holds meaning. Aging
+                  in place is about preserving dignity, independence, and love.
+                  Our mission is to support families through this journey with
+                  confidence, and help reshape healthcare so seniors can live
+                  with grace in a more caring, connected community.
                 </p>
                 <div className="flex gap-11	items-center mt-5 cursor-pointer">
                   <Link to="#" class="hover:text-blue-400">
@@ -45,13 +38,13 @@ function Footer() {
               </div>
             </div>
 
-            <div class="px-4 my-4 w-full sm:w-auto">
+            <div class=" my-4 w-full sm:w-auto">
               <div>
                 <h2 class="inline-block text-white mb-2.5   font-semibold	text-lg	">
                   Find help (1/2)
                 </h2>
               </div>
-              <ul class="leading-8 text-base mb-2.5	text-white	">
+              <ul class="leading-8 text-base mb-2.5	text-[#BBBBBB] font-medium		">
                 <li>
                   <Link to="#" class="hover:text-blue-400">
                     Personal care
@@ -85,7 +78,7 @@ function Footer() {
                   Find help (2/2)
                 </h2>
               </div>
-              <ul class="leading-8 text-base mb-2.5	text-white">
+              <ul class="leading-8 text-base mb-2.5	text-[#BBBBBB] font-medium	">
                 <li>
                   <Link to="#" class="hover:text-blue-400">
                     Medical equipment
@@ -106,6 +99,11 @@ function Footer() {
                     End-of-life planning{" "}
                   </Link>
                 </li>
+                <li>
+                  <Link to="#" class="hover:text-blue-400">
+                    All service categories{" "}
+                  </Link>
+                </li>
               </ul>
             </div>
             <div class="px-4 my-4 w-full sm:w-auto">
@@ -114,7 +112,7 @@ function Footer() {
                   Take action
                 </h2>
               </div>
-              <ul class="leading-8 text-base mb-2.5	text-white">
+              <ul class="leading-8 text-base mb-2.5	text-[#BBBBBB] font-medium	">
                 <li>
                   <Link to="/recources-page" class="hover:text-blue-400">
                     Find help
@@ -150,18 +148,14 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div class=" md:flex md:flex-grow justify-center mt-10	py-5	border-t border-b border-white">
-        <ul class="flex justify-center space-x-4 text-base	font-semibold	 text-white">
+      <div class=" md:flex md:flex-grow justify-center py-5	border-t border-b border-white">
+        <ul class="flex justify-center space-x-4 text-base	font-semibold	 text-[#BBBBBB]">
           <li>
             <Link to="/" class="hover:text-secondary">
               Home{" "}
             </Link>
           </li>
-          <li>
-            <Link to="/get-in-touch" class="hover:text-secondary">
-              Site map
-            </Link>
-          </li>
+
           <li>
             <Link to="/get-in-touch" class="hover:text-secondary">
               Privacy
@@ -174,7 +168,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div class=" py-4 text-gray-100">
+      <div class=" py-4 text-[#BBBBBB]">
         <div class="container mx-auto px-4">
           <div class=" flex flex-col items-center flex-wrap justify-between gap-2">
             <div class="px-4 w-full text-center sm:w-auto sm:text-left">

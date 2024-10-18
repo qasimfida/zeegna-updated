@@ -21,7 +21,7 @@ const HeroSlider = () => {
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveThree.png" />
         </div>
-        <div className="relative w-full sm:w-[55%] py-[80px]">
+        <div className="relative w-full sm:w-[70%] py-[80px]">
           <div className="flex items-center flex-col gap-[5px]">
             <h1 className="text-[32px] font-semibold text-center">
               Trusted by families like yours
@@ -43,7 +43,7 @@ const HeroSlider = () => {
             mousewheel={true}
             keyboard={true}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-            className="sm:w-[80%] sm:h-[65vh] md:h-[43vh] lg:h-[38vh] xl:h-[50vh]  mt-[55px]"
+            className="sm:w-[70%] sm:h-[65vh] md:h-[43vh] lg:h-[30vh]   mt-[55px]"
           >
             {/* First Slide */}
             <SwiperSlide className="text-center flex flex-col items-center">
@@ -67,8 +67,10 @@ const HeroSlider = () => {
                 needed was simple, and now she's happy and well taken care of.
                 It feels wonderful to see her content.
               </h2>
-              <img src={person} alt="person" />
-              <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
+              <img src={person} alt="person" className="pt-[30px]" />
+              <p className="text-[#5e5e6f] pt-[19px] text-[16px]">
+                Sara R. Charlotte, NC
+              </p>
             </SwiperSlide>
 
             {/* Third Slide */}
@@ -79,20 +81,22 @@ const HeroSlider = () => {
                 needed was simple, and now she's happy and well taken care of.
                 It feels wonderful to see her content.
               </h2>
-              <img src={person} alt="person" />
-              <p className="text-[#5E5E6F]">Sara R. Charlotte, NC</p>
+              <img src={person} alt="person" className="pt-[30px]" />
+              <p className="text-[#5e5e6f] pt-[19px] text-[16px]">
+                Sara R. Charlotte, NC
+              </p>
             </SwiperSlide>
           </Swiper>
           {/* buttons */}
           <div
             ref={prevRef}
-            className="swiper-button-back absolute left-2 top-[89%] lg:top-[50%] transform -translate-y-[100%] z-10 cursor-pointer p-3 border border-black rounded-full flex items-center justify-center"
+            className="swiper-button-back absolute left-2 top-[89%] lg:top-[45%] transform -translate-y-[100%] z-10 cursor-pointer p-3 border border-black rounded-full flex items-center justify-center"
           >
             <IoArrowBack size={24} />
           </div>
           <div
             ref={nextRef}
-            className="swiper-button-fore absolute right-2 top-[89%] lg:top-[50%] transform -translate-y-[100%] z-10 cursor-pointer p-3 border border-black rounded-full flex items-center justify-center"
+            className="swiper-button-fore absolute right-2 top-[89%] lg:top-[45%] transform -translate-y-[100%] z-10 cursor-pointer p-3 border border-black rounded-full flex items-center justify-center"
           >
             <IoArrowForward size={24} />
           </div>

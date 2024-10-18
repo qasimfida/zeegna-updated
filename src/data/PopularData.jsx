@@ -74,8 +74,8 @@ const PopularData = [
   },
   {
     id: 8,
-    image: "/images/Popular-6.png",
-    title: "Financial advisory",
+    image: "/images/Lawn care.png",
+    title: "Lawn care",
     description:
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: PersonalCareIcon,

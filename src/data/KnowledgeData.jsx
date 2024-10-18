@@ -14,12 +14,12 @@ const KnowledgeData = [
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: PersonalCareIcon,
     bgColor: "bg-[#BFB5FE]",
-    chip: "Featured",
+    chip: "Most Popular",
   },
   {
     id: 2,
     image: "/images/knowledge1.png",
-    title: "Home maintenance",
+    title: "The power of meal prep in supporting senior health and well-being",
     description:
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: HomeMaintance,
@@ -34,7 +34,7 @@ const KnowledgeData = [
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: CarIcon,
     bgColor: "bg-[#A9EEB8]",
-    chip: "Personal Care",
+    chip: "Most Popular",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const KnowledgeData = [
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: MovingIcon,
     bgColor: "bg-[#9DEFEB]",
-    chip: "Featured",
+    chip: "Most Popular",
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const KnowledgeData = [
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: WellNess,
     bgColor: "bg-[#F1AAF2]",
-    chip: "Featured",
+    chip: "Most Popular",
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const KnowledgeData = [
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: PersonalCareIcon,
     bgColor: "bg-[#AADCF2]",
-    chip: "Featured",
+    chip: "Most Popular",
   },
   {
     id: 7,
@@ -75,7 +75,7 @@ const KnowledgeData = [
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: PersonalCareIcon,
     bgColor: "bg-[#AADCF2]",
-    chip: "Featured",
+    chip: "Most Popular",
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ const KnowledgeData = [
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: MovingIcon,
     bgColor: "bg-[#9DEFEB]",
-    chip: "Featured",
+    chip: "Most Popular",
   },
   {
     id: 9,
@@ -95,7 +95,7 @@ const KnowledgeData = [
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: CarIcon,
     bgColor: "bg-[#A9EEB8]",
-    chip: "Personal Care",
+    chip: "Most Popular",
   },
 ];
 
