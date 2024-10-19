@@ -52,7 +52,6 @@ function StayConnectedSection() {
           </form>
         </div>
 
-        {/* Right-side avatars */}
         <div className="hidden md:flex flex-col gap-4">
           <img
             className="w-[73px] h-[73px] rounded-full object-cover max-w-[73px] absolute top-[56px] right-[23px]"

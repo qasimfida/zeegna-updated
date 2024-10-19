@@ -1,5 +1,6 @@
 import React from "react";
 import DownArrow from "../../assets/icons/arrow/DownArrow";
+import Typewriter from "../typeWriteing/TypeWriter";
 
 function HomeSection() {
   return (
@@ -34,7 +35,7 @@ function HomeSection() {
               <p className="text-2xl	font-medium	 mb-10 text-[#5E5E6F] max-sm:w-full	mx-auto max-sm:text-lg max-md:text-xl   leading-[38px]		">
                 Find trusted vendors to help with{" "}
                 <span className="text-[#109088] font-semibold animate-fadeIn">
-                  Personal Care|
+                  <Typewriter />
                 </span>
                 <br />
                 to live the best of your days at home.
