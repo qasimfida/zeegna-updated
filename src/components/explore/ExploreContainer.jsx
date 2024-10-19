@@ -51,7 +51,7 @@ function ExploreContainer() {
           </p>
         </div>
 
-        <div className="md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px] mt-[50px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px] mt-[50px]">
           {ExploreData.map((card) => (
             <ExploreCard
               key={card.id}

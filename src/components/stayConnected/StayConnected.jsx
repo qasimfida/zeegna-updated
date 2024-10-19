@@ -1,0 +1,73 @@
+import React from "react";
+
+function StayConnectedSection() {
+  return (
+    <div className="mx-auto pb-[80px] text-center poppin relative">
+      {/* Form Section */}
+      <div className="relative bg-[#DFFFEE] py-[50px] px-[25px] rounded-[40px] flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-[1300px] mx-auto">
+        {/* Left-side avatars */}
+        <div className="hidden md:flex flex-col gap-4">
+          <img
+            className="w-[61px] h-[61px] rounded-full object-cover max-w-[61px] absolute top-[101px]"
+            src="images/stay (4).png"
+            alt="Person"
+          />
+          <img
+            className="w-[93px] h-[93px] rounded-full object-cover max-w-[93px] absolute left-[80px] bottom-[57px]"
+            src="images/stay (3).png"
+            alt="Person"
+          />
+        </div>
+
+        {/* Form Content */}
+        <div className="text-center w-full">
+          <h3 className="text-[32px] font-semibold mb-[10px] text-[#1C1C1C]">
+            Stay Connected with the Latest in Senior Care
+          </h3>
+          <p className="text-[#575757] mb-[20px] text-[20px] font-medium">
+            Get expert tips and updates to help your loved ones age comfortably
+            at home.
+          </p>
+
+          {/* Form */}
+          <form className="max-w-md mx-auto">
+            <div className="flex flex-col gap-[15px] w-full">
+              <input
+                type="text"
+                placeholder="Name"
+                className="w-full px-4 py-[15px] border border-gray-300 rounded-[10px] text-[14px] font-medium text-[#5E5E6F] h-[50px]"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="w-full px-4 py-[15px] border border-gray-300 rounded-[10px] text-[14px] font-medium text-[#5E5E6F] h-[50px]"
+              />
+              <button
+                type="submit"
+                className="bg-black text-white py-[13px] font-medium rounded-[27px] hover:bg-white border-2 border-black hover:text-black transition-colors"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+
+        {/* Right-side avatars */}
+        <div className="hidden md:flex flex-col gap-4">
+          <img
+            className="w-[73px] h-[73px] rounded-full object-cover max-w-[73px] absolute top-[56px] right-[23px]"
+            src="images/stay (2).png"
+            alt="Person"
+          />
+          <img
+            className="w-[86px] rounded-full object-cover max-w-[86px] absolute right-[67px] bottom-[17%]"
+            src="images/stay (1).png"
+            alt="Person"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default StayConnectedSection;

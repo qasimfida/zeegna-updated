@@ -24,6 +24,7 @@ import ExploreContainer from "./components/explore/ExploreContainer";
 
 import BecomePartner from "./pages/BecomePartner";
 import HomeCareSlider from "./components/homeCareSlider/HomeCareSlider";
+import StayConnectedSection from "./components/stayConnected/StayConnected";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 

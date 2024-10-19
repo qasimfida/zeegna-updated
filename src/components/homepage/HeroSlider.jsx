@@ -61,8 +61,8 @@ const HeroSlider = () => {
                   <h2 className="text-black text-[19px] font-semibold text-wrap w-[78%]">
                     We found the perfect caregiver for mom. She's kind and
                     incredibly helpful. The process of getting the care my mom
-                    needed was simple, and now she's happy <br></br> and well taken care
-                    of. It feels wonderful to see her content.
+                    needed was simple, and now she's happy <br></br> and well
+                    taken care of. It feels wonderful to see her content.
                   </h2>
                   <img src={person} alt="person" className="pt-[30px]" />
                   <p className="text-[#5e5e6f] pt-[19px] pb-[35px] text-[16px]">
@@ -74,10 +74,10 @@ const HeroSlider = () => {
           {/* Buttons */}
           <div
             ref={prevRef}
-            className={`swiper-button-back absolute left-2 top-[89%] lg:top-[47%] transform -translate-y-[100%] z-10 cursor-pointer p-[8px] border border-black rounded-full flex items-center justify-center ${
+            className={`swiper-button-back absolute left-2 top-[89%] lg:top-[47%] transform -translate-y-[100%] z-10 cursor-pointer p-[8px] rounded-full flex items-center justify-center ${
               currentIndex === 0
-                ? "border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed"
-                : ""
+                ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed"
+                : "border border-black"
             }`}
             onClick={currentIndex === 0 ? null : () => prevRef.current.click()}
           >
@@ -85,10 +85,10 @@ const HeroSlider = () => {
           </div>
           <div
             ref={nextRef}
-            className={`swiper-button-fore absolute right-2 top-[89%] lg:top-[47%] transform -translate-y-[100%] z-10 cursor-pointer p-[8px] border border-black rounded-full flex items-center justify-center ${
+            className={`swiper-button-fore absolute right-2 top-[89%] lg:top-[47%] transform -translate-y-[100%] z-10 cursor-pointer p-[8px] rounded-full flex items-center justify-center ${
               currentIndex === 2
-                ? "border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed"
-                : ""
+                ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed"
+                : "border border-black"
             }`}
             onClick={currentIndex === 2 ? null : () => nextRef.current.click()}
           >

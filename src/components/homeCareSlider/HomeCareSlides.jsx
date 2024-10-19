@@ -1,33 +1,68 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-import '../../assets/css/homeSlider.css';
+import "../../assets/css/homeSlider.css";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
 function HomeCareSlides() {
   const [activeTab, setActiveTab] = useState(0);
+  const swiperRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const tabs = [
-    { title: "All articles" },
-    { title: "Features" },
-    { title: "Most popular" },
-    { title: "Caregiver corner" },
-    { title: "Personal care" },
+    { title: "Home care" },
+    { title: "Home maintenance" },
+    { title: "Transportation" },
+    { title: "Professional services" },
+    { title: "Professional" },
     { title: "Home maintenance" },
     { title: "Transportation" },
     { title: "Legal matters" },
     { title: "Financial health" },
   ];
 
+  const handleSlideChange = (swiper) => {
+    setActiveTab(swiper.activeIndex);
+    setCurrentIndex(swiper.activeIndex); // Update currentIndex when slide changes
+  };
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+    setCurrentIndex(index); // Update currentIndex when tab is clicked
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideTo(index); // Slide to the selected tab
+    }
+  };
+
+  const handleNext = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  const handlePrev = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
   return (
     <div className="relative w-full mx-auto poppin">
-      <Swiper 
-        spaceBetween={0} 
+      <Swiper
+        ref={swiperRef}
+        spaceBetween={0}
         slidesPerView="auto"
+        pagination={true}
+        cssMode={true}
+        onSlideChange={handleSlideChange}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
       >
         {tabs.map((tab, index) => (
-            <SwiperSlide key={index} className="flex items-center relative">
+          <SwiperSlide key={index} className="flex items-center relative">
             <button
-              onClick={() => setActiveTab(index)}
+              onClick={() => handleTabClick(index)} // Call handleTabClick
               className={`px-3 flex flex-col items-center transition-colors duration-300 relative`}
             >
               <span
@@ -41,12 +76,36 @@ function HomeCareSlides() {
               </span>
             </button>
             {index < tabs.length - 1 && (
-              <div className="h-[15px] w-px bg-[#EAEAF1] mx-2" /> 
+              <div className="h-[15px] w-px bg-[#EAEAF1] mx-2" />
             )}
           </SwiperSlide>
         ))}
       </Swiper>
-     <div className=" bottom-0 w-full absolute border-b-2 border-[#EAEAF1]"></div>
+
+      {/* Navigation Buttons */}
+      <div
+        className={`swiper-button-back absolute left-0 top-[50%] transform -translate-y-[50%] z-10 cursor-pointer ${
+          currentIndex === 0
+            ? "text-[#A7A7A7] cursor-not-allowed"
+            : "text-black"
+        }`}
+        onClick={currentIndex === 0 ? null : handlePrev}
+      >
+        <IoArrowBack size={22} />
+      </div>
+
+      <div
+        className={`swiper-button-forward absolute right-0 top-[50%] transform -translate-y-[50%] z-10 cursor-pointer ${
+          currentIndex === tabs.length - 1
+            ? "text-[#A7A7A7] cursor-not-allowed"
+            : "text-black"
+        }`}
+        onClick={currentIndex === tabs.length - 1 ? null : handleNext}
+      >
+        <IoArrowForward size={22} />
+      </div>
+
+      <div className="bottom-0 w-full absolute border-b-2 border-[#EAEAF1]"></div>
     </div>
   );
 }

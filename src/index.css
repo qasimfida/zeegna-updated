@@ -39,16 +39,31 @@
   font-size: 17px;
 }
 .custom-slick-arrow {
- 
-    background-color: #109088;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  background-color: #109088;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .custom-slick-arrow::before {
-    font-size: 20px;
-    color: white;
+  font-size: 20px;
+  color: white;
+}
+.select-icon select::-ms-expand {
+  display: none;
+}
+
+.select-icon select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 10px 40px 10px 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../public/images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
 }

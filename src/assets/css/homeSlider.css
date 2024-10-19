@@ -1,7 +1,10 @@
 .swiper-slide {
-    flex-shrink: 0;
-    position: relative;
-    transition-property: transform;
-    display: block;
-    width: auto;
+  flex-shrink: 0;
+  position: relative;
+  transition-property: transform;
+  display: block;
+  width: auto;
+}
+.swiper {
+  width: 89%;
 }
