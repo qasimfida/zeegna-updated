@@ -7,7 +7,7 @@ function HomeCardsContainer() {
     <>
       <div className=" mx-2 md:mx-20 py-20  poppin max-sm:pb-0	">
         <div className="text-center max-sm:mt-72">
-          <h2 className="font-semibold text-xl md:text-4xl xl:mt-[80px] ">
+          <h2 className="font-semibold text-xl md:text-4xl xl:mt-[114px] ">
             Right in the home you love
           </h2>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>

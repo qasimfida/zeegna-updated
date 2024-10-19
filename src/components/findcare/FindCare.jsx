@@ -5,7 +5,7 @@ function FindCare({ title, description, count, bgColor }) {
     <div className="text-center poppin ">
       <div className="flex items-center justify-center w-full  ">
         <div
-          className={`${bgColor} w-16 h-16  rounded-full flex items-center justify-center`}
+          className={`${bgColor} transition-transform duration-300 hover:-translate-y-1 cursor-pointer w-16 h-16  rounded-full flex items-center justify-center`}
         >
           <h4 className="text-black text-2xl font-semibold">{count}</h4>
         </div>

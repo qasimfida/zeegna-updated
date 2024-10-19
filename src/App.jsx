@@ -20,6 +20,7 @@ import HelpCard from "./components/helpsection/Help";
 import ArticleContainer from "./components/article/ArticleTextContainer";
 import ScrollToTop from "./components/scroll/ScrollTop";
 import Getintouchpage from "./pages/Getintouchpage";
+import ExploreContainer from "./components/explore/ExploreContainer";
 
 import BecomePartner from "./pages/BecomePartner";
 // import "slick-carousel/slick/slick.css";
@@ -36,6 +37,8 @@ function App() {
           <Route path="/article" element={<ArticlePage />} />
 
           <Route path="/guiding-hero" element={<GuidingHeroSection />} />
+          <Route path="/explore" element={<ExploreContainer />} />
+
           <Route path="/guiding-platform" element={<GuidingPlatform />} />
           <Route path="/guiding-review" element={<GuidingReview />} />
           <Route path="/get-in-touch" element={<Getintouchpage />} />

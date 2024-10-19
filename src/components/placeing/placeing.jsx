@@ -2,7 +2,7 @@ import React from "react";
 
 function PlacingHelpSection() {
   return (
-    <div className="max-w-7xl mx-auto py-20 md:mt-20 text-center poppin">
+    <div className="max-w-7xl mx-auto py-20  text-center poppin">
       <h2 className="font-semibold text-3xl lg:text-[32px]">
         Placing help at everyone's reach{" "}
       </h2>

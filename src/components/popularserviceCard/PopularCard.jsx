@@ -10,7 +10,9 @@ const PopularCard = ({ image, title }) => {
       <div className="px-5 py-[15px] flex items-center justify-between">
         <h5 className=" text-base font-semibold text-[#1C1C1C] ">{title}</h5>
         <div className="flex items-center gap-2">
-          <p className="text-[#5E5E6F] text-sm font-medium	">Find help</p>
+          <p className="text-[#5E5E6F] text-sm font-medium hover:text-[#109088]	">
+            Find help
+          </p>
 
           <div className="transition-transform duration-300 hover:translate-x-2">
             <svg

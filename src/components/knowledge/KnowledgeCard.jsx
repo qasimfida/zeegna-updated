@@ -10,7 +10,7 @@ const KnowledgeCard = ({ image, title, description, chip, id, className }) => {
 
   return (
     <div
-      className={` xl:h-[450px] bg-white border border-gray-200 shadow-md rounded-lg border-[#EAEAF1] relative group cursor-pointer poppin ${className}`}
+      className={` xl:h-[450px] bg-white border border-gray-200 shadow-sm rounded-[15px] border-[#EAEAF1] relative group cursor-pointer poppin ${className}`}
     >
       <a href="#">
         <img className="rounded-t-lg text-[#5E5E6F]" src={image} alt={title} />
@@ -25,10 +25,10 @@ const KnowledgeCard = ({ image, title, description, chip, id, className }) => {
         </a>
       </div>
 
-      <div className="pl-[15px] pr-[25px] xl:w-[420px]">
+      <div className="pl-[15px] pr-[25px] ">
         <a href="#">
           <h5
-            className={`mb-2 text-[17px] font-semibold text-[#5E5E6F] ${
+            className={`mb-2 text-[17px] font-semibold text-[#5E5E6F]  hover:text-[#109088] ${
               id == 4 ? "pb-[27px]" : "pb-0"
             }`}
           >
