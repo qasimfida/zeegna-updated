@@ -21,7 +21,7 @@ function NewPassword() {
             <input
               type="password"
               id="password"
-              className="shadow-sm text-sm rounded-full w-full px-4 py-3.5	 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="shadow-sm text-sm rounded-[10px] w-full px-4 py-3.5	 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               placeholder="Enter a new password"
               required
             />
@@ -36,7 +36,7 @@ function NewPassword() {
             <input
               type="password"
               id="password"
-              className="shadow-sm text-sm rounded-full w-full px-4 py-3.5 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="shadow-sm text-sm rounded-[10px] w-full px-4 py-3.5 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               placeholder="Enter your password"
               required
             />

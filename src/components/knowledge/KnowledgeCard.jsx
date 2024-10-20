@@ -15,7 +15,7 @@ const KnowledgeCard = ({ image, title, description, chip, id, className }) => {
       <a href="#">
         <img className="rounded-t-lg text-[#5E5E6F]" src={image} alt={title} />
       </a>
-      <div className="h-[250px]">
+      <div className="h-[250px] max-sm:h-auto">
         <div className="pl-[15px] pt-[15px] pb-[5px] pr-[25px] py-3">
           <a
             href="#"

@@ -10,10 +10,10 @@ function HomeSection() {
           {/* Left Image and Text */}
           <div
             className="flex pt-[106px] pl-[29px] pr-[58px] h-[700px] justify-center relative pb-[36px] 
-        "
+        max-sm:flex-col max-sm:h-auto max-sm:pt-[60px] max-sm:px-[16px] max-sm:pb-[20px]"
           >
-            <div className="absolute w-[338px] left-[0] ml-[24px] mt-[55px]">
-              <div className="text-center text-sm text-gray-600 bg-[#FDE7FF] py-2.5	px-2.5 rounded-2xl max-sm:py-1	max-sm:px-1	 w-[173px] ml-[54px] mb-[8px]		">
+            <div className="absolute w-[338px] left-[0] ml-[24px] mt-[55px] max-sm:relative max-sm:w-full max-sm:ml-0 max-sm:mt-0 max-sm:flex max-sm:flex-col max-sm:items-center">
+              <div className="text-center text-sm text-gray-600 bg-[#FDE7FF] py-2.5	px-2.5 rounded-2xl max-sm:py-1	max-sm:px-1	 w-[173px] ml-[54px] mb-[8px]	max-sm:ml-0	">
                 <p className="font-semibold max-sm:text-[12px] leading-[21px]">
                   Kelly, Age 74
                 </p>
@@ -24,10 +24,10 @@ function HomeSection() {
               <img
                 src="images/HeroLeft.png"
                 alt=""
-                className="w-[285px]  ml-[17px] mr-[36px] mb-[61px] h-[284px] "
+                className="w-[285px]  ml-[17px] mr-[36px] mb-[61px] h-[284px] max-sm:w-[150px] max-sm:h-[150px] max-sm:ml-0 max-sm:mr-0 max-sm:mb-[20px]"
               />
             </div>
-            <div className=" text-center">
+            <div className="text-center max-sm:w-full">
               {/* Heading */}
               <h1 className="text-[64px] leading-[80px] font-semibold text-gray-800 mb-5 max-sm:text-[28px] poppin max-md:text-4xl">
                 Comfort. Choice. Home.
@@ -48,19 +48,18 @@ function HomeSection() {
             </div>
 
             {/* Content with Images */}
-            <div className="block w-[317px] absolute right-0 mt-[56px]">
+            <div className="block w-[317px] absolute right-0 mt-[56px] max-sm:relative max-sm:w-full max-sm:mt-[20px]">
               {/* Right Image and Text */}
-              <div className="w-[317px] flex flex-col items-end">
+              <div className="w-[317px] flex flex-col items-end max-sm:items-center max-sm:w-full">
                 <img
                   src="images/HeroImage.png"
                   alt=""
-                  className="pl-[25px] pr-[23px]"
+                  className="pl-[25px] pr-[23px] max-sm:p-0 max-sm:w-[150px] max-sm:h-[150px]"
                 />
               </div>
             </div>
-
-            {/* Form Section */}
-            <div className=" py-[30px] bottom-0 mb-[-42px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white  rounded-3xl shadow-md absolute left-0 right-0 max-sm:mb-12 max-sm:py-4 max-sm:px-4  flex max-xl:mx-[30px] max-sm:mx-[16px] items-center justify-around  max-md:mb-38">
+            {/* form  */}
+            <div className=" py-[30px] bottom-0 max-sm:bottom-[-59%] mb-[-42px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white  rounded-3xl shadow-md absolute left-0 right-0 max-sm:mb-12 max-sm:py-4 max-sm:px-4  flex max-xl:mx-[30px] max-sm:mx-[16px] items-center justify-around  max-md:mb-38">
               <div className="">
                 <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between max-sm:justify-center">
                   {/* Left Section: Heading and Description */}

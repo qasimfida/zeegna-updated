@@ -7,7 +7,7 @@ function Login() {
 
   const handleLoginClick = (e) => {
     e.preventDefault();
-    navigate("/"); // Navigate to the homepage after login
+    navigate("/");
   };
 
   return (
@@ -57,7 +57,7 @@ function Login() {
               <div className="flex items-center">
                 <input
                   type="checkbox"
-                  id="remember" // Updated the checkbox id
+                  id="remember"
                   className="!h-5 !w-5 !rounded-md border-gray-300 text-indigo-600 focus:ring-indigo-500 focus:outline-none"
                 />
                 <label
@@ -84,7 +84,7 @@ function Login() {
             <div className="text-center text-sm">
               Don't have an account yet?{" "}
               <Link
-                to="/signup" // Changed to a React Router Link
+                to="/signup"
                 className="inline-block text-blue-500 align-baseline hover:text-blue-800"
               >
                 Get started
