@@ -29,7 +29,7 @@ function Typewriter() {
       }
     };
 
-    const timer = setTimeout(type, isDeleting ? 100 : 200);
+    const timer = setTimeout(type, isDeleting ? 50 : 100);
 
     return () => clearTimeout(timer);
   }, [displayedText, j, isDeleting, currentIndex, words]);

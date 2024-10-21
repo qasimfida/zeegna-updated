@@ -2,7 +2,7 @@ import React from "react";
 
 function HomeCard({ title, description, Icon, bgColor }) {
   return (
-    <div className="w-full  border border-[#DBDBE0] rounded-[15px] p-4 flex items-start gap-4 cursor-pointer hover:bg-[#EBEBF3] ">
+    <div className="w-full  border border-[#DBDBE0] rounded-[15px] p-[15px] flex items-start gap-[15px] cursor-pointer hover:bg-[#EBEBF3] ">
       {/* Icon Section */}
       <div className={`p-[15px] rounded-[12px] ${bgColor}`}>
         <Icon />

@@ -39,7 +39,7 @@ function ExploreContainer() {
   return (
     <div className="bg-white poppin mb-[80px]">
       <div className=" mx-[70px]">
-        <div className="text-center mt-10">
+        <div className="text-center mt-[80px]">
           <h2 className="font-semibold text-xl md:text-[32px] text-[#1C1C1C] ">
             Explore help at home by city{" "}
           </h2>

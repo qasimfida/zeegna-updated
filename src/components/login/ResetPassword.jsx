@@ -13,7 +13,7 @@ function ResetPassword() {
   return (
     <div className="bg-[#F7F7F7]">
       <LoginPageHeader />
-      <div className="min-h-[648px] flex  justify-center w-full poppin">
+      <div className="lg:min-h-[648px] flex  justify-center w-full poppin lg:mt-[90px]">
         <div className="px-8 py-6 max-w-[553px]">
           <h1 className="text-[32px] font-semibold text-center mb-2">
             Let's help reset your password

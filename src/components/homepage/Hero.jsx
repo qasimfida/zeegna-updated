@@ -12,7 +12,7 @@ function HomeSection() {
             className="flex pt-[106px] pl-[29px] pr-[58px] h-[700px] justify-center relative pb-[36px] 
         max-sm:flex-col max-sm:h-auto max-sm:pt-[60px] max-sm:px-[16px] max-sm:pb-[20px]"
           >
-            <div className="absolute w-[338px] left-[0] ml-[24px] mt-[55px] max-sm:relative max-sm:w-full max-sm:ml-0 max-sm:mt-0 max-sm:flex max-sm:flex-col max-sm:items-center">
+            <div className="max-sm:hidden absolute w-[338px] left-[0] ml-[24px] mt-[55px] max-sm:relative max-sm:w-full max-sm:ml-0 max-sm:mt-0 max-sm:flex max-sm:flex-col max-sm:items-center">
               <div className="text-center text-sm text-gray-600 bg-[#FDE7FF] py-2.5	px-2.5 rounded-2xl max-sm:py-1	max-sm:px-1	 w-[173px] ml-[54px] mb-[8px]	max-sm:ml-0	">
                 <p className="font-semibold max-sm:text-[12px] leading-[21px]">
                   Kelly, Age 74
@@ -32,7 +32,7 @@ function HomeSection() {
               <h1 className="text-[64px] leading-[80px] font-semibold text-gray-800 mb-5 max-sm:text-[28px] poppin max-md:text-4xl">
                 Comfort. Choice. Home.
               </h1>
-              <p className="text-2xl	font-medium	 mb-10 text-[#5E5E6F] max-sm:w-full	mx-auto max-sm:text-lg max-md:text-xl   leading-[38px]		">
+              <p className="text-2xl	font-medium	 mb-10 text-[#5E5E6F] max-sm:w-full	mx-auto max-sm:text-[19px] max-md:text-xl   leading-[38px]		">
                 Find trusted vendors to help with{" "}
                 <span className="text-[#109088] font-semibold animate-fadeIn">
                   <Typewriter />
@@ -48,7 +48,7 @@ function HomeSection() {
             </div>
 
             {/* Content with Images */}
-            <div className="block w-[317px] absolute right-0 mt-[56px] max-sm:relative max-sm:w-full max-sm:mt-[20px]">
+            <div className=" max-sm:hidden block w-[317px] absolute right-0 mt-[56px] max-sm:relative max-sm:w-full max-sm:mt-[20px]">
               {/* Right Image and Text */}
               <div className="w-[317px] flex flex-col items-end max-sm:items-center max-sm:w-full">
                 <img
@@ -59,13 +59,13 @@ function HomeSection() {
               </div>
             </div>
             {/* form  */}
-            <div className=" py-[30px] bottom-0 max-sm:bottom-[-59%] mb-[-42px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white  rounded-3xl shadow-md absolute left-0 right-0 max-sm:mb-12 max-sm:py-4 max-sm:px-4  flex max-xl:mx-[30px] max-sm:mx-[16px] items-center justify-around  max-md:mb-38">
+            <div className=" py-[30px] bottom-0 max-sm:bottom-[-59%] mb-[-42px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white  rounded-3xl shadow-md absolute left-0 right-0 max-sm:py-[30px] max-sm:px-[15px]  flex max-xl:mx-[30px] max-sm:mx-[7px]  items-center justify-around  max-md:mb-38">
               <div className="">
                 <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between max-sm:justify-center">
                   {/* Left Section: Heading and Description */}
                   <div>
-                    <div className="flex flex-col text-left gap-2 mb-4 lg:mb-0 xl:mr-[45px] ">
-                      <p className="font-semibold text-black text-xl">
+                    <div className="flex flex-col text-left max-sm:text-center gap-2 mb-4 lg:mb-0 xl:mr-[45px] ">
+                      <p className="font-semibold text-black text-xl max-sm:text-[24px]">
                         Find help now
                       </p>
                       <p className="text-gray-500 text-base font-medium w-full lg:w-[238px]">

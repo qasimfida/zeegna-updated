@@ -26,7 +26,7 @@ function KnowledgeContainer() {
               />
             ))}
           </div>
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-[50px]">
             <button className="rounded-full bg-transparent border-[#1C1C1C] border-2 px-[35.5px] py-[13px] text-[#1C1C1C] hover:bg-black hover:text-white font-medium">
               Read more
             </button>
