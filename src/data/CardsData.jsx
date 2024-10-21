@@ -19,7 +19,7 @@ const cardsData = [
   {
     id: 2,
     title: "Home maintenance",
-    description: "Home repairs, mods, appliance, electrical, and more",
+    description: "Home repairs, mods, appliance, electrical,and more",
     Icon: HomeMaintance,
     bgColor: "bg-[#FEBCD5]",
   },
@@ -33,7 +33,7 @@ const cardsData = [
   {
     id: 4,
     title: "Moving and storage",
-    description: "Downsizing, packing, relocation, and storage solutions",
+    description: "Downsizing, packing, relocation, and storage solutions",
     Icon: MovingIcon,
     bgColor: "bg-[#9DEFEB]",
   },
@@ -56,14 +56,14 @@ const cardsData = [
     id: 7,
     title: "Professional services",
     description:
-      "Taxes, retirement and estate planning, mobile notary, wills, trusts, and more",
+      "Taxes, retirement and estate planning, mobile notary, wills, trusts,and more",
     Icon: ProfessionalServices,
     bgColor: "bg-[#F2BBAA]",
   },
   {
     id: 8,
     title: "Pet care",
-    description: "Feeding, walking, grooming, and veterinary care",
+    description: "Feeding, walking, grooming, and veterinary care",
     Icon: PetCare,
     bgColor: "bg-[#D7F2AA]",
   },
