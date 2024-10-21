@@ -4,8 +4,7 @@ import "../../assets/css/homeSlider.css";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
-function HomeCareSlides() {
-  const [activeTab, setActiveTab] = useState(0);
+function HomeCareSlides({ activeTab, setActiveTab }) {
   const swiperRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -23,14 +22,14 @@ function HomeCareSlides() {
 
   const handleSlideChange = (swiper) => {
     setActiveTab(swiper.activeIndex);
-    setCurrentIndex(swiper.activeIndex); // Update currentIndex when slide changes
+    setCurrentIndex(swiper.activeIndex); 
   };
 
   const handleTabClick = (index) => {
     setActiveTab(index);
-    setCurrentIndex(index); // Update currentIndex when tab is clicked
+    setCurrentIndex(index); 
     if (swiperRef.current) {
-      swiperRef.current.swiper.slideTo(index); // Slide to the selected tab
+      swiperRef.current.swiper.slideTo(index); 
     }
   };
 
@@ -68,7 +67,7 @@ function HomeCareSlides() {
               <span
                 className={`flex items-center ${
                   activeTab === index
-                    ? "text-[black] font-semibold border-b-2 border-[#109088] mb-0"
+                    ? "text-[black] text-[19px] font-semibold border-b-2 border-[#109088] mb-0"
                     : "text-black font-medium hover:text-black"
                 }`}
               >

@@ -25,7 +25,7 @@ const HeroSlider = () => {
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveThree.png" />
         </div>
-        <div className="relative w-full sm:w-[75%] py-[80px]">
+        <div className="relative w-full sm:w-[65%] py-[80px]">
           <div className="flex items-center flex-col gap-[5px]">
             <h1 className="text-[32px] font-semibold text-center">
               Trusted by families like yours
@@ -58,7 +58,7 @@ const HeroSlider = () => {
                   key={index}
                   className="text-center flex flex-col items-center"
                 >
-                  <h2 className="text-black text-[19px] font-semibold text-wrap w-[78%]">
+                  <h2 className="text-black text-[19px] font-semibold text-wrap">
                     We found the perfect caregiver for mom. She's kind and
                     incredibly helpful. The process of getting the care my mom
                     needed was simple, and now she's happy <br></br> and well
