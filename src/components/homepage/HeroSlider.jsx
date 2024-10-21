@@ -25,9 +25,9 @@ const HeroSlider = () => {
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveThree.png" />
         </div>
-        <div className="relative w-full sm:w-[65%] py-[80px]">
+        <div className="relative w-full sm:w-[65%] py-[80px] max-sm:pt-[60px]">
           <div className="flex items-center flex-col gap-[5px]">
-            <h1 className="text-[32px] font-semibold text-center">
+            <h1 className="text-[32px] max-sm:text-[24px] font-semibold text-center">
               Trusted by families like yours
             </h1>
             <div className="w-[100px] h-[2px] border border-black"></div>
@@ -48,7 +48,7 @@ const HeroSlider = () => {
             mousewheel={true}
             keyboard={true}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-            className="mt-[55px]"
+            className="mt-[55px] max-sm:mt-[60]"
           >
             {/* Slides */}
             {Array(3)
@@ -58,14 +58,14 @@ const HeroSlider = () => {
                   key={index}
                   className="text-center flex flex-col items-center"
                 >
-                  <h2 className="text-black text-[19px] font-semibold text-wrap">
+                  <h2 className="text-black text-[19px] max-sm:[17px] font-semibold text-wrap text-center">
                     We found the perfect caregiver for mom. She's kind and
                     incredibly helpful. The process of getting the care my mom
-                    needed was simple, and now she's happy <br></br> and well
+                    needed was simple, and now she's happy and well
                     taken care of. It feels wonderful to see her content.
                   </h2>
                   <img src={person} alt="person" className="pt-[30px]" />
-                  <p className="text-[#5e5e6f] pt-[19px] pb-[35px] text-[16px]">
+                  <p className="text-[#5e5e6f] pt-[19px] pb-[35px] max-sm:pb-[60px] text-[16px]">
                     Sara R. Charlotte, NC
                   </p>
                 </SwiperSlide>

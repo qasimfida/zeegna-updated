@@ -45,21 +45,21 @@ const HomeCareSlider = () => {
   ];
   return (
     <>
-      <section className="gap-[106px] pt-[80px] pl-[90px] pr-[71px] pb-[64px] h-[494px] flex font-poppins bg-[#F7F7F7]">
-        <div className="w-[364px]">
+      <section className="max-sm:gap-0 gap-[106px] max-sm:pt-[58px] pt-[80px] max-sm:pl-[16px] max-sm:pr-[14px] pl-[90px] pr-[71px] pb-[64px] h-[494px] flex bg-[#F7F7F7]">
+        <div className="w-[364px] max-sm: hidden">
           <img src={Banner} alt="img" />
         </div>
-        <div className=" w-[804px]">
+        <div className=" w-[804px] max-sm:w-full max-md:w-full">
           <div className="pb-[30px]">
             <HomeCareSlides activeTab={activeTab} setActiveTab={setActiveTab} />
           </div>
-          <h2 className="pb-[10px] text-[24px] font-semibold">
+          <h2 className="pb-[10px] max-sm:text-[19px]  text-[24px] font-semibold">
           {tabs[activeTab].title}
           </h2>
-          <p className="text-[20px] font-medium text-[#5E5E6F] ">
+          <p className="text-[20px] max-sm:text-[16px] font-medium text-[#5E5E6F] ">
           {tabs[activeTab].description}
           </p>
-          <div className="flex gap-3 pt-[30px]">
+          <div className="flex max-sm:flex-col gap-3 pt-[30px] max-sm:pb-[50px]">
             <button className="border border-black text-[16px] font-medium px-[26px] py-[13px] rounded-full hover:bg-black hover:text-white">
               Take our care quiz
             </button>
