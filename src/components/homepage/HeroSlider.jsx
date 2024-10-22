@@ -27,7 +27,7 @@ const HeroSlider = () => {
         </div>
         <div className="relative w-full sm:w-[65%] py-[80px] max-sm:pt-[60px]">
           <div className="flex items-center flex-col gap-[5px]">
-            <h1 className="text-[32px] max-sm:text-[24px] font-semibold text-center">
+            <h1 className="text-[32px] max-sm:px-[67px] max-sm:text-[24px] font-semibold text-center">
               Trusted by families like yours
             </h1>
             <div className="w-[100px] h-[2px] border border-black"></div>
