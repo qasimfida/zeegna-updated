@@ -9,7 +9,9 @@ function PowerFulCard({ title, description, Icon }) {
         </div>
       </div>
       <div>
-        <h4 className="font-semibold text-lg text-[#1C1C1C] pt-2">{title}</h4>
+        <h4 className="font-semibold text-[19px] text-[#1C1C1C] pt-2 max-sm:pt-[15px]">
+          {title}
+        </h4>
         <p className="font-medium text-[#5E5E6F] text-base ">{description}</p>
       </div>
     </div>

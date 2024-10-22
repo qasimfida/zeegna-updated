@@ -37,21 +37,21 @@ function ExploreContainer() {
   };
 
   return (
-    <div className="bg-white poppin mb-[80px]">
-      <div className=" mx-[70px]">
-        <div className="text-center mt-[80px]">
-          <h2 className="font-semibold text-xl md:text-[32px] text-[#1C1C1C] ">
+    <div className="bg-white poppin mb-[80px] max-sm:mb-[50px]">
+      <div className=" mx-[70px]  max-sm:mx-0 ">
+        <div className="text-center mt-[80px] max-sm:mt-[50px] max-sm:px-[16px]">
+          <h2 className="font-semibold text-xl md:text-[32px] text-[#1C1C1C] max-sm:text-[24px] ">
             Explore help at home by city{" "}
           </h2>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-4"></div>
-          <p class="font-medium text-sm md:text-xl text-[#575757] mt-[20px] lg:w-[846px] mx-auto leading-5	    ">
+          <p class="font-medium text-sm md:text-xl text-[#575757] mt-[20px] lg:w-[846px] mx-auto leading-5 max-sm:text-[16px]	    ">
             From home repairs to cleaning to specialized care and more, find
             trusted professionals to keep your home running smoothly in your
             city.{" "}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px] mt-[50px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px] mt-[50px] max-sm:mt-[20px] max-sm:gap-[10px]">
           {ExploreData.map((card) => (
             <ExploreCard
               key={card.id}

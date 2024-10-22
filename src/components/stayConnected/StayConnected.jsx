@@ -2,9 +2,9 @@ import React from "react";
 
 function StayConnectedSection() {
   return (
-    <div className="mx-auto pb-[80px] text-center poppin relative">
+    <div className="mx-auto pb-[80px] text-center poppin relative max-sm:px-[16px] max-sm:mb-[50px]">
       {/* Form Section */}
-      <div className="relative bg-[#DFFFEE] py-[50px] px-[25px] rounded-[40px] flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-[1300px] mx-auto">
+      <div className="relative bg-[#DFFFEE] py-[50px] px-[25px] max-sm:px-[20px] rounded-[40px] flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-[1300px] mx-auto">
         {/* Left-side avatars */}
         <div className="hidden md:flex flex-col gap-4">
           <img
@@ -21,10 +21,10 @@ function StayConnectedSection() {
 
         {/* Form Content */}
         <div className="text-center w-full">
-          <h3 className="text-[32px] font-semibold mb-[10px] text-[#1C1C1C]">
+          <h3 className="text-[32px] font-semibold mb-[10px] text-[#1C1C1C] max-sm:text-[24px]">
             Stay Connected with the Latest in Senior Care
           </h3>
-          <p className="text-[#575757] mb-[20px] text-[20px] font-medium">
+          <p className="text-[#575757] mb-[20px] text-[20px] font-medium max-sm:text-[16px]">
             Get expert tips and updates to help your loved ones age comfortably
             at home.
           </p>
@@ -35,16 +35,16 @@ function StayConnectedSection() {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full px-4 py-[15px] border border-gray-300 rounded-[10px] text-[14px] font-medium text-[#5E5E6F] h-[50px]"
+                className="w-full px-4 py-[15px] border border-gray-300 bg-[#DFFFEE]  rounded-[10px] text-[14px] font-medium text-[#5E5E6F] h-[50px]"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full px-4 py-[15px] border border-gray-300 rounded-[10px] text-[14px] font-medium text-[#5E5E6F] h-[50px]"
+                className="w-full px-4 py-[15px] border border-gray-300 bg-[#DFFFEE]  rounded-[10px] text-[14px] font-medium text-[#5E5E6F] h-[50px]"
               />
               <button
                 type="submit"
-                className="bg-black text-white py-[13px] font-medium rounded-[27px] hover:bg-white border-2 border-black hover:text-black transition-colors"
+                className="bg-[#1C1C1C] text-white py-[13px] font-medium rounded-[27px] hover:bg-white border-2 border-black hover:text-black transition-colors"
               >
                 Subscribe
               </button>

@@ -6,11 +6,11 @@ function HomeSection() {
   return (
     <div className="">
       <section className="bg-gradient-to-b from-[#FFFDFD] via-[#FFFDFD] to-[#F7E7E7] poppin ">
-        <div className=" mx-auto text-center">
+        <div className=" mx-auto text-center max-sm:h-[740px]">
           {/* Left Image and Text */}
           <div
             className="flex pt-[106px] pl-[29px] pr-[58px] h-[700px] justify-center relative pb-[36px] 
-        max-sm:flex-col max-sm:h-auto max-sm:pt-[60px] max-sm:px-[16px] max-sm:pb-[20px]"
+        max-sm:flex-col max-sm:h-auto max-sm:py-[90px] max-sm:px-[16px] max-sm:pb-[20px]"
           >
             <div className="max-sm:hidden absolute w-[338px] left-[0] ml-[24px] mt-[55px] max-sm:relative max-sm:w-full max-sm:ml-0 max-sm:mt-0 max-sm:flex max-sm:flex-col max-sm:items-center">
               <div className="text-center text-sm text-gray-600 bg-[#FDE7FF] py-2.5	px-2.5 rounded-2xl max-sm:py-1	max-sm:px-1	 w-[173px] ml-[54px] mb-[8px]	max-sm:ml-0	">
@@ -42,7 +42,7 @@ function HomeSection() {
               </p>
 
               {/* Call to Action Button */}
-              <button className="bg-[#1C1C1C] text-white py-[13px]	 px-9	 rounded-full font-medium  mb-10 max-sm:mb-0 hover:text-black hover:bg-white hover:border-black hover:border-2">
+              <button className="bg-[#1C1C1C] text-white py-[13px]	 px-9	 rounded-full font-medium  mb-10 max-sm:mb-0 hover:text-black hover:bg-white hover:border-black hover:border-2 max-sm:mb-0">
                 Find the help you need
               </button>
             </div>
@@ -59,7 +59,7 @@ function HomeSection() {
               </div>
             </div>
             {/* form  */}
-            <div className=" py-[30px] bottom-0 max-sm:bottom-[-59%] mb-[-42px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white  rounded-3xl shadow-md absolute left-0 right-0 max-sm:py-[30px] max-sm:px-[15px]  flex max-xl:mx-[30px] max-sm:mx-[7px]  items-center justify-around  max-md:mb-38">
+            <div className=" py-[30px] bottom-0 max-sm:bottom-[-100%] mb-[-42px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white  rounded-3xl shadow-md absolute left-0 right-0 max-sm:py-[30px] max-sm:px-[15px]  flex max-xl:mx-[30px] max-sm:mx-[7px]  items-center justify-around  max-md:mb-38">
               <div className="">
                 <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between max-sm:justify-center">
                   {/* Left Section: Heading and Description */}

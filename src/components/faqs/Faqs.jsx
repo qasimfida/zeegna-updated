@@ -12,10 +12,10 @@ function FaqsCard({ title, description }) {
     <div className="transition-all duration-200 bg-white border border-[#B6B9CE]  cursor-pointer  rounded-[10px] poppin	lg:w-[750px] w-full">
       <button
         type="button"
-        className="flex items-center justify-between w-full px-[17px] py-[17px] max-sm:p-6"
+        className="flex md:items-center justify-between w-full px-[17px] py-[17px] max-sm:p-[15px]"
         onClick={toggleFaq}
       >
-        <span className="flex text-[17px] font-semibold text-[#1c1c1c] ">
+        <span className="flex text-[17px] font-semibold text-[#1c1c1c] max-sm:text-left ">
           {title}
         </span>
         <div
