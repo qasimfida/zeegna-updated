@@ -4,8 +4,7 @@ import "../../assets/css/homeSlider.css";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
-function HomeCareSlides() {
-  const [activeTab, setActiveTab] = useState(0);
+function HomeCareSlides({ activeTab, setActiveTab }) {
   const swiperRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -23,14 +22,14 @@ function HomeCareSlides() {
 
   const handleSlideChange = (swiper) => {
     setActiveTab(swiper.activeIndex);
-    setCurrentIndex(swiper.activeIndex); // Update currentIndex when slide changes
+    setCurrentIndex(swiper.activeIndex); 
   };
 
   const handleTabClick = (index) => {
     setActiveTab(index);
-    setCurrentIndex(index); // Update currentIndex when tab is clicked
+    setCurrentIndex(index); 
     if (swiperRef.current) {
-      swiperRef.current.swiper.slideTo(index); // Slide to the selected tab
+      swiperRef.current.swiper.slideTo(index); 
     }
   };
 
@@ -58,17 +57,28 @@ function HomeCareSlides() {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        breakpoints={{
+          640: {
+            slidesPerView: 2, 
+          },
+          768: {
+            slidesPerView: 3, 
+          },
+          1024: {
+            slidesPerView: 4, 
+          },
+        }}
       >
         {tabs.map((tab, index) => (
           <SwiperSlide key={index} className="flex items-center relative">
             <button
-              onClick={() => handleTabClick(index)} // Call handleTabClick
-              className={`px-3 flex flex-col items-center transition-colors duration-300 relative`}
+              onClick={() => handleTabClick(index)} 
+              className={`px-3 max-sm:px-[10px] flex flex-col items-center transition-colors duration-300 relative`}
             >
               <span
                 className={`flex items-center ${
                   activeTab === index
-                    ? "text-[black] font-semibold border-b-2 border-[#109088] mb-0"
+                    ? "text-[black] max-sm:text-[16px] text-[19px] font-semibold border-b-2 border-[#109088] mb-0"
                     : "text-black font-medium hover:text-black"
                 }`}
               >
@@ -76,7 +86,7 @@ function HomeCareSlides() {
               </span>
             </button>
             {index < tabs.length - 1 && (
-              <div className="h-[15px] w-px bg-[#EAEAF1] mx-2" />
+              <div className="h-[15px] w-px bg-[#EAEAF1] mx-2 max-sm:mx-[10px]" />
             )}
           </SwiperSlide>
         ))}
