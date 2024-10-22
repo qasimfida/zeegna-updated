@@ -2,7 +2,7 @@ import React from "react";
 
 const PopularCard = ({ image, title }) => {
   return (
-    <div className="max-w-xl bg-white border rounded-lg border-[#EAEAF1] relative group cursor-pointer poppin mx-4 xl:mx-0">
+    <div className="max-w-xl bg-white border rounded-lg border-[#EAEAF1] relative group cursor-pointer poppin max-sm:mx-4 xl:mx-0 ">
       <a href="#">
         <img className="rounded-t-lg" src={image} alt={title} />
       </a>

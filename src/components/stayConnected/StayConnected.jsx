@@ -2,11 +2,11 @@ import React from "react";
 
 function StayConnectedSection() {
   return (
-    <div className="mx-auto pb-[80px] text-center poppin relative max-sm:px-[16px] max-sm:mb-[50px]">
+    <div className="mx-auto pb-[80px] text-center poppin relative max-sm:px-[16px] max-sm:mb-[50px] max-lg:mx-[27px]">
       {/* Form Section */}
-      <div className="relative bg-[#DFFFEE] py-[50px] px-[25px] max-sm:px-[20px] rounded-[40px] flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-[1300px] mx-auto">
+      <div className="relative bg-[#DFFFEE] py-[50px] px-[25px] max-sm:px-[20px] rounded-[40px] flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-[1300px] mx-auto ">
         {/* Left-side avatars */}
-        <div className="hidden md:flex flex-col gap-4">
+        <div className="hidden xl:flex flex-col gap-4">
           <img
             className="w-[61px] h-[61px] rounded-full object-cover max-w-[61px] absolute top-[101px]"
             src="images/stay (4).png"
@@ -21,10 +21,10 @@ function StayConnectedSection() {
 
         {/* Form Content */}
         <div className="text-center w-full">
-          <h3 className="text-[32px] font-semibold mb-[10px] text-[#1C1C1C] max-sm:text-[24px]">
+          <h3 className="text-[32px] font-semibold mb-[10px] text-[#1C1C1C] max-lg:text-[24px]">
             Stay Connected with the Latest in Senior Care
           </h3>
-          <p className="text-[#575757] mb-[20px] text-[20px] font-medium max-sm:text-[16px]">
+          <p className="text-[#575757] mb-[20px] text-[20px] font-medium max-lg:text-[16px]">
             Get expert tips and updates to help your loved ones age comfortably
             at home.
           </p>
@@ -52,7 +52,7 @@ function StayConnectedSection() {
           </form>
         </div>
 
-        <div className="hidden md:flex flex-col gap-4">
+        <div className="hidden xl:flex flex-col gap-4">
           <img
             className="w-[73px] h-[73px] rounded-full object-cover max-w-[73px] absolute top-[56px] right-[23px]"
             src="images/stay (2).png"

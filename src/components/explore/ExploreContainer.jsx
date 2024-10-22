@@ -37,8 +37,8 @@ function ExploreContainer() {
   };
 
   return (
-    <div className="bg-white poppin mb-[80px] max-sm:mb-[50px]">
-      <div className=" mx-[70px]  max-sm:mx-0 ">
+    <div className="bg-white poppin mb-[80px] max-sm:mb-[50px] ">
+      <div className=" xl:mx-[70px]  max-sm:mx-0  max-lg:mx-[27px]">
         <div className="text-center mt-[80px] max-sm:mt-[50px] max-sm:px-[16px]">
           <h2 className="font-semibold text-xl md:text-[32px] text-[#1C1C1C] max-sm:text-[24px] ">
             Explore help at home by city{" "}

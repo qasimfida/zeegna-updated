@@ -2,7 +2,7 @@ import React from "react";
 
 const ExploreCard = ({ image, title }) => {
   return (
-    <div className="relative max-w-xl rounded-[15px] overflow-hidden cursor-pointer mx-4 xl:mx-0 group">
+    <div className="relative max-w-xl rounded-[15px] overflow-hidden cursor-pointer mx-4 md:mx-0 group">
       {/* Image with hover scale effect */}
       <img
         className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
