@@ -30,7 +30,9 @@ function HomeCard({ title, description, Icon, bgColor }) {
         </div>
 
         {/* Description */}
-        <p className="text-[#5E5E6F] font-medium text-[16px]">{description}</p>
+        <p className="text-[#5E5E6F] font-medium text-[16px]  ">
+          {description}
+        </p>
       </div>
     </div>
   );
