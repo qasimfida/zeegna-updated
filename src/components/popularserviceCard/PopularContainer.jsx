@@ -58,7 +58,6 @@ function PopularContainer() {
             ))}
           </Swiper>
 
-          {/* Navigation Buttons */}
           <div
             ref={prevRef}
             className={`swiper-button-back absolute left-4 top-[50%] lg:top-[47%] transform -translate-y-[100%] z-10 cursor-pointer p-[8px] rounded-full flex items-center justify-center ${
@@ -73,7 +72,7 @@ function PopularContainer() {
           <div
             ref={nextRef}
             className={`swiper-button-forward absolute right-4 top-[50%] lg:top-[47%] transform -translate-y-[100%] z-20 cursor-pointer p-[8px] rounded-full flex items-center justify-center ${
-              currentIndex === PopularData.length - 1 // Check if on the last slide
+              currentIndex === PopularData.length - 1 
                 ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed bg-white"
                 : "border border-black bg-white"
             }`}
@@ -87,7 +86,6 @@ function PopularContainer() {
           </div>
         </div>
 
-        {/* Grid for larger screens */}
         <div className="max-sm:hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px] max-lg:gap-[14px] max-sm:gap-8 mt-[50px] max-sm:mt-[30px] max-lg:mx-[16px] max-sm:mx-0">
           {PopularData?.map((card) => (
             <PopularCard
