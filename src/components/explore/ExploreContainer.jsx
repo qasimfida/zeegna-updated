@@ -4,7 +4,6 @@ import ExploreData from "../../data/ExploreData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Mousewheel, Keyboard } from "swiper/modules";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
-// import "swiper/swiper-bundle.min.css";
 
 function ExploreContainer() {
   const prevRef = useRef(null);
@@ -47,12 +46,12 @@ function ExploreContainer() {
             mousewheel={true}
             keyboard={true}
             modules={[Navigation, Mousewheel, Keyboard]}
-            slidesPerView={1} // Only one "column" at a time, but multiple rows
+            slidesPerView={1}
             grid={{
-              rows: 2, // Set the number of rows to 2
-              fill: "row", // Ensure images are filled row by row
+              rows: 2,
+              fill: "row",
             }}
-            spaceBetween={10} // Space between rows and columns
+            spaceBetween={10}
           >
             {ExploreData.map((card) => (
               <SwiperSlide key={card.id} className="flex justify-center">
@@ -97,7 +96,7 @@ function ExploreContainer() {
               key={card.id}
               image={card.image}
               title={card.title}
-              bgColor={card.bgColor} // Ensure bgColor is applied in ExploreCard if needed
+              bgColor={card.bgColor}
             />
           ))}
         </div>
