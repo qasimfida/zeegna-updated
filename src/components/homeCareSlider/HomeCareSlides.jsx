@@ -57,17 +57,6 @@ function HomeCareSlides({ activeTab, setActiveTab }) {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        breakpoints={{
-          640: {
-            slidesPerView: 2, 
-          },
-          768: {
-            slidesPerView: 3, 
-          },
-          1024: {
-            slidesPerView: 4, 
-          },
-        }}
       >
         {tabs.map((tab, index) => (
           <SwiperSlide key={index} className="flex items-center relative">
@@ -79,7 +68,7 @@ function HomeCareSlides({ activeTab, setActiveTab }) {
                 className={`flex items-center ${
                   activeTab === index
                     ? "text-[black] max-sm:text-[16px] text-[19px] font-semibold border-b-2 border-[#109088] mb-0"
-                    : "text-black font-medium hover:text-black"
+                    : "text-black text-[19px] max-sm:text-[16px] font-medium hover:text-black"
                 }`}
               >
                 {tab.title}
