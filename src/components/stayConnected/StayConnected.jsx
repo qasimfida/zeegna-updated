@@ -2,7 +2,7 @@ import React from "react";
 
 function StayConnectedSection() {
   return (
-    <div className="mx-auto pb-[80px] text-center poppin relative max-sm:px-[16px] max-sm:mb-[50px] max-lg:mx-[27px]">
+    <div className="mx-auto pb-[80px] text-center poppin relative max-sm:mx-[16px] max-sm:mb-[50px] max-lg:mx-[27px]">
       {/* Form Section */}
       <div className="relative bg-[#DFFFEE] py-[50px] px-[25px] max-sm:px-[20px] rounded-[40px] flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-[1300px] mx-auto ">
         {/* Left-side avatars */}

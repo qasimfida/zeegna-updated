@@ -29,7 +29,7 @@ function HomeSection() {
             </div>
             <div className="text-center max-sm:w-full">
               {/* Heading */}
-              <h1 className="text-[64px] leading-[80px] font-semibold text-gray-800 mb-5 max-sm:text-[28px] poppin text-4xl max-lg:text-[48px]">
+              <h1 className="text-[64px] xl:leading-[80px] font-semibold text-gray-800 mb-5 max-sm:text-[28px] poppin text-4xl max-lg:text-[48px]">
                 Comfort. Choice. Home.
               </h1>
               <p className="text-2xl	font-medium	 mb-10 text-[#5E5E6F] max-sm:w-full	mx-auto max-sm:text-[19px] max-md:text-xl   leading-[38px]		">
