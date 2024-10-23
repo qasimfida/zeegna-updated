@@ -21,7 +21,7 @@ const HeroSlider = () => {
     <>
       <section className="w-full flex items-center justify-center sm:justify-between bg-[#F7F7F7] poppin">
         <div className="sm:flex flex-col gap-[10rem] pl-[48px]">
-          <img className="w-[400px]" src="images/curveOne.png" />
+          <img className="w-[40px]" src="images/curveOne.png" />
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveThree.png" />
         </div>
