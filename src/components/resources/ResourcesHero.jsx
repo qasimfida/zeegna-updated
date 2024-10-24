@@ -16,6 +16,11 @@ function ResourcesHero({
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
         {/* Text Content */}
         <div className="col-span-1 md:col-span-5 md:mx-20 mx-4">
+          <div className="flex">
+            <button>home</button>
+            <h2>/</h2>
+            <button>featured</button>
+          </div>
           <button className="rounded-full py-3 px-6 bg-[#F9ECEC]">
             Featured
           </button>

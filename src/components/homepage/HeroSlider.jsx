@@ -96,7 +96,8 @@ const HeroSlider = () => {
           </div>
         </div>
 
-        <div className="sm:flex flex-col gap-[10rem] pr-[48px]">
+        <div className="
+        sm:flex flex-col gap-[10rem] pr-[48px]">
           <img className="w-[40px]" src="images/curveFour.png" />
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveFive.png" />
