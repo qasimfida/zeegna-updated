@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import TwitterIcon from "../../assets/icons/resources/Twitter";
 import FacebookIcon from "../../assets/icons/resources/FacebookIcon";
@@ -7,27 +7,71 @@ import EmailIcon from "../../assets/icons/resources/Email";
 import LeftTick from "../../assets/icons/faqsDropDown/LeftTick";
 
 function ResourcesHero({
-  paraChange = "Got questions? We've answers",
+  paraChange = "When it comes to aging or managing long-term health issues, home health care can be an absolute lifesaver. But what exactly is home health care? Put simply, it’s professional care provided in the comfort of your own home...",
   showSocialIcons = false,
   showReadMore = false,
+  extraThings,
 }) {
+  const [isMdScreen, setIsMdScreen] = useState(false);
+
+  // Check for screen size
+  useEffect(() => {
+    const handleResize = () => {
+      // Check if the screen width is medium size (768px to 1024px)
+      setIsMdScreen(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Run on mount to set initial state
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Truncated text for medium screens
+  const truncatedText =
+    "When it comes to aging or managing long-term health issues, home health care can...";
+
   return (
     <div className="bg-[#F7F7F7] poppin">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
-        <div className="col-span-1 md:col-span-5 md:mx-20 mx-4">
-          <button className="rounded-full py-3 px-6 bg-[#F9ECEC]">
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[50px] justify-items-end max-sm:flex flex-col-reverse	 md:items-center lg:h-[460px] md:h-[313px] max-sm:pb-[40px]">
+        <div className="mx-4 md:ml-[34px] md:mx-0">
+          <div className="flex justify-start w-full pt-[20px] pb-[50px] text-gray-500 text-sm font-medium">
+            <Link
+              to="/"
+              className={`hover:underline ${
+                location.pathname === "/" ? "text-gray-500" : "text-black"
+              }`}
+            >
+              Home
+            </Link>
+            <span className="mx-2">|</span>
+            <Link
+              to="/resources"
+              className={`hover:underline ${
+                location.pathname === "/resources"
+                  ? "text-gray-500"
+                  : "text-black"
+              }`}
+            >
+              Resources
+            </Link>
+            {extraThings}
+          </div>
+          <button className="rounded-[30px] py-[5px] px-[18px] bg-[#F9ECEC] text-[#5E5E6F] text-[14px] font-normal mb-[10px]">
             Featured
           </button>
-          <h2 className="text-2xl md:text-3xl font-semibold text-[#1C1C1C] pb-2 leading-[35px] md:leading-[40px]">
+
+          <h2 className="text-2xl lg:text-[32px] md:text-[19px] font-semibold text-[#1C1C1C] pb-2 leading-[35px] md:leading-[25px]">
             10 things you should know when choosing a home health provider
           </h2>
 
-          <div className="text-sm md:text-base text-[#5E5E6F] py-4">
-            <p>{paraChange}</p>
+          {/* Conditionally display truncated or full text */}
+          <div className="text-sm md:text-[16px] font-medium text-[#5E5E6F] lg:py-4 md:py-[10px] leading-[25px]">
+            <p>{isMdScreen ? truncatedText : paraChange}</p>
           </div>
 
           {showSocialIcons && (
-            <div className="flex space-x-4 items-center py-4 cursor-pointer">
+            <div className="flex space-x-4 items-center py-4">
               <Link
                 to="#"
                 className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center"
@@ -58,7 +102,7 @@ function ResourcesHero({
           {showReadMore && (
             <Link
               to="/article"
-              className="flex items-center mt-2 py-2 gap-4 bg-transparent text-[#109088] text-sm md:text-base font-semibold"
+              className="flex items-center gap-2 bg-transparent text-[#109088] text-sm md:text-base font-semibold"
             >
               Read more
               <LeftTick />
@@ -67,10 +111,10 @@ function ResourcesHero({
         </div>
 
         {/* Image Section */}
-        <div className="col-span-1 md:col-span-7 text-base	font-medium">
+        <div className="max-sm:ml-4 md:mx-0">
           <img
             src="images/resources.png"
-            className="w-full h-auto"
+            className="w-full h-auto lg:h-[460px] lg:w-[670px] md:h-[260px] md:w-[370px]"
             alt="Resources"
           />
         </div>
