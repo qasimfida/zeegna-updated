@@ -16,7 +16,7 @@ function Header({ styles = "" }) {
   return (
     <Disclosure as="nav" className="border-b poppin">
       <div className="px-[37px] max-sm:px-[15px] lg:px-[37px] bg-[#FFFDFD] max-sm:border-b">
-        <div className="flex py-[20px] max-sm:py-[15px]  justify-between">
+        <div className="flex py-[18px] max-sm:py-[15px]  justify-between">
           {/* Logo */}
           <Link to="/" className="flex">
             <div className="flex flex-shrink-0 items-center">

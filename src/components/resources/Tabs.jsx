@@ -263,7 +263,7 @@ function Tabs() {
         ))}
       </Swiper>
 
-      <div className="py-[40px] rounded-lg bg-white ">
+      <div className="py-[30px] rounded-lg bg-white ">
         {tabs[activeTab].content}
       </div>
     </div>
