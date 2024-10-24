@@ -34,4 +34,3 @@ const PartnerContainer = () => {
 };
 
 export default PartnerContainer;
-// relative bottom-[316px] left-[80px]

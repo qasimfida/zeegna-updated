@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import LoginPageHeader from "../../layout/header/LoginPageHeader";
+import ShowIcon from "../../assets/icons/loginIcons/ShowIcon";
+import HideIcon from "../../assets/icons/loginIcons/HideIcon";
 
 function Login() {
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleLoginClick = (e) => {
     e.preventDefault();
     navigate("/");
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevState) => !prevState);
   };
 
   return (
@@ -15,11 +22,11 @@ function Login() {
       <LoginPageHeader />
 
       <div className="min-h-[738px] flex items-center justify-center w-full poppin">
-        <div className="px-8 py-6 max-w-[552px]">
-          <h1 className="text-[32px] font-semibold text-center mb-2">
+        <div className="px-8 py-6 max-w-[552px] max-sm:px-[16px] max-sm:pt-[50px] max-sm:pb-[90px]">
+          <h1 className="text-[32px] font-semibold text-center mb-2 max-sm:text-[24px]">
             We're happy to see you again
           </h1>
-          <p className="text-center text-[17px] text-[#5E5E6F] font-medium mb-10">
+          <p className="text-center text-[17px] text-[#5E5E6F] font-medium mb-10 max-sm:text-[17px]">
             Please enter your details to login
           </p>
           <form>
@@ -38,7 +45,8 @@ function Login() {
                 required
               />
             </div>
-            <div className="mb-4">
+
+            <div className="mb-4 relative">
               <label
                 htmlFor="password"
                 className="block text-sm font-semibold text-[#5E5E6F] mb-2"
@@ -46,13 +54,21 @@ function Login() {
                 Password
               </label>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 id="password"
                 className="shadow-sm text-sm rounded-[10px] w-full px-4 py-3.5 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                 placeholder="Enter your password"
                 required
               />
+              <button
+                type="button"
+                className="absolute right-4 top-[55%] bottom-[55%] transform -translate-y-1/2 text-gray-400"
+                onClick={togglePasswordVisibility}
+              >
+                {showPassword ? <HideIcon /> : <ShowIcon />}
+              </button>
             </div>
+
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center">
                 <input
@@ -85,7 +101,7 @@ function Login() {
               Don't have an account yet?{" "}
               <Link
                 to="/signup"
-                className="inline-block text-blue-500 align-baseline hover:text-blue-800"
+                className="inline-block text-[#2D7CD9] align-baseline hover:text-blue-800"
               >
                 Get started
               </Link>
