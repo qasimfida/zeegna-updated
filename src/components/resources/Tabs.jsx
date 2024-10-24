@@ -4,15 +4,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// Your imports here...
-import KnowledgeData from "../../data/KnowledgeData";
-import FeaturedData from "../../data/FeaturedData";
-import KnowledgeCard from "../knowledge/KnowledgeCard";
-import Personilize from "./HomeLove/HomeMaintance";
-import PersonalCare from "./HomeLove/PersonalCareIcon";
-import EndLife from "./HomeLove/End-of-LifePlanning";
-import Professional from "./HomeLove/ProfessionalServices";
-import Heart from "./HomeLove/WellNess";
+import ResourcesCard from "./ResourcesCard";
+import ResourceseData from "../../data/ResourcesData";
+import Personilize from "../../assets/icons/homeLove/HomeMaintance";
+import PersonalCare from "../../assets/icons/homeLove/PersonalCareIcon";
+import EndLife from "../../assets/icons/homeLove/End-of-LifePlanning";
+import Professional from "../../assets/icons/homeLove/ProfessionalServices";
+import Heart from "../../assets/icons/homeLove/WellNess";
 import AllResources from "../../assets/icons/resources/AllResources";
 import Popular from "../../assets/icons/resources/PopularIcon";
 import Star from "../../assets/icons/resources/StarIcon";
@@ -21,7 +19,7 @@ import Transportation from "../../assets/icons/resources/Transportation";
 function Tabs() {
   const [activeTab, setActiveTab] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
-  const cardsPerPage = 6;
+  const cardsPerPage = 20;
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
@@ -34,13 +32,13 @@ function Tabs() {
 
   const tabs = [
     {
-      title: "All articles",
+      title: "All articles ",
       icon: <AllResources className="h-10 w-10 bg-black rounded-full p-10" />,
       content: (
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-10 max-sm:mx-0 justify-center poppin">
-            {paginate(KnowledgeData).map((card) => (
-              <KnowledgeCard
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 gap-[20px]  justify-center poppin px-[70px] max-sm:px-[16px] max-md:px-[27px]">
+            {paginate(ResourceseData).map((card) => (
+              <ResourcesCard
                 key={card.id}
                 image={card.image}
                 title={card.title}
@@ -52,7 +50,7 @@ function Tabs() {
             ))}
           </div>
           <Pagination
-            totalCards={KnowledgeData.length}
+            totalCards={ResourceseData.length}
             cardsPerPage={cardsPerPage}
             currentPage={currentPage}
             onPageChange={handlePageChange}
@@ -65,9 +63,9 @@ function Tabs() {
       icon: <Star className="h-10 w-10 bg-[red] rounded-full p-10" />,
       content: (
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-sm:mx-0 gap-8 mx-10 justify-center poppin">
-            {paginate(FeaturedData).map((card) => (
-              <KnowledgeCard
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3  gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px]  justify-center poppin">
+            {paginate(ResourceseData).map((card) => (
+              <ResourcesCard
                 key={card.id}
                 image={card.image}
                 title={card.title}
@@ -79,7 +77,7 @@ function Tabs() {
             ))}
           </div>
           <Pagination
-            totalCards={FeaturedData.length}
+            totalCards={ResourceseData.length}
             cardsPerPage={cardsPerPage}
             currentPage={currentPage}
             onPageChange={handlePageChange}
@@ -91,9 +89,9 @@ function Tabs() {
       title: "Most popular",
       icon: <Popular className="h-10 w-10 bg-[red] rounded-full p-10" />,
       content: (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-sm:mx-0 gap-8 mx-10 justfiy-center poppin">
-          {KnowledgeData.map((card) => (
-            <KnowledgeCard
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3  gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justfiy-center poppin">
+          {ResourceseData.map((card) => (
+            <ResourcesCard
               key={card.id}
               image={card.image}
               title={card.title}
@@ -110,9 +108,9 @@ function Tabs() {
       title: "Caregiver corner",
       icon: <Heart className="h-10 w-10 bg-[red] rounded-full p-10" />,
       content: (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-sm:mx-0 gap-8 mx-10 justfiy-center poppin">
-          {KnowledgeData.map((card) => (
-            <KnowledgeCard
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3  gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justfiy-center poppin">
+          {ResourceseData.map((card) => (
+            <ResourcesCard
               key={card.id}
               image={card.image}
               title={card.title}
@@ -129,9 +127,9 @@ function Tabs() {
       title: "Personal care",
       icon: <PersonalCare className="h-10 w-10 bg-[red] rounded-full p-10" />,
       content: (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-sm:mx-0 gap-8 mx-10 justfiy-center poppin">
-          {KnowledgeData.map((card) => (
-            <KnowledgeCard
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3  gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justfiy-center poppin">
+          {ResourceseData.map((card) => (
+            <ResourcesCard
               key={card.id}
               image={card.image}
               title={card.title}
@@ -148,9 +146,9 @@ function Tabs() {
       title: "Home maintenance",
       icon: <Personilize className="h-10 w-10 bg-[red] rounded-full p-10" />,
       content: (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-sm:mx-0 gap-8 mx-10 justfiy-center poppin">
-          {KnowledgeData.map((card) => (
-            <KnowledgeCard
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3  gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justfiy-center poppin">
+          {ResourceseData.map((card) => (
+            <ResourcesCard
               key={card.id}
               image={card.image}
               title={card.title}
@@ -167,9 +165,9 @@ function Tabs() {
       title: "Transportation",
       icon: <Transportation className="h-10 w-10 bg-[red] rounded-full p-10" />,
       content: (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-sm:mx-0 gap-8 mx-10 justfiy-center poppin">
-          {KnowledgeData.map((card) => (
-            <KnowledgeCard
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3  gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justfiy-center poppin">
+          {ResourceseData.map((card) => (
+            <ResourcesCard
               key={card.id}
               image={card.image}
               title={card.title}
@@ -186,9 +184,9 @@ function Tabs() {
       title: "Legal matters",
       icon: <Professional className="h-10 w-10 bg-[red] rounded-full p-10" />,
       content: (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-sm:mx-0 gap-8 mx-10 justfiy-center poppin">
-          {KnowledgeData.map((card) => (
-            <KnowledgeCard
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3  gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justfiy-center poppin">
+          {ResourceseData.map((card) => (
+            <ResourcesCard
               key={card.id}
               image={card.image}
               title={card.title}
@@ -205,9 +203,9 @@ function Tabs() {
       title: "Financial health",
       icon: <EndLife className="h-10 w-10 bg-[red] rounded-full p-10" />,
       content: (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-sm:mx-0 gap-8 mx-10 justfiy-center poppin">
-          {KnowledgeData.map((card) => (
-            <KnowledgeCard
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3  gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justfiy-center poppin">
+          {ResourceseData.map((card) => (
+            <ResourcesCard
               key={card.id}
               image={card.image}
               title={card.title}
@@ -223,7 +221,7 @@ function Tabs() {
   ];
 
   return (
-    <div className="w-full mx-auto px-4 py-8 poppin">
+    <div className="w-full   py-8 poppin">
       <Swiper
         spaceBetween={10}
         slidesPerView={3}
@@ -243,34 +241,35 @@ function Tabs() {
         }}
       >
         {tabs.map((tab, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="!mr-0 !w-[150px]">
             <button
               onClick={() => setActiveTab(index)}
-              className={`py-2 px-4 flex flex-col items-center transition-colors duration-300 ${
+              className={`pb-[20px] w-[110px] flex flex-col items-center text-[14px] font-semibold transition-colors duration-300  ${
                 activeTab === index
-                  ? "border-b-2 border-[#109088] text-[#5E5E6F] font-semibold"
+                  ? "border-b-2 border-[#109088] text-[#5E5E6F] font-bold"
                   : "text-gray-500 hover:text-indigo-500"
               }`}
             >
               <span
-                className={`h-[60px] w-[60px] rounded-full flex items-center justify-center mb-2 ${
+                className={`h-[55px] w-[55px] rounded-full flex items-center justify-center mb-2 ${
                   activeTab === index ? "bg-[#F3B5B5]" : "bg-[#F9ECEC]"
                 }`}
               >
                 {tab.icon}
               </span>
-              <span>{tab.title}</span>
+              <span className="w-[150px]">{tab.title}</span>
             </button>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      <div className="p-4 rounded-lg bg-white">{tabs[activeTab].content}</div>
+      <div className="py-[40px] rounded-lg bg-white ">
+        {tabs[activeTab].content}
+      </div>
     </div>
   );
 }
 
-// Pagination component
 function Pagination({ totalCards, cardsPerPage, currentPage, onPageChange }) {
   const totalPages = Math.ceil(totalCards / cardsPerPage);
 

@@ -14,7 +14,6 @@ function ResourcesHero({
   return (
     <div className="bg-[#F7F7F7] poppin">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
-        {/* Text Content */}
         <div className="col-span-1 md:col-span-5 md:mx-20 mx-4">
           <div className="flex">
             <button>home</button>
