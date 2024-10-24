@@ -282,7 +282,7 @@ function Pagination({ totalCards, cardsPerPage, currentPage, onPageChange }) {
           key={index}
           onClick={() => onPageChange(index + 1)}
           className={`mx-1 px-4 py-2 rounded ${
-            currentPage === index + 1
+            currentPage === index + 1 
               ? "bg-indigo-500 text-white"
               : "bg-gray-300 text-black"
           }`}
