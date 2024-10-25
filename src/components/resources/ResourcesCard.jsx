@@ -1,7 +1,15 @@
 import React from "react";
 import DotIcon from "../../assets/icons/doticon/DotIcon";
 
-const ResourcesCard = ({ image, title, description, chip, id, className, bgColor }) => {
+const ResourcesCard = ({
+  image,
+  title,
+  description,
+  chip,
+  id,
+  className,
+  bgColor,
+}) => {
   const maxLength = 131;
   const trimmedDescription =
     description.length > maxLength
@@ -10,25 +18,28 @@ const ResourcesCard = ({ image, title, description, chip, id, className, bgColor
 
   return (
     <div
-      className={` xl:h-[450px] xl:w-[420px] bg-white border shadow-sm rounded-[15px] border-[#EAEAF1] relative group cursor-pointer poppin ${className}`}
+      className={` xl:h-[450px]  bg-white border shadow-sm rounded-[15px] border-[#EAEAF1] relative group cursor-pointer poppin ${className}`}
     >
       <a href="#">
         <img className="rounded-t-lg text-[#5E5E6F]" src={image} alt={title} />
       </a>
       <div className="xl:h-[250px] max-sm:h-auto">
-      <div className={`pl-[15px] pt-[15px] pb-[5px] pr-[25px] py-3`}>
-  <a
-    href="#"
-    className={`inline-flex items-center px-[7px] py-[5px] text-sm font-normal text-center text-[#5E5E6F] rounded-full ${
-      chip === "Features" ? "bg-[#F9ECEC]" :
-      chip === "Most popular" ? "bg-[#E9FFDC]" :
-      chip === "Personal care" ? "bg-[#DCF0FF]" :
-      "bg-[#E9FFDC]"
-    }`}
-  >
-    {chip}
-  </a>
-</div>
+        <div className={`pl-[15px] pt-[15px] pb-[5px] pr-[25px] py-3`}>
+          <a
+            href="#"
+            className={`inline-flex items-center px-[7px] py-[5px] text-sm font-normal text-center text-[#5E5E6F] rounded-full ${
+              chip === "Features"
+                ? "bg-[#F9ECEC]"
+                : chip === "Most popular"
+                ? "bg-[#E9FFDC]"
+                : chip === "Personal care"
+                ? "bg-[#DCF0FF]"
+                : "bg-[#E9FFDC]"
+            }`}
+          >
+            {chip}
+          </a>
+        </div>
 
         <div className="pl-[15px] pr-[25px] ">
           <a href="#" className="leading-[23px]">

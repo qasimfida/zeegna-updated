@@ -20,9 +20,13 @@ const RelatedArticleCard = ({
       className={` xl:h-[450px] bg-white border border-gray-200 shadow-sm rounded-[15px] border-[#EAEAF1] relative group cursor-pointer poppin ${className}`}
     >
       <a href="#">
-        <img className="rounded-t-lg text-[#5E5E6F]" src={image} alt={title} />
+        <img
+          className="rounded-t-lg text-[#5E5E6F] w-full"
+          src={image}
+          alt={title}
+        />
       </a>
-      <div className="h-[250px] max-sm:h-auto">
+      <div className="lg:h-[250px] h-auto">
         <div className="pl-[15px] pt-[15px] pb-[5px] pr-[25px] py-3">
           <a
             href="#"
