@@ -13,7 +13,7 @@ function ResourcesHero({
   extraThings,
 }) {
   const [isMdScreen, setIsMdScreen] = useState(false);
-  const location = useLocation(); // Get the current page location
+  const location = useLocation(); 
 
   useEffect(() => {
     const handleResize = () => {
