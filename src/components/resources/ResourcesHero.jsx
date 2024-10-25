@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"; // import useLocation for pathname checking
 import TwitterIcon from "../../assets/icons/resources/Twitter";
 import FacebookIcon from "../../assets/icons/resources/FacebookIcon";
 import LinkedinIcon from "../../assets/icons/resources/Linkedin";
@@ -13,27 +13,25 @@ function ResourcesHero({
   extraThings,
 }) {
   const [isMdScreen, setIsMdScreen] = useState(false);
+  const location = useLocation(); // Get the current page location
 
-  // Check for screen size
   useEffect(() => {
     const handleResize = () => {
-      // Check if the screen width is medium size (768px to 1024px)
       setIsMdScreen(window.innerWidth >= 768 && window.innerWidth < 1024);
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Run on mount to set initial state
+    handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Truncated text for medium screens
   const truncatedText =
     "When it comes to aging or managing long-term health issues, home health care can...";
 
   return (
     <div className="bg-[#F7F7F7] poppin">
-      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[50px] justify-items-end max-sm:flex flex-col-reverse	 md:items-center lg:h-[460px] md:h-[313px] max-sm:pb-[40px]">
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[50px] justify-items-end max-sm:flex flex-col-reverse	 md:items-center lg:h-[460px]  max-sm:pb-[40px]">
         <div className="mx-4 md:ml-[34px] md:mx-0">
           <div className="flex justify-start w-full pt-[20px] pb-[50px] text-gray-500 text-sm font-medium">
             <Link
@@ -55,17 +53,34 @@ function ResourcesHero({
             >
               Resources
             </Link>
+
+            {/* Conditionally render the new "Featured articles" link on other pages */}
+            {location.pathname !== "/resources" && (
+              <>
+                <span className="mx-2">|</span>
+                <Link
+                  to="/article"
+                  className={`hover:underline ${
+                    location.pathname === "/article"
+                      ? "text-gray-500"
+                      : "text-black"
+                  }`}
+                >
+                  Featured articles
+                </Link>
+              </>
+            )}
+
             {extraThings}
           </div>
           <button className="rounded-[30px] py-[5px] px-[18px] bg-[#F9ECEC] text-[#5E5E6F] text-[14px] font-normal mb-[10px]">
             Featured
           </button>
 
-          <h2 className="text-2xl lg:text-[32px] md:text-[19px] font-semibold text-[#1C1C1C] pb-2 leading-[35px] md:leading-[25px]">
+          <h2 className="text-2xl lg:text-[32px] md:text-[19px] font-semibold text-[#1C1C1C] pb-2 leading-[35px] max-md:leading-[25px]">
             10 things you should know when choosing a home health provider
           </h2>
 
-          {/* Conditionally display truncated or full text */}
           <div className="text-sm md:text-[16px] font-medium text-[#5E5E6F] lg:py-4 md:py-[10px] leading-[25px]">
             <p>{isMdScreen ? truncatedText : paraChange}</p>
           </div>

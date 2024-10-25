@@ -2,13 +2,13 @@ import React from "react";
 
 function ArticleCard({ heading, text }) {
   return (
-    <div className="max-w-4xl mx-auto pb-10 poppin">
-      <div className="mb-5">
-        <h2 className="font-semibold text-2xl">{heading}</h2>
+    <div className="lg:w-[840px] mx-auto pb-[20px] poppin md:px-[27px] lg:px-0">
+      <div className="">
+        <h2 className="font-semibold text-[20px] pb-[10px]">{heading}</h2>
       </div>
-      <div className="text-lg text-[#5E5E6F] font-medium">
+      <div className="text-[17px] text-[#5E5E6F] font-medium">
         {text.slice(0, Math.min(text.length, 3)).map((paragraph, index) => (
-          <p key={index} className="mb-3">
+          <p key={index} className="mb-[10px]">
             {paragraph}
           </p>
         ))}
