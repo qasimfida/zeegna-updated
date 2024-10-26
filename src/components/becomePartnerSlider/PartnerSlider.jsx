@@ -12,7 +12,7 @@ import imageFive from "../../../public/images/personManThree.png";
 import "../../assets/css/slider.css";
 
 const images = [
-  { src: [imageOne], index: 1, alt: "person 1" },
+  { src: [imageOne], index: 1, alt: "person 1", },
   { src: [imageTwo], index: 2, alt: "person 2" },
   { src: [imageThree], index: 3, alt: "person 3" },
   { src: [imageFour], index: 4, alt: "person 4" },
@@ -31,8 +31,8 @@ const PartnerSlider = () => {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={"5"}
-          spaceBetween={50}
+          slidesPerView={"auto"}
+          spaceBetween={80}
           coverflowEffect={{
             rotate: 1,
             stretch: 0,
@@ -52,7 +52,7 @@ const PartnerSlider = () => {
               className={`relative ${activeIndex === index ? "z-10" : "z-0"}`}
             >
               <img
-                className={`w-full h-full object-cover rounded-lg transition-all duration-300 ${
+                className={`w-[300px] h-[350px] object-cover rounded-lg transition-all duration-300 ${
                   activeIndex === index ? "grayscale-0" : "grayscale"
                 }`}
                 src={image.src}
