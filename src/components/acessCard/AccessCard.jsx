@@ -1,19 +1,21 @@
 import React from "react";
 import Doller from "../../assets/icons/doller/Doller";
 
-const AccessCard = ({ image, title }) => {
+const AccessCard = ({ image, title, para }) => {
   console.log({ title });
   return (
-    <div className="max-w-xl bg-white border rounded-lg border-[#EAEAF1] relative group cursor-pointer poppin mx-4 xl:mx-0">
+    <div className=" bg-white border rounded-[15px] border-[#EAEAF1] relative group cursor-pointer poppin mx-4 xl:mx-0">
       <a href="#">
-        <img className="rounded-t-lg" src={image} alt={title} />
+        <img className="rounded-t-[15px]" src={image} alt={title} />
       </a>
 
-      <div className="px-5 py-[15px] flex flex-col items-start justify-between">
+      <div className="px-5 pt-[10px] pb-[20px] max-sm:px-[10px] flex flex-col items-start justify-between">
         <div className="flex w-full justify-between">
-          <h5 className=" text-base font-semibold text-[#1C1C1C] ">{title}</h5>
+          <h5 className=" text-base font-semibold text-[#1C1C1C] max-sm:text-[16px] ">
+            {title}
+          </h5>
           <div className="flex items-center gap-2">
-            <p className="text-[#5E5E6F]">join now</p>
+            <p className="text-[#5E5E6F] text-[14px] font-medium">join now</p>
 
             <svg
               width="16"
@@ -33,9 +35,7 @@ const AccessCard = ({ image, title }) => {
         </div>
         <div className="flex items-center gap-[3px] justify-between pt-[5px]">
           <Doller />
-          <p className="text-[#5E5E6F] text-[14px]">
-            Range of per ride spend $60-80
-          </p>
+          <p className="text-[#5E5E6F] text-[14px] font-medium">{para}</p>
         </div>
       </div>
     </div>

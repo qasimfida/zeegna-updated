@@ -6,7 +6,7 @@ function PowerFulContainer() {
   return (
     <>
       <div className="bg-[#F7F7F7] poppin">
-        <div className="mx-20 max-sm:mx-6 max-sm:py-[50px]  py-[80px]">
+        <div className="mx-[70px] max-sm:mx-6 max-sm:py-[50px]  py-[80px]">
           <div className="text-center ">
             <h2 className="font-semibold text-[32px] max-sm:text-3xl max-sm:text-[24px]">
               Simple in use, powerful in action
