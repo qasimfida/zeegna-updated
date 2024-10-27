@@ -94,9 +94,10 @@ function Tabs() {
   const filteredData = getFilteredData();
 
   return (
-    <div className="w-full py-8 poppin">
+    <div className="w-full py-8 poppin ">
       <Swiper
-        spaceBetween={10}
+        className="w-full  "
+        spaceBetween={5}
         slidesPerView={3}
         breakpoints={{
           400: {
@@ -114,16 +115,19 @@ function Tabs() {
         }}
       >
         {tabs.map((tab, index) => (
-          <SwiperSlide key={index} className="!mr-0 !w-[150px]">
+          <SwiperSlide
+            key={index}
+            className="!mr-0   flex items-center justify-center    "
+          >
             <button
               onClick={() => {
                 setActiveTab(index);
-                setCurrentPage(1); // Reset to first page when tab changes
+                setCurrentPage(1);
               }}
-              className={`pb-[20px] w-[110px] flex flex-col items-center text-[14px] font-semibold transition-colors duration-300 ${
+              className={`pb-[20px]  flex  flex-col items-center text-[14px] font-semibold transition-colors duration-300  ${
                 activeTab === index
                   ? "border-b-2 border-[#109088] text-[#5E5E6F] font-bold"
-                  : "text-gray-500 hover:text-indigo-500"
+                  : "text-[#5E5E6F] "
               }`}
             >
               <span
@@ -133,7 +137,7 @@ function Tabs() {
               >
                 {tab.icon}
               </span>
-              <span className="w-[150px]">{tab.title}</span>
+              <span className="">{tab.title}</span>
             </button>
           </SwiperSlide>
         ))}
@@ -175,11 +179,13 @@ function Pagination({ totalCards, cardsPerPage, currentPage, onPageChange }) {
   };
 
   return (
-    <div className="flex justify-center mt-4">
+    <div className="flex justify-center mt-4 items-center lg:mt-[40px] gap-[10px]">
       <button
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className={`p-2 border-2 rounded-full ${currentPage === 1 ? "disabled border-[#EAEAF1] text-[#5E5E6F]" : ""}`}
+        className={`w-[40px] h-[40px] border rounded-full flex items-center justify-center ${
+          currentPage === 1 ? "disabled border-[#EAEAF1] text-[#5E5E6F]" : ""
+        }`}
       >
         <IoArrowBack size={22} />
       </button>
@@ -188,10 +194,10 @@ function Pagination({ totalCards, cardsPerPage, currentPage, onPageChange }) {
         <button
           key={index}
           onClick={() => handlePageChange(index + 1)}
-          className={`mx-1 px-4 py-2 rounded ${
+          className={` w-[40px] h-[40px] rounded ${
             currentPage === index + 1
-              ? "text-[#5E5E6F] border-[#5E5E6F] border-2 rounded-full"
-              : "border-[#EAEAF1] text-[#EAEAF1] border-2 rounded-full"
+              ? "text-[#5E5E6F] border-[#5E5E6F] border rounded-full"
+              : "border-[#EAEAF1] text-[#5E5E6F] border rounded-full"
           }`}
         >
           {index + 1}
@@ -201,7 +207,11 @@ function Pagination({ totalCards, cardsPerPage, currentPage, onPageChange }) {
       <button
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className={`p-2 border-2 rounded-full ${currentPage === totalPages ? "disabled border-[#EAEAF1] text-[#5E5E6F]" : ""}`}
+        className={`w-[40px] h-[40px] border rounded-full flex items-center justify-center ${
+          currentPage === totalPages
+            ? "disabled border-[#EAEAF1] text-[#5E5E6F]"
+            : ""
+        }`}
       >
         <IoArrowForward size={22} />
       </button>
