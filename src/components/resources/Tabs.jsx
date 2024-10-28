@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -16,14 +16,34 @@ import Popular from "../../assets/icons/resources/PopularIcon";
 import Star from "../../assets/icons/resources/StarIcon";
 import Transportation from "../../assets/icons/resources/Transportation";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+import Box from '@mui/material/Box';
+import LinearProgress from '@mui/material/LinearProgress';
 
 function Tabs() {
   const [activeTab, setActiveTab] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+  const [progress, setProgress] = useState(0);
   const cardsPerPage = activeTab === 0 ? 21 : 5;
+
+  const handleTabClick = (index) => {
+    if (index !== activeTab) {
+      const increment = 100 / (tabs.length); 
+      if (index < activeTab) {
+        setProgress((prev) => Math.max(prev - increment, 5));
+      } else {
+        setProgress((prev) => Math.min(prev + increment, 100));
+      }
+
+      setActiveTab(index);
+      setCurrentPage(1);
+    }
+  };
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
+    // Increment progress when changing pages
+    const increment = 100 / (tabs.length); // Adjust as needed
+    setProgress((prev) => Math.min(prev + increment, 100));
   };
 
   const paginate = (data) => {
@@ -94,9 +114,9 @@ function Tabs() {
   const filteredData = getFilteredData();
 
   return (
-    <div className="w-full py-8 poppin ">
+    <div className="w-full py-8 poppin">
       <Swiper
-        className="w-full  "
+        className="w-full"
         spaceBetween={5}
         slidesPerView={3}
         breakpoints={{
@@ -117,17 +137,14 @@ function Tabs() {
         {tabs.map((tab, index) => (
           <SwiperSlide
             key={index}
-            className="!mr-0   flex items-center justify-center    "
+            className="!mr-0 flex items-center justify-center"
           >
             <button
-              onClick={() => {
-                setActiveTab(index);
-                setCurrentPage(1);
-              }}
-              className={`pb-[20px]  flex  flex-col items-center text-[14px] font-semibold transition-colors duration-300  ${
+              onClick={() => handleTabClick(index)}
+              className={`pb-[20px] flex flex-col items-center text-[14px] font-semibold transition-colors duration-300 ${
                 activeTab === index
-                  ? "border-b-2 border-[#109088] text-[#5E5E6F] font-bold"
-                  : "text-[#5E5E6F] "
+                  ? " text-[#5E5E6F] font-bold"
+                  : "text-[#5E5E6F]"
               }`}
             >
               <span
@@ -137,11 +154,14 @@ function Tabs() {
               >
                 {tab.icon}
               </span>
-              <span className="">{tab.title}</span>
+              <span>{tab.title}</span>
             </button>
           </SwiperSlide>
         ))}
       </Swiper>
+      <Box sx={{ width: '100%' }}>
+        <LinearProgress variant="determinate" value={progress} />
+      </Box>
 
       <div className="py-[30px] rounded-lg bg-white">
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justify-center poppin">
@@ -194,7 +214,7 @@ function Pagination({ totalCards, cardsPerPage, currentPage, onPageChange }) {
         <button
           key={index}
           onClick={() => handlePageChange(index + 1)}
-          className={` w-[40px] h-[40px] rounded ${
+          className={`w-[40px] h-[40px] rounded ${
             currentPage === index + 1
               ? "text-[#5E5E6F] border-[#5E5E6F] border rounded-full"
               : "border-[#EAEAF1] text-[#5E5E6F] border rounded-full"
