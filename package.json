@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@cloudflare/next-on-pages": "^1.13.5",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@headlessui/react": "^2.1.8",
     "@heroicons/react": "^2.1.5",
+    "@mui/material": "^6.1.5",
     "browser": "^0.2.6",
     "icons": "^1.0.0",
     "react": "^18.3.1",
