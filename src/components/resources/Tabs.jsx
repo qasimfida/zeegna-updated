@@ -27,12 +27,11 @@ function Tabs() {
 
   const handleTabClick = (index) => {
     if (index !== activeTab) {
-      const increment = 100 / (tabs.length); 
-      if (index < activeTab) {
-        setProgress((prev) => Math.max(prev - increment, 5));
-      } else {
-        setProgress((prev) => Math.min(prev + increment, 100));
-      }
+      const increment = 90 / tabs.length; 
+      setProgress((prev) => {
+        const newProgress = (index + 1) * increment; 
+        return Math.min(newProgress, 90);
+      });
 
       setActiveTab(index);
       setCurrentPage(1);
@@ -41,8 +40,8 @@ function Tabs() {
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
-    // Increment progress when changing pages
-    const increment = 100 / (tabs.length); // Adjust as needed
+   
+    const increment = 100 / (tabs.length);
     setProgress((prev) => Math.min(prev + increment, 100));
   };
 
@@ -160,7 +159,15 @@ function Tabs() {
         ))}
       </Swiper>
       <Box sx={{ width: '100%' }}>
-        <LinearProgress variant="determinate" value={progress} />
+        <LinearProgress variant="determinate" value={progress} 
+            sx={{ 
+              height: "2px",
+              backgroundColor: '#E0E0E0', 
+              '& .MuiLinearProgress-bar': {
+                backgroundColor: '#109088',
+              },
+            }}
+        />
       </Box>
 
       <div className="py-[30px] rounded-lg bg-white">
