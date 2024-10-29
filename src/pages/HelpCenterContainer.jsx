@@ -28,11 +28,11 @@ const HelpCardsGrid = () => {
     <>
       <HelpCenterHeroSection changeTheHeading="We're happy to help" />
 
-      <div className="max-w-screen-lg mx-auto poppin">
-        <div className="flex justify-around m-10 p-4 bg-[#F7F7F7] rounded-full max-md:flex-col max-md:gap-10 max-md:bg-transparent ">
+      <div className="max-w-[1080px] mx-auto poppin flex items-center justify-center flex-col">
+        <div className="flex justify-between md:m-10 max-sm:my-[30px] p-[15px] bg-[#F7F7F7] md:w-[750px] md:gap-[15px] rounded-full gap-[10px]   max-sm:mx-[16px] ">
           <button
             onClick={() => handleButtonClick("families")}
-            className={`rounded-full flex items-center justify-center gap-4 px-20 lg:w-96 text-base font-medium py-3.5 ${
+            className={`rounded-full flex items-center justify-center gap-4 md:px-20 lg:w-96 text-base font-medium md:py-3.5 py-[13px] px-[36px] ${
               activeButton === "families"
                 ? "bg-black text-white"
                 : "bg-[#EAEAEA] text-black"
@@ -42,7 +42,7 @@ const HelpCardsGrid = () => {
           </button>
           <button
             onClick={() => handleButtonClick("partners")}
-            className={`rounded-full flex items-center justify-center gap-4 px-20  lg:w-96 text-base font-medium py-3.5 ${
+            className={`rounded-full flex items-center justify-center gap-4 md:px-20  lg:w-96 text-base font-medium md:py-3.5 py-[13px] px-[36px] ${
               activeButton === "partners"
                 ? "bg-black text-white"
                 : "bg-[#EAEAEA] text-black"
@@ -52,7 +52,7 @@ const HelpCardsGrid = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] max-sm:mx-[16px] max-sm:gap-[16px]">
           {activeData.map((card) => (
             <HelpCenterCard
               key={card.id}

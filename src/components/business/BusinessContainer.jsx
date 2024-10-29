@@ -21,34 +21,40 @@ const BusinessContainer = ({ title, description, Icon }) => {
     <>
       {/* section 1 */}
       <section className="flex justify-center flex-col">
-        <div className="flex flex-col items-center pt-[80px]">
-          <h1 className="text-4xl font-semibold text-center">
+        <div className="flex flex-col items-center pt-[80px] max-sm:pt-[50px]">
+          <h1 className="text-[32px] font-semibold text-center max-sm:text-[24px]">
             Seize the opportunity
           </h1>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-3"></div>
-          <p className="pt-4 text-xl text-[#5E5E6F] text-center">
+          <p className="pt-4 text-xl text-[#5E5E6F] font-medium text-center max-sm:text-[16px]">
             Transform homes. Transform lives
           </p>
         </div>
-        <div className="grid gap-10 sm:gap-0 sm:grid-cols-3 justify-center mt-12 justify-items-center">
-          <div className="flex items-center flex-col gap-3 w-[60%]">
+        <div className="flex items-center  justify-center lg:gap-[152px] md:gap-[37px] md:mx-[37px] mt-[80px] max-sm:mt-[30px] justify-items-center max-sm:flex-col max-sm:mx-[64px] max-sm:gap-y-[30px]	">
+          <div className="flex items-center flex-col gap-3 md:w-[211px] ">
             <PeopleIcon />
-            <h1 className="text-6xl font-semibold">77M</h1>
-            <p className="text-xl text-center text-[#5E5E6F]">
+            <h1 className="lg:text-[64px] md:text-[48px] text-[36px] font-semibold">
+              77M
+            </h1>
+            <p className="md:text-[20px] text-[16px] text-center text-[#5E5E6F]">
               Number of seniors by 2034
             </p>
           </div>
-          <div className="flex items-center flex-col gap-3 w-[60%]">
+          <div className="flex items-center flex-col gap-3 md:w-[211px] ">
             <HouseIcon />
-            <h1 className="text-6xl font-semibold">90%</h1>
-            <p className="text-xl text-center text-[#5E5E6F]">
+            <h1 className="lg:text-[64px] md:text-[48px] text-[36px] font-semibold">
+              90%
+            </h1>
+            <p className="md:text-[20px] text-[16px] text-center text-[#5E5E6F]">
               Seniors showing desire to age in their homes
             </p>
           </div>
-          <div className="flex items-center flex-col gap-3 w-[60%]">
+          <div className="flex items-center flex-col gap-3 md:w-[248px]">
             <MoneyHandIcon />
-            <h1 className="text-6xl font-semibold">$460B</h1>
-            <p className="text-xl text-center text-[#5E5E6F]">
+            <h1 className="lg:text-[64px] md:text-[48px] text-[36px] font-semibold">
+              $460B
+            </h1>
+            <p className="md:text-[20px] text-[16px] text-center text-[#5E5E6F]">
               Estimated worth of total home care market
             </p>
           </div>
