@@ -59,27 +59,39 @@ function ArticlePage() {
           <div className="flex space-x-4 items-center justify-center">
             <div
               onClick={() => redirectTo("https://www.facebook.com")}
-              className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center cursor-pointer"
+              className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center cursor-pointer transition duration-300 hover:bg-blue-200  hover:-translate-y-1"
             >
-              <FacebookIcon alt="Facebook Icon" />
+              <FacebookIcon
+                alt="Facebook Icon"
+                className="text-gray-500 hover:text-white"
+              />
             </div>
             <div
               onClick={() => redirectTo("https://www.linkedin.com")}
-              className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center cursor-pointer"
+              className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center cursor-pointer transition duration-300 hover:bg-blue-200 hover:-translate-y-1"
             >
-              <LinkedinIcon alt="LinkedIn Icon" />
+              <LinkedinIcon
+                alt="LinkedIn Icon"
+                className="text-gray-500 hover:text-white"
+              />
             </div>
             <div
               onClick={() => redirectTo("https://twitter.com")}
-              className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center cursor-pointer"
+              className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center cursor-pointer transition duration-300 hover:bg-blue-200  hover:-translate-y-1"
             >
-              <TwitterIcon alt="Twitter Icon" />
+              <TwitterIcon
+                alt="Twitter Icon"
+                className="text-gray-500 hover:text-white"
+              />
             </div>
             <div
               onClick={() => redirectTo("mailto:example@example.com")}
-              className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center cursor-pointer"
+              className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center cursor-pointer transition duration-300 hover:bg-blue-200 hover:border-gray-600 hover:-translate-y-1"
             >
-              <EmailIcon alt="Email Icon" />
+              <EmailIcon
+                alt="Email Icon"
+                className="text-gray-500 hover:text-white"
+              />
             </div>
           </div>
         </div>
@@ -93,7 +105,7 @@ function ArticlePage() {
             <p className="mt-[10px] text-[16px] font-medium text-[#5E5E6F] ">
               Get the care you need to stay happy and healthy in your home
             </p>
-            <button className="mt-[20px] rounded-full px-[30px] w-[150px] font-medium py-[13px] bg-[#1C1C1C] text-white">
+            <button className="mt-[20px] rounded-full px-[30px] w-[150px] font-medium py-[13px] bg-[#1C1C1C] text-white  hover:text-black hover:bg-white hover:border-black hover:border-2">
               Get started
             </button>
           </div>
@@ -113,7 +125,7 @@ function ArticlePage() {
             <p className="mt-[10px] text-[20px] font-medium text-[#5E5E6F] w-[330px]">
               Get the care you need to stay happy and healthy in your home
             </p>
-            <button className="mt-[20px] rounded-full px-[30px] w-[150px] font-medium py-[13px] bg-[#1C1C1C] text-white">
+            <button className="mt-[20px] rounded-full px-[30px] w-[150px] font-medium py-[13px] bg-[#1C1C1C] text-white hover:text-black hover:bg-white border-black border">
               Get started
             </button>
           </div>

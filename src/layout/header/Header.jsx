@@ -15,11 +15,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function Header({ styles = "" }) {
   const location = useLocation();
   const bgColor =
-    location.pathname === "/resources"
+    location.pathname === "/resources" || location.pathname === "/article"
       ? "bg-[#F0F9F9]"
       : location.pathname === "/become-partner"
       ? "bg-[#F9F9F9]"
       : "bg-[#FFFDFD]";
+
   const isActive = (path) => location.pathname === path;
 
   return (
