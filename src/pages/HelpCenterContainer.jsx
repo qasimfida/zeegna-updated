@@ -75,7 +75,7 @@ const HelpCardsGrid = () => {
         />
       </div>
 
-      <section className="sm:mt-6 lg:mt-8 mt-12 max-sm:mx-[16px]  lg:mx-[80px] md:mx-[50px]  bg-[#E5FFEF] md:rounded-[40px] rounded-[30px] poppin">
+      <section className="  max-sm:mx-[16px] max-sm:mt-[50px] lg:mx-[80px] md:mx-[50px]  bg-[#E5FFEF] md:rounded-[40px] rounded-[30px] poppin">
         <div className="mb-10   mt-0   flex gap-3 lg:px-[80px] md:px-[50px] px-[15px] py-[50px] lg:py-[75px] justify-between lg:flex flex-col lg:flex-row  md:text-center ">
           <div className="max-md:text-center lg:text-left">
             <h1 className="text-[32px]  font-semibold lg:w-[370px] max-sm:text-[24px]">
