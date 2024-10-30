@@ -12,8 +12,8 @@ import imageFive from "../../../public/images/personManThree.png";
 import "../../assets/css/slider.css";
 
 const images = [
-  { src: [imageOne], index: 1, alt: "person 1", },
-  { src: [imageTwo], index: 2, alt: "person 2" },
+  { src: [imageOne], index: 1, id: "img1", alt: "person 1", },
+  { src: [imageTwo], index: 2, id: "img2", alt: "person 2" },
   { src: [imageThree], index: 3, alt: "person 3" },
   { src: [imageFour], index: 4, alt: "person 4" },
   { src: [imageFive], index: 5, alt: "person 5" },
@@ -26,13 +26,13 @@ const PartnerSlider = () => {
   };
   return (
     <>
-      <div className=" w-full pt-7 h-[50vh]">
+      <div className=" w-full pt-7 h-[35vh]">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={"auto"}
-          spaceBetween={80}
+          spaceBetween={100}
           coverflowEffect={{
             rotate: 1,
             stretch: 0,
