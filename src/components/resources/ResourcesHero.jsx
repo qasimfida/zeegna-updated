@@ -13,7 +13,7 @@ function ResourcesHero({
   extraThings,
 }) {
   const [isMdScreen, setIsMdScreen] = useState(false);
-  const location = useLocation(); 
+  const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -89,27 +89,39 @@ function ResourcesHero({
             <div className="flex space-x-4 items-center py-4">
               <Link
                 to="#"
-                className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center"
+                className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center transition duration-300 hover:bg-blue-200  hover:-translate-y-1"
               >
-                <FacebookIcon alt="Facebook Icon" />
+                <FacebookIcon
+                  alt="Facebook Icon"
+                  className="text-gray-500 hover:text-white"
+                />
               </Link>
               <Link
                 to="#"
-                className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center"
+                className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center transition duration-300 hover:bg-blue-200 hover:-translate-y-1"
               >
-                <LinkedinIcon alt="LinkedIn Icon" />
+                <LinkedinIcon
+                  alt="LinkedIn Icon"
+                  className="text-gray-500 hover:text-white"
+                />
               </Link>
               <Link
                 to="#"
-                className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center"
+                className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center transition duration-300 hover:bg-blue-200 hover:-translate-y-1"
               >
-                <TwitterIcon alt="Twitter Icon" />
+                <TwitterIcon
+                  alt="Twitter Icon"
+                  className="text-gray-500 hover:text-white"
+                />
               </Link>
               <Link
                 to="#"
-                className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center"
+                className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center transition duration-300 hover:bg-blue-200 hover:-translate-y-1"
               >
-                <EmailIcon alt="Email Icon" />
+                <EmailIcon
+                  alt="Email Icon"
+                  className="text-gray-500 hover:text-white"
+                />
               </Link>
             </div>
           )}

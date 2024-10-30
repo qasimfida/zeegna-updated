@@ -7,27 +7,25 @@ import { Link } from "react-router-dom";
 const PartnerContainer = () => {
   return (
     <div className="pt-[30px] pb-[50px] bg-[#eefff0] font-poppins">
-                <div className="flex justify-start pl-[38px] w-full text-sm font-medium">
-            <Link
-              to="/"
-              className={`hover:underline ${
-                location.pathname === "/" ? "text-gray-500" : "text-black"
-              }`}
-            >
-              Home
-            </Link>
-            <span className="mx-2">|</span>
-            <Link
-              to="/become-partner"
-              className={`hover:underline ${
-                location.pathname === "/resources"
-                  ? "text-black"
-                  : "text-gray-500"
-              }`}
-            >
-              Become a Partner
-            </Link>
-          </div>
+      <div className="flex justify-start pl-[38px] w-full text-sm font-medium">
+        <Link
+          to="/"
+          className={`hover:underline ${
+            location.pathname === "/" ? "text-gray-500" : "text-black"
+          }`}
+        >
+          Home
+        </Link>
+        <span className="mx-2">|</span>
+        <Link
+          to="/become-partner"
+          className={`hover:underline ${
+            location.pathname === "/resources" ? "text-black" : "text-gray-500"
+          }`}
+        >
+          Become a Partner
+        </Link>
+      </div>
       <div className="flex flex-col items-center">
         <h1 className="text-[28px] sm:text-[48px] md:text-[64px] font-semibold font-poppins text-center">
           Grow your business
@@ -36,7 +34,7 @@ const PartnerContainer = () => {
           Join our network to help millions of seniors to age <br /> at home in
           good health and comfort
         </p>
-        <button className="bg-black text-white py-[15px] px-[80px] rounded-full cursor-pointer mt-[30px]">
+        <button className="bg-black text-white py-[15px] px-[80px] rounded-full cursor-pointer mt-[30px] hover:bg-white hover:text-black border-2 border-black">
           Start today
         </button>
       </div>

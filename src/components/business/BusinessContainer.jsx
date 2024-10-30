@@ -1,6 +1,6 @@
 import React from "react";
 import HomeCard from "../homecard/HomeCard";
-import cardsData from "../../data/CardsData";
+import PartnerCardData from "../../data/PartnerCardData";
 import PowerFulCard from "../power/PowerFulCard";
 import FindCare from "../findcare/FindCare";
 import { FindCard, BusinessStepsData } from "../../data/FindCareData";
@@ -74,7 +74,7 @@ const BusinessContainer = ({ title, description, Icon }) => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] mt-[50px] max-sm:mt-[30px] max-sm:gap-[10px] max-sm:px-[15px]">
-            {cardsData.map((card) => (
+            {PartnerCardData.map((card) => (
               <HomeCard
                 key={card.id}
                 title={card.title}
@@ -141,7 +141,7 @@ const BusinessContainer = ({ title, description, Icon }) => {
               ))}
             </div>
             <div className="mt-[50px] flex justify-center">
-              <button className="text-white bg-black px-[30px] py-[9px] rounded-full">
+              <button className="text-white bg-black px-[30px] py-[9px] rounded-full hover:bg-white hover:text-black border-2 border-black">
                 Get Started Now
               </button>
             </div>
@@ -166,14 +166,14 @@ const BusinessContainer = ({ title, description, Icon }) => {
                 Join our provider network to reach more clients and do more
                 business. Make it count.
               </p>
-              <button className="bg-[#1C1C1C] text-white px-[20px] md:px-[25px] lg:px-[30px] py-[10px] md:py-[12px] lg:py-[13px] font-medium rounded-full w-fit max-sm:mb-[40px] max-sm:w-[250px]">
+              <button className="bg-[#1C1C1C] text-white px-[20px] md:px-[25px] lg:px-[30px] py-[10px] md:py-[12px] lg:py-[12px] font-medium rounded-full w-fit max-sm:mb-[40px] max-sm:w-[250px]  hover:bg-white hover:text-black border-2 border-black">
                 Get started
               </button>
             </div>
           </div>
           <img
             className="object-cover w-full  md:h-auto md:w-[300px] xl:w-[498px] rounded-b-lg md:rounded-none md:rounded-r-lg"
-            src="/public/images/BusinessCard.png"
+            src="public/images/BusinessCard.png"
             alt="Business Card"
           />
         </div>
