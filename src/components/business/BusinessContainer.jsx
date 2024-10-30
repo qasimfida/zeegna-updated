@@ -173,7 +173,7 @@ const BusinessContainer = ({ title, description, Icon }) => {
           </div>
           <img
             className="object-cover w-full  md:h-auto md:w-[300px] xl:w-[498px] rounded-b-lg md:rounded-none md:rounded-r-lg"
-            src="public/images/BusinessCard.png"
+            src="images/BusinessCard.png"
             alt="Business Card"
           />
         </div>
