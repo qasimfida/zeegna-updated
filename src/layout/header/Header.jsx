@@ -17,6 +17,8 @@ function Header({ styles = "" }) {
   const bgColor =
     location.pathname === "/resources" || location.pathname === "/article"
       ? "bg-[#F0F9F9]"
+      : location.pathname === "/help-center"
+      ? "bg-[#F7F7F7]"
       : location.pathname === "/become-partner"
       ? "bg-[#F9F9F9]"
       : "bg-[#FFFDFD]";
