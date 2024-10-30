@@ -5,9 +5,9 @@ import BusinessSlider from "../businessSlider/BusinessSlider";
 const BusinessResults = () => {
   return (
     <>
-      <div className="py-[80px] max-sm:pl[16px] max-md:pl[57px] lg:px-[150px]">
+      <div className="py-[80px] max-sm:pl[16px] max-md:pl[57px] lg:px-[150px] font-poppins">
         <div className="flex flex-col items-center gap-3">
-          <h1 className="text-4xl font-semibold text-center">
+          <h1 className="text-[32px] font-semibold text-center">
             Trusted by providers, proven by results
           </h1>
           <div className="w-[100px] border border-black h-[2px]"></div>

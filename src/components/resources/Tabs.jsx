@@ -221,7 +221,7 @@ function Pagination({ totalCards, cardsPerPage, currentPage, onPageChange }) {
         <button
           key={index}
           onClick={() => handlePageChange(index + 1)}
-          className={`w-[40px] h-[40px] rounded ${
+          className={`w-[40px] h-[40px] rounded-full ${
             currentPage === index + 1
               ? "text-[#5E5E6F] border-[#5E5E6F] border rounded-full"
               : "border-[#EAEAF1] text-[#5E5E6F] border rounded-full"

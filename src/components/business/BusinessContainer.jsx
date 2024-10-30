@@ -14,18 +14,18 @@ import MoneyHandIcon from "../../assets/icons/becomePartner/MoneyHandIcon";
 import PeopleIcon from "../../assets/icons/becomePartner/PeopleIcon";
 
 const BusinessContainer = ({ title, description, Icon }) => {
-  const isBusiness = true; // set this condition as needed
+  const isBusiness = true; 
   const dataToDisplay = isBusiness ? BusinessStepsData : FindCard;
 
   return (
     <>
       {/* section 1 */}
-      <section className="flex justify-center flex-col">
+      <section className="flex justify-center flex-col font-poppins">
         <div className="flex flex-col items-center pt-[80px] max-sm:pt-[50px]">
           <h1 className="text-[32px] font-semibold text-center max-sm:text-[24px]">
             Seize the opportunity
           </h1>
-          <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-3"></div>
+          <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-1"></div>
           <p className="pt-4 text-xl text-[#5E5E6F] font-medium text-center max-sm:text-[16px]">
             Transform homes. Transform lives
           </p>
@@ -118,7 +118,7 @@ const BusinessContainer = ({ title, description, Icon }) => {
 
       {/* section 5 */}
       <section>
-        <div className="bg-[#F7F7F7]">
+        <div className="bg-[#F7F7F7] font-poppins">
           <div className="mx-[70px] max-sm:mx-[16px] py-[80px] max-sm:py-[50px]">
             <div className="text-center">
               <h2 className="font-semibold text-[24px] md:text-[32px]">
