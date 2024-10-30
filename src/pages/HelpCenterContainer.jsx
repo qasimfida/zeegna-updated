@@ -75,35 +75,30 @@ const HelpCardsGrid = () => {
         />
       </div>
 
-      <section className="sm:mt-6 lg:mt-8 mt-12 max-w-7xl mx-auto px-4 max-md:px-5 sm:px-6 lg:px-8 bg-[#E5FFEF] rounded-[40px] poppin">
-        <div className="mb-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 mt-0 lg:px-8  flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row py-16 md:text-center ">
+      <section className="  max-sm:mx-[16px] max-sm:mt-[50px] lg:mx-[80px] md:mx-[50px]  bg-[#E5FFEF] md:rounded-[40px] rounded-[30px] poppin">
+        <div className="mb-10   mt-0   flex gap-3 lg:px-[80px] md:px-[50px] px-[15px] py-[50px] lg:py-[75px] justify-between lg:flex flex-col lg:flex-row  md:text-center ">
           <div className="max-md:text-center lg:text-left">
-            <h1 className="text-4xl tracking-tight font-semibold sm:text-5xl md:text-6xl">
-              <span className="block xl:inline mt-2 md:text-center">
-                Can't find what you
-              </span>
-              <span className="block xl:inline-block lg:mt-4 md:text-center">
-                are looking for?
-              </span>
+            <h1 className="text-[32px]  font-semibold lg:w-[370px] max-sm:text-[24px]">
+              Can't find what you are looking for?
             </h1>
-            <p className="mt-3 text-xl text-[#5E5E6F] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 xl:w-[50%]">
+            <p className="mt-3 text-xl text-[#5E5E6F] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:w-[390px] md:text-xl max-sm:text-[16px]">
               Get the care you need to stay happy and healthy in your home
             </p>
-            <div className="mt-10 md:flex max-md:justify-center max-md:items-center">
+            <div className="mt-10 md:flex max-lg:justify-center max-lg:items-center">
               <Link
                 to={
                   activeButton === "families"
                     ? "/family-help-center"
                     : "/partner-help-center"
                 }
-                className="rounded-full flex items-center justify-center gap-4 px-20 lg:w-96 text-base font-medium py-3.5 max-sm:py-2 bg-[#1C1C1C] text-white"
+                className="rounded-full flex items-center justify-center gap-4 px-[58px]  text-base font-medium py-3.5 max-sm:py-3 bg-[#1C1C1C] text-white max-sm:mb-[30px] hover:bg-white hover:text-black border border-black"
               >
                 Contact Support
               </Link>
             </div>
           </div>
 
-          <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4">
+          <div className=" lg:w-[540px] ">
             <img
               className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-[20px]"
               src="images/Rectangle .png"
