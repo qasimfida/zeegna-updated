@@ -51,7 +51,7 @@ function HomeCareSlides({ activeTab, setActiveTab }) {
         ref={swiperRef}
         spaceBetween={0}
         slidesPerView="auto"
-        pagination={true}
+        pagination={false}
         cssMode={true}
         onSlideChange={handleSlideChange}
         mousewheel={true}

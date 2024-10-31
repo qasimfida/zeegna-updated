@@ -45,3 +45,12 @@
   z-index: 1;
   display: block;
 }
+
+.swiper-slide {
+  margin: 0px;  
+
+}
+.swiper-container {
+  padding-left: 20px; /* Adjust for left space */
+  padding-right: 20px; /* Adjust for right space */
+}
