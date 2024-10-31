@@ -21,8 +21,8 @@ function Login() {
     <div className="bg-[#F7F7F7]">
       <LoginPageHeader />
 
-      <div className="min-h-[738px] flex items-center justify-center w-full poppin">
-        <div className="px-8 py-6 max-w-[552px] max-sm:px-[16px] max-sm:pt-[50px] max-sm:pb-[90px]">
+      <div className="lg:pb-[192px] flex max-md:items-center justify-center w-full poppin lg:py-[90px]">
+        <div className="px-8  max-w-[552px] max-sm:px-[16px] max-sm:pt-[50px] max-sm:pb-[90px]">
           <h1 className="text-[32px] font-semibold text-center mb-2 max-sm:text-[24px]">
             We're happy to see you again
           </h1>
