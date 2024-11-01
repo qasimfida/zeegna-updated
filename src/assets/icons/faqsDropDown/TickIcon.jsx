@@ -10,7 +10,7 @@ const TickIcon = () => (
   >
     <path
       d="M20.5 6L9.5 18L4.5 12.5455"
-      stroke="white"
+      stroke="black"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
