@@ -25,23 +25,22 @@ function FamilyPartnerHelp() {
         }
       />
       <NewTabs />
-      <div className=" flex flex-col items-center justify-center max-w-2xl mx-auto p-10	bg-[#DEFFED] rounded-[40px] mb-20 max-sm:w-[18rem] poppin">
+      <div className=" flex flex-col items-center justify-center max-w-[840px] mx-auto p-10	bg-[#DEFFED] rounded-[40px] mb-20 max-sm:w-[18rem] poppin">
         <h1 className="text-2xl	 tracking-tight font-semibold sm:text md:text-">
           Did you find the help you were looking for?
         </h1>
 
-        <div className="mt-10 flex max-sm:flex-col md:items-center gap-4">
+        <div className="mt-10 flex max-sm:flex-col md:items-center gap-4 ">
           <Link to="/no-page">
             {" "}
-            <button className="rounded-full flex items-center gap-4 bg-transparent border-[#1C1C1C] border-2 px-10 text-base font-medium py-[13px] text-black">
+            <button className="rounded-full flex items-center gap-4 bg-transparent border-[#1C1C1C] border-2 px-[45px] text-base font-medium py-[13px] text-black hover:bg-[#1C1C1C] hover:text-white">
               No
               <CrossIcon />
             </button>
           </Link>
 
           <Link to="/yes-page">
-            {" "}
-            <button className="rounded-full flex items-center gap-4 bg-black px-10 text-base font-medium py-[13px] text-white border-[#1C1C1C] border-2">
+            <button className="rounded-full flex items-center gap-4 px-[45px] py-[13px] text-base font-medium text-black border-[#1C1C1C] border-2 hover:bg-[#1C1C1C] hover:text-white">
               Yes
               <TickIcon />
             </button>
