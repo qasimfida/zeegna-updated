@@ -40,16 +40,15 @@
   margin-right: auto;
   width: 100% !important;
   position: absolute !important;
+  height: 35vh;
   overflow: hidden !important;
-  /* list-style: none; */
-  /* padding: 0; */
   z-index: 1;
   display: block;
 }
 
 .swiper-slide {
   margin: 0px;  
- display: none;
+  display: none;
 }
 .swiper-container {
   padding-left: 20px; 
