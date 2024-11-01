@@ -26,34 +26,26 @@ const PartnerSlider = () => {
   };
   return (
     <>
-      <div className=" w-full pt-7 h-[35vh]">
+      <div className="container w-full pt-7 h-[45vh] max-w-[1154px] m-auto p-0">
         <Swiper
-          effect={"coverflow"}
+        effect="coverflow"
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={"auto"}
-          spaceBetween={100}
-          coverflowEffect={{
-            rotate: 1,
-            stretch: 0,
-            depth: 50,
-            modifier: 6,
-            slideShadows: false,
-          }}
+          slidesPerView={"4"}
+          spaceBetween={0}
           pagination={false}
-          modules={[EffectCoverflow, Pagination]}
-          className="flex justify-between gap-10 h-full"
           onSlideChange={handleSlideChange}
           initialSlide={2}
         >
           {images.map((image, index) => (
             <SwiperSlide
               key={index}
-              className={`relative ${activeIndex === index ? "z-10" : "z-0"}`}
+              className={`relative w-full`}
             >
+              {index}
               <img
-                className={`w-[300px] h-[350px] object-cover rounded-lg transition-all duration-300 ${
-                  activeIndex === index ? "grayscale-0" : "grayscale"
+                className={`h-[250px] object-cover rounded-lg transition-all duration-300 ${
+                  activeIndex === index ? "grayscale-0 active" : "grayscale"
                 }`}
                 src={image.src}
                 alt={image.alt}

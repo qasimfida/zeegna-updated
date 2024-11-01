@@ -38,19 +38,27 @@
 .swiper {
   margin-left: auto;
   margin-right: auto;
-  /* position: relative; */
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
+  width: 100% !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  /* list-style: none; */
+  /* padding: 0; */
   z-index: 1;
   display: block;
 }
 
 .swiper-slide {
   margin: 0px;  
-
+ display: none;
 }
 .swiper-container {
-  padding-left: 20px; /* Adjust for left space */
-  padding-right: 20px; /* Adjust for right space */
+  padding-left: 20px; 
+  padding-right: 20px; 
+}
+.swiper-wrapper::part(container) {
+  overflow: visible;
+  display: none !important;
+}
+.active{
+  transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1.2) !important;
 }
