@@ -10,6 +10,7 @@ import imageThree from "../../../public/images/personManTwo.png";
 import imageFour from "../../../public/images/personManFour.png";
 import imageFive from "../../../public/images/personManThree.png";
 import "../../assets/css/slider.css";
+const images = [imageOne, imageTwo, imageThree, imageFour, imageFive];
 
 const PartnerSlider = () => {
   const [activeIndex, setActiveIndex] = useState(2);
@@ -19,13 +20,13 @@ const PartnerSlider = () => {
   };
 
   return (
-    <div className="container w-full pt-7 h-[35vh] m-auto p-0 flex items-center justify-center overflow-hidden">
+    <div className="container w-full pt-7 h-[60vh] m-auto p-0 flex items-center justify-center md:overflow-hidden">
       <Swiper
         grabCursor={true}
         effect="coverflow"
         centeredSlides={true}
         slidesPerView={5}
-        spaceBetween={0}
+        spaceBetween={50}
         pagination={false}
         onSlideChange={handleSlideChange}
         initialSlide={2}
@@ -37,7 +38,7 @@ const PartnerSlider = () => {
           slideShadows: false,
         }}
       >
-        <SwiperSlide className="flex justify-center items-center">
+        {/* <SwiperSlide className="flex justify-end items-center h-full">
           <img
             src={imageOne}
             alt="person 1"
@@ -89,7 +90,7 @@ const PartnerSlider = () => {
             }}
           />
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center items-center">
+        <SwiperSlide className="flex justify-start items-center">
           <img
             src={imageFive}
             alt="person 5"
@@ -101,7 +102,32 @@ const PartnerSlider = () => {
               transition: "transform 0.3s ease, filter 0.3s ease",
             }}
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
+        {images.map((image, index) => (
+          <SwiperSlide
+            key={index}
+            className={`${
+              index === 0
+                ? "flex justify-end items-center h-full"
+                : index === 4
+                ? "flex justify-start items-center"
+                : "flex justify-center items-center"
+            }`}
+          >
+            <img
+              src={image}
+              alt={`person ${index + 1}`}
+              style={{
+                height: "auto",
+                width: "auto",
+                filter:
+                  activeIndex === index ? "grayscale(0)" : "grayscale(100%)",
+                transform: activeIndex === index ? "scale(1.1)" : "scale(1)",
+                transition: "transform 0.3s ease, filter 0.3s ease",
+              }}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
