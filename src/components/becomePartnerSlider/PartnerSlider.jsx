@@ -20,7 +20,7 @@ const PartnerSlider = () => {
   };
 
   return (
-    <div className="container w-full pt-7 h-[60vh] m-auto p-0 flex items-center justify-center md:overflow-hidden">
+    <div className="container w-full h-[fit-content] m-auto p-0 flex items-center justify-center overflow-visible">
       <Swiper
         grabCursor={true}
         effect="coverflow"
@@ -36,6 +36,20 @@ const PartnerSlider = () => {
           depth: 50,
           modifier: 6,
           slideShadows: false,
+        }}
+                breakpoints={{
+          640: {
+            slidesPerView: 3, // For small screens
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3, // For medium screens
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 5, // For larger screens
+            spaceBetween: 50,
+          },
         }}
       >
         {/* <SwiperSlide className="flex justify-end items-center h-full">
@@ -108,10 +122,13 @@ const PartnerSlider = () => {
             key={index}
             className={`${
               index === 0
-                ? "flex justify-end items-center h-full"
+                ? "flex justify-end items-end h-full"
                 : index === 4
-                ? "flex justify-start items-center"
-                : "flex justify-center items-center"
+                ? "flex justify-start items-end "
+                // : index === 2  ? "" 
+
+
+                : "flex justify-center items-end"
             }`}
           >
             <img
@@ -120,9 +137,10 @@ const PartnerSlider = () => {
               style={{
                 height: "auto",
                 width: "auto",
+
                 filter:
                   activeIndex === index ? "grayscale(0)" : "grayscale(100%)",
-                transform: activeIndex === index ? "scale(1.1)" : "scale(1)",
+                transform: activeIndex === index ? "scale(1.2)" : "scale(1)",
                 transition: "transform 0.3s ease, filter 0.3s ease",
               }}
             />
