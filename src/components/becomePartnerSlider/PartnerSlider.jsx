@@ -20,7 +20,7 @@ const PartnerSlider = () => {
   };
 
   return (
-    <div className="container w-full h-[fit-content] m-auto p-0 flex items-center justify-center overflow-visible">
+    <div className="container w-full h-[50vh] m-auto p-0 flex items-center justify-center overflow-visible">
       <Swiper
         grabCursor={true}
         effect="coverflow"
@@ -125,9 +125,6 @@ const PartnerSlider = () => {
                 ? "flex justify-end items-end h-full"
                 : index === 4
                 ? "flex justify-start items-end "
-                // : index === 2  ? "" 
-
-
                 : "flex justify-center items-end"
             }`}
           >
