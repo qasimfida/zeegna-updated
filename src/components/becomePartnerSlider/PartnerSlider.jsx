@@ -25,8 +25,8 @@ const PartnerSlider = () => {
         grabCursor={true}
         effect="coverflow"
         centeredSlides={true}
-        slidesPerView={1} 
-        spaceBetween={20} 
+        slidesPerView={1}
+        spaceBetween={20}
         pagination={false}
         onSlideChange={handleSlideChange}
         initialSlide={2}
@@ -39,15 +39,15 @@ const PartnerSlider = () => {
         }}
         breakpoints={{
           640: {
-            slidesPerView: 1, 
+            slidesPerView: 1,
             spaceBetween: 0,
           },
           768: {
-            slidesPerView: 3, 
+            slidesPerView: 3,
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 5, 
+            slidesPerView: 5,
             spaceBetween: 50,
           },
         }}
@@ -71,7 +71,8 @@ const PartnerSlider = () => {
               style={{
                 height: "auto",
                 width: "auto",
-                filter: activeIndex === index ? "grayscale(0)" : "grayscale(100%)",
+                filter:
+                  activeIndex === index ? "grayscale(0)" : "grayscale(100%)",
                 transform: activeIndex === index ? "scale(1.2)" : "scale(1)",
                 transition: "transform 0.3s ease, filter 0.3s ease",
               }}

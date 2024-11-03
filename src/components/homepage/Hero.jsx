@@ -5,7 +5,7 @@ import Typewriter from "../typeWriteing/TypeWriter";
 function HomeSection() {
   return (
     <div className="">
-      <section className="bg-gradient-to-b from-[#FFFDFD] via-[#FFFDFD] to-[#F7E7E7] poppin ">
+      <section className="bg-gradient-to-b from-[#FFFDFD]  via-[#FFFDFD] to-[#F7E7E7]  max-sm:bg-gradient-to-b from-[#FFFDFD]  via-[#EFE1E1] to-[#EFE1E1]  poppin ">
         <div className=" mx-auto text-center max-sm:h-[740px] max-lg:h-[950px]">
           {/* Left Image and Text */}
           <div
@@ -34,10 +34,10 @@ function HomeSection() {
               </h1>
               <p className="text-2xl	font-medium	 mb-10 text-[#5E5E6F] max-sm:w-full	mx-auto max-sm:text-[19px] max-md:text-xl   leading-[38px]		">
                 Find trusted vendors to help with{" "}
-                <span className="text-[#109088] font-semibold animate-fadeIn">
+                <span className="text-[#109088] max-sm:block font-semibold animate-fadeIn">
                   <Typewriter />
                 </span>
-                <br />
+                <br className="max-sm:hidden	" />
                 to live the best of your days at home.
               </p>
 
@@ -59,7 +59,7 @@ function HomeSection() {
               </div>
             </div>
             {/* form  */}
-            <div className=" py-[30px] bottom-0 max-sm:bottom-[-100%] mb-[-42px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white  rounded-3xl shadow-md absolute left-0 right-0 max-sm:py-[30px] max-sm:px-[15px]  flex max-xl:mx-[30px] max-sm:mx-[7px] max-lg:bottom-[-47%]  items-center justify-around  max-md:mb-38">
+            <div className=" py-[30px] bottom-0 max-sm:bottom-[-100%] mb-[-42px] xl:w-[1144px] xl:h-[150px] md:h-[223px] mx-auto bg-white  rounded-3xl shadow-md absolute left-0 right-0 max-sm:py-[30px] max-sm:px-[16px]  flex max-xl:mx-[30px] max-sm:mx-[16px] max-lg:bottom-[-47%]  items-center justify-around  max-md:mb-38">
               <div className="">
                 <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between max-sm:justify-center">
                   {/* Left Section: Heading and Description */}
@@ -83,7 +83,7 @@ function HomeSection() {
                           Who needs help?
                         </p>
                         <select
-                          className="border  border-gray-300 rounded-lg px-4 py-3 text-gray-600 text-sm"
+                          className="border  border-gray-300 rounded-lg px-4 py-3 max-sm:h-[50px] text-gray-600 text-sm"
                           defaultValue=""
                         >
                           <option value="" disabled>
@@ -101,7 +101,7 @@ function HomeSection() {
                             What kind of help do you need?
                           </p>
                           <select
-                            className="border border-gray-300 rounded-lg px-4 py-3 text-gray-600 text-sm"
+                            className="border border-gray-300 rounded-lg px-4 py-3 max-sm:h-[50px] text-gray-600 text-sm"
                             defaultValue=""
                           >
                             <option value="" disabled>
@@ -118,7 +118,7 @@ function HomeSection() {
                     {/* Right Section: Get Started Button */}
                     <div>
                       <div className="text-center lg:text-right w-full">
-                        <button className="border-2 border-black text-black py-3 px-9 font-medium rounded-full hover:text-white hover:bg-black w-full max-lg:w-[146px] max-sm:w-full max-lg:px-0 max-sm:px-9">
+                        <button className="border-2 border-black text-black py-3 px-9 font-medium rounded-full hover:text-white hover:bg-black w-full max-lg:w-[146px] max-sm:h-[50px] max-sm:w-full max-lg:px-0 max-sm:px-9">
                           Get started
                         </button>
                       </div>
