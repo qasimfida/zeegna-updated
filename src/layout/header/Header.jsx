@@ -20,7 +20,7 @@ function Header({ styles = "" }) {
       : location.pathname === "/help-center" || location.pathname === "/article"
       ? "bg-[#F7F7F7]"
       : location.pathname === "/become-partner"
-      ? "bg-[#F9F9F9]"
+      ? "bg-[#F5FFF3]"
       : "bg-[#FFFDFD]";
 
   const isActive = (path) => location.pathname === path;

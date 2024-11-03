@@ -5,7 +5,7 @@ import cardsData from "../../data/CardsData";
 function HomeCardsContainer() {
   return (
     <>
-      <div className=" md:mx-2 md:mx-[70px] pb-20 pt-[2.5rem] max-lg:pt-[182px]  poppin max-sm:pb-0 	">
+      <div className=" md:mx-2 md:mx-[70px] pb-20 pt-[2.5rem] lg:pt-[182px]  poppin max-sm:pb-0 	">
         <div className="text-center max-sm:mt-[40px] max-sm:px-[16px]">
           <h2 className="font-semibold text-xl md:text-[32px] xl:mt-[114px] max-sm:pt-[50px] max-sm:text-[24px] leading-[30px] ">
             Right in the home you love

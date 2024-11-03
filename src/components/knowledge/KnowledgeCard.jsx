@@ -40,7 +40,7 @@ const KnowledgeCard = ({ image, title, description, chip, id, className }) => {
             {trimmedDescription}
           </p>
 
-          <div className="flex items-center gap-4 border-t-[1px] pt-[10px] pb-[15px] border-[#EAEAF1]">
+          <div className="flex items-center gap-4 max-sm:gap-[10px] border-t-[1px] pt-[10px] pb-[15px] border-[#EAEAF1]">
             <p className="text-[#5E5E6F] text-[14px] font-regular">
               By Zeegna Team
             </p>

@@ -37,7 +37,7 @@ const PartnerSlider = () => {
           modifier: 6,
           slideShadows: false,
         }}
-                breakpoints={{
+        breakpoints={{
           640: {
             slidesPerView: 3, // For small screens
             spaceBetween: 20,
@@ -125,10 +125,9 @@ const PartnerSlider = () => {
                 ? "flex justify-end items-end h-full"
                 : index === 4
                 ? "flex justify-start items-end "
-                // : index === 2  ? "" 
+                : // : index === 2  ? ""
 
-
-                : "flex justify-center items-end"
+                  "flex justify-center items-end"
             }`}
           >
             <img

@@ -14,7 +14,7 @@ import MoneyHandIcon from "../../assets/icons/becomePartner/MoneyHandIcon";
 import PeopleIcon from "../../assets/icons/becomePartner/PeopleIcon";
 
 const BusinessContainer = ({ title, description, Icon }) => {
-  const isBusiness = true; 
+  const isBusiness = true;
   const dataToDisplay = isBusiness ? BusinessStepsData : FindCard;
 
   return (
@@ -155,7 +155,7 @@ const BusinessContainer = ({ title, description, Icon }) => {
       </section>
 
       {/* section 7 */}
-      <section className="sm:px-[20px] md:px-[27px] lg:px-[70px] md:pb-[80px] max-sm:px-[16px] max-sm:pb-[50px]">
+      <section className="sm:px-[20px] md:px-[27px] lg:px-[70px] font-poppins md:pb-[80px] max-sm:px-[16px] max-sm:pb-[50px]">
         <div className="flex flex-col md:flex-row items-center bg-[#E8FFF1] rounded-[40px] max-sm:rounded-[30px] hover:bg-gray-100 px-[20px] md:px-[40px] lg:px-[80px] py-[40px]">
           <div className="flex flex-col justify-between p-4 max-sm:p-0 leading-normal md:w-2/3">
             <div className="lg:w-[430px] max-sm:text-center">
