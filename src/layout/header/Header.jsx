@@ -98,7 +98,7 @@ function Header({ styles = "" }) {
         {/* Menu Items */}
         <div className="px-4">
           <Link
-            to="/find-help"
+            to="/help-center"
             className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700"
           >
             Find Help
