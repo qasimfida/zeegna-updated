@@ -9,6 +9,7 @@ import imageThree from "../../../public/images/personManTwo.png";
 import imageFour from "../../../public/images/personManFour.png";
 import imageFive from "../../../public/images/personManThree.png";
 import "../../assets/css/slider.css";
+
 const images = [imageOne, imageTwo, imageThree, imageFour, imageFive];
 
 const PartnerSlider = () => {
@@ -24,8 +25,8 @@ const PartnerSlider = () => {
         grabCursor={true}
         effect="coverflow"
         centeredSlides={true}
-        slidesPerView={5}
-        spaceBetween={50}
+        slidesPerView={1} 
+        spaceBetween={20} 
         pagination={false}
         onSlideChange={handleSlideChange}
         initialSlide={2}
@@ -38,15 +39,15 @@ const PartnerSlider = () => {
         }}
         breakpoints={{
           640: {
-            slidesPerView: 3,
-            spaceBetween: 20,
+            slidesPerView: 1, 
+            spaceBetween: 0,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 3, 
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 5, 
             spaceBetween: 50,
           },
         }}
@@ -56,7 +57,7 @@ const PartnerSlider = () => {
             key={index}
             className={`${
               index === activeIndex
-                ? "flex justify-center items-end mb-6" // Active index styling
+                ? "flex justify-center items-end mb-6"
                 : index === 0
                 ? "flex justify-end items-end h-full"
                 : index === 4
@@ -70,11 +71,8 @@ const PartnerSlider = () => {
               style={{
                 height: "auto",
                 width: "auto",
-
-                filter:
-                  activeIndex === index ? "grayscale(0)" : "grayscale(100%)",
+                filter: activeIndex === index ? "grayscale(0)" : "grayscale(100%)",
                 transform: activeIndex === index ? "scale(1.2)" : "scale(1)",
-                height: activeIndex == index ? " auto" : "auto",
                 transition: "transform 0.3s ease, filter 0.3s ease",
               }}
             />

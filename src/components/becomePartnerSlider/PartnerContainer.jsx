@@ -35,13 +35,13 @@ const PartnerContainer = () => {
           good health and comfort
         </p>
         <div className="flex justify-between">
-        <div className="relative right-[270px] top-[120px] hidden">
+        <div className="relative lg:right-[180px] xl:right-[250px] top-[120px] hidden md:block">
             <img src={rating} className=""></img>
           </div>
         <button className="bg-black text-white py-[15px] px-[80px] rounded-full cursor-pointer mt-[30px] mb-[30px] hover:bg-white hover:text-black border-2 border-black">
           Start today
         </button>
-        <div className="relative left-[270px] top-[120px] hidden">
+        <div className="relative lg:left-[180px] xl:left-[250px] top-[120px] hidden md:block">
             <Netsales />
           </div>
         </div>
