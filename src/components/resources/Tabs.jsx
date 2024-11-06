@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "../../assets/css/scrollBar.css"
 
 import ResourcesCard from "./ResourcesCard";
 import ResourceseData from "../../data/ResourcesData";
@@ -108,14 +109,24 @@ function Tabs() {
       title: "End of life planning",
       icon: <EndLife className="h-10 w-10 bg-[red] rounded-full p-10" />,
     },
+    
+    {
+      title: "End of life planning",
+      icon: <EndLife className="h-10 w-10 bg-[red] rounded-full p-10" />,
+    },
+    
+    {
+      title: "End of life planning",
+      icon: <EndLife className="h-10 w-10 bg-[red] rounded-full p-10" />,
+    },
   ];
 
   const filteredData = getFilteredData();
 
   return (
     <div className="w-full py-8 poppin">
-      <Swiper
-        className="w-full"
+        <Swiper
+          className="w-full overflow-x-scroll"
         spaceBetween={5}
         slidesPerView={3}
         breakpoints={{
@@ -158,7 +169,7 @@ function Tabs() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <Box sx={{ width: '100%' }}>
+      {/* <Box sx={{ width: '100%' }}>
         <LinearProgress variant="determinate" value={progress} 
             sx={{ 
               height: "2px",
@@ -168,7 +179,7 @@ function Tabs() {
               },
             }}
         />
-      </Box>
+      </Box> */}
 
       <div className="py-[30px] rounded-lg bg-white">
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justify-center poppin">

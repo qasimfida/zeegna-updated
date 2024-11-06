@@ -1,0 +1,19 @@
+/* Custom scrollbar for Tailwind CSS */
+.w-full.overflow-x-scroll::-webkit-scrollbar {
+    height: 3px; 
+}
+
+.w-full.overflow-x-scroll::-webkit-scrollbar-thumb {
+    background-color: #109088; 
+    border-radius: 10px; 
+    display: none;
+}
+
+.w-full.overflow-x-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.w-full.overflow-x-scroll {
+    scrollbar-width: thin; 
+    scrollbar-color: #109088 #f1f1f1; 
+}
