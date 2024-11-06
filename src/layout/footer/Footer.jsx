@@ -6,7 +6,7 @@ import FooterLogo from "../../assets/icons/footerIcons/FooterLogo";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
-    <footer className="bg-[#1C1C1C] pt-16	px-9 max-sm:px-[15px] poppin">
+    <footer className="bg-[#1C1C1C] pt-16	px-9 max-sm:px-[15px] poppin overflow-hidden	">
       <div class=" 	 text-gray-400">
         <div class=" px-4 max-sm:px-0 mx-auto">
           <div class="-mx-4 flex flex-wrap justify-between">

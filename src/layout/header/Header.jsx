@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import Logo from "../../assets/icons/logo/Logo";
 import Facebook from "../../assets/icons/headerIcons/Facebook";
@@ -24,13 +24,21 @@ function Header({ styles = "" }) {
       : "bg-[#FFFDFD]";
 
   const isActive = (path) => location.pathname === path;
+  const [isOpen, setIsOpen] = useState(false);
 
+  const togglePanel = () => {
+    console.log(isOpen);
+    setIsOpen((prevState) => !prevState);
+  };
   return (
-    <Disclosure as="nav" className={`border-b poppin ${bgColor}`}>
+    <Disclosure
+      as="nav"
+      className={`max-sm:sticky	max-sm:top-0 max-sm:w-full max-sm:z-50 border-b poppin ${bgColor}`}
+    >
       <div className="px-[37px] max-sm:px-[15px] lg:px-[37px]  max-sm:border-b">
         <div className="flex py-[18px] max-sm:py-[15px] justify-between">
           {/* Logo */}
-          <Link to="/" className="flex">
+          <Link to="/" onClick={togglePanel} className="flex">
             <div className="flex flex-shrink-0 items-center">
               <Logo />
             </div>
@@ -78,78 +86,91 @@ function Header({ styles = "" }) {
 
           {/* Mobile Menu Button */}
           <div className="-mr-2 flex items-center lg:hidden shadow-sm">
-            <Disclosure.Button className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <button
+              className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              onClick={togglePanel}
+            >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon
-                aria-hidden="true"
-                className="block h-6 w-6 group-data-[open]:hidden"
-              />
-              <XMarkIcon
-                aria-hidden="true"
-                className="hidden h-6 w-6 group-data-[open]:block"
-              />
-            </Disclosure.Button>
+              {!isOpen ? (
+                <Bars3Icon
+                  aria-hidden="true"
+                  className="block h-6 w-6 group-data-[open]:hidden"
+                />
+              ) : (
+                <XMarkIcon
+                  aria-hidden="true"
+                  className={`block h-6 w-6 group-data-[open]:block`}
+                />
+              )}
+            </button>
           </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      <Disclosure.Panel className="lg:hidden pb-4 bg-gradient-to-b h-[740px] from-white to-pink-100">
-        {/* Menu Items */}
-        <div className="px-4">
-          <Link
-            to="/help-center"
-            className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700"
-          >
-            Find Help
-            <HeaderIcon />
-          </Link>
-          <Link
-            to="/resources"
-            className="block w-full py-[15px] text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700"
-          >
-            Resources
-            <HeaderIcon />
-          </Link>
-          <Link
-            to="/become-partner"
-            className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700"
-          >
-            Become a Partner
-            <HeaderIcon />
-          </Link>
-          <Link
-            to="/all-services"
-            className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700"
-          >
-            All service categories
-            <HeaderIcon />
-          </Link>
-        </div>
+      {isOpen && (
+        <div className="lg:hidden pb-4 h-[90vh] bg-gradient-to-b from-white to-pink-200">
+          {/* Menu Items */}
+          <div className="px-4 mb-[135px]">
+            <Link
+              to="/help-center"
+              className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b"
+              onClick={togglePanel}
+            >
+              Find Help
+              <HeaderIcon />
+            </Link>
+            <Link
+              to="/resources"
+              className="block w-full py-[15px] text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b"
+              onClick={togglePanel}
+            >
+              Resources
+              <HeaderIcon />
+            </Link>
+            <Link
+              to="/become-partner"
+              className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b"
+              onClick={togglePanel}
+            >
+              Become a Partner
+              <HeaderIcon />
+            </Link>
+            <Link
+              to="/all-services"
+              className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b"
+              onClick={togglePanel}
+            >
+              All service categories
+              <HeaderIcon />
+            </Link>
+          </div>
 
-        {/* Login Button (Mobile) */}
-        <div className="flex justify-center my-4 mt-[332px]">
-          <Link
-            to="/login"
-            className="border-2 border-black text-black font-semibold hover:text-white hover:bg-black px-12 py-[13px] rounded-full transition w-full mx-[16px]"
-          >
-            Login
-          </Link>
-        </div>
+          {/* Login Button (Mobile) */}
+          <div className="flex justify-center my-4 mt-[]">
+            <Link
+              to="/login"
+              className="border-2 border-black text-black font-semibold hover:text-white hover:bg-black px-12 py-[13px] rounded-full transition w-full mx-[16px] max-sm:text-center"
+              onClick={togglePanel}
+            >
+              Login
+            </Link>
+          </div>
 
-        {/* Social Media Icons */}
-        <div className="flex justify-center gap-[30px] mt-[30px]">
-          <a href="#" className="text-black">
-            <Linkedin />
-          </a>
-          <a href="#" className="text-black">
-            <Facebook />
-          </a>
-          <a href="#" className="text-black">
-            {/* <Twitter /> */}
-          </a>
+          {/* Social Media Icons */}
+          <div className="flex justify-center gap-[30px] mt-[30px]">
+            <a href="#" className="text-black">
+              <Linkedin />
+            </a>
+            <a href="#" className="text-black">
+              <Facebook />
+            </a>
+            <a href="#" className="text-black">
+              {/* <Twitter /> */}
+            </a>
+          </div>
         </div>
-      </Disclosure.Panel>
+      )}
     </Disclosure>
   );
 }
