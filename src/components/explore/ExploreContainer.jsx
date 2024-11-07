@@ -8,24 +8,28 @@ import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/grid";
+
 function ExploreContainer() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const handleSlideChange = (swiper) => {
-    setCurrentIndex(swiper.realIndex);
+    console.log({ swiper });
+    setCurrentIndex(swiper.activeIndex);
   };
+
+  const handleNext = () => {
+    console.log(swiperRef?.current);
+  };
+
   useEffect(() => {
-    if (
-      swiperRef.current &&
-      swiperRef.current.params.navigation &&
-      swiperRef.current.navigation
-    ) {
-      swiperRef.current.navigation.init();
-      swiperRef.current.navigation.update();
+    if (swiperRef?.current) {
+      console.log(swiperRef.current);
     }
-  }, []);
+  }, [swiperRef]);
+
   return (
     <div className="bg-white poppin mb-20 max-sm:mb-12">
       <div className="lg:mx-[70px] max-sm:mx-[16px] md:mx-7">
@@ -42,12 +46,14 @@ function ExploreContainer() {
           </p>
         </div>
 
+        {/* Swiper for mobile and tablet */}
         <div className="block sm:hidden mt-12 relative">
           <Swiper
             direction="horizontal"
             slidesPerView={1}
-            slidesPerGroup={2}
+            slidesPerGroup={1}
             spaceBetween={10}
+            ref={swiperRef}
             grid={{
               rows: 2,
               fill: "row",
@@ -61,13 +67,10 @@ function ExploreContainer() {
               swiper.params.navigation.prevEl = prevRef.current;
               swiper.params.navigation.nextEl = nextRef.current;
             }}
-            onSwiper={(swiper) => {
-              swiperRef.current = swiper;
-            }}
             onSlideChange={handleSlideChange}
             mousewheel={true}
             keyboard={true}
-            modules={[Navigation, Mousewheel, Keyboard, Grid]}
+            modules={[Navigation, Grid]}
             className="h-full"
           >
             {ExploreData.map((card) => (
@@ -81,6 +84,7 @@ function ExploreContainer() {
             ))}
           </Swiper>
 
+          {/* Navigation buttons */}
           <div
             ref={prevRef}
             className={`swiper-button-back absolute left-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full flex items-center justify-center ${
@@ -88,22 +92,23 @@ function ExploreContainer() {
                 ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed bg-white"
                 : "border border-black bg-white"
             }`}
-            onClick={() => swiperRef.current?.slidePrev()}
+            onClick={handleNext}
           >
             <IoArrowBack size={22} />
           </div>
           <div
             ref={nextRef}
             className={`swiper-button-forward absolute right-0 top-1/2 transform -translate-y-1/2 z-20 cursor-pointer p-2 rounded-full flex items-center justify-center ${
-              currentIndex >= ExploreData.length / 2 - 2
+              currentIndex === 3
                 ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed bg-white"
                 : "border border-black bg-white"
             }`}
-            onClick={() => swiperRef.current?.slideNext()}
+            onClick={handleNext}
           >
             <IoArrowForward size={22} />
           </div>
         </div>
+
         {/* Desktop Grid */}
         <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-12 max-sm:mt-5 max-sm:gap-2.5">
           {ExploreData.map((card) => (
@@ -119,4 +124,5 @@ function ExploreContainer() {
     </div>
   );
 }
+
 export default ExploreContainer;
