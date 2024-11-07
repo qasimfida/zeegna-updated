@@ -1,6 +1,6 @@
 import React from "react";
 
-const EmailIcon = () => (
+const Email = () => (
   <svg
     width="120"
     height="120"
@@ -53,4 +53,4 @@ const EmailIcon = () => (
   </svg>
 );
 
-export default EmailIcon;
+export default Email;
