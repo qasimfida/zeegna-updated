@@ -19,13 +19,13 @@ function ExploreContainer() {
       <div className=" xl:mx-[70px]  max-sm:mx-0  max-lg:mx-[27px]">
         <div className="text-center mt-[80px] max-sm:mt-[50px] max-sm:px-[16px]">
           <h2 className="font-semibold text-xl md:text-[32px] text-[#1C1C1C] max-sm:text-[24px] ">
-            Explore help at home by city{" "}
+            Explore help at home by city
           </h2>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-4"></div>
           <p className="font-medium text-sm md:text-xl text-[#575757] mt-[20px] lg:w-[846px] mx-auto leading-5 max-sm:text-[16px]">
             From home repairs to cleaning to specialized care and more, find
             trusted professionals to keep your home running smoothly in your
-            city.{" "}
+            city.
           </p>
         </div>
 
