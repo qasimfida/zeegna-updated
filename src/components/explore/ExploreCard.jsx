@@ -3,14 +3,12 @@ import React from "react";
 const ExploreCard = ({ image, title }) => {
   return (
     <div className="relative max-w-xl rounded-[15px] overflow-hidden cursor-pointer mx-4 md:mx-0 group max-sm:mx-0">
-      {/* Image with hover scale effect */}
       <img
         className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
         src={image}
         alt={title}
       />
 
-      {/* Gradient overlay with hover darken effect */}
       <div className="absolute bottom-0 left-0 w-full p-[15px] bg-gradient-to-t from-black/60 via-transparent to-transparent text-white group-hover:from-black/80 transition-colors duration-500">
         <h5 className="text-base font-semibold">{title}</h5>
         <div className="flex items-center gap-[10px] mt-[5px]">
