@@ -53,7 +53,7 @@ const HomeCareSlider = () => {
   ];
   return (
     <>
-      <section className="gap-0 lg:gap-[106px] max-sm:pt-[58px] pt-[60px] lg:pt-[80px] max-sm:pl-[16px] max-sm:pr-[14px] px-[27px] lg:pl-[90px] lg:pr-[71px] pb-[50px] lg:h-[494px] flex bg-[#F7F7F7]">
+      <section className=" gap-0 lg:gap-[106px] max-sm:pt-[58px] pt-[60px] lg:pt-[80px] max-sm:pl-[16px] max-sm:pr-[14px] px-[27px] lg:pl-[90px] lg:pr-[71px] pb-[50px] lg:h-[494px] flex bg-[#F7F7F7]">
         <div className="w-[364px] hidden lg:block">
           <img src={Banner} alt="img" />
         </div>

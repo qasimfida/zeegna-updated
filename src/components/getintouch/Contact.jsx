@@ -1,6 +1,7 @@
 import React from "react";
 import PhoneIcon from "../../assets/icons/contacticons/PhoneIcon";
-
+import Dollericon from "../../assets/icons/contacticons/Dollericon";
+import Personicon from "../../assets/icons/contacticons/Personicon"
 import "../../assets/css/input.css";
 import { useState } from "react";
 import Clockicon from "../../assets/icons/contacticons/Clockicon";
@@ -30,8 +31,8 @@ const Contact = () => {
             </div>
             <input type="checkbox" checked={activeTab === 1} readOnly />
           </div>
-          <h2 className="text-base font-semibold py-2">I have a question</h2>
-          <p className="text-sm font-medium">
+          <h2 className="text-[16px] font-semibold py-2">I have a question</h2>
+          <p className="text-[14px] text-[#5E5E6F] font-medium">
             Need more information? We're here to help. Get answers to your
             questions quickly.
           </p>
@@ -45,12 +46,12 @@ const Contact = () => {
         >
           <div className="flex justify-between items-center">
             <div>
-              <PhoneIcon />{" "}
+              <Personicon />{" "}
             </div>
             <input type="checkbox" checked={activeTab === 2} readOnly />
           </div>
           <h2 className="text-base font-semibold py-2">I have an idea</h2>
-          <p className="text-sm font-medium">
+          <p className="text-[14px] text-[#5E5E6F]  font-medium">
             Have a suggestion or feedback? Share your ideas with us – we'd love
             to hear from you!
           </p>
@@ -64,14 +65,14 @@ const Contact = () => {
         >
           <div className="flex justify-between items-center">
             <div>
-              <PhoneIcon />{" "}
+              <Dollericon />{" "}
             </div>
             <input type="checkbox" checked={activeTab === 3} readOnly />
           </div>
           <h2 className="text-base font-semibold py-2">
             I need to talk to Sales
           </h2>
-          <p className="text-sm font-medium">
+          <p className="text-[14px] text-[#5E5E6F]  font-medium">
             Ready to take the next step? Connect with our sales team for
             personalized assistance.
           </p>
@@ -80,7 +81,7 @@ const Contact = () => {
       {activeTab === 1 && <Form />}
       {activeTab === 2 && <Form />}
       {activeTab === 3 && <Salesform />}
-      <div className=" flex gap-4 bg-[#f7f7f7] p-5  rounded-lg mt-5">
+      <div className=" w-full flex gap-4 bg-[#f7f7f7] p-5  rounded-lg mt-5">
         <Clockicon />
         <div className="">
           <h1 className="text-lg font-semibold">Support Hours</h1>

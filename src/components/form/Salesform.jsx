@@ -11,7 +11,7 @@ const Salesform = () => {
     <form className="bg-[#F7F7F7] mt-[30px] flex justify-center rounded w-full poppin">
       <div className="w-[80%] py-12 flex flex-col justify-center">
         <select
-          className="border border-gray-300 rounded-full px-4 py-3	w-full text-gray-600 text-sm"
+          className="border border-gray-300 rounded-lg bg-transparent px-4 py-3	w-full text-gray-600 text-sm"
           defaultValue="pleade"
         >
           <option value="please select a topic">Please select a topic</option>
@@ -36,9 +36,9 @@ const Salesform = () => {
           value={value}
           onChange={setValue}
           placeholder="Please enter your comments"
-          className="bg-white mt-4 rounded-lg border-none"
+          className="bg-transparent mt-4 rounded-lg border-none"
         />
-        <div className="flex items-center flex-col mt-3 bg-white py-4 gap-2">
+        <div className="flex items-center flex-col mt-3 border-dashed rounded-lg border-[2px] border-[#B6B9CE] py-4 gap-2">
           <div>
             <Uploadicon />
           </div>
@@ -57,7 +57,7 @@ const Salesform = () => {
           </p>
         </div>
         <div className="flex justify-center mt-10">
-          <button className="py-2 px-14 bg-black text-white rounded-full">
+          <button className="py-2 px-14 bg-black hover:bg-transparent hover:text-black hover:border-black border-[1px] text-white rounded-full">
             Submit
           </button>
         </div>

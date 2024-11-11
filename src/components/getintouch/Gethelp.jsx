@@ -5,7 +5,7 @@ import img from "../../../public/images/getHelp.png";
 const Gethelp = () => {
   return (
     <>
-      <section className="sm:mx-8 mt-4 poppin">
+      <section className="sm:mx-8 mt-4 poppin mb-[80px]">
         <div className="flex-col flex sm:flex-row justify-between gap-4 bg-[#e6fff0] sm:px-20 pl-2 rounded-2xl py-16">
           <div className="sm:w-[45%] w-auto flex flex-col items-start justify-center gap-3">
             <h1 className="text-4xl font-semibold">Get help now </h1>
