@@ -16,7 +16,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="mt-3 sm:mx-40 flex flex-col items-center poppin">
+    <section className="mt-[40px] sm:mx-40 flex flex-col items-center poppin">
       <div className="grid md:grid-cols-3 gap-5">
         {/* Tab one */}
         <div
@@ -81,7 +81,7 @@ const Contact = () => {
       {activeTab === 1 && <Form />}
       {activeTab === 2 && <Form />}
       {activeTab === 3 && <Salesform />}
-      <div className=" w-full flex gap-4 bg-[#f7f7f7] p-5  rounded-lg mt-5">
+      <div className=" w-full flex gap-4 bg-[#f7f7f7] p-5 mb-[80px] rounded-lg mt-5">
         <Clockicon />
         <div className="">
           <h1 className="text-lg font-semibold">Support Hours</h1>

@@ -15,7 +15,7 @@ const Gethelp = () => {
             </p>
             <Link to="/help-center">
               {" "}
-              <button className="py-[10px] px-[30px] bg-black text-white cursor-pointer rounded-3xl">
+              <button className="py-[10px] px-[30px] bg-black hover:bg-transparent hover:text-black hover:border-black border-[1px] text-white cursor-pointer rounded-3xl">
                 Visit help center
               </button>
             </Link>
