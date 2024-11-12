@@ -86,11 +86,7 @@ const HelpCardsGrid = () => {
             </p>
             <div className="mt-10 md:flex max-lg:justify-center max-lg:items-center">
               <Link
-                to={
-                  activeButton === "families"
-                    ? "/family-help-center"
-                    : "/partner-help-center"
-                }
+                to="/get-in-touch"
                 className="rounded-full flex items-center justify-center gap-4 px-[58px]  text-base font-medium py-3.5 max-sm:py-3 bg-[#1C1C1C] text-white max-sm:mb-[30px] hover:bg-white hover:text-black border border-black"
               >
                 Contact Support

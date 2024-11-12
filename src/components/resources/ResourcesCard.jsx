@@ -18,10 +18,14 @@ const ResourcesCard = ({
 
   return (
     <div
-      className={` xl:h-[450px]  bg-white border shadow-sm rounded-[15px] border-[#EAEAF1] relative group cursor-pointer poppin ${className}`}
+      className={` xl:h-[450px]  bg-white border shadow-sm rounded-[15px] border-[#EAEAF1] relative group cursor-pointer poppin overflow-hidden ${className}`}
     >
       <a href="#">
-        <img className="rounded-t-lg text-[#5E5E6F]" src={image} alt={title} />
+        <img
+          className="rounded-t-lg text-[#5E5E6F] transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-4"
+          src={image}
+          alt={title}
+        />
       </a>
       <div className="xl:h-[250px] max-sm:h-auto">
         <div className={`pl-[15px] pt-[15px] pb-[5px] pr-[25px] py-3`}>

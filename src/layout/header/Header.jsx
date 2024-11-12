@@ -51,7 +51,7 @@ function Header({ styles = "" }) {
             <Link
               to="/help-section"
               className={`inline-flex items-center   px-1 pt-1 hover:border-gray-300 hover:text-gray-700 ${
-                isActive("/help-center") ? "text-[#109088]" : "text-[#5E5E6F]"
+                isActive("/help-section") ? "text-[#109088]" : "text-[#5E5E6F]"
               }`}
             >
               Find help

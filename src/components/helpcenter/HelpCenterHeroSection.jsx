@@ -9,7 +9,7 @@ function HelpCenterHeroSection({
   const location = useLocation();
 
   return (
-    <section className="items-center bg-[#F7F7F7] w-full">
+    <section className="items-center bg-[#F7F7F7] w-full ">
       <div className="flex justify-start  w-full px-[40px] max-sm:px-[16px] max-sm:py-[16px] py-[20px] text-gray-500 text-sm font-medium">
         <Link
           to="/"
@@ -36,10 +36,10 @@ function HelpCenterHeroSection({
         <div className="flex w-full mx-auto text-left">
           <div className="relative inline-flex items-center mx-auto align-middle">
             <div className="text-center">
-              <h1 className="max-w-5xl text-[28px] font-semibold leading-none tracking-tighter md:text-5xl lg:text-[32px] lg:max-w-5xl">
+              <h1 className="max-w-5xl text-[28px] font-semibold   lg:text-[32px] lg:max-w-5xl">
                 {changeTheHeading}
               </h1>
-              <p className="max-w-xl max-sm:w-full mx-auto mt-[10px] text-[19px] md:text-[20px] leading-relaxed text-[#5E5E6F]">
+              <p className="max-w-xl max-sm:w-full mx-auto mt-[10px] text-[19px] md:text-[20px] font-medium text-[#5E5E6F]">
                 {changeTheText}
               </p>
             </div>

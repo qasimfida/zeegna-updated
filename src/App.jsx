@@ -19,10 +19,8 @@ import ArticlePage from "./pages/ArticlePage";
 import HelpCard from "./components/helpsection/Help";
 import ArticleContainer from "./components/article/ArticleTextContainer";
 import ScrollToTop from "./components/scroll/ScrollTop";
-
 import Getintouchpage from "./pages/Getintouchpage";
 import ExploreContainer from "./components/explore/ExploreContainer";
-
 import BecomePartner from "./pages/BecomePartner";
 import HomeCareSlider from "./components/homeCareSlider/HomeCareSlider";
 import StayConnectedSection from "./components/stayConnected/StayConnected";
@@ -38,10 +36,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/article" element={<ArticlePage />} />
-
           <Route path="/guiding-hero" element={<GuidingHeroSection />} />
           <Route path="/explore" element={<ExploreContainer />} />
-
           <Route path="/guiding-platform" element={<GuidingPlatform />} />
           <Route path="/guiding-review" element={<GuidingReview />} />
           <Route path="/get-in-touch" element={<Getintouchpage />} />
@@ -50,7 +46,6 @@ function App() {
           <Route path="/help-center" element={<HelpCardsGrid />} />
           <Route path="/family-help-center" element={<FamilyPartnerHelp />} />
           <Route path="/become-partner" element={<BecomePartner />} />
-
           <Route
             path="/partner-help-center"
             element={<PartnerHelpContainer />}
@@ -61,7 +56,6 @@ function App() {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/check-email" element={<CheckYourEmail />} />
         <Route path="/new-password" element={<NewPassword />} />
-
         <Route path="/help-sections" element={<HelpCard />} />
         <Route path="/home-care-slider" element={<HomeCareSlider />} />
       </Routes>
