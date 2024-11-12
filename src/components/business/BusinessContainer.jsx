@@ -62,7 +62,7 @@ const BusinessContainer = ({ title, description, Icon }) => {
       </section>
 
       {/* section 2 */}
-      <section className="bg-[#F7F7F7]">
+      <section className="bg-[#F7F7F7] poppin">
         <div className="sm:mx-20 py-20 mt-20">
           <div className="text-center">
             <h2 className="font-semibold text-[32px] max-sm:text-[24px]">

@@ -5,7 +5,7 @@ import AccessData from "../../data/AccessData";
 const AccessContainer = () => {
   return (
     <div className="bg-[#fffff] poppin">
-      <div className=" lg:mx-[70px] max-sm:mx-[16px] md:mx-[27px] py-20  max-sm:py-0 max-sm:pt-[30px] max-sm:pb-[50px] ">
+      <div className=" lg:mx-[70px] max-sm:mx-[16px] md:mx-[27px] pb-20 py-24  max-sm:py-0 max-sm:pt-[30px] max-sm:pb-[50px] ">
         <div className="text-center">
           <h2 className="font-semibold text-xl md:text-[32px]">
             Exclusive access to jobs in your area

@@ -17,10 +17,12 @@ function Header({ styles = "" }) {
   const bgColor =
     location.pathname === "/resources"
       ? "bg-[#F7F7F7]"
-      : location.pathname === "/help-center" || location.pathname === "/article"
+      : location.pathname === "/help-center" ||
+        location.pathname === "/article" ||
+        location.pathname === "/help-section"
       ? "bg-[#F7F7F7]"
       : location.pathname === "/become-partner"
-      ? "bg-[#F5FFF3]"
+      ? "bg-[#eefff0]"
       : "bg-[#FFFDFD]";
 
   const isActive = (path) => location.pathname === path;
@@ -47,7 +49,7 @@ function Header({ styles = "" }) {
           {/* Desktop Menu */}
           <div className="hidden lg:flex lg:space-x-8 text-[17px] font-semibold text-[#5E5E6F]">
             <Link
-              to="/help-center"
+              to="/help-section"
               className={`inline-flex items-center   px-1 pt-1 hover:border-gray-300 hover:text-gray-700 ${
                 isActive("/help-center") ? "text-[#109088]" : "text-[#5E5E6F]"
               }`}
@@ -113,7 +115,7 @@ function Header({ styles = "" }) {
           {/* Menu Items */}
           <div className="px-4 mb-[135px]">
             <Link
-              to="/help-center"
+              to="/help-section"
               className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b"
               onClick={togglePanel}
             >

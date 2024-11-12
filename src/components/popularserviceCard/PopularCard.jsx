@@ -2,9 +2,13 @@ import React from "react";
 
 const PopularCard = ({ image, title }) => {
   return (
-    <div className="max-w-xl bg-white border rounded-lg border-[#EAEAF1] relative group cursor-pointer poppin max-sm:mx-4 xl:mx-0 ">
+    <div className="max-w-xl bg-white border rounded-lg border-[#EAEAF1] relative group cursor-pointer poppin max-sm:mx-4 xl:mx-0 overflow-hidden ">
       <a href="#">
-        <img className="rounded-t-lg" src={image} alt={title} />
+        <img
+          className="rounded-t-lg transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-4"
+          src={image}
+          alt={title}
+        />
       </a>
 
       <div className="px-5 py-[15px] flex items-center justify-between">
