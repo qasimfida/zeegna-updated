@@ -23,6 +23,8 @@ function Header({ styles = "" }) {
       ? "bg-[#F7F7F7]"
       : location.pathname === "/become-partner"
       ? "bg-[#eefff0]"
+      : location.pathname === "/guiding-hero"
+      ? "bg-[#FFF9C6]"
       : "bg-[#FFFDFD]";
 
   const isActive = (path) => location.pathname === path;
