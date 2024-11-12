@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import FamilyHelpData from "../../data/FamilyHelpData";
+import FamilyHelpData from "../../data/FamilyHelpData"; // Your provided FamilyHelpData
 import ChoosingProviders from "../../assets/icons/helpcentericons/ChoosingProviders";
 import ServiceDetail from "../../assets/icons/helpcentericons/ServiceDetails";
 import BookingServices from "../../assets/icons/helpcentericons/BookingServices";
@@ -13,17 +13,10 @@ import AccountProfile from "../../assets/icons/helpcentericons/AccountProfile";
 import TrustSafety from "../../assets/icons/helpcentericons/TrustSafety";
 import FindingHelp from "../../assets/icons/helpcentericons/FindingHelp";
 import GettingStarted from "../../assets/icons/helpcentericons/GettingStarted";
-import Box from "@mui/material/Box";
-import LinearProgress from "@mui/material/LinearProgress";
+import "../../assets/css/scrollBar.css";
 
 function Tabs() {
-  const [activeTab, setActiveTab] = useState(0);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [progress, setProgress] = useState(0);
-  const [familyHelpData, setFamilyHelpData] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  const cardsPerPage = activeTab === 0 ? 5 : 5;
+  const [activeTab, setActiveTab] = useState(0); 
 
   const tabs = [
     { title: "Getting started", icon: <GettingStarted /> },
@@ -35,57 +28,25 @@ function Tabs() {
     { title: "Payments & fees", icon: <PaymentsFees /> },
     { title: "Account & profile", icon: <AccountProfile /> },
     { title: "Trust & safety", icon: <TrustSafety /> },
+    { title: "Trust & safety", icon: <TrustSafety /> },
+    { title: "Trust & safety", icon: <TrustSafety /> },
+    { title: "Trust & safety", icon: <TrustSafety /> },
   ];
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("family-help-data");
-        const data = await response.json();
-        setFamilyHelpData(data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
   const handleTabClick = (index) => {
-    setActiveTab(index);
-    setCurrentPage(1);
-    setProgress((index + 1) * (90 / tabs.length));
-  };
-
-  const handlePageChange = (newPage) => {
-    setCurrentPage(newPage);
-    setProgress((prev) => Math.min(prev + 100 / tabs.length, 100));
-  };
-
-  const paginate = (data) => {
-    const startIndex = (currentPage - 1) * cardsPerPage;
-    return data.slice(startIndex, startIndex + cardsPerPage);
+    setActiveTab(index); 
   };
 
   const getFilteredData = () => {
-    if (activeTab === 0) {
-      return familyHelpData;
-    }
-    return [];
+    return FamilyHelpData;
   };
 
-  const paginatedData = paginate(getFilteredData());
-
-  if (loading) {
-    return <LinearProgress />;
-  }
+  const filteredData = getFilteredData();
 
   return (
-    <div className="w-full py-[40px]  poppin">
+    <div className="w-full py-[40px] poppin">
       <Swiper
-        className="items-center justify-center flex flex-row w-full pb-[20px]"
+        className="items-center justify-center flex flex-row w-full pb-[20px] container overflow-x-scroll"
         spaceBetween={5}
         slidesPerView={3}
         breakpoints={{
@@ -96,10 +57,7 @@ function Tabs() {
         }}
       >
         {tabs.map((tab, index) => (
-          <SwiperSlide
-            key={index}
-            className="flex items-center justify-center w-full"
-          >
+          <SwiperSlide key={index} className="flex items-center justify-center w-full ">
             <button
               onClick={() => handleTabClick(index)}
               className={`pb-[20px] flex flex-col items-center font-semibold transition-colors duration-300 ${
@@ -115,49 +73,21 @@ function Tabs() {
               >
                 {tab.icon}
               </span>
-              <span className="text-[14px] text[#5E5E6F] font-semibold">
-                {tab.title}
-              </span>
+              <span className="text-[13px] text-[#5E5E6F] font-semibold">{tab.title}</span>
             </button>
           </SwiperSlide>
         ))}
       </Swiper>
-
-      <Box sx={{ width: "100%" }}>
-        <LinearProgress
-          variant="determinate"
-          value={progress}
-          sx={{
-            height: "2px",
-            backgroundColor: "#E0E0E0",
-            "& .MuiLinearProgress-bar": { backgroundColor: "#109088" },
-          }}
-        />
-      </Box>
-
-      <div>
-        {paginatedData.map((data) => (
-          <familyHelpData
-            key={data.id}
-            title={data.title}
-            description={data.description}
-          />
+      <div className="flex items-center justify-center flex-col  py-[40px]">
+        {filteredData.map((data) => (
+          <div key={data.id} className="px-[16px] md:px-[300px] py-[20px] flex flex-col gap-[10px] ">
+            <h2 className="text-xl font-semibold">{data.title}</h2>
+            <p className="text-gray-600">{data.description}</p>
+          </div>
         ))}
       </div>
-
-      <Pagination
-        totalCards={getFilteredData().length}
-        cardsPerPage={cardsPerPage}
-        currentPage={currentPage}
-        onPageChange={handlePageChange}
-      />
     </div>
   );
-}
-
-function Pagination({ totalCards, cardsPerPage, currentPage, onPageChange }) {
-  const totalPages = Math.ceil(totalCards / cardsPerPage);
-  if (totalPages === 1) return null;
 }
 
 export default Tabs;

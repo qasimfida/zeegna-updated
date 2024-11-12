@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import PaymentsFees from "../../assets/icons/helpcentericons/PaymentsFees";
 import AccountProfile from "../../assets/icons/helpcentericons/AccountProfile";
 import TrustSafety from "../../assets/icons/helpcentericons/TrustSafety";
-
 import GettingStarted from "../../assets/icons/helpcentericons/GettingStarted";
 import ServiceListing from "../../assets/icons/helpcentericons/ServiceListing";
 import ClientInteraction from "../../assets/icons/helpcentericons/ClientInteraction";
@@ -16,8 +15,8 @@ import MarketingVisibility from "../../assets/icons/helpcentericons/MarketingVis
 import SupportResources from "../../assets/icons/helpcentericons/SupportResources";
 import LegalCompliance from "../../assets/icons/helpcentericons/LegalCompliance";
 
-import FamilyHelpCard from "./FamilyPartnerCards";
 import PartnerHelpData from "../../data/PartnerHelpData"; // Partner Help data array
+import PartnerHelpCard from "../../data/PartnerHelpCard";
 
 function PartnerTabs() {
   const [activeTab, setActiveTab] = useState(0);
@@ -29,11 +28,11 @@ function PartnerTabs() {
       icon: <GettingStarted className="h-10 w-10 bg-black rounded-full p-10" />,
       content: (
         <div className="gap-8 mx-10 max-sm:mt-4 max-sm:mx-0 justify-center poppin">
-          {PartnerHelpData.map((card) => (
-            <FamilyHelpCard
+          {PartnerHelpData.slice(0, 3).map((card) => (
+            <PartnerHelpCard
               key={card.id}
               title={card.title}
-              description={card.description}
+              description={card.description || "No description available"}
             />
           ))}
         </div>
@@ -44,11 +43,11 @@ function PartnerTabs() {
       icon: <AccountProfile className="h-10 w-10 bg-black rounded-full p-10" />,
       content: (
         <div className="gap-8 mx-10 max-sm:mt-4 max-sm:mx-0 justify-center poppin">
-          {PartnerHelpData.map((card) => (
-            <FamilyHelpCard
+          {PartnerHelpData.slice(3, 5).map((card) => (
+            <PartnerHelpCard
               key={card.id}
               title={card.title}
-              description={card.description}
+              description={card.description || "No description available"}
             />
           ))}
         </div>
@@ -59,11 +58,11 @@ function PartnerTabs() {
       icon: <ServiceListing className="h-10 w-10 bg-black rounded-full p-10" />,
       content: (
         <div className="gap-8 mx-10 max-sm:mt-4 max-sm:mx-0 justify-center poppin">
-          {PartnerHelpData.map((card) => (
-            <FamilyHelpCard
+          {PartnerHelpData.slice(1, 4).map((card) => (
+            <PartnerHelpCard
               key={card.id}
               title={card.title}
-              description={card.description}
+              description={card.description || "No description available"}
             />
           ))}
         </div>
@@ -71,16 +70,14 @@ function PartnerTabs() {
     },
     {
       title: "Client interaction",
-      icon: (
-        <ClientInteraction className="h-10 w-10 bg-black rounded-full p-10" />
-      ),
+      icon: <ClientInteraction className="h-10 w-10 bg-black rounded-full p-10" />,
       content: (
         <div className="gap-8 mx-10 max-sm:mt-4 max-sm:mx-0 justify-center poppin">
-          {PartnerHelpData.map((card) => (
-            <FamilyHelpCard
+          {PartnerHelpData.slice(2, 5).map((card) => (
+            <PartnerHelpCard
               key={card.id}
               title={card.title}
-              description={card.description}
+              description={card.description || "No description available"}
             />
           ))}
         </div>
@@ -91,11 +88,11 @@ function PartnerTabs() {
       icon: <PaymentsFees className="h-10 w-10 bg-black rounded-full p-10" />,
       content: (
         <div className="gap-8 mx-10 max-sm:mt-4 max-sm:mx-0 justify-center poppin">
-          {PartnerHelpData.map((card) => (
-            <FamilyHelpCard
+          {PartnerHelpData.slice(0, 3).map((card) => (
+            <PartnerHelpCard
               key={card.id}
               title={card.title}
-              description={card.description}
+              description={card.description || "No description available"}
             />
           ))}
         </div>
@@ -106,11 +103,11 @@ function PartnerTabs() {
       icon: <TrustSafety className="h-10 w-10 bg-black rounded-full p-10" />,
       content: (
         <div className="gap-8 mx-10 max-sm:mt-4 max-sm:mx-0 justify-center poppin">
-          {PartnerHelpData.map((card) => (
-            <FamilyHelpCard
+          {PartnerHelpData.slice(3, 6).map((card) => (
+            <PartnerHelpCard
               key={card.id}
               title={card.title}
-              description={card.description}
+              description={card.description || "No description available"}
             />
           ))}
         </div>
@@ -118,16 +115,14 @@ function PartnerTabs() {
     },
     {
       title: "Marketing & visibility",
-      icon: (
-        <MarketingVisibility className="h-10 w-10 bg-black rounded-full p-10" />
-      ),
+      icon: <MarketingVisibility className="h-10 w-10 bg-black rounded-full p-10" />,
       content: (
         <div className="gap-8 mx-10 max-sm:mt-4 max-sm:mx-0 justify-center poppin">
-          {PartnerHelpData.map((card) => (
-            <FamilyHelpCard
+          {PartnerHelpData.slice(0, 3).map((card) => (
+            <PartnerHelpCard
               key={card.id}
               title={card.title}
-              description={card.description}
+              description={card.description || "No description available"}
             />
           ))}
         </div>
@@ -135,16 +130,14 @@ function PartnerTabs() {
     },
     {
       title: "Support & resources",
-      icon: (
-        <SupportResources className="h-10 w-10 bg-black rounded-full p-10" />
-      ),
+      icon: <SupportResources className="h-10 w-10 bg-black rounded-full p-10" />,
       content: (
         <div className="gap-8 mx-10 max-sm:mt-4 max-sm:mx-0 justify-center poppin">
-          {PartnerHelpData.map((card) => (
-            <FamilyHelpCard
+          {PartnerHelpData.slice(2, 4).map((card) => (
+            <PartnerHelpCard
               key={card.id}
               title={card.title}
-              description={card.description}
+              description={card.description || "No description available"}
             />
           ))}
         </div>
@@ -152,16 +145,14 @@ function PartnerTabs() {
     },
     {
       title: "Legal & compliance",
-      icon: (
-        <LegalCompliance className="h-10 w-10 bg-black rounded-full p-10" />
-      ),
+      icon: <LegalCompliance className="h-10 w-10 bg-black rounded-full p-10" />,
       content: (
         <div className="gap-8 mx-10 max-sm:mt-4 max-sm:mx-0 justify-center poppin">
-          {PartnerHelpData.map((card) => (
-            <FamilyHelpCard
+          {PartnerHelpData.slice(1, 3).map((card) => (
+            <PartnerHelpCard
               key={card.id}
               title={card.title}
-              description={card.description}
+              description={card.description || "No description available"}
             />
           ))}
         </div>

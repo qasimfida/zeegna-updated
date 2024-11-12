@@ -57,6 +57,7 @@ function HomeCareSlides({ activeTab, setActiveTab }) {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className=""
       >
         {tabs.map((tab, index) => (
           <SwiperSlide key={index} className="flex items-center relative">
