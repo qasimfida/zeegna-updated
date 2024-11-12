@@ -1,5 +1,5 @@
-/* Custom scrollbar for Tailwind CSS */
-.w-full.overflow-x-scroll::-webkit-scrollbar {
+
+/* .w-full.overflow-x-scroll::-webkit-scrollbar {
     height: 3px; 
 }
 
@@ -16,4 +16,17 @@
 .w-full.overflow-x-scroll {
     scrollbar-width: thin; 
     scrollbar-color: #109088 #f1f1f1; 
-}
+} */
+
+    .container::-webkit-scrollbar{
+        width:1px;
+        background-color:#f1f1f1;
+        height: 4px;
+        }
+        
+    .container::-webkit-scrollbar-thumb{
+    background: #109088;
+    border-radius:1px;
+    width: 1px;
+    height: 4px;
+    }

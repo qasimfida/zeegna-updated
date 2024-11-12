@@ -17,8 +17,6 @@ import Popular from "../../assets/icons/resources/PopularIcon";
 import Star from "../../assets/icons/resources/StarIcon";
 import Transportation from "../../assets/icons/resources/Transportation";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
-import Box from '@mui/material/Box';
-import LinearProgress from '@mui/material/LinearProgress';
 
 function Tabs() {
   const [activeTab, setActiveTab] = useState(0);
@@ -126,7 +124,7 @@ function Tabs() {
   return (
     <div className="w-full py-8 poppin">
         <Swiper
-          className="w-full overflow-x-scroll"
+          className="w-full container overflow-x-scroll"
         spaceBetween={5}
         slidesPerView={3}
         breakpoints={{
@@ -164,22 +162,11 @@ function Tabs() {
               >
                 {tab.icon}
               </span>
-              <span>{tab.title}</span>
+              <span className="text-[13px] font-semibold">{tab.title}</span>
             </button>
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <Box sx={{ width: '100%' }}>
-        <LinearProgress variant="determinate" value={progress} 
-            sx={{ 
-              height: "2px",
-              backgroundColor: '#E0E0E0', 
-              '& .MuiLinearProgress-bar': {
-                backgroundColor: '#109088',
-              },
-            }}
-        />
-      </Box> */}
 
       <div className="py-[30px] rounded-lg bg-white">
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-[20px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justify-center poppin">

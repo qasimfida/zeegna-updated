@@ -4,7 +4,7 @@ const FormInput = ({ type = "text", placeholder = "text" }) => {
   return (
     <input
       type={type}
-      className="rounded-full md:w-[49%] w-full pl-5 py-3 border border-[#DBDBE0] poppin"
+      className="bg-transparent rounded-lg md:w-[49%] w-full pl-5 py-3 border border-[#DBDBE0] poppin"
       placeholder={placeholder}
     />
   );

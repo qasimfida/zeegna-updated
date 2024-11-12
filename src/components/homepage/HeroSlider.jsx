@@ -58,12 +58,12 @@ const HeroSlider = () => {
                   key={index}
                   className="text-center flex flex-col items-center"
                 >
-                  <h2 className="text-black text-[19px] max-sm:[17px] font-semibold text-wrap text-center">
+                  <hp className="text-black md:px-[5rem] text-[19px] max-sm:[17px] font-semibold text-wrap text-center">
                     We found the perfect caregiver for mom. She's kind and
                     incredibly helpful. The process of getting the care my mom
                     needed was simple, and now she's happy and well taken care
                     of. It feels wonderful to see her content.
-                  </h2>
+                  </hp>
                   <img src={person} alt="person" className="pt-[30px]" />
                   <p className="text-[#5e5e6f] pt-[19px] pb-[35px] max-sm:pb-[60px] text-[16px]">
                     Sara R. Charlotte, NC
