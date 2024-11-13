@@ -63,10 +63,10 @@ function Tabs() {
           <SwiperSlide key={index} className="flex items-center justify-center w-full ">
             <button
               onClick={() => handleTabClick(index)}
-              className={`pb-[20px] flex flex-col items-center font-semibold transition-colors duration-300 ${
+              className={`pb-[20px] flex flex-col items-center transition-colors duration-300 ${
                 activeTab === index
                   ? "text-[#5E5E6F] font-bold"
-                  : "text-[#5E5E6F]"
+                  : "text-[#5E5E6F] font-semibold"
               }`}
             >
               <span
@@ -76,7 +76,7 @@ function Tabs() {
               >
                 {tab.icon}
               </span>
-              <span className="text-[13px] text-[#5E5E6F] font-semibold">{tab.title}</span>
+              <span className="text-[13px]">{tab.title}</span>
             </button>
           </SwiperSlide>
         ))}
