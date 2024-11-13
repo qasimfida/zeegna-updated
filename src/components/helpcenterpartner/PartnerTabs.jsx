@@ -162,7 +162,7 @@ function PartnerTabs() {
 
   return (
     <div className="w-full mx-auto px-4 py-8 poppin">
-      {/* Swiper for Tab Navigation */}
+    
       <Swiper
         spaceBetween={10}
         slidesPerView={3}

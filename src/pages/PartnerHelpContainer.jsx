@@ -26,6 +26,7 @@ function PartnerHelpContainer() {
         }
       />
       <Tabs />
+      {/* <PartnerTabs /> */}
       <div className=" flex flex-col items-center max-sm:gap-[20px] md:mx-[40px] lg:mx-auto max-sm:rounded-[30px] justify-center max-w-[840px] mx-auto p-10	bg-[#DEFFED] rounded-[40px] mb-20 max-sm:text-center max-sm:py-[50px] max-sm:px-[5px] max-sm:mx-[16px] max-sm:mb-[50px]  poppin">
         <h1 className="text-2xl	 tracking-tight font-semibold sm:text md:text-">
           Did you find the help you were looking for?

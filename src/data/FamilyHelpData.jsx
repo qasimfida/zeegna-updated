@@ -1,41 +1,41 @@
 const FamilyHelpData = [
   {
     id: 1,
-    title: "still working on this section!!!!!!!!!!!!",
+    title: "What is Zeegna’s mission and how does the platform help families?",
     description:
-      "ZyraHealth is a dedicated platform built to address the growing need for quality care at home as America’s senior population surges to 77 million by 2034. As 90% of seniors express a desire to age in their own homes, ZyraHealth’s mission is to make that aspiration a reality. We do this by connecting families with.",
+      "Zeegna’s mission is to make aging at home not just possible, but comfortable and empowering for families. We believe that everyone should have access to the right care and support, and we’re committed to helping families navigate this important journey with ease and confidence. Our platform brings together a trusted network of providers who offer services ranging from personal",
   },
   {
     id: 2,
-    title: "What types of companies can list their services on ZyraHealth?",
+    title: "How do you improve the experience of finding care for seniors?",
     description:
-      "ZyraHealth is all about bringing the right care and services to families who need them. If your business helps seniors age at home, we’re here to connect you with families actively searching for the services you offer. Here’s how your business can fit into our platform: Personal care: If you provide home care or home health services.",
+      "We improve the experience of finding care for seniors by making the process simple, personalized, and accessible. Instead of spending hours searching across different platforms or providers, families can use our platform to find everything they need in one place. With an easy-to-use interface, you can filter by specific needs—whether it's personal care, home maintenance, or specialized.",
   },
   {
     id: 3,
-    title: "How does joining the ZyraHealth network benefit service providers?",
+    title: "How can I find the right care for my loved one?",
     description:
-      "Becoming a part of the ZyraHealth network means more than just listing your services. It’s about joining a platform that is designed to connect you directly with families who are actively seeking care solutions. With the home care market projected to reach $460 billion, there’s an incredible opportunity to expand your business by being part of our trusted provider network",
+      "Finding the right care for your loved one starts with understanding their specific needs, and our platform is designed to guide you through that process. You can begin by searching for services based on the type of care required—whether it’s personal care, companionship, home maintenance, or specialized medical support. You can easily filter providers by location, availability.",
   },
   {
     id: 4,
     title:
-      "How does the application process work to join the ZyraHealth network?",
+      "What type of services are available for me?",
     description:
-      "The application process to join the ZyraHealth network is simple and starts online. First, businesses select the type of services they offer, whether it’s personal care, home maintenance, wellness, or other categories. From there, you'll be guided through an application form that captures key details about your business, including service offerings, contact information, and areas of service",
+      "Our platform offers a wide range of services to meet the unique needs of seniors and their families. You can find personal care services such as assistance with bathing, dressing, and meal preparation, as well as companionship to help reduce isolation. We also provide access to home maintenance and repair services, ensuring that your loved one’s home remains safe and comfortable.  ",
   },
   {
     id: 5,
     title:
-      "What information do I need to provide during the application process? ",
+      "Do I need to pay anything to use any of the services?",
     description:
-      "During the application process, you’ll need to provide essential details about your business or individual services. This includes your business name, contact information, and a description of the services you offer. You’ll also need to submit documentation to verify that your business is legitimate, such as proof of business registration, any relevant licenses, and certifications that apply",
+      "Membership to browse and find local, trusted service providers on the platform is completely free. You can explore all the available services and compare providers without any cost. However, once you choose a service that fits your needs, you will need to make a payment directly to the provider for the specific service you select. Each provider sets their own rates, and you’ll be able to see the pricing.",
   },
   {
     id: 6,
-    title: "How long does it take to get approved and start offering services?",
+    title: "How do you choose the service providers featured on the platform?",
     description:
-      "The approval process typically takes between 3 to 5 business days, depending on the volume of applications and the thoroughness of the information you provide. We review each application to ensure that all service providers meet our standards for quality and trustworthiness. You’ll receive an email once your application is approved, and from there, you can begin listing your services.",
+      "We carefully select the service providers featured on the platform through a thorough vetting process. Each provider is required to submit relevant certifications, licenses, and proof of qualifications to ensure they meet our high standards of care. We also conduct background checks to verify their trustworthiness and professionalism. Additionally, we prioritize.",
   },
 ];
 

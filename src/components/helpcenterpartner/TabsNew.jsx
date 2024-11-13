@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import FamilyHelpData from "../../data/FamilyHelpData"; // Your provided FamilyHelpData
+import PartnerHelpData from "../../data/PartnerHelpData";
+import FamilyHelpData from "../../data/FamilyHelpData"; 
 import ChoosingProviders from "../../assets/icons/helpcentericons/ChoosingProviders";
 import ServiceDetail from "../../assets/icons/helpcentericons/ServiceDetails";
 import BookingServices from "../../assets/icons/helpcentericons/BookingServices";
@@ -17,7 +19,7 @@ import "../../assets/css/scrollBar.css";
 
 function Tabs() {
   const [activeTab, setActiveTab] = useState(0); 
-
+  const location = useLocation();
   const tabs = [
     { title: "Getting started", icon: <GettingStarted /> },
     { title: "Finding help", icon: <FindingHelp /> },
@@ -37,12 +39,13 @@ function Tabs() {
     setActiveTab(index); 
   };
 
-  const getFilteredData = () => {
+  const getPartnerData = () => {
+    return PartnerHelpData;
+  };
+  const getFamilyData = () => {
     return FamilyHelpData;
   };
-
-  const filteredData = getFilteredData();
-
+  const data = location.pathname.includes("partner") ? PartnerHelpData : FamilyHelpData;
   return (
     <div className="w-full py-[40px] poppin">
       <Swiper
@@ -79,10 +82,10 @@ function Tabs() {
         ))}
       </Swiper>
       <div className="flex items-center justify-center flex-col  py-[40px]">
-        {filteredData.map((data) => (
-          <div key={data.id} className="px-[16px] md:px-[300px] py-[20px] flex flex-col gap-[10px] ">
-            <h2 className="text-xl font-semibold">{data.title}</h2>
-            <p className="text-gray-600">{data.description}</p>
+        {data.map((item) => (
+          <div key={item.id} className="px-[16px] md:px-[300px] py-[20px] flex flex-col gap-[10px] ">
+            <h2 className="text-xl font-semibold">{item.title}</h2>
+            <p className="text-gray-600">{item.description}</p>
           </div>
         ))}
       </div>
