@@ -32,13 +32,13 @@ function GuidingHeroSection() {
           <img
             src="images/Ellipse.png"
             alt=""
-            class="ellipse-2 absolute lg:left-[5%] lg:top-[15%] bottom-[181px]  w-[147px] sm:w-[73px] md:w-[84px] lg:w-[147px] !w-[88px] sm:!w-[88px] md:!w-[84px] lg:!w-[147px]   sm:right-[70%]  "
+            class="ellipse-2 absolute lg:left-[5%] lg:top-[15%] bottom-[181px]  w-[147px] sm:w-[73px] md:w-[84px] lg:w-[147px] !w-[88px] sm:!w-[88px] md:!w-[84px] lg:!w-[147px]     "
           />
 
           <img
             src="images/Ellipse2.png"
             alt=""
-            class="ellipse-2 absolute lg:right-[7%] lg:top-[10%] bottom-[29px] left-[40%] w-[147px] sm:w-[73px] md:w-[84px] lg:w-[174px] !w-[106px] sm:!w-[106px] md:!w-[84px] lg:!w-[174px] "
+            class="ellipse-2 absolute lg:right-[7%] lg:top-[10%] max-sm:bottom-[29px] max-sm:left-[40%] w-[147px] sm:w-[73px] md:w-[84px] lg:w-[174px] !w-[106px] sm:!w-[106px] md:!w-[84px] lg:!w-[174px] "
           />
           <img
             src="images/Ellipse3.png"
