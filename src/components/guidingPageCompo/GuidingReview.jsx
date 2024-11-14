@@ -6,13 +6,13 @@ import ReviewIcon from "../../assets/icons/guidingSectionIcons/ReviewStar";
 function GuidingReview() {
   return (
     <>
-      <blockquote className="flex flex-col items-center p-4 poppin">
-        <p className="lg:w-5/12	 	 font-semibold text-center text-[30px] sm:text-lg md:text-xl xl:text-5xl md:text-2xl lg:text-3xl">
+      <div className="flex flex-col items-center gap-[30px] py-[80px] poppin">
+        <p className="lg:w-[853px] text-center font-semibold max-sm:text-center text-[40px]  ">
           "To care for those who once cared for us is one of the highest honors"
         </p>
-        <div className="flex items-center flex-col gap-3 mt-6 md:mt-12 item-center">
+        <div className="flex items-center flex-col gap-[30px]  item-center">
           <img
-            className="flex-shrink-0 w-24 h-24 border rounded-full border-black/10"
+            className="flex-shrink-0 w-[100px] h-[100px] border rounded-full border-black/10"
             src="images/Review.png"
             alt="Sebastiaan Kloos"
             loading="lazy"
@@ -21,14 +21,14 @@ function GuidingReview() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block font-medium tracking-tight text-base text-[#5E5E6F]"
+            className="inline-block font-medium  text-base text-[#5E5E6F]"
           >
             <p>Tia Walker, Business Consultant,</p>
             <p className="  text-center">Author & Speaker</p>
           </a>
         </div>
-      </blockquote>
-      <div class="relative mt-12 pb-12 flex w-full flex-col items-center sm:mt-24 bg-[#F7F7F7]">
+      </div>
+      <div class="relative  pb-[80px] flex w-full flex-col items-center  bg-[#F7F7F7]">
         <div
           className="absolute mx-auto flex max-w-fit items-center justify-center space-x-2
           overflow-hidden rounded-full bg-white px-6 py-6 transition-all top-[-44px]
@@ -37,7 +37,7 @@ function GuidingReview() {
           <ReviewIcon />
         </div>
 
-        <span class="mt-8 max-w-3xl	 text-center 	font-semibold   pt-8 text-[30px] sm:text-lg md:text-xl lg:text-4xl	">
+        <span class="pt-[113px]  max-w-3xl	 text-center 	font-semibold    text-[32px]  	">
           A future where every family thrives in the comfort of their home.
           Built together.
         </span>

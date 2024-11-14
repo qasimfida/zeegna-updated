@@ -5,32 +5,37 @@ import FlowerLeft from "../../assets/icons/guidingSectionIcons/FlowerLeft";
 function GuidingPlatform() {
   return (
     <>
-      <div className="bg-zinc-50 overflow-hidden pt-12 poppin">
+      <div className="bg-zinc-50 overflow-hidden pt-[80px] max-sm:pt-[50px] poppin">
         <div className="text-center">
-          <h2 className="font-semibold text-4xl">A platform with a purpose</h2>
+          <h2 className="font-semibold text-[32px] max-sm:text-[24px]">
+            A platform with a purpose
+          </h2>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>
         </div>
-        <div className="flex flex-col items-center justify-center py-12">
-          <div className="flex items-center justify-center space-x-4">
-            <FlowerLeft />
+        <div className="flex flex-col items-center justify-center pt-[50px] max-sm:pt-[30px] max-sm:mx-[23px] max-sm:text-center relative">
+          <div className="flex  justify-center  border-b border-gray-200 ">
+            <div className="w-full absolute lg:left-[22%] max-sm:left-0 top-[15%]">
+              <FlowerLeft />
+            </div>
 
-            <p className="text-center text-xl sm:text-2xl font-medium text-gray-700 xl:w-7/12	leading-5	">
+            <p className="text-center text-[20px] max-sm:text-[16px]  font-medium text-[#5E5E6F] xl:w-7/12 max-sm:w-[77%]	 pb-[35px] max-sm:pb-[20px]	">
               We're driven to enable families help their loved ones age at home
               with good health, dignity, and comfort.
             </p>
-
-            <FlowerIcon />
+            <div className="w-full absolute lg:left-[73%] max-sm:left-[85%] top-[15%] ">
+              <FlowerIcon />
+            </div>
           </div>
 
-          <div className="w-full my-6 border-t border-gray-200"></div>
+          <div className="w-full mt-[35px] max-sm:mt-[20px] "></div>
 
-          <div className="text-center text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl">
+          <div className="text-center text-lg max-sm:text-[16px] font-medium text-[#5E5E6F]  lg:max-w-[884px]">
             To deliver on this mission, we bring together services, resources,
             and tools to help families find support, make informed decisions,
             and thrive in the comfort of their home.
           </div>
         </div>
-        <div className="max-w-screen-xl 2xl:max-w-screen-3xl px-8 md:px-12 mx-auto py-12 lg:py-24 space-y-24  flex flex-col justify-center">
+        <div className="max-w-screen-xl 2xl:max-w-screen-3xl px-8 md:px-12 mx-auto py-[90px] lg:py-24 space-y-24  flex flex-col justify-center">
           <div className="flex flex-col sm:flex-row mx-auto">
             <a href="#_">
               <img
