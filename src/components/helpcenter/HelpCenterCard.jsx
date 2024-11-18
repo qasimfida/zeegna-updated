@@ -1,8 +1,12 @@
 import React from "react";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
-function HelpCenterCard({ name, description, Icon }) {
+function HelpCenterCard({ name, description, Icon, link }) {
+
+  const router = useNavigate();
   return (
-    <div
+    <a 
+    href={link}
       className={` rounded-xl border h-full border-[#EAEAF1] flex flex-col hover:bg-[#EBEBF3] cursor-pointer items-center py-[30px]	px-[20px] poppin		 bg-[#F7F7F7]`}
     >
       <div className="p-2.5 rounded-full mr-4 bg-[#A9EEB8]">
@@ -14,7 +18,7 @@ function HelpCenterCard({ name, description, Icon }) {
           {description}
         </p>
       </div>
-    </div>
+    </a>
   );
 }
 

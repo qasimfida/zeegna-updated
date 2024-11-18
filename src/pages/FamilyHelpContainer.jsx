@@ -7,6 +7,7 @@ import TickIcon from "../assets/icons/faqsDropDown/TickIcon";
 import NewTabs from "../components/helpcenterpartner/TabsNew";
 
 function FamilyPartnerHelp() {
+  
   return (
     <>
       <HelpCenterHeroSection
