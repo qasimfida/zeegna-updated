@@ -1,7 +1,7 @@
 import React from "react";
 import PhoneIcon from "../../assets/icons/contacticons/PhoneIcon";
 import Dollericon from "../../assets/icons/contacticons/Dollericon";
-import Personicon from "../../assets/icons/contacticons/Personicon"
+import Personicon from "../../assets/icons/contacticons/Personicon";
 import "../../assets/css/input.css";
 import { useState } from "react";
 import Clockicon from "../../assets/icons/contacticons/Clockicon";
@@ -16,11 +16,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="mt-[40px] sm:mx-40 flex flex-col items-center poppin">
-      <div className="grid md:grid-cols-3 gap-5">
+    <section className="mt-[40px] sm:mx-[135px] max-sm:mx-[16px] flex flex-col items-center poppin">
+      <div className="grid md:grid-cols-3 gap-[20px]">
         {/* Tab one */}
         <div
-          className={`border border-[#e5dbdb] rounded-2xl px-4 py-4 cursor-pointer hover:bg-[#F8F8F8] ${
+          className={`border border-[#e5dbdb] rounded-2xl p-[15px] cursor-pointer hover:bg-[#F8F8F8] ${
             activeTab === 1 ? "bg-[#F8F8F8] border-black" : ""
           }`}
           onClick={() => handleTabClick(1)}
@@ -81,13 +81,13 @@ const Contact = () => {
       {activeTab === 1 && <Form />}
       {activeTab === 2 && <Form />}
       {activeTab === 3 && <Salesform />}
-      <div className=" w-full flex gap-4 bg-[#f7f7f7] p-5 mb-[80px] rounded-lg mt-5">
+      <div className=" w-full flex gap-4 bg-[#f7f7f7] p-5 mb-[80px] max-sm:mb-[50px] rounded-[15px] mt-[24px]">
         <Clockicon />
         <div className="">
-          <h1 className="text-lg font-semibold">Support Hours</h1>
+          <h1 className="text-[19px] font-semibold">Support Hours</h1>
           <p className="text-[#5E5E6F] text-sm font-medium">
             Please note that support tickets are reviewed Monday through Friday
-            from 8:00 a.m to 5:000 p.m. EST, except for holidays
+            from 8:00 a.m to 5:000 p.m. EST, <br /> except for holidays
           </p>
         </div>
       </div>

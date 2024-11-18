@@ -15,7 +15,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function Header({ styles = "" }) {
   const location = useLocation();
   const bgColor =
-    location.pathname === "/resources"
+    location.pathname === "/resources " || location.pathname === "/get-in-touch"
       ? "bg-[#F7F7F7]"
       : location.pathname === "/help-center" ||
         location.pathname === "/article" ||
