@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import GuidingReview from "../components/guidingPageCompo/GuidingReview";
 import GuidingPath from "../components/guidingPageCompo/GuidingPath";
 import GuidingPlatform from "../components/guidingPageCompo/GuidingPlatform";
+import StayConnectedSection from "../components/stayConnected/StayConnected";
 
 function GuidingHeroSection() {
   return (
@@ -55,6 +56,7 @@ function GuidingHeroSection() {
       <GuidingPlatform />
       <GuidingPath />
       <GuidingReview />
+      <StayConnectedSection />
     </>
   );
 }
