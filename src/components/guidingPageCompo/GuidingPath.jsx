@@ -2,21 +2,21 @@ import React from "react";
 
 function GuidingPath() {
   return (
-    <div className="bg-[#F7F7F7] py-24	poppin">
+    <div className="bg-[#F7F7F7] pt-[80px]	poppin">
       <div className="text-center">
-        <h2 className="font-semibold text-4xl">
+        <h2 className="font-semibold text-[32px] max-sm:text-[24px]">
           Principles that guide our path
         </h2>
         <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>
       </div>
       {/* card 1 */}
-      <div className="text-gray-600 body-font  ">
-        <div className="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
-            <h1 className="text-2xl font-semibold leading-9 tracking-tight mb-3 text-gray-900  sm:text-4xl sm:leading-10 md:text-3xl md:leading-normal">
+      <div className=" poppin  ">
+        <div className=" mx-auto flex md:px-[200px] md:pt-[70px] md:pb-[100px] gap-[122px] md:flex-row flex-col items-center">
+          <div className="flex flex-col gap-[20px]">
+            <h1 className="font-semibold text-[32px] max-sm:text-[24px] text-[#1C1C1C]">
               Build with passion
             </h1>
-            <p className="mb-8 md:pl-0 pl-2 pr-2 leading-relaxed text-xl	w-9/12 text-[#5E5E6F]	">
+            <p className="mb-8 md:pl-0 pl-2 pr-2 lg:  w-[538px] text-[#5E5E6F] font-medium text-[20px] max-sm:text-[16px]	">
               Our passion is the driving force behind everything we do at
               ZyraHealth. We're passionate about creating something truly
               remarkable that's infused with a sense of purpose and enthusiasm.
@@ -25,30 +25,23 @@ function GuidingPath() {
               impact on their lives.
             </p>
           </div>
-          <div className="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src="images/GuidingPath1.png"
-            />
+
+          <div className="w-full h-auto">
+            <img className="" alt="hero" src="images/GuidingPath1.png" />
           </div>
         </div>
       </div>
       {/* card 2 */}
-      <div className="text-gray-600 body-font  ">
-        <div className="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
-          <div className="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src="images/GuidingPath2.png"
-            />
+      <div>
+        <div className=" mx-auto flex md:px-[200px]  md:pb-[100px] gap-[122px] md:flex-row flex-col items-center">
+          <div className="w-full h-auto">
+            <img alt="hero" src="images/GuidingPath2.png" />
           </div>
-          <div className="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pl-24 md:pl-16 flex flex-col  mb-16 md:mb-0 items-center ">
-            <h1 className="text-2xl font-semibold leading-9 tracking-tight mb-3 text-gray-900  sm:text-4xl sm:leading-10 md:text-3xl md:leading-normal ">
+          <div className="flex flex-col gap-[20px]">
+            <h1 className="font-semibold text-[32px] max-sm:text-[24px] text-[#1C1C1C] ">
               Inspire for better
             </h1>
-            <p className="mb-8 md:pl-0 pl-2  leading-relaxed text-xl	w-9/12  text-[#5E5E6F]	">
+            <p className="mb-8 md:pl-0 pl-2 pr-2 lg:  w-[538px] text-[#5E5E6F] font-medium text-[20px] max-sm:text-[16px]	">
               We believe in raising the standard for how society approaches
               aging. Our vision is to build a future where aging at home is
               embraced as the natural, dignified choice with families and
@@ -61,13 +54,13 @@ function GuidingPath() {
       </div>
 
       {/* card 3 */}
-      <div className="text-gray-600 body-font  ">
-        <div className="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="text-2xl font-semibold leading-9 tracking-tight mb-3 text-gray-900  sm:text-4xl sm:leading-10 md:text-3xl md:leading-normal">
+      <div>
+        <div className="mx-auto flex md:px-[200px] md:pb-[80px] gap-[122px] md:flex-row flex-col items-center">
+          <div className="flex flex-col gap-[20px]">
+            <h1 className="font-semibold text-[32px] max-sm:text-[24px] text-[#1C1C1C]">
               Deliver for many
             </h1>
-            <p className="mb-8 md:pl-0 pl-2 pr-2 leading-relaxed text-xl	w-9/12 text-[#5E5E6F]	">
+            <p className="mb-8 md:pl-0 pl-2 pr-2 lg:  w-[538px] text-[#5E5E6F] font-medium text-[20px] max-sm:text-[16px]		">
               We believe aging at home is a fundamental right, not a privilege.
               It's our vision to build a care system where every senior can age
               in the comfort of their home surrounded by people and places they
@@ -76,12 +69,8 @@ function GuidingPath() {
               to support every family on this journey.
             </p>
           </div>
-          <div className="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src="images/GuidingPath3.png"
-            />
+          <div className="w-full h-auto">
+            <img alt="hero" src="images/GuidingPath3.png" />
           </div>
         </div>
       </div>
