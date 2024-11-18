@@ -17,10 +17,10 @@ const BusinessResults = () => {
           <img
             src={person}
             alt=""
-            className="h-auto flex-shrink-0 mb-6 md:mb-0"
+            className="h-auto max-sm:px-[45px] max-md:px-[22px] mb-6 md:mb-0"
           />
 
-          <div className="slider flex-grow min-w-0 lg:ml-[121px] ml-[20px] w-full md:w-auto">
+          <div className="slider flex-grow min-w-0 lg:ml-[121px] w-full md:w-auto">
             <BusinessSlider />
           </div>
         </div>

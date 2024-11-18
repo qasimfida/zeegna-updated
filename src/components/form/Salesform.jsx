@@ -9,7 +9,7 @@ const Salesform = () => {
 
   return (
     <form className="bg-[#F7F7F7] mt-[30px] flex justify-center rounded w-full poppin">
-      <div className="w-[80%] py-12 flex flex-col justify-center">
+      <div className="w-[65%] py-12 flex flex-col justify-center">
         <select
           className="border border-gray-300 rounded-lg bg-transparent px-4 py-3	w-full text-gray-600 text-sm"
           defaultValue="pleade"
