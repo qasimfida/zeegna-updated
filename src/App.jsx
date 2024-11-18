@@ -44,14 +44,10 @@ function App() {
           <Route path="/help-section" element={<HelpCardsContainer />} />
           <Route path="/delivery-form" element={<DeliveryForm />} />
           <Route path="/help-center" element={<HelpCardsGrid />} />
-          <Route path="/family-help-center" element={<FamilyPartnerHelp />} />
           <Route path="/become-partner" element={<BecomePartner />} />
-          <Route
-            path="/partner-help-center"
-            element={<PartnerHelpContainer />}
-          />
+          <Route path="/family-help-center" element={<FamilyPartnerHelp />} />
+          <Route path="/partner-help-center" element={<FamilyPartnerHelp />} />
         </Route>
-
         <Route path="/login" element={<LoginPages />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/check-email" element={<CheckYourEmail />} />

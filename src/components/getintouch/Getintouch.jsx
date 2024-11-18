@@ -5,7 +5,7 @@ const Getintouch = () => {
     <>
       <section className="flex flex-col px-9 bg-[#F7F7F7] poppin">
         <div className="pt-[20px]">
-          <h3 className="text-base font-bold text-black">
+          <h3 className="text-[14px] font-medium text-black">
             Home | <span className="text-[#747474]">Get in touch</span>
           </h3>
         </div>

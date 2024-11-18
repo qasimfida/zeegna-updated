@@ -7,11 +7,11 @@ import "react-quill/dist/quill.snow.css";
 const Form = () => {
   const [value, setValue] = useState("");
   return (
-    <form className="bg-[#F7F7F7] mt-[30px] flex justify-center rounded w-full poppin">
-      <div className="w-[80%] py-12 flex flex-col justify-center">
+    <form className="bg-[#F7F7F7] mt-[30px] flex justify-center rounded-3xl w-full poppin">
+      <div className="w-[65%] py-12 flex flex-col justify-center">
         <select
           className="bg-transparent border border-gray-300 rounded-lg px-4 py-3	w-full text-gray-600 text-sm"
-          defaultValue="pleade"
+          defaultValue=""
         >
           <option value="please select a topic">Please select a topic</option>
           <option value="self">one</option>
@@ -31,7 +31,7 @@ const Form = () => {
           value={value}
           onChange={setValue}
           placeholder="Please enter your comments"
-          className="bg-transparent mt-4 rounded-lg border-none"
+          className="bg-transparent mt-4 rounded-full border-none"
         />
         <div className="flex items-center flex-col mt-3 border-dashed rounded-lg border-[2px] border-[#B6B9CE] py-4 gap-2">
           <div>
