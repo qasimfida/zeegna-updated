@@ -3,6 +3,11 @@ import PartnerSlider from "./PartnerSlider";
 import Netsales from "../netSales/Netsales";
 import rating from "../../../public/images/rating.png";
 import { Link } from "react-router-dom";
+import PersonOne from "../../../public/images/personManOne.png"
+import PersonTwo from "../../../public/images/personWomen.png"
+import PersonThree from "../../../public/images/personManTwo.png"
+import PersonFour from "../../../public/images/personManFour.png"
+import PersonFive from "../../../public/images/personManThree.png"
 
 const PartnerContainer = () => {
   return (
@@ -47,14 +52,11 @@ const PartnerContainer = () => {
         </div>
       </div>
       <div className="">
-        {/* <div className="hidden sm:flex justify-between">
-          <div className="relative top-[60px] left-[54px]">
-            <img src={rating} className=""></img>
-          </div>
-          <div className="relative top-[56px] right-[113px]">
-            <Netsales />
-          </div>
-        </div> */}
+        {/* <img src={PersonOne} alt="" />
+        <img src={PersonTwo} alt="" />
+        <img src={PersonThree} alt="" />
+        <img src={PersonFour} alt="" />
+        <img src={PersonFive} alt="" /> */}
         <PartnerSlider />
       </div>
     </div>
