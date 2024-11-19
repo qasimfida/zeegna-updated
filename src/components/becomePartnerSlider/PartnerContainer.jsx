@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const PartnerContainer = () => {
   return (
-    <div className="pt-[30px] pb-[50px] bg-[#eefff0] font-poppins">
+    <div className="pt-[30px] max-sm:pt-[16px] pb-[50px] bg-[#eefff0] font-poppins">
       <div className="flex justify-start md:pl-[38px] max-sm:pl-[16px] w-full text-sm font-medium">
         <Link
           to="/"
