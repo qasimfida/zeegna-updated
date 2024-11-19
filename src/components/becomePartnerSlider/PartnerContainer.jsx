@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const PartnerContainer = () => {
   return (
     <div className="pt-[30px] pb-[50px] bg-[#eefff0] font-poppins">
-      <div className="flex justify-start pl-[38px] w-full text-sm font-medium">
+      <div className="flex justify-start md:pl-[38px] max-sm:pl-[16px] w-full text-sm font-medium">
         <Link
           to="/"
           className={`hover:underline ${
@@ -26,13 +26,13 @@ const PartnerContainer = () => {
           Become a Partner
         </Link>
       </div>
-      <div className="flex flex-col items-center">
-        <h1 className="text-[28px] sm:text-[48px] md:text-[64px] font-semibold font-poppins text-center">
+      <div className="flex flex-col items-center max-sm:pt-[50px]">
+        <h1 className="text-[28px] sm:text-[48px] md:text-[64px] font-semibold font-poppins text-center max-sm:text-[28px]">
           Grow your business
         </h1>
-        <p className="text-[24px] font-medium text-[#5E5E6F] text-center">
-          Join our network to help millions of seniors to age <br /> at home in
-          good health and comfort
+        <p className="text-[24px] font-medium text-[#5E5E6F] text-center max-sm:text-[19px] max-sm:sm-[16px]">
+          Join our network to help millions of seniors to age{" "}
+          <br className="max-sm:hidden" /> at home in good health and comfort
         </p>
         <div className="flex justify-between">
           <div className="relative lg:right-[180px] xl:right-[250px] top-[120px] hidden md:block">
