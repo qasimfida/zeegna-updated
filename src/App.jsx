@@ -45,7 +45,7 @@ function App() {
           <Route path="/delivery-form" element={<DeliveryForm />} />
           <Route path="/help-center" element={<HelpCardsGrid />} />
           <Route path="/become-partner" element={<BecomePartner />} />
-          <Route path="/family-help-center" element={<BecomePartner />} />
+          <Route path="/family-help-center" element={<FamilyPartnerHelp />} />
           <Route path="/partner-help-center" element={<FamilyPartnerHelp />} />
         </Route>
         <Route path="/login" element={<LoginPages />} />
