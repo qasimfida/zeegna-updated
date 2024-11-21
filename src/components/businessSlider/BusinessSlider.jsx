@@ -22,7 +22,8 @@ const BusinessSlider = () => {
 
   return (
     <div className="relative w-full">
-      {/* Swiper */}
+
+      {/* Slider starts here */}
       <Swiper
         cssMode={true}
         navigation={{
@@ -44,7 +45,6 @@ const BusinessSlider = () => {
           swiper.wrapperEl.style.cursor = 'grab';
         }}
       >
-        {/* First Slide */}
         <SwiperSlide className=" text-start flex flex-col items-start justify-center md:justify-start md:pt-[81px] max-sm:px-1 max-sm:text-center">
           <h2 className=" text-[19px] font-semibold ">
             We have been able to reach more families in need of quality home
@@ -69,7 +69,7 @@ const BusinessSlider = () => {
           </div>
         </SwiperSlide>
 
-                <SwiperSlide className=" text-start flex flex-col items-start justify-center md:justify-start md:pt-[81px] max-sm:px-1 max-sm:text-center">
+          <SwiperSlide className=" text-start flex flex-col items-start justify-center md:justify-start md:pt-[81px] max-sm:px-1 max-sm:text-center">
           <h2 className=" text-[19px] font-semibold ">
             We have been able to reach more families in need of quality home
             care through Zeegna network. It's made connecting with clients
@@ -81,9 +81,9 @@ const BusinessSlider = () => {
           </div>
         </SwiperSlide>
 
-        {/* Second Slide */}
       </Swiper>
 
+      {/* slider ends */}
 
       {/* Custom Previous Button */}
       <div
