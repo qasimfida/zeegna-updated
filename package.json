@@ -27,7 +27,7 @@
     "router": "^2.0.0",
     "slick-carousel": "^1.8.1",
     "slider": "^1.0.4",
-    "swiper": "^11.1.14"
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241011.0",

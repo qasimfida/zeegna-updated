@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link
+import { Link } from "react-router-dom"; 
 import HelpCenterHeroSection from "../components/helpcenter/HelpCenterHeroSection";
 // import FamilyTabs from "../components/helpcenterpartner/FamilyTabs";
 import CrossIcon from "../assets/icons/faqsDropDown/CrossIcon";

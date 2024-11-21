@@ -20,7 +20,7 @@ const PartnerSlider = () => {
   };
 
   return (
-    <div className="container w-full h-[88vh] md:h-[50vh] m-auto p-0 ">
+    <div className="container w-full h-[88vh] md:h-[350px] m-auto p-0 ">
       <Swiper
         grabCursor={true}
         effect="coverflow"
