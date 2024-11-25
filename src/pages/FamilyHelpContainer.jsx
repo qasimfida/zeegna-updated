@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link
+import { Link } from "react-router-dom"; 
 import HelpCenterHeroSection from "../components/helpcenter/HelpCenterHeroSection";
-import FamilyTabs from "../components/helpcenterpartner/FamilyTabs";
+// import FamilyTabs from "../components/helpcenterpartner/FamilyTabs";
 import CrossIcon from "../assets/icons/faqsDropDown/CrossIcon";
 import TickIcon from "../assets/icons/faqsDropDown/TickIcon";
 import NewTabs from "../components/helpcenterpartner/TabsNew";
@@ -34,7 +34,6 @@ function FamilyPartnerHelp() {
 
         <div className="mt-10 flex max-sm:flex-col md:items-center gap-4 ">
           <Link to="/no-page">
-            {" "}
             <button className="rounded-full flex items-center gap-4 bg-transparent border-[#1C1C1C] border-2 px-[45px] text-base font-medium py-[13px] text-black hover:bg-[#1C1C1C] hover:text-white">
               No
               <RxCross2 />

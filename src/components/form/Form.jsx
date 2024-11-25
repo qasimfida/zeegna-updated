@@ -59,7 +59,7 @@ const Form = () => {
         <div className=" flex gap-[15px] mt-[15px] md:items-center">
           <input
             type="checkbox"
-            className="!rounded-[5px] w-[22px] !h-[22px]  "
+            className="!rounded-[5px] w-[22px] !h-[22px]"
           />
           <p className="text-[#5E5E6F] text-sm font-medium">
             By submitting this form, I acknowledge receipt of the Zeegna. See
