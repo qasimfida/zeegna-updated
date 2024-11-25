@@ -8,7 +8,7 @@ const Form = () => {
   const [value, setValue] = useState("");
   return (
     <form className="bg-[#F7F7F7] mt-[30px] flex justify-center rounded-[30px] max-sm:rounded-[15px] w-full poppin">
-      <div className="md:w-[67%] max-sm:mx-[15px] pt-[44px] flex flex-col justify-center">
+      <div className="md:w-[67%] max-sm:mx-[15px] pt-[44px]  select-icon flex flex-col justify-center">
         <select
           className="bg-transparent border border-gray-300 rounded-lg px-4 py-3	w-full text-gray-600 text-sm"
           defaultValue=""
@@ -26,19 +26,22 @@ const Form = () => {
           <FormInput placeholder="Email" />
           <FormInput placeholder="Phone Number" />
         </div>
-        <div className="flex flex-col justify-between md:flex-row pt-4 gap-3">
+        <div className="flex flex-col  select-icon   justify-between md:flex-row pt-4 gap-3">
           <FormInput placeholder="Company Name" />
           <select
-            className="bg-transparent border border-gray-300 rounded-lg px-4 py-3 md:w-[352px]	 text-gray-600 text-sm"
+            className="bg-transparent border border-gray-300 rounded-lg px-4 py-3 md:w-[49%]	 text-gray-600 text-sm"
             defaultValue=""
           >
-            <option value="please select a topic">Company category</option>
+            <option value="" disabled>
+              Company category
+            </option>
+
             <option value="self">one</option>
             <option value="family">Two</option>
             <option value="friend">Three</option>
           </select>
         </div>
-        ;
+
         <ReactQuill
           theme="snow"
           value={value}

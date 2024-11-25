@@ -5,9 +5,10 @@ import FamilyTabs from "../components/helpcenterpartner/FamilyTabs";
 import CrossIcon from "../assets/icons/faqsDropDown/CrossIcon";
 import TickIcon from "../assets/icons/faqsDropDown/TickIcon";
 import NewTabs from "../components/helpcenterpartner/TabsNew";
+import { FaCheck } from "react-icons/fa6";
+import { RxCross2 } from "react-icons/rx";
 
 function FamilyPartnerHelp() {
-  
   return (
     <>
       <HelpCenterHeroSection
@@ -36,14 +37,14 @@ function FamilyPartnerHelp() {
             {" "}
             <button className="rounded-full flex items-center gap-4 bg-transparent border-[#1C1C1C] border-2 px-[45px] text-base font-medium py-[13px] text-black hover:bg-[#1C1C1C] hover:text-white">
               No
-              <CrossIcon />
+              <RxCross2 />
             </button>
           </Link>
 
           <Link to="/yes-page">
             <button className="rounded-full flex items-center gap-4 px-[45px] py-[13px] text-base font-medium text-black border-[#1C1C1C] border-2 hover:bg-[#1C1C1C] hover:text-white">
               Yes
-              <TickIcon />
+              <FaCheck />
             </button>
           </Link>
         </div>

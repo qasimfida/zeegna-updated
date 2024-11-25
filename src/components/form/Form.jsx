@@ -7,7 +7,7 @@ import "react-quill/dist/quill.snow.css";
 const Form = () => {
   const [value, setValue] = useState("");
   return (
-    <form className="bg-[#F7F7F7] mt-[30px] flex justify-center rounded-[30px] max-sm:rounded-[15px] w-full poppin">
+    <form className="bg-[#F7F7F7] select-icon mt-[30px] flex justify-center rounded-[30px] max-sm:rounded-[15px] w-full poppin">
       <div className="md:w-[67%] max-sm:mx-[15px] pt-[44px] flex flex-col justify-center">
         <select
           className="bg-transparent border border-gray-300 rounded-lg px-4 py-3	w-full text-gray-600 text-sm"
