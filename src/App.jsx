@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from "react";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import LoginPages from "./pages/LoginPages";
@@ -24,6 +25,10 @@ import ExploreContainer from "./components/explore/ExploreContainer";
 import BecomePartner from "./pages/BecomePartner";
 import HomeCareSlider from "./components/homeCareSlider/HomeCareSlider";
 import StayConnectedSection from "./components/stayConnected/StayConnected";
+// import HomeSafetyContainer from "./components/homesafety/HomeSafetyContainer";
+import HomePageNew from "./pages/NewHomeSection";
+import CitiesPage from "./pages/Cities";
+import CreateHomeCard from "./components/createHome/CreateHomeCard";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -46,7 +51,14 @@ function App() {
           <Route path="/help-center" element={<HelpCardsGrid />} />
           <Route path="/become-partner" element={<BecomePartner />} />
           <Route path="/family-help-center" element={<FamilyPartnerHelp />} />
-          <Route path="/partner-help-center" element={<PartnerHelpContainer />} />
+          {/* <Route path="/home-safety" element={<HomeSafetyContainer />} /> */}
+          <Route path="/home-new" element={<HomePageNew />} />
+          <Route path="/cities" element={<CitiesPage />} />
+          <Route path="/create-home" element={<CreateHomeCard />} />
+          <Route
+            path="/partner-help-center"
+            element={<PartnerHelpContainer />}
+          />
         </Route>
         <Route path="/login" element={<LoginPages />} />
         <Route path="/reset-password" element={<ResetPassword />} />
