@@ -1,7 +1,7 @@
 import React from "react";
 import HomeCardNew from "./HomeCardsNew";
 import cardsData from "../../data/CardsData";
-// import NewCardsData from "../../data/NewCardsData";
+import NewCardsData from "../../data/NewCardsData";
 
 function NewHomeCardsContainer() {
   return (

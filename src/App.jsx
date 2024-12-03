@@ -25,7 +25,7 @@ import ExploreContainer from "./components/explore/ExploreContainer";
 import BecomePartner from "./pages/BecomePartner";
 import HomeCareSlider from "./components/homeCareSlider/HomeCareSlider";
 import StayConnectedSection from "./components/stayConnected/StayConnected";
-// import HomeSafetyContainer from "./components/homesafety/HomeSafetyContainer";
+import HomeSafetyContainer from "./components/homesafety/HomeSafetyContainer";
 import HomePageNew from "./pages/NewHomeSection";
 import CitiesPage from "./pages/Cities";
 import CreateHomeCard from "./components/createHome/CreateHomeCard";
@@ -51,7 +51,7 @@ function App() {
           <Route path="/help-center" element={<HelpCardsGrid />} />
           <Route path="/become-partner" element={<BecomePartner />} />
           <Route path="/family-help-center" element={<FamilyPartnerHelp />} />
-          {/* <Route path="/home-safety" element={<HomeSafetyContainer />} /> */}
+          <Route path="/home-safety" element={<HomeSafetyContainer />} />
           <Route path="/home-new" element={<HomePageNew />} />
           <Route path="/cities" element={<CitiesPage />} />
           <Route path="/create-home" element={<CreateHomeCard />} />
