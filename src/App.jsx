@@ -38,7 +38,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePageNew />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/article" element={<ArticlePage />} />
           <Route path="/guiding-hero" element={<GuidingHeroSection />} />
@@ -52,7 +52,7 @@ function App() {
           <Route path="/become-partner" element={<BecomePartner />} />
           <Route path="/family-help-center" element={<FamilyPartnerHelp />} />
           <Route path="/home-safety" element={<HomeSafetyContainer />} />
-          <Route path="/home-new" element={<HomePageNew />} />
+          <Route path="/home-new" element={<HomePage />} />
           <Route path="/cities" element={<CitiesPage />} />
           <Route path="/create-home" element={<CreateHomeCard />} />
           <Route
