@@ -59,7 +59,7 @@ function App() {
           <Route path="/all-services" element={<AllServicesCategories />} />
           <Route path="/bathroom-remodel" element={<BathroomRemodel />} />
           <Route path="/new-resources" element={<ResourcesMS />} />
-          <Route path="/new-article" element={<ArticalMSpage />} />
+          <Route path="/article-ms" element={<ArticalMSpage />} />
 
           <Route
             path="/partner-help-center"
