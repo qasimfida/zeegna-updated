@@ -18,7 +18,6 @@ import ResourcesPage from "./pages/ResourcesPage";
 import PartnerHelpContainer from "./pages/PartnerHelpContainer";
 import ArticlePage from "./pages/ArticlePage";
 import HelpCard from "./components/helpsection/Help";
-import ArticleContainer from "./components/article/ArticleTextContainer";
 import ScrollToTop from "./components/scroll/ScrollTop";
 import Getintouchpage from "./pages/Getintouchpage";
 import ExploreContainer from "./components/explore/ExploreContainer";
@@ -29,8 +28,10 @@ import HomeSafetyContainer from "./components/homesafety/HomeSafetyContainer";
 import HomePageNew from "./pages/NewHomeSection";
 import CitiesPage from "./pages/Cities";
 import CreateHomeCard from "./components/createHome/CreateHomeCard";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import AllServicesCategories from "./pages/AllServicesCategories";
+import BathroomRemodel from "./pages/BathroomRemodel";
+import ResourcesMS from "./pages/ResourcesMS";
+import ArticalMSpage from "./pages/ArticalMSpage";
 
 function App() {
   return (
@@ -38,9 +39,9 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<HomePageNew />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/resources" element={<ResourcesPage />} />
-          {/* <Route path="/article" element={<ArticlePage />} /> */}
+          <Route path="/article" element={<ArticlePage />} />
           <Route path="/guiding-hero" element={<GuidingHeroSection />} />
           <Route path="/explore" element={<ExploreContainer />} />
           <Route path="/guiding-platform" element={<GuidingPlatform />} />
@@ -52,10 +53,14 @@ function App() {
           <Route path="/become-partner" element={<BecomePartner />} />
           <Route path="/family-help-center" element={<FamilyPartnerHelp />} />
           <Route path="/home-safety" element={<HomeSafetyContainer />} />
-          <Route path="/home-new" element={<HomePage />} />
+          <Route path="/home-new" element={<HomePageNew />} />
           <Route path="/cities" element={<CitiesPage />} />
           <Route path="/create-home" element={<CreateHomeCard />} />
-          {/* <Route path="/resources-new" element={<Re />} /> */}
+          <Route path="/all-services" element={<AllServicesCategories />} />
+          <Route path="/bathroom-remodel" element={<BathroomRemodel />} />
+          <Route path="/new-resources" element={<ResourcesMS />} />
+          <Route path="/new-article" element={<ArticalMSpage />} />
+
           <Route
             path="/partner-help-center"
             element={<PartnerHelpContainer />}
