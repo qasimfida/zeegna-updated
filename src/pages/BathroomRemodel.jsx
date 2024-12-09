@@ -12,7 +12,7 @@ import ExploreContainer from "../components/explore/ExploreContainer";
 import AllServicesData from "../data/AllServicesData";
 import BathroomRemodelContainer from "../components/bathroomRemodel.jsx/BathroomRemodelContainer";
 
-import person1 from "/images/person1.png";
+// import person1 from "/images/person1.png";
 
 function BathroomRemodel() {
   return (
@@ -32,7 +32,7 @@ function BathroomRemodel() {
 
       <HeroSlider
         title="Trusted by families like yours"
-        img={person1}
+        // img={person1}
         name={"Larry"}
         fontSize="text-[27px] max-sm:text-[21px]"
       />

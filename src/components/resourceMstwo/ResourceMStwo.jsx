@@ -8,15 +8,15 @@ import "swiper/css/pagination";
 // import "../../assets/css/sliderMS.css";
 
 import ResourceseData from "../../data/ResourcesData";
-import EndLife from "../../assets/icons/homeLove/End-of-LifePlanning";
-import FreeFallIcon from "../../assets/icons/resourceMSicons/FreeFallIcon";
-import BathroomSafetyicon from "../../assets/icons/resourceMSicons/BathroomSafetyicon";
-import Ketchenicon from "../../assets/icons/resourceMSicons/Ketchenicon";
-import Stairicon from "../../assets/icons/resourceMSicons/Stairicon";
-import Enterwayicon from "../../assets/icons/resourceMSicons/Enterwayicon";
-import AllResources from "../../assets/icons/resources/AllResources";
-import Popular from "../../assets/icons/resources/PopularIcon";
-import Star from "../../assets/icons/resources/StarIcon";
+// import EndLife from "../../assets/icons/homeLove/End-of-LifePlanning";
+// import FreeFallIcon from "../../assets/icons/resourceMSicons/FreeFallIcon";
+// import BathroomSafetyicon from "../../assets/icons/resourceMSicons/BathroomSafetyicon";
+// import Ketchenicon from "../../assets/icons/resourceMSicons/Ketchenicon";
+// import Stairicon from "../../assets/icons/resourceMSicons/Stairicon";
+// import Enterwayicon from "../../assets/icons/resourceMSicons/Enterwayicon";
+// import AllResources from "../../assets/icons/resources/AllResources";
+// import Popular from "../../assets/icons/resources/PopularIcon";
+// import Star from "../../assets/icons/resources/StarIcon";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 import ResourceMScard from "./ResourceMScard";
 
@@ -99,7 +99,7 @@ function ResourceMStwo() {
     },
     {
       title: "Features",
-      icon: <Star className="h-10 w-10 bg-[red] rounded-full p-10" />,
+      // icon: <Star className="h-10 w-10 bg-[red] rounded-full p-10" />,
     },
     {
       title: "Most popular",
@@ -107,29 +107,29 @@ function ResourceMStwo() {
     },
     {
       title: "Fall-free living",
-      icon: <FreeFallIcon className="h-10 w-10 bg-[red] rounded-full p-10" />,
+      // icon: <FreeFallIcon className="h-10 w-10 bg-[red] rounded-full p-10" />,
     },
     {
       title: "Bathroom safety",
       icon: (
-        <BathroomSafetyicon className="h-10 w-10 bg-[red] rounded-full p-10" />
+        // <BathroomSafetyicon className="h-10 w-10 bg-[red] rounded-full p-10" />
       ),
     },
     {
       title: "kitchen accessibility",
-      icon: <Ketchenicon className="h-10 w-10 bg-[red] rounded-full p-10" />,
+      // icon: <Ketchenicon className="h-10 w-10 bg-[red] rounded-full p-10" />,
     },
     {
       title: "stair modification",
-      icon: <Stairicon className="h-10 w-10 bg-[red] rounded-full p-10" />,
+      // icon: <Stairicon className="h-10 w-10 bg-[red] rounded-full p-10" />,
     },
     {
       title: "Entryway adjustments",
-      icon: <Enterwayicon className="h-10 w-10 bg-[red] rounded-full p-10" />,
+      // icon: <Enterwayicon className="h-10 w-10 bg-[red] rounded-full p-10" />,
     },
     {
       title: "End of life planning",
-      icon: <EndLife className="h-10 w-10 bg-[red] rounded-full p-10" />,
+      // icon: <EndLife className="h-10 w-10 bg-[red] rounded-full p-10" />,
     },
 
     {
