@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+
 import HomeCardsContainer from "../components/homecard/HomeCardsContainer";
 
 import PowerFUlContainer from "../components/power/PowerFulContainer";
@@ -13,6 +14,7 @@ import PopularContainer from "../components/popularserviceCard/PopularContainer"
 import ExploreContainer from "../components/explore/ExploreContainer";
 import HomeCareSlider from "../components/homeCareSlider/HomeCareSlider";
 import StayConnectedSection from "../components/stayConnected/StayConnected";
+import person from "/images/person.png";
 
 function HomePage() {
   return (
@@ -23,7 +25,7 @@ function HomePage() {
       <PopularContainer />
       <PowerFUlContainer />
       <FindCareContainer />
-      <HeroSlider />
+      <HeroSlider img={person} name={"Sara R. Charlotte, NC"} />
       <FaqsContainer />
 
       <KnowledgeContainer />

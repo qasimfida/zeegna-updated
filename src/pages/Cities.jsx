@@ -5,7 +5,7 @@ import ExpertTipsContainer from "../components/expertTips/ExpertTips";
 import StayConnectedSection from "../components/stayConnected/StayConnected";
 import NewHomeCardsContainer from "../components/newHomeCard/NewHomeCardsContainer";
 import CitiesContainer from "../components/cities/CitiesContainer";
-// import HomeSafetyContainer from "../components/homesafety/HomeSafetyContainer";
+import HomeSafetyContainer from "../components/homesafety/HomeSafetyContainer";
 import CreateHomeCard from "../components/createHome/CreateHomeCard";
 import CitiesHeroSection from "../components/cities/CitiesHeroSection";
 
@@ -15,7 +15,7 @@ function CitiesPage() {
       <CitiesHeroSection />
       <NewHomeCardsContainer />
       <CreateHomeCard />
-      {/* <HomeSafetyContainer /> */}
+      <HomeSafetyContainer />
       <CitiesContainer />
       <ExpertTipsContainer />
       <StayConnectedSection />
