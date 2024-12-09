@@ -3,16 +3,20 @@ import HomeCardNew from "./HomeCardsNew";
 import cardsData from "../../data/CardsData";
 import NewCardsData from "../../data/NewCardsData";
 
-function NewHomeCardsContainer() {
+function NewHomeCardsContainer({
+  textSize = "md:text-[27px] max-sm:text-[24px]",
+}) {
   return (
     <>
       <div className=" md:mx-2 md:mx-[70px] pb-20    poppin max-sm:pb-0 	">
         <div className="text-center max-sm:px-[16px]">
-          <h2 className="font-semibold text-xl md:text-[32px]  max-sm:pt-[50px] max-sm:text-[24px] leading-[30px] ">
+          <h2
+            className={`font-semibold ${textSize}    max-sm:pt-[50px]  leading-[30px] `}
+          >
             Home mods for safer, smarter living
           </h2>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>
-          <p className="font-medium text-base md:text-xl text-[#575757] pt-4 max-sm:pt-[20px]">
+          <p className="font-medium text-[16px] md:text-[18px] text-[#575757] pt-4 max-sm:pt-[20px]">
             Get professional, vetted help delivered to your home
           </p>
         </div>

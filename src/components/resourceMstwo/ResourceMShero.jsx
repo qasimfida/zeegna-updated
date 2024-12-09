@@ -1,5 +1,5 @@
-npmimport React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom"; 
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import TwitterIcon from "../../assets/icons/resources/Twitter";
 import FacebookIcon from "../../assets/icons/resources/FacebookIcon";
 import LinkedinIcon from "../../assets/icons/resources/Linkedin";
@@ -44,9 +44,9 @@ function ResourceMShero({
             </Link>
             <span className="mx-2">|</span>
             <Link
-              to="/resources"
+              to="/new-resources"
               className={`hover:underline ${
-                location.pathname === "/resources"
+                location.pathname === "/new-resources"
                   ? "text-gray-500"
                   : "text-black"
               }`}
@@ -55,13 +55,13 @@ function ResourceMShero({
             </Link>
 
             {/* Conditionally render the new "Featured articles" link on other pages */}
-            {location.pathname !== "/resources" && (
+            {location.pathname !== "/new-resources" && (
               <>
                 <span className="mx-2">|</span>
                 <Link
-                  to="/article"
+                  to="/new-article"
                   className={`hover:underline ${
-                    location.pathname === "/article"
+                    location.pathname === "/new-article"
                       ? "text-gray-500"
                       : "text-black"
                   }`}

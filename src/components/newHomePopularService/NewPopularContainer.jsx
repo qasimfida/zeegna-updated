@@ -5,7 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Mousewheel, Keyboard } from "swiper/modules";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
-function NewPopularContainer() {
+function NewPopularContainer({
+  fontSize = "text-[24px]",
+  marginBottom = "mb-[80px]",
+}) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
@@ -16,10 +19,10 @@ function NewPopularContainer() {
   };
 
   return (
-    <div className="bg-[#fffff] poppin mb-[80px]">
+    <div className={`bg-[#fffff] ${marginBottom} poppin `}>
       <div className="xl:mx-[70px] max-sm:py-0">
         <div className="text-center max-sm:mt-10">
-          <h2 className="font-semibold text-[24px]  block px-[15px]">
+          <h2 className={`font-semibold  ${fontSize}   block px-[15px]`}>
             Popular services in your area
           </h2>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>

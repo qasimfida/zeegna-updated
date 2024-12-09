@@ -40,7 +40,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<HomePageNew />} />
           <Route path="/resources" element={<ResourcesPage />} />
-          <Route path="/article" element={<ArticlePage />} />
+          {/* <Route path="/article" element={<ArticlePage />} /> */}
           <Route path="/guiding-hero" element={<GuidingHeroSection />} />
           <Route path="/explore" element={<ExploreContainer />} />
           <Route path="/guiding-platform" element={<GuidingPlatform />} />
@@ -55,6 +55,7 @@ function App() {
           <Route path="/home-new" element={<HomePage />} />
           <Route path="/cities" element={<CitiesPage />} />
           <Route path="/create-home" element={<CreateHomeCard />} />
+          {/* <Route path="/resources-new" element={<Re />} /> */}
           <Route
             path="/partner-help-center"
             element={<PartnerHelpContainer />}
