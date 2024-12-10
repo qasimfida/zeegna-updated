@@ -15,7 +15,7 @@ import PopularContainer from "../components/popularserviceCard/PopularContainer"
 import ExploreContainer from "../components/explore/ExploreContainer";
 import HomeCareSlider from "../components/homeCareSlider/HomeCareSlider";
 import StayConnectedSection from "../components/stayConnected/StayConnected";
-// import person1 from "/images/person1.png";
+import person1 from "/images/person1.png";
 
 function HomePageNew() {
   return (
@@ -31,7 +31,7 @@ function HomePageNew() {
       <PowerFUlContainer textSize="max-sm:text-[21px] text-[27px]" />
       <FindCareContainer fontSize="text-[27px] max-sm:text-[21px]" />
       <HeroSlider
-        // img={person1}
+        img={person1}
         name={"Larry"}
         fontSize="text-[27px] max-sm:text-[21px]"
         textSize="text-[18px] max-sm:text-[18px]"

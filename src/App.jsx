@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
 import "./App.css";
 import HomePage from "./pages/HomePage";
+import NewHomeSection from "./pages/NewHomeSection";
 import LoginPages from "./pages/LoginPages";
 import ResetPassword from "./components/login/ResetPassword";
 import CheckYourEmail from "./components/login/CheckEmail";
@@ -39,7 +40,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<NewHomeSection />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/article" element={<ArticlePage />} />
           <Route path="/guiding-hero" element={<GuidingHeroSection />} />

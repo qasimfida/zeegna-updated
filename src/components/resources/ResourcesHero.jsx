@@ -30,7 +30,7 @@ function ResourcesHero({
   }, []);
 
   return (
-    <div className="poppin">
+    <div className="poppin pb-[60px] md:pb-[100px]">
       <div className="pl-[16px] md:[34px]  flex justify-start w-full pt-[20px] pb-[50px] text-gray-500 text-sm font-medium">
         <Link
           to="/"

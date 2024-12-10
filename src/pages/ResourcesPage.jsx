@@ -7,7 +7,7 @@ import ResourceMStwo from "../components/resourceMstwo/ResourceMStwo";
 function ResourcesPage() {
   return (
     <>
-      <ResorcesHero showSocialIcons={false} showReadMore={true} />
+      <ResorcesHero showSocialIcons={false} showReadMore={false} />
       <ResourceMStwo />
       <StayConnectedSection />
     </>
