@@ -50,7 +50,6 @@ function ResourcesHero({
           Resources
         </Link>
 
-        {/* Render extraThings (third link) */}
         {extraThings && <span className="mx-2">|</span>}
         {extraThings}
       </div>
@@ -138,7 +137,6 @@ function ResourcesHero({
             </div>
           )}
 
-          {/* Read More Link */}
           {showReadMore && (
             <Link
               to="/article-ms"

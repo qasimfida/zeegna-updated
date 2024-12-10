@@ -42,7 +42,7 @@ const ArticalMSpage = () => {
           >
             Featured articles
           </Link>
-        } // This is the third link with the desired styles
+        }
       />
 
       <div className="bg-white lg:w-[900px] md:px-[27px] lg:px-0 px-[16px] mx-auto poppin">
