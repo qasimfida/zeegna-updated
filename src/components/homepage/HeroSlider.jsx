@@ -5,10 +5,18 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import person from "/images/person.png";
+import curve from "/images/curveOne.png";
+import person1 from "/images/person1.png";
 import "../../assets/css/slider.css";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
-const HeroSlider = () => {
+const HeroSlider = ({
+  fontSize = "text-[32px]  max-sm:text-[24px]",
+  title = "Trusted by families like yours",
+  img,
+  name,
+  textSize = "text-[18px]",
+}) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,11 +33,14 @@ const HeroSlider = () => {
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveThree.png" />
         </div>
-        <div className="relative w-full sm:w-[65%] py-[80px] max-sm:pt-[60px]">
+        <div className="relative w-full sm:w-[65%] py-[80px] max-sm:pt-[50px]">
           <div className="flex items-center flex-col gap-[5px]">
-            <h1 className="text-[32px] max-sm:px-[67px] max-sm:text-[24px] font-semibold text-center">
-              Trusted by families like yours
+            <h1
+              className={` max-sm:px-[16px]  ${fontSize} font-semibold text-center`}
+            >
+              {title}
             </h1>
+
             <div className="w-[100px] h-[2px] border border-black"></div>
           </div>
           {/* Swiper */}
@@ -48,7 +59,7 @@ const HeroSlider = () => {
             mousewheel={true}
             keyboard={true}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-            className="mt-[55px] max-sm:mt-[60]"
+            className="mt-[55px] max-sm:mt-[50]"
           >
             {/* Slides */}
             {Array(3)
@@ -58,15 +69,17 @@ const HeroSlider = () => {
                   key={index}
                   className="text-center flex flex-col items-center"
                 >
-                  <hp className="text-black md:px-[5rem] text-[19px] max-sm:[17px] font-semibold text-wrap text-center">
+                  <p
+                    className={`text-black md:px-[5rem] ${textSize}  font-medium text-wrap text-center`}
+                  >
                     We found the perfect caregiver for mom. She's kind and
                     incredibly helpful. The process of getting the care my mom
                     needed was simple, and now she's happy and well taken care
                     of. It feels wonderful to see her content.
-                  </hp>
-                  <img src={person} alt="person" className="pt-[30px]" />
+                  </p>
+                  <img src={img} alt="person" className="pt-[30px] w-[70px]" />
                   <p className="text-[#5e5e6f] pt-[19px] pb-[35px] max-sm:pb-[60px] text-[16px]">
-                    Sara R. Charlotte, NC
+                    {name}
                   </p>
                 </SwiperSlide>
               ))}
@@ -96,10 +109,7 @@ const HeroSlider = () => {
           </div>
         </div>
 
-        <div
-          className="
-        sm:flex flex-col gap-[10rem] pr-[48px]"
-        >
+        <div className="sm:flex flex-col gap-[10rem] pr-[48px]">
           <img className="w-[40px]" src="images/curveFour.png" />
           <img className="w-[40px]" src="images/curveTwo.png" />
           <img className="w-[40px]" src="images/curveFive.png" />

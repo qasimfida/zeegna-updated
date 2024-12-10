@@ -15,17 +15,20 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function Header({ styles = "" }) {
   const location = useLocation();
   const bgColor =
-    location.pathname === "/resources " || location.pathname === "/get-in-touch" || location.pathname === "/family-help-center"  || location.pathname === "/partner-help-center"
-      ? "bg-[#F7F7F7]"
-      : location.pathname === "/help-center" ||
-        location.pathname === "/article" ||
-        location.pathname === "/help-section"
+    location.pathname === "/get-in-touch" ||
+    location.pathname === "/family-help-center" ||
+    location.pathname === "/partner-help-center" ||
+    location.pathname === "/help-center" ||
+    location.pathname === "/article" ||
+    location.pathname === "/help-section"
       ? "bg-[#F7F7F7]"
       : location.pathname === "/become-partner"
       ? "bg-[#eefff0]"
+      : location.pathname === "/new-resources"
+      ? "bg-white" // Default white background for /new-resources
       : location.pathname === "/guiding-hero"
       ? "bg-[#FFF9C6]"
-      : "bg-[#FFFDFD]";
+      : "bg-[#FFFDFD]"; // Default background color for all other paths
 
   const isActive = (path) => location.pathname === path;
   const [isOpen, setIsOpen] = useState(false);

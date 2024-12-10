@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom"; // import useLocation for pathname checking
+import { Link, useLocation } from "react-router-dom";
 import TwitterIcon from "../../assets/icons/resources/Twitter";
 import FacebookIcon from "../../assets/icons/resources/FacebookIcon";
 import LinkedinIcon from "../../assets/icons/resources/Linkedin";
@@ -44,32 +44,18 @@ function ResourcesHero({
         <Link
           to="/new-resources"
           className={`hover:underline ${
-            location.pathname === "/new-resources"
-              ? "text-gray-500"
-              : "text-black"
+            location.pathname === "/new-resources" ? "text-gray-500" : ""
           }`}
         >
           Resources
         </Link>
-        {location.pathname !== "/resources" && (
-          <>
-            <span className="mx-2">|</span>
-            <Link
-              to="/new-article"
-              className={`hover:underline ${
-                location.pathname === "/new-article"
-                  ? "text-gray-500"
-                  : "text-black"
-              }`}
-            >
-              Featured articles
-            </Link>
-          </>
-        )}
 
+        {/* Render extraThings (third link) */}
+        {extraThings && <span className="mx-2">|</span>}
         {extraThings}
       </div>
-      <div className="px-[16px] md:px-[300px] mx-auto max-sm:flex flex-col-reverse md:items-center  max-sm:pb-[40px]">
+
+      <div className="px-[16px] md:px-[300px] mx-auto max-sm:flex flex-col-reverse md:items-center max-sm:pb-[40px]">
         <div className="mx-4 md:ml-[34px] md:mx-0">
           {/* Heading Section */}
           <div className="text-center text-[21px] font-semibold md:text-[27px] md:font-semibold">
@@ -123,7 +109,7 @@ function ResourcesHero({
             )}
 
             {showAuthorInfo && (
-              <div className="flex max-sm:flex-col justify-between ">
+              <div className="flex max-sm:flex-col justify-between">
                 <div className="flex items-center">
                   <img
                     src="/images/image (3).png"

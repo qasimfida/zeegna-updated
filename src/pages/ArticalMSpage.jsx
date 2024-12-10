@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link, useLocation } from "react-router-dom";
 import ResourcesHero from "../components/resources/ResourcesHero";
 import ArticleContainer from "../components/article/ArticleTextContainer";
 import FacebookIcon from "../assets/icons/resources/FacebookIcon";
@@ -16,7 +16,7 @@ const ArticalMSpage = () => {
         headingChange={
           <div className="text-start">
             <h1>
-              10 things you should know when choosing a home health provider
+              10 things you should know when choosing a home health provider
             </h1>
           </div>
         }
@@ -33,6 +33,16 @@ const ArticalMSpage = () => {
         showAuthorInfo={true}
         showReadMore={false}
         showImg={true}
+        extraThings={
+          <Link
+            to="/article-ms"
+            className={`hover:underline text-black ${
+              location.pathname === "/article-ms" ? "text-gray-500" : ""
+            }`}
+          >
+            Featured articles
+          </Link>
+        } // This is the third link with the desired styles
       />
 
       <div className="bg-white lg:w-[900px] md:px-[27px] lg:px-0 px-[16px] mx-auto poppin">

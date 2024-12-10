@@ -54,25 +54,9 @@ function ResourceMShero({
               Resources
             </Link>
 
-            {/* Conditionally render the new "Featured articles" link on other pages */}
-            {location.pathname !== "/new-resources" && (
-              <>
-                <span className="mx-2">|</span>
-                <Link
-                  to="/new-article"
-                  className={`hover:underline ${
-                    location.pathname === "/new-article"
-                      ? "text-gray-500"
-                      : "text-black"
-                  }`}
-                >
-                  Featured articles
-                </Link>
-              </>
-            )}
-
             {extraThings}
           </div>
+
           <button className="rounded-[30px] py-[5px] px-[18px] bg-[#F9ECEC] text-[#5E5E6F] text-[14px] font-normal mb-[10px]">
             Featured
           </button>

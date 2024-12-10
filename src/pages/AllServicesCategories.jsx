@@ -11,7 +11,7 @@ import FaqsContainer from "../components/faqs/FaqsContainer";
 import ExploreContainer from "../components/explore/ExploreContainer";
 import AllServicesData from "../data/AllServicesData";
 
-// import person1 from "/images/person1.png";
+import person1 from "/images/person1.png";
 
 function AllServicesCategories() {
   return (
@@ -34,7 +34,7 @@ function AllServicesCategories() {
 
       <HeroSlider
         title="Helping families create safer homes"
-        // img={person1}
+        img={person1}
         name={"Larry"}
         fontSize="text-[27px] max-sm:text-[21px]"
       />

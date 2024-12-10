@@ -181,7 +181,7 @@ function ResourceMStwo() {
         {tabs.map((tab, index) => (
           <SwiperSlide
             key={index}
-            className="!w-fit"
+            className="!w-fit px-[20px]"
             // style={{
             //   width: index < 3 ? 'calc(100% / 8)' : 'calc(100% / 6)',
             // }}
