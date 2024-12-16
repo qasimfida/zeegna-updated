@@ -55,6 +55,7 @@ function NewPopularContainer({
                   image={card.image}
                   title={card.title}
                   bgColor={card.bgColor}
+                  link={card.link}
                 />
               </SwiperSlide>
             ))}
@@ -106,6 +107,7 @@ function NewPopularContainer({
               image={card.image}
               title={card.title}
               bgColor={card.bgColor}
+              link={card.link}
             />
           ))}
         </div>

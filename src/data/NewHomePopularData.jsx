@@ -17,6 +17,7 @@ const NewPopularData = [
     title: "Bathroom remodel",
     description:
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
+    link: "/bathroom-remodel",
   },
   {
     id: 4,

@@ -12,7 +12,7 @@ const HomeHeroComp = () => {
         {firstTwoCards.map(({ id, Icon, heading, details, text, bgColor }) => (
           <div
             key={id}
-            className={`px-[20px] max-sm:px-[15px] flex flex-col ${bgColor} rounded-xl pb-[20px]`}
+            className={`px-[20px] max-sm:px-[15px] flex flex-col ${bgColor} rounded-xl pb-[20px] transition-transform transform hover:scale-105 hover:shadow-lg`}
           >
             <div className="flex justify-start md:justify-end pt-[20px] pb-[8px] md:pb-[72px]">
               <Icon />
@@ -35,7 +35,7 @@ const HomeHeroComp = () => {
         {lastTwoCards.map(({ id, Icon, heading, details, text, bgColor }) => (
           <div
             key={id}
-            className={`px-[20px] py-[20px] max-sm:px-[15px] flex flex-col ${bgColor} rounded-xl pb-[20px]`}
+            className={`px-[20px] py-[20px] max-sm:px-[15px] flex flex-col ${bgColor} rounded-xl pb-[20px] transition-transform transform hover:scale-105 hover:shadow-lg`}
           >
             <div className="md:flex-row flex justify-between flex-col-reverse gap-[8px] md:gap-0">
               <h1 className="text-[21px]  font-semibold max-sm:text-[18px] pb-[5px]">

@@ -1,9 +1,16 @@
 import React from "react";
 
 const PopularCard = ({ image, title, link }) => {
+  const handleCardClick = () => {
+    window.location.href = link;
+  };
+
   return (
-    <div className="max-w-xl bg-white border rounded-lg border-[#EAEAF1] relative group cursor-pointer poppin max-sm:mx-4 xl:mx-0 overflow-hidden">
-      <a href={link}>
+    <div
+      className="max-w-xl bg-white border rounded-lg border-[#EAEAF1] relative group cursor-pointer poppin max-sm:mx-4 xl:mx-0 overflow-hidden"
+      onClick={handleCardClick}
+    >
+      <a>
         <img
           className="rounded-t-lg transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-4"
           src={image}
