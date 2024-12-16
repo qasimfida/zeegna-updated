@@ -5,7 +5,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         "@floating-ui/react",
-        "@react-stately/utils",
+        "@/react-stately/utils",
         "@react-aria/ssr",
       ],
     },
