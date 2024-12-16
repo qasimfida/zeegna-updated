@@ -1,12 +1,12 @@
-import React from 'react'
-import TermContainer from '../components/termOfUse/TermContainer'
+import React from "react";
+import TermContainer from "../components/termOfUse/TermContainer";
 
 const TermsOFUse = () => {
   return (
     <div>
-      <TermContainer/>
+      <TermContainer />
     </div>
-  )
-}
+  );
+};
 
-export default TermsOFUse
+export default TermsOFUse;
