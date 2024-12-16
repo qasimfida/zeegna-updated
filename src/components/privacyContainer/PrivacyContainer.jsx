@@ -1,7 +1,6 @@
 import React from "react";
 import PrivacyCard from "./PrivacyCard";
 import PrivacyData from "../../data/PrivacyData";
-// import TermsHero from "../termOfUse/TermsHero";
 import { Link, useLocation } from "react-router-dom";
 
 const PrivacyContainer = () => {
