@@ -1,8 +1,11 @@
 import React from "react";
 
-const ExploreCard = ({ image, title }) => {
+const ExploreCard = ({ image, title, onClick }) => {
   return (
-    <div className="relative max-w-xl rounded-[15px] overflow-hidden cursor-pointer mx-4 md:mx-0 group max-sm:mx-0">
+    <div
+      className="relative max-w-xl rounded-[15px] overflow-hidden cursor-pointer mx-4 md:mx-0 group max-sm:mx-0"
+      onClick={onClick}
+    >
       <img
         className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
         src={image}

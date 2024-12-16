@@ -1,0 +1,1 @@
+export { ProfileCompletion as default } from './ProfileCompletion';

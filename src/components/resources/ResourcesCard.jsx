@@ -20,7 +20,7 @@ const ResourcesCard = ({
     <div
       className={` xl:h-[450px]  bg-white border shadow-sm rounded-[15px] border-[#EAEAF1] relative group cursor-pointer poppin overflow-hidden ${className}`}
     >
-      <a href="#">
+      <a href="/article-ms">
         <img
           className="rounded-t-lg text-[#5E5E6F] transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-4"
           src={image}
@@ -30,7 +30,7 @@ const ResourcesCard = ({
       <div className="xl:h-[250px] max-sm:h-auto">
         <div className={`pl-[15px] pt-[15px] pb-[5px] pr-[25px] py-3`}>
           <a
-            href="#"
+            href="/article-ms"
             className={`inline-flex items-center px-[7px] py-[5px] text-sm font-normal text-center text-[#5E5E6F] rounded-full ${
               chip === "Features"
                 ? "bg-[#F9ECEC]"
@@ -46,7 +46,7 @@ const ResourcesCard = ({
         </div>
 
         <div className="pl-[15px] pr-[25px] ">
-          <a href="#" className="leading-[23px]">
+          <a href="/article-ms" className="leading-[23px]">
             <h5
               className={`mb-2 text-[17px] font-semibold text-[#5E5E6F]  hover:text-[#109088] ${
                 id == 4 ? "pb-[27px]" : "pb-0"

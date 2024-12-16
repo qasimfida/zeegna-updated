@@ -7,7 +7,7 @@ const HomeHeroComp = () => {
   const lastTwoCards = HomeHeroData.slice(2);
 
   return (
-    <div className="flex max-sm:mx-[16px] md:px-[70px] gap-[20px] flex-col poppin md:flex-row md:pb-[80px] max-sm:pt-[50px]">
+    <div className="flex max-sm:mx-[16px] md:px-[70px] gap-[20px] flex-col poppin md:flex-row md:pb-[80px] max-sm:pt-[50px] cursor-pointer">
       <div className="flex flex-col md:flex-row gap-[20px]">
         {firstTwoCards.map(({ id, Icon, heading, details, text, bgColor }) => (
           <div
@@ -31,7 +31,7 @@ const HomeHeroComp = () => {
         ))}
       </div>
 
-      <div className="flex flex-col gap-[20px] ">
+      <div className="flex flex-col gap-[20px] cursor-pointer ">
         {lastTwoCards.map(({ id, Icon, heading, details, text, bgColor }) => (
           <div
             key={id}

@@ -1,0 +1,1 @@
+export { JobsCard as default } from './JobsCard'
