@@ -160,12 +160,12 @@ function Footer() {
           </li>
 
           <li>
-            <Link to="/get-in-touch" class="hover:text-secondary">
+            <Link to="/privacy" class="hover:text-secondary">
               Privacy
             </Link>
           </li>
           <li>
-            <Link to="/get-in-touch" class="hover:text-secondary">
+            <Link to="/terms-of-use" class="hover:text-secondary">
               Terms of use
             </Link>
           </li>
