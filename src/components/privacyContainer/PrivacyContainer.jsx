@@ -5,7 +5,7 @@ import PrivacyData from "../../data/PrivacyData";
 import { Link, useLocation } from "react-router-dom";
 
 const PrivacyContainer = () => {
-  const location = useLocation(); // Ensure `location` is properly defined
+  const location = useLocation();
 
   return (
     <>
