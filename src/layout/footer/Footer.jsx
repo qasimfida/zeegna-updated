@@ -101,7 +101,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/all-services" class="hover:text-white">
+                    <Link to="/services" class="hover:text-white">
                       All service categories{" "}
                     </Link>
                   </li>
