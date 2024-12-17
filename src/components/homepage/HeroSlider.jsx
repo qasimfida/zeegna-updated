@@ -6,6 +6,11 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import person from "/images/person.png";
 import curve from "/images/curveOne.png";
+import curveOne from "/images/curveTwo.png";
+import curveTwo from "/images/curveThree.png";
+import curveThree from "/images/curveFour.png";
+import curveFour from "/images/curveFive.png";
+import curveFive from "/images/curveOne.png";
 import person1 from "/images/person1.png";
 import "../../assets/css/slider.css";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
@@ -29,9 +34,9 @@ const HeroSlider = ({
     <>
       <section className="w-full flex items-center justify-center sm:justify-between bg-[#F7F7F7] poppin">
         <div className="sm:flex flex-col gap-[10rem] pl-[48px]">
-          <img className="w-[40px]" src="images/curveOne.png" />
-          <img className="w-[40px]" src="images/curveTwo.png" />
-          <img className="w-[40px]" src="images/curveThree.png" />
+          <img className="w-[40px]" src={curve} />
+          <img className="w-[40px]" src={curveOne} />
+          <img className="w-[40px]" src={curveTwo} />
         </div>
         <div className="relative w-full sm:w-[65%] py-[80px] max-sm:pt-[50px]">
           <div className="flex items-center flex-col gap-[5px]">
@@ -110,9 +115,9 @@ const HeroSlider = ({
         </div>
 
         <div className="sm:flex flex-col gap-[10rem] pr-[48px]">
-          <img className="w-[40px]" src="images/curveFour.png" />
-          <img className="w-[40px]" src="images/curveTwo.png" />
-          <img className="w-[40px]" src="images/curveFive.png" />
+          <img className="w-[40px]" src={curveThree} />
+          <img className="w-[40px]" src={curveFour} />
+          <img className="w-[40px]" src={curveFive} />
         </div>
       </section>
     </>
