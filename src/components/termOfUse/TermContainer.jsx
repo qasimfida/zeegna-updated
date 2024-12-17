@@ -1,8 +1,7 @@
 import React from "react";
-import PrivacyCard from "../PrivacyContainer/PrivacyCard";
 import TermsData from "../../data/TermsData";
 import TermsHero from "./TermsHero";
-import PrivacyCard from "../PrivacyContainer/PrivacyCard";
+import PrivacyCard from "../privacyContainers/PrivacyCard";
 
 const TermContainer = () => {
   return (
