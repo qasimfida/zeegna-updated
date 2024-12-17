@@ -11,13 +11,18 @@ import FaqsContainer from "../components/faqs/FaqsContainer";
 import ExploreContainer from "../components/explore/ExploreContainer";
 import AllServicesData from "../data/AllServicesData";
 import BathroomRemodelContainer from "../components/bathroomRemodel.jsx/BathroomRemodelContainer";
+import { useParams } from "react-router-dom";
+import HomeSafetyData from "../data/HomeSafetyData";
 
-// import person1 from "/images/person1.png";
+import person1 from "/images/person1.png";
 
 function BathroomRemodel() {
+  const params = useParams();
+  const service = HomeSafetyData.find((i) => i.link === params?.service);
+  console.log({ service });
   return (
     <>
-      <BathroomRemodelContainer />
+      <BathroomRemodelContainer titleChange={service?.title} />
 
       <FindCareContainer
         headingText="Matching on Zeegna is simple and easy"
@@ -26,13 +31,13 @@ function BathroomRemodel() {
       />
 
       <FaqsContainer
-        headingChange="Bathroom remodel FAQs"
+        headingChange={`${service?.title} FAQs`}
         fontSize="text-[27px] max-sm:text-[21px]"
       />
 
       <HeroSlider
         title="Trusted by families like yours"
-        // img={person1}
+        img={person1}
         name={"Larry"}
         fontSize="text-[27px] max-sm:text-[21px]"
       />

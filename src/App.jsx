@@ -59,8 +59,8 @@ function App() {
           <Route path="/home-new" element={<HomePageNew />} />
           <Route path="/cities" element={<CitiesPage />} />
           <Route path="/create-home" element={<CreateHomeCard />} />
-          <Route path="/all-services" element={<AllServicesCategories />} />
-          <Route path="/bathroom-remodel" element={<BathroomRemodel />} />
+          <Route path="/services" element={<AllServicesCategories />} />
+          <Route path="/services/:service" element={<BathroomRemodel />} />
           <Route path="/new-resources" element={<ResourcesMS />} />
           <Route path="/article-ms" element={<ArticalMSpage />} />
           <Route path="/terms-of-use" element={<TermsOFUse />} />
