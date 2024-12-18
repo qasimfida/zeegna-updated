@@ -117,17 +117,17 @@ function Footer() {
               </div>
               <ul class="leading-8 max-sm:leading-0 text-base mb-2.5	text-[#BBBBBB] font-medium max-sm:text-[14px]	">
                 <li>
-                  <Link to="/recources-page" class="hover:text-white">
+                  <Link to="/help-section" class="hover:text-white">
                     Find help
                   </Link>
                 </li>
                 <li>
-                  <Link to="/recources-page" class="hover:text-white">
+                  <Link to="/become-partner" class="hover:text-white">
                     Become a partner
                   </Link>
                 </li>
                 <li>
-                  <Link to="/recources-page" class="hover:text-white">
+                  <Link to="/resources" class="hover:text-white">
                     Resources
                   </Link>
                 </li>

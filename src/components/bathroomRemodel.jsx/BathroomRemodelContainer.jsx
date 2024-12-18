@@ -20,24 +20,20 @@ const BathroomRemodelContainer = ({ titleChange }) => {
         <Link
           to="/services"
           className={`hover:underline ${
-            location.pathname === "/all-services"
-              ? "text-gray-500"
-              : "text-black"
+            location.pathname === "/services" && "text-gray-500"
           }`}
         >
           Categories
         </Link>
+
         <span className="mx-2">|</span>
         <Link
-          to="/bathroom-remodel"
+          to="/services"
           className={`hover:underline ${
-            location.pathname === "/bathroom-remodel"
-              ? "text-gray-500"
-              : "text-black"
+            location.pathname === "/services" ? "text-gray-500" : "text-black"
           }`}
-        >
-          {titleChange}
-        </Link>
+        ></Link>
+        {titleChange}
       </div>
 
       {/* Title Section */}

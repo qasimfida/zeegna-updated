@@ -7,7 +7,7 @@ function HomeSafetyCard({ title, url }) {
       <div className="flex flex-col">
         <Link
           to={`/services/${url}`}
-          className="text-[#2D7CD9] font-medium text-[18px]"
+          className="text-[#2D7CD9] font-medium text-[18px] "
         >
           {title}
         </Link>
