@@ -18,16 +18,17 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
-    },
-    "types": ["@cloudflare/workers-types/2023-07-01"]
+      "@/*": ["./src/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/assets/icons/logo/logo.jsx"
+    "src/app/layout.js",
+    "src/app/(home)/page.js",
+    "src/components/MapComponent/MapComponent.jsx"
   ],
   "exclude": ["node_modules"]
 }

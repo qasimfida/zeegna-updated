@@ -101,7 +101,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/services" class="hover:text-white">
+                    <Link to="/all-services" class="hover:text-white">
                       All service categories{" "}
                     </Link>
                   </li>
@@ -117,17 +117,17 @@ function Footer() {
               </div>
               <ul class="leading-8 max-sm:leading-0 text-base mb-2.5	text-[#BBBBBB] font-medium max-sm:text-[14px]	">
                 <li>
-                  <Link to="/help-section" class="hover:text-white">
+                  <Link to="/recources-page" class="hover:text-white">
                     Find help
                   </Link>
                 </li>
                 <li>
-                  <Link to="/become-partner" class="hover:text-white">
+                  <Link to="/recources-page" class="hover:text-white">
                     Become a partner
                   </Link>
                 </li>
                 <li>
-                  <Link to="/resources" class="hover:text-white">
+                  <Link to="/recources-page" class="hover:text-white">
                     Resources
                   </Link>
                 </li>
@@ -160,12 +160,12 @@ function Footer() {
           </li>
 
           <li>
-            <Link to="/privacy" class="hover:text-secondary">
+            <Link to="/get-in-touch" class="hover:text-secondary">
               Privacy
             </Link>
           </li>
           <li>
-            <Link to="/terms-of-use" class="hover:text-secondary">
+            <Link to="/get-in-touch" class="hover:text-secondary">
               Terms of use
             </Link>
           </li>

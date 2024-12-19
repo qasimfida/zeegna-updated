@@ -33,8 +33,6 @@ import AllServicesCategories from "./pages/AllServicesCategories";
 import BathroomRemodel from "./pages/BathroomRemodel";
 import ResourcesMS from "./pages/ResourcesMS";
 import ArticalMSpage from "./pages/ArticalMSpage";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOFUse from "./pages/TermsOFUse";
 
 function App() {
   return (
@@ -59,12 +57,10 @@ function App() {
           <Route path="/home-new" element={<HomePageNew />} />
           <Route path="/cities" element={<CitiesPage />} />
           <Route path="/create-home" element={<CreateHomeCard />} />
-          <Route path="/services" element={<AllServicesCategories />} />
-          <Route path="/services/:service" element={<BathroomRemodel />} />
+          <Route path="/all-services" element={<AllServicesCategories />} />
+          <Route path="/bathroom-remodel" element={<BathroomRemodel />} />
           <Route path="/new-resources" element={<ResourcesMS />} />
           <Route path="/article-ms" element={<ArticalMSpage />} />
-          <Route path="/terms-of-use" element={<TermsOFUse />} />
-          <Route path="/privacy" element={<PrivacyPolicy />} />
 
           <Route
             path="/partner-help-center"

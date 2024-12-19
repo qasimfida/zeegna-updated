@@ -1,91 +1,89 @@
-import { Description } from "@headlessui/react";
-
 const HomeSafetyData = [
   {
     id: 1,
     title: "Bathroom remodel",
-    link: "bathroom-remodel",
+    link: "/fire-safety",
   },
   {
     id: 2,
     title: "Mounting",
-    link: "mounting",
+    link: "/fire-safety",
   },
   {
     id: 3,
     title: "Walk-in showers",
-    link: "walk-in-showers",
+    link: "/fire-safety",
   },
   {
     id: 4,
     title: "Installations",
-    link: "installations",
+    link: "/fire-safety",
   },
   {
     id: 5,
     title: "Walk-in bathtubs",
-    link: "walk-in-bathtubs",
+    link: "/fire-safety",
   },
   {
     id: 6,
     title: "Security cameras",
-    link: "security-cameras",
+    link: "/fire-safety",
   },
   {
     id: 7,
     title: "Grab-bar installations",
-    link: "grb-bar",
+    link: "/fire-safety",
   },
   {
     id: 8,
     title: "Assistive tech",
-    link: "assistive-tech",
+    link: "/fire-safety",
   },
   {
     id: 9,
     title: "Kitchen remodel",
-    link: "kitchen-remodel",
+    link: "/fire-safety",
   },
   {
     id: 10,
     title: "Floor improvements",
-    link: "floor-improvements",
+    link: "/fire-safety",
   },
   {
     id: 11,
     title: "Electric stairlifts",
-    link: "electric-stairlifts",
+    link: "/fire-safety",
   },
   {
     id: 12,
     title: "Electrical help",
-    link: "electrical-help",
+    link: "/fire-safety",
   },
   {
     id: 13,
     title: "Ramp installation",
-    link: "ramp-installation",
+    link: "/fire-safety",
   },
   {
     id: 14,
     title: "Window modifications",
-    link: "window-modification",
+    link: "/fire-safety",
   },
-  { id: 15, title: "Fire Safety", link: "fire-safety" },
+  { id: 15, title: "Fire Safety", link: "/fire-safety" },
   {
     id: 16,
     title: "Lighting improvements",
-    link: "lighting-improvements",
+    link: "/fire-safety",
   },
   {
     id: 17,
     title: "Home elevators",
-    link: "home-elevators",
+    link: "/fire-safety",
   },
   {
     id: 18,
     title: "Widening doorways",
-    link: "widening-doorways",
+    link: "/fire-safety",
   },
 ];
 

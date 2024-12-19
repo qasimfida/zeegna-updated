@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f1f1f1;
+}
+
+.sideBar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Track */
+.sideBar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.sideBar::-webkit-scrollbar-thumb {
+  background: #109088;
+}
+
+/* Handle on hover */
+.sideBar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* General style for the date input */
+input[type="date"] {
+  background-color: white;
+  -webkit-appearance: none; /* For Safari and Chrome */
+  -moz-appearance: none; /* For Firefox */
+  appearance: none; /* Standard syntax */
+}
+
+/* Hide the calendar picker indicator */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 16px;
+  z-index: 11 !important;
+  height: 24px;
+  width: 24px;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 16px;
+  z-index: 11 !important;
+  height: 24px;
+  width: 24px;
+}
+
+input[type="date"]::-ms-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 16px;
+  z-index: 11 !important;
+  height: 24px;
+  width: 24px;
+}
+
+/* Hide the inner spin button for webkit browsers */
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.ql-toolbar {
+  @apply rounded-t-2xl;
+}
+.ql-container {
+  @apply rounded-b-2xl;
+}
+/* .ql-container {
+   @apply h-14
+} */
+/* .ql-snow {
+   @apply border-0
+} */
+
+/* For browsers that don't support hiding the calendar picker, 
+   you might not be able to hide the picker indicator. 
+   In such cases, consider a custom date picker solution. */
+/* APP SCROLLBAR */
+
+.app-scroll::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.app-scroll::-webkit-scrollbar-track {
+  background-color: #eaeaf1;
+  border-radius: 10px;
+}
+
+.app-scroll::-webkit-scrollbar-thumb {
+  background-color: #c4c1c1;
+  border-radius: 10px;
+}
+
+/* RANGE SLIDER */
+
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb:hover {
+  height: 16px;
+  width: 16px;
+}
+
+.thumb::-webkit-slider-thumb {
+  background-color: #1eca63;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin-top: 6px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb:hover {
+  height: 16px;
+  width: 16px;
+}
+
+.thumb::-moz-range-thumb {
+  background-color: #1eca63;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin-top: 6px;
+  pointer-events: all;
+  position: relative;
+  transition: 0.2s all ease;
+}
+
+/* Removing the default appearance for primary thumb */
+.primary-thumb,
+.primary-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* For Chrome browsers */
+.primary-thumb::-webkit-slider-thumb:hover {
+  height: 16px;
+  width: 16px;
+}
+
+.primary-thumb::-webkit-slider-thumb {
+  background-color: #109088;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin-top: 6px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.primary-thumb::-moz-range-thumb:hover {
+  height: 16px;
+  width: 16px;
+}
+
+.primary-thumb::-moz-range-thumb {
+  background-color: #109088;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin-top: 6px;
+  pointer-events: all;
+  position: relative;
+  transition: 0.2s all ease;
+}
+
+/* Custom styles for text and arrow */
+.text {
+  @apply bg-red-500 text-white inline-block pl-1;
+}
+
+.arrow {
+  @apply border-dashed border-transparent border-2 inline-block text-[100px] h-0 leading-none relative align-middle w-0 bg-[#F7F7F7] border-l-2  border-l-[#F7F7F7]  ml-1;
+}
