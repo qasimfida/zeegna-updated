@@ -9,15 +9,15 @@ function HomeCareSlides({ activeTab, setActiveTab }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const tabs = [
-    { title: "Home care" },
-    { title: "Home maintenance" },
-    { title: "Transportation" },
-    { title: "Professional services" },
-    { title: "Professional" },
-    { title: "Home maintenance" },
-    { title: "Transportation" },
-    { title: "Legal matters" },
-    { title: "Financial health" },
+    { title: "Bathroom safety" },
+    { title: "Kitchen accessibility" },
+    { title: "Stair modifications" },
+    { title: "Entryway adjustments" },
+    { title: "Flooring improvements" },
+    { title: "Lighting & electrical" },
+    { title: "Installations & mounting" },
+    { title: "Home safety" },
+    { title: "Home automation" },
   ];
 
   const handleSlideChange = (swiper) => {
@@ -68,8 +68,8 @@ function HomeCareSlides({ activeTab, setActiveTab }) {
               <span
                 className={`flex items-center ${
                   activeTab === index
-                    ? "text-[black] max-sm:text-[16px] text-[19px] font-semibold border-b-2 border-[#109088] mb-0"
-                    : "text-black text-[19px] max-sm:text-[16px] font-medium hover:text-black"
+                    ? "text-[black] max-sm:text-[16px] text-[18px] font-semibold border-b-2 border-[#109088] mb-0"
+                    : "text-black text-[18px] max-sm:text-[16px] font-medium hover:text-black"
                 }`}
               >
                 {tab.title}

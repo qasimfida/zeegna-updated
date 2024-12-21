@@ -7,7 +7,7 @@ function FindCareContainer() {
     <div className="bg-white poppin">
       <div className="mx-20 max-sm:mx-5 max-lg:mx-[27px] max-sm:py-[50px] py-[80px]">
         <div className="text-center">
-          <h2 className="font-semibold text-[32px] max-sm:text-[24px]">
+          <h2 className="font-semibold text-[27px] max-sm:text-[24px]">
             Finding care just got simplified
           </h2>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>

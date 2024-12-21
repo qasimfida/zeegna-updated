@@ -30,30 +30,7 @@ function ResourcesHero({
   }, []);
 
   return (
-    <div className="poppin pb-[60px] md:pb-[100px]">
-      <div className="pl-[16px] md:[34px]  flex justify-start w-full pt-[20px] pb-[50px] text-gray-500 text-sm font-medium">
-        <Link
-          to="/"
-          className={`hover:underline ${
-            location.pathname === "/" ? "text-gray-500" : "text-black"
-          }`}
-        >
-          Home
-        </Link>
-        <span className="mx-2">|</span>
-        <Link
-          to="/new-resources"
-          className={`hover:underline ${
-            location.pathname === "/new-resources" ? "text-gray-500" : ""
-          }`}
-        >
-          Resources
-        </Link>
-
-        {extraThings && <span className="mx-2">|</span>}
-        {extraThings}
-      </div>
-
+    <div className="poppin py-[60px] md:pb-[100px]">
       <div className="px-[16px] md:px-[300px] mx-auto max-sm:flex flex-col-reverse md:items-center max-sm:pb-[40px]">
         <div className="mx-4 md:ml-[34px] md:mx-0">
           {/* Heading Section */}

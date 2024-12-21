@@ -21,10 +21,10 @@ function StayConnectedSection() {
 
         {/* Form Content */}
         <div className="text-center w-full">
-          <h3 className="text-[32px] font-semibold mb-[10px] text-[#1C1C1C] max-lg:text-[24px]">
+          <h3 className="text-[27px] font-semibold mb-[10px] text-[#1C1C1C] max-lg:text-[24px]">
             Stay Connected with the Latest in Senior Care
           </h3>
-          <p className="text-[#575757] mb-[20px] text-[20px] font-medium max-lg:text-[16px]">
+          <p className="text-[#575757] mb-[18px] text-[18px] font-medium max-lg:text-[16px]">
             Get expert tips and updates to help your loved ones age comfortably
             at home.
           </p>

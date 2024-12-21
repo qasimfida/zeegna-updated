@@ -14,11 +14,7 @@ function HomeSafetyContainer() {
         </div>
         <div className="lg:w-[958px] grid grid-cols-1 md:grid-cols-2 justify-items-center lg:grid-cols-3 gap-[10px] gap-x-[150px] mt-[50px] max-sm:mt-[30px] max-sm:gap-[10px] max-sm:px-[10px]">
           {HomeSafetyData.map((card) => (
-            <HomeSafetyCard
-              key={card.id}
-              title={card.title}
-              redirectTo={card.link}
-            />
+            <HomeSafetyCard key={card.id} title={card.title} url={card.link} />
           ))}
         </div>
       </div>

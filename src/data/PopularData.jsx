@@ -6,9 +6,19 @@ import WellNess from "../assets/icons/homeLove/WellNess";
 
 const PopularData = [
   {
+    id: 7,
+    image: "/images/Kitchen remodel.png",
+    title: "Kitchen remodel",
+    description:
+      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
+    Icon: PersonalCareIcon,
+    bgColor: "bg-[#AADCF2]",
+    chip: "Featured",
+  },
+  {
     id: 1,
     image: "/images/Popular-1.png",
-    title: "Home Care",
+    title: "Grab bar installation",
     bgColor: "bg-[#BFB5FE]",
     chip: "Featured",
   },
@@ -22,6 +32,18 @@ const PopularData = [
     bgColor: "bg-[#FEBCD5]",
     chip: "Most Popular",
   },
+
+  {
+    id: 4,
+    image: "/images/Popular-4.png",
+    title: "Ramp installation",
+    description:
+      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
+    Icon: MovingIcon,
+    bgColor: "bg-[#9DEFEB]",
+    chip: "Featured",
+  },
+
   {
     id: 3,
     image: "/images/Popular-3.png",
@@ -33,19 +55,9 @@ const PopularData = [
     chip: "Personal Care",
   },
   {
-    id: 4,
-    image: "/images/Popular-4.png",
-    title: "Ramp installation",
-    description:
-      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
-    Icon: MovingIcon,
-    bgColor: "bg-[#9DEFEB]",
-    chip: "Featured",
-  },
-  {
     id: 5,
     image: "/images/Popular-5.png",
-    title: "Home cleaning",
+    title: "Door widening",
     description:
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: WellNess,
@@ -55,7 +67,38 @@ const PopularData = [
   {
     id: 6,
     image: "/images/Popular-6.png",
-    title: "Financial advisory",
+    title: "Stair lift installation",
+    description:
+      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
+    Icon: PersonalCareIcon,
+    bgColor: "bg-[#AADCF2]",
+    chip: "Featured",
+  },
+
+  {
+    id: 8,
+    image: "/images/Lawn care.png",
+    title: "Non-slip flooring",
+    description:
+      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
+    Icon: PersonalCareIcon,
+    bgColor: "bg-[#AADCF2]",
+    chip: "Featured",
+  },
+  {
+    id: 7,
+    image: "/images/Kitchen remodel.png",
+    title: "Kitchen remodel",
+    description:
+      "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
+    Icon: PersonalCareIcon,
+    bgColor: "bg-[#AADCF2]",
+    chip: "Featured",
+  },
+  {
+    id: 8,
+    image: "/images/Lawn care.png",
+    title: "Lawn care",
     description:
       "We found the perfect caregiver for mom. She's kind and incredibly helpful. The process of getting the care my mom needed was simple, and now she's happy and well taken care of. It feels wonderful to see her content.",
     Icon: PersonalCareIcon,

@@ -20,7 +20,7 @@ function KnowledgeContainer() {
       <div className="bg-[#F7F7F7] poppin">
         <div className="mx-4 lg:mx-[70px] py-20 max-sm:py-[50px] ">
           <div className="text-center">
-            <h2 className="font-semibold text-[32px] max-sm:text-[24px]">
+            <h2 className="font-semibold text-[27px] max-sm:text-[24px]">
               Your knowledge hub
             </h2>
             <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>

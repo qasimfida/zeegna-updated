@@ -8,7 +8,7 @@ function FaqsContainer({ headingChange = " Got questions? We've answers" }) {
     <>
       <div className="max-w-7xl mx-auto py-[80px] max-sm:py-[50px]  px-5 poppin max-sm:px-[15px]">
         <div className="text-center">
-          <h2 className="font-semibold text-[32px] max-sm:text-[24px]">
+          <h2 className="font-semibold text-[27px] max-sm:text-[24px]">
             {headingChange}
           </h2>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>

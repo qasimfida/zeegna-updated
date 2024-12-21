@@ -41,67 +41,67 @@ function Footer() {
             <div className="flex max-sm:mx-[16px] max-sm:w-full">
               <div class="px-4 max-sm:px-0 max-sm:mx-[0px] my-4 w-full sm:w-auto">
                 <div>
-                  <h2 class="inline-block text-white mb-2.5   font-semibold	text-lg max-sm:text-[17px]	">
+                  <h2 class="inline-block text-white mb-2.5 font-semibold text-lg max-sm:text-[17px]">
                     Find help (1/2)
                   </h2>
                 </div>
-                <ul class="leading-8 max-sm:leading-0 text-base mb-2.5	text-[#BBBBBB] font-medium max-sm:text-[14px]		">
+                <ul class="leading-8 max-sm:leading-0 text-base mb-2.5 text-[#BBBBBB] font-medium max-sm:text-[14px]">
                   <li>
                     <Link to="#" class="hover:text-white">
-                      Personal care
+                      Bathroom safety
                     </Link>
                   </li>
                   <li>
                     <Link to="#" class="hover:text-white">
-                      Home maintenance
+                      Kitchen accessibility
                     </Link>
                   </li>
                   <li>
                     <Link to="#" class="hover:text-white">
-                      Transportation
+                      Stair modifications
                     </Link>
                   </li>
                   <li>
                     <Link to="#" class="hover:text-white">
-                      Moving and storage
+                      Entryway adjustments
                     </Link>
                   </li>
                   <li>
                     <Link to="#" class="hover:text-white">
-                      Wellness
+                      Flooring improvements
                     </Link>
                   </li>
                 </ul>
               </div>
               <div class="px-4 max-sm:px-0 max-sm:mx-[0px] my-4 w-full sm:w-auto">
                 <div>
-                  <h2 class="inline-block text-white mb-2.5   font-semibold	text-lg max-sm:text-[17px] ">
+                  <h2 class="inline-block text-white mb-2.5 font-semibold text-lg max-sm:text-[17px]">
                     Find help (2/2)
                   </h2>
                 </div>
-                <ul class="leading-8 max-sm:leading-0 text-base mb-2.5	text-[#BBBBBB] font-medium max-sm:text-[14px]	">
+                <ul class="leading-8 max-sm:leading-0 text-base mb-2.5 text-[#BBBBBB] font-medium max-sm:text-[14px]">
                   <li>
                     <Link to="#" class="hover:text-white">
-                      Medical equipment
+                      Lighting & electrical
                     </Link>
                   </li>
                   <li>
                     <Link to="#" class="hover:text-white">
-                      Professional services
+                      Installations & mounting
                     </Link>
                   </li>
                   <li>
                     <Link to="#" class="hover:text-white">
-                      Pet care
+                      Home safety
                     </Link>
                   </li>
                   <li>
                     <Link to="#" class="hover:text-white">
-                      End-of-life planning{" "}
+                      Home automation
                     </Link>
                   </li>
                   <li>
-                    <Link to="/all-services" class="hover:text-white">
+                    <Link to="/services" class="hover:text-white">
                       All service categories{" "}
                     </Link>
                   </li>
@@ -117,17 +117,17 @@ function Footer() {
               </div>
               <ul class="leading-8 max-sm:leading-0 text-base mb-2.5	text-[#BBBBBB] font-medium max-sm:text-[14px]	">
                 <li>
-                  <Link to="/recources-page" class="hover:text-white">
+                  <Link to="/help-section" class="hover:text-white">
                     Find help
                   </Link>
                 </li>
                 <li>
-                  <Link to="/recources-page" class="hover:text-white">
+                  <Link to="/become-partner" class="hover:text-white">
                     Become a partner
                   </Link>
                 </li>
                 <li>
-                  <Link to="/recources-page" class="hover:text-white">
+                  <Link to="/resources" class="hover:text-white">
                     Resources
                   </Link>
                 </li>
@@ -154,18 +154,18 @@ function Footer() {
       <div class=" md:flex md:flex-grow justify-center py-5	border-t border-b border-[#484848]">
         <ul class="flex justify-center space-x-4 max-sm:justify-around text-base	font-semibold	 text-[#BBBBBB]">
           <li>
-            <Link to="/" class="hover:text-secondary">
-              Home{" "}
+            <Link to="/home-new" class="hover:text-secondary">
+              Home
             </Link>
           </li>
 
           <li>
-            <Link to="/get-in-touch" class="hover:text-secondary">
+            <Link to="/privacy" class="hover:text-secondary">
               Privacy
             </Link>
           </li>
           <li>
-            <Link to="/get-in-touch" class="hover:text-secondary">
+            <Link to="/terms-of-use" class="hover:text-secondary">
               Terms of use
             </Link>
           </li>

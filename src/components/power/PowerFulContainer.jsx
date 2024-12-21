@@ -8,7 +8,7 @@ function PowerFulContainer() {
       <div className="bg-[#F7F7F7] poppin">
         <div className="mx-[70px] max-sm:mx-6 max-sm:py-[50px]  py-[80px]">
           <div className="text-center ">
-            <h2 className="font-semibold text-[32px] max-sm:text-3xl max-sm:text-[24px]">
+            <h2 className="font-semibold text-[27px] max-sm:text-3xl max-sm:text-[24px]">
               Simple in use, powerful in action
             </h2>
             <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>

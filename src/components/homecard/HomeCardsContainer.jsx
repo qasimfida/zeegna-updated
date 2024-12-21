@@ -2,7 +2,9 @@ import React from "react";
 import HomeCard from "./HomeCard";
 import cardsData from "../../data/CardsData";
 
+
 function HomeCardsContainer() {
+
   return (
     <>
       <div className=" md:mx-2 md:mx-[70px] pb-20 pt-[2.5rem]   poppin max-sm:pb-0 	">

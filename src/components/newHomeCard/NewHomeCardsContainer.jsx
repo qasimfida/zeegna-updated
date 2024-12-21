@@ -7,8 +7,8 @@ function NewHomeCardsContainer({
   textSize = "md:text-[27px] max-sm:text-[24px]",
 }) {
   return (
-    <>
-      <div className=" md:mx-2 md:mx-[70px] pb-20    poppin max-sm:pb-0 	">
+    <div className="bg-[#F7F7F7]  pt-[80px]">
+      <div className="md:px-2 md:mx-[70px] pb-20 poppin max-sm:pb-0">
         <div className="text-center max-sm:px-[16px]">
           <h2
             className={`font-semibold ${textSize}    max-sm:pt-[50px]  leading-[30px] `}
@@ -32,7 +32,7 @@ function NewHomeCardsContainer({
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

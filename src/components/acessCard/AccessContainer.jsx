@@ -7,7 +7,7 @@ const AccessContainer = () => {
     <div className="bg-[#fffff] poppin">
       <div className=" lg:mx-[70px] max-sm:mx-[16px] md:mx-[27px] pb-20 py-24  max-sm:py-0 max-sm:pt-[30px] max-sm:pb-[50px] ">
         <div className="text-center">
-          <h2 className="font-semibold text-xl md:text-[32px]">
+          <h2 className="font-semibold text-xl md:text-[27px]">
             Exclusive access to jobs in your area
           </h2>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>

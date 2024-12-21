@@ -19,7 +19,7 @@ function NewPopularContainer({
   };
 
   return (
-    <div className={`bg-[#fffff] ${marginBottom} poppin`}>
+    <div className={`bg-[#fffff] ${marginBottom} poppin py-[80px]`}>
       <div className="xl:mx-[70px] max-sm:py-0">
         {/* Header */}
         <div className="text-center max-sm:mt-10">

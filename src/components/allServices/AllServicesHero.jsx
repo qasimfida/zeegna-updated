@@ -18,11 +18,9 @@ const AllServicesHero = () => {
         </Link>
         <span className="mx-2">|</span>
         <Link
-          to="/all-services"
+          to="/services"
           className={`hover:underline ${
-            location.pathname === "/all-services"
-              ? "text-gray-500"
-              : "text-black"
+            location.pathname === "/services" ? "text-gray-500" : "text-black"
           }`}
         >
           All service categories

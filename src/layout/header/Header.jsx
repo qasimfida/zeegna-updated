@@ -15,20 +15,20 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function Header({ styles = "" }) {
   const location = useLocation();
   const bgColor =
+    location.pathname === "/resources " ||
     location.pathname === "/get-in-touch" ||
     location.pathname === "/family-help-center" ||
-    location.pathname === "/partner-help-center" ||
-    location.pathname === "/help-center" ||
-    location.pathname === "/article" ||
-    location.pathname === "/help-section"
+    location.pathname === "/partner-help-center"
+      ? "bg-[#F7F7F7]"
+      : location.pathname === "/help-center" ||
+        location.pathname === "/article" ||
+        location.pathname === "/help-section"
       ? "bg-[#F7F7F7]"
       : location.pathname === "/become-partner"
       ? "bg-[#eefff0]"
-      : location.pathname === "/new-resources"
-      ? "bg-white" // Default white background for /new-resources
       : location.pathname === "/guiding-hero"
       ? "bg-[#FFF9C6]"
-      : "bg-[#FFFDFD]"; // Default background color for all other paths
+      : "bg-[#FFFDFD]";
 
   const isActive = (path) => location.pathname === path;
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ function Header({ styles = "" }) {
   return (
     <Disclosure
       as="nav"
-      className={`max-sm:sticky	max-sm:top-0 max-sm:w-full max-sm:z-50 border-b poppin ${bgColor}`}
+      className={`max-sm:sticky	max-sm:top-0 max-sm:w-full max-sm:z-50 border-b poppin`}
     >
       <div className="px-[37px] max-sm:px-[15px] lg:px-[37px]  max-sm:border-b">
         <div className="flex py-[18px] max-sm:py-[15px] justify-between">

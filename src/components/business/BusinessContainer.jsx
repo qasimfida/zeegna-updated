@@ -20,14 +20,14 @@ const BusinessContainer = ({ title, description, Icon }) => {
   return (
     <>
       {/* section 1 */}
-      <section className="flex justify-center flex-col font-poppins">
-        <div className="flex flex-col items-center pt-[80px] max-sm:pt-[50px]">
-          <h1 className="text-[32px] font-semibold text-center max-sm:text-[24px]">
+      <section className="bg-[#F7F7F7] flex justify-center py-[80px] flex-col font-poppins">
+        <div className="flex flex-col items-center  max-sm:pt-[50px]">
+          <h1 className="text-[27px] font-semibold text-center max-sm:text-[24px]">
             Seize the opportunity
           </h1>
           <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-1"></div>
-          <p className="pt-4 text-xl text-[#5E5E6F] font-medium text-center max-sm:text-[16px]">
-            Transform homes. Transform lives
+          <p className="pt-4 text-[18px] text-[#5E5E6F] font-medium text-center max-sm:text-[16px]">
+            Transform homes, transform lives
           </p>
         </div>
         <div className="flex items-center  justify-center lg:gap-[152px] md:gap-[37px] md:mx-[37px] mt-[80px] max-sm:mt-[30px] justify-items-center max-sm:flex-col max-sm:mx-[64px] max-sm:gap-y-[30px]	">
@@ -62,14 +62,14 @@ const BusinessContainer = ({ title, description, Icon }) => {
       </section>
 
       {/* section 2 */}
-      <section className="bg-[#F7F7F7] poppin">
-        <div className="sm:mx-20 py-20 mt-20">
+      <section className="poppin">
+        <div className="sm:mx-20 py-20">
           <div className="text-center">
-            <h2 className="font-semibold text-[32px] max-sm:text-[24px]">
-              Expand reach. Increase revenue
+            <h2 className="font-semibold text-[27px] max-sm:text-[24px]">
+              Expand reach, increase revenue
             </h2>
             <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>
-            <p className="font-medium text-xl text-[#5E5E6F] py-4">
+            <p className="font-medium  text-[#5E5E6F] py-4 text-[18px]">
               Be part of the solution millions of families are searching for
             </p>
           </div>
@@ -88,11 +88,11 @@ const BusinessContainer = ({ title, description, Icon }) => {
       </section>
 
       {/* section 3 */}
-      <section>
+      <section className="bg-[#F7F7F7] max-sm:py-[50px] py-[80px]">
         <div className="poppin">
-          <div className="mx-20 max-sm:mx-6 max-sm:pt-[50px] pt-[80px]">
+          <div className="mx-20 max-sm:mx-6">
             <div className="text-center">
-              <h2 className="font-semibold text-[32px] max-sm:text-3xl max-sm:text-[24px]">
+              <h2 className="font-semibold text-[27px] max-sm:text-3xl max-sm:text-[24px]">
                 Drive your business forward
               </h2>
               <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>
@@ -121,11 +121,11 @@ const BusinessContainer = ({ title, description, Icon }) => {
         <div className="bg-[#F7F7F7] font-poppins">
           <div className="mx-[70px] max-sm:mx-[16px] py-[80px] max-sm:py-[50px]">
             <div className="text-center">
-              <h2 className="font-semibold text-[24px] md:text-[32px]">
-                Simple steps. Lasting impact
+              <h2 className="font-semibold text-[27px] md:text-[27px]">
+                Simple steps, lasting impact
               </h2>
               <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>
-              <p className="mt-5 text-xl font-medium max-sm:text-[16px] text-[#5E5E6F]">
+              <p className="mt-5 text-[18px] font-medium max-sm:text-[16px] text-[#5E5E6F]">
                 Take your business to new heights with ease
               </p>
             </div>
@@ -159,10 +159,10 @@ const BusinessContainer = ({ title, description, Icon }) => {
         <div className="flex flex-col md:flex-row items-center bg-[#E8FFF1] rounded-[40px] max-sm:rounded-[30px]  px-[20px] md:px-[40px] lg:px-[80px] py-[40px]">
           <div className="flex flex-col justify-between p-4 max-sm:p-0 leading-normal md:w-2/3">
             <div className="lg:w-[430px] max-sm:text-center">
-              <h5 className="mb-[20px] max-sm:mb-[10px] text-[24px] md:text-[28px] lg:text-[32px] font-semibold lg:w-[430px]">
+              <h5 className="mb-[20px] max-sm:mb-[10px] text-[27px] md:text-[27px] lg:text-[27px] font-semibold lg:w-[430px]">
                 Ready for your next great move?
               </h5>
-              <p className="mb-[20px] max-sm:mb-[10px] font-medium text-[16px] md:text-[18px] lg:text-[20px] text-[#5E5E6F]">
+              <p className="mb-[20px] max-sm:mb-[10px] font-medium text-[18px] md:text-[18px] lg:text-[18px] text-[#5E5E6F]">
                 Join our provider network to reach more clients and do more
                 business. Make it count.
               </p>

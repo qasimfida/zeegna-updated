@@ -36,7 +36,7 @@ function HelpCenterHeroSection({
         <div className="flex w-full mx-auto text-left">
           <div className="relative inline-flex items-center mx-auto align-middle">
             <div className="text-center">
-              <h1 className="max-w-5xl text-[28px] font-semibold   lg:text-[32px] lg:max-w-5xl">
+              <h1 className="max-w-5xl text-[27px] font-semibold   lg:text-[27px] lg:max-w-5xl">
                 {changeTheHeading}
               </h1>
               <p className="max-w-xl max-sm:w-full mx-auto mt-[10px] text-[19px] md:text-[20px] font-medium text-[#5E5E6F]">

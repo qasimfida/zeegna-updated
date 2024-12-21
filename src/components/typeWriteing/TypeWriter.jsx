@@ -1,7 +1,18 @@
 import React, { useState, useEffect } from "react";
 
 function Typewriter() {
-  const words = ["Personal Care", "Home Maintenance", "Transportation"];
+  const words = [
+    "Bathroom safety",
+    "Kitchen accessibility",
+    "Stair modifications",
+    "Entryway adjustments",
+    "Flooring improvements",
+    "Lighting & electrical",
+    "Installations & mounting",
+    "Home safety",
+    "Home automation"
+  ];
+  
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [j, setJ] = useState(0);
