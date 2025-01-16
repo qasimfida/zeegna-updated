@@ -1,0 +1,1 @@
+export { NotificationCard  as default } from './NotificationCard'

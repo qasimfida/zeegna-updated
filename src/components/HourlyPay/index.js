@@ -1,0 +1,1 @@
+export { HourlyPay as default } from './HourlyPay';

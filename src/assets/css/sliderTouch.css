@@ -1,0 +1,52 @@
+.swiper1 .swiper-pagination-fraction,
+.swiper1 .swiper-pagination-custom,
+.swiper1 .swiper-horizontal > .swiper-pagination-bullets,
+.swiper1 .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, -5px);
+  top: var(--swiper-pagination-top);
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  position: relative;
+  color: #999;
+}
+
+.swiper2 .swiper-pagination-fraction,
+.swiper2 .swiper-pagination-custom,
+.swiper2 .swiper-horizontal > .swiper-pagination-bullets,
+.swiper2 .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, -5px);
+  top: var(--swiper-pagination-top, 0px);
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  position: relative;
+  color: #999;
+}
+/* Change the color of pagination bullets using the ::before pseudo-element */
+.swiper2 .swiper-pagination-bullet::before {
+  content: ""; /* No text, just an effect */
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%; /* Make the bullet circular */
+  background-color: #109088; /* Default color for the bullet */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change the color of active pagination bullet using the ::after pseudo-element */
+.swiper2 .swiper-pagination-bullet-active::after {
+  content: ""; /* No text, just an effect */
+  display: block;
+  width: 8px; /* Increase the size of the active bullet */
+  height: 8px;
+  border-radius: 50%; /* Make it circular */
+  transform: scale(1.2); /* Slightly enlarge the active bullet */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Optionally, add hover effect using ::before */
+.swiper2 .swiper-pagination-bullet:hover::before {
+  background-color: #109088; /* Tomato color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
