@@ -22,14 +22,14 @@ function HomeCareSlides({ activeTab, setActiveTab }) {
 
   const handleSlideChange = (swiper) => {
     setActiveTab(swiper.activeIndex);
-    setCurrentIndex(swiper.activeIndex); 
+    setCurrentIndex(swiper.activeIndex);
   };
 
   const handleTabClick = (index) => {
     setActiveTab(index);
-    setCurrentIndex(index); 
+    setCurrentIndex(index);
     if (swiperRef.current) {
-      swiperRef.current.swiper.slideTo(index); 
+      swiperRef.current.swiper.slideTo(index);
     }
   };
 
@@ -62,7 +62,7 @@ function HomeCareSlides({ activeTab, setActiveTab }) {
         {tabs.map((tab, index) => (
           <SwiperSlide key={index} className="flex items-center relative">
             <button
-              onClick={() => handleTabClick(index)} 
+              onClick={() => handleTabClick(index)}
               className={`px-3 max-sm:px-[10px] flex flex-col items-center transition-colors duration-300 relative`}
             >
               <span

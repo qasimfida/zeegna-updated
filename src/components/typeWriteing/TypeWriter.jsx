@@ -7,9 +7,9 @@ function Typewriter() {
     "Home automation",
     "Home care",
     "Home maintenance",
-    "Professional services"
+    "Professional services",
   ];
-  
+
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [j, setJ] = useState(0);

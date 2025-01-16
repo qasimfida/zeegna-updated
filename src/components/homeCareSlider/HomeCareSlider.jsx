@@ -34,28 +34,32 @@ const HomeCareSlider = () => {
       button2: "Find entryway adjustment solutions near me →",
     },
     {
-      title: "How to prevent falls for seniors with the best flooring solutions?",
+      title:
+        "How to prevent falls for seniors with the best flooring solutions?",
       description:
         "Take our home evaluation quiz to explore the best flooring options for safety and comfort tailored to senior people—whether it’s installing non-slip surfaces, replacing loose rugs, creating smooth transitions between rooms, or upgrading to durable, senior-friendly materials. Get personalized recommendations and connect with trusted professionals to make your home safer and more fall-resistant for seniors.",
       button1: "Take our home evaluation quiz →",
       button2: "Find flooring solutions near me →",
     },
     {
-      title: "How to improve home safety for seniors with smart lighting and electrical upgrades?",
+      title:
+        "How to improve home safety for seniors with smart lighting and electrical upgrades?",
       description:
         "Take our home evaluation quiz to discover lighting and electrical solutions designed for the safety and convenience of seniors—whether it’s motion-sensor lights, outlet and switch installation, or a smart lighting system. Get tailored recommendations and connect with trusted professionals to create a safer, more functional living space that meets the unique needs of older adults.",
       button1: "Take our home evaluation quiz →",
       button2: "Find lighting and electrical solutions near me →",
     },
     {
-      title: "How to improve home safety for older adults with expert installations and mounting?",
+      title:
+        "How to improve home safety for older adults with expert installations and mounting?",
       description:
         "Take our home evaluation quiz to discover installation and mounting solutions tailored to the needs of older adults—whether it’s securely mounting grab bars, installing safety railings, or setting up wall-mounted shelves and appliances. Get personalized recommendations and connect with trusted professionals to enhance safety, functionality, and organization in your home for older adults.",
       button1: "Take our home evaluation quiz →",
       button2: "Find handyman near me →",
     },
     {
-      title: "How to improve home safety with expert installations and mounting?",
+      title:
+        "How to improve home safety with expert installations and mounting?",
       description:
         "Take our home evaluation quiz to discover installation and mounting solutions tailored to your needs—whether it’s securely mounting grab bars, installing safety railings, or setting up wall-mounted shelves and appliances. Get personalized recommendations and connect with trusted professionals to enhance safety, functionality, and organization in your home.",
       button1: "Take our home evaluation quiz →",
@@ -69,8 +73,7 @@ const HomeCareSlider = () => {
       button2: "Find home safety and automation solutions near me →",
     },
   ];
-  
-  
+
   return (
     <>
       <section className="gap-0 lg:gap-[106px] max-sm:pt-[58px] pt-[60px] lg:pt-[80px] max-sm:pl-[16px] max-sm:pr-[14px] px-[27px] lg:pl-[90px] lg:pr-[71px] pb-[50px] lg:h-[494px] flex bg-[#F7F7F7] poppin">
@@ -89,10 +92,10 @@ const HomeCareSlider = () => {
           </p>
           <div className="flex max-sm:flex-col gap-3 pt-[30px]">
             <button className="border border-black text-[16px] font-medium px-[26px] py-[13px] rounded-full hover:bg-black hover:text-white">
-            {tabs[activeTab].button1}
+              {tabs[activeTab].button1}
             </button>
             <button className="bg-black text-white px-[26px] py-[13px] text-[16px] font-medium rounded-full hover:text-black hover:bg-transparent hover:border hover:border-black">
-            {tabs[activeTab].button2}
+              {tabs[activeTab].button2}
             </button>
           </div>
         </div>
