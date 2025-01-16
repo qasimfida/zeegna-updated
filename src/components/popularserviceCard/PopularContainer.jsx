@@ -16,7 +16,11 @@ function PopularContainer() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="bg-[#fffff] poppin my-[80px]">
+=======
+    <div className="bg-[#fffff] poppin mb-[80px]">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
       <div className="xl:mx-[70px] max-sm:py-0">
         <div className="text-center max-sm:mt-10">
           <h2 className="font-semibold text-xl md:text-[32px] sm:block hidden">
@@ -58,6 +62,7 @@ function PopularContainer() {
             ))}
           </Swiper>
 
+<<<<<<< HEAD
           <div className="flex justify-between mt-4 absolute left-0 right-0 px-4">
             <div
               ref={prevRef}
@@ -85,6 +90,33 @@ function PopularContainer() {
             >
               <IoArrowForward size={22} />
             </div>
+=======
+          <div
+            ref={prevRef}
+            className={`swiper-button-back absolute left-4 top-[50%] lg:top-[47%] transform -translate-y-[100%] z-10 cursor-pointer p-[8px] rounded-full flex items-center justify-center ${
+              currentIndex === 0
+                ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed bg-white"
+                : "border border-black bg-white"
+            }`}
+            onClick={currentIndex === 0 ? null : () => prevRef.current.click()}
+          >
+            <IoArrowBack size={22} />
+          </div>
+          <div
+            ref={nextRef}
+            className={`swiper-button-forward absolute right-4 top-[50%] lg:top-[47%] transform -translate-y-[100%] z-20 cursor-pointer p-[8px] rounded-full flex items-center justify-center ${
+              currentIndex === PopularData.length - 1 
+                ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed bg-white"
+                : "border border-black bg-white"
+            }`}
+            onClick={
+              currentIndex === PopularData.length - 1
+                ? null
+                : () => nextRef.current.click()
+            }
+          >
+            <IoArrowForward size={22} />
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
           </div>
         </div>
 

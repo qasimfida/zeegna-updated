@@ -41,6 +41,7 @@ function Footer() {
             <div className="flex max-sm:mx-[16px] max-sm:w-full">
               <div class="px-4 max-sm:px-0 max-sm:mx-[0px] my-4 w-full sm:w-auto">
                 <div>
+<<<<<<< HEAD
                   <h2 class="inline-block text-white mb-2.5   font-semibold	text-lg max-sm:text-[17px]	">
                     Find help (1/2)
                   </h2>
@@ -53,28 +54,58 @@ function Footer() {
                   </li>
                   <li>
                     <Link to="/find-help" class="hover:text-white">
+=======
+                  <h2 class="inline-block text-white mb-2.5 font-semibold text-lg max-sm:text-[17px]">
+                    Find help (1/2)
+                  </h2>
+                </div>
+                <ul class="leading-8 max-sm:leading-0 text-base mb-2.5 text-[#BBBBBB] font-medium max-sm:text-[14px]">
+                  <li>
+                    <Link to="#" class="hover:text-white">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
                       Bathroom safety
                     </Link>
                   </li>
                   <li>
+<<<<<<< HEAD
                     <Link to="/find-help" class="hover:text-white">
+=======
+                    <Link to="#" class="hover:text-white">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
                       Kitchen accessibility
                     </Link>
                   </li>
                   <li>
+<<<<<<< HEAD
                     <Link to="/find-help" class="hover:text-white">
+=======
+                    <Link to="#" class="hover:text-white">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
                       Stair modifications
                     </Link>
                   </li>
                   <li>
+<<<<<<< HEAD
                     <Link to="/find-help" class="hover:text-white">
                       Entryway adjustments
                     </Link>
                   </li>
+=======
+                    <Link to="#" class="hover:text-white">
+                      Entryway adjustments
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="#" class="hover:text-white">
+                      Flooring improvements
+                    </Link>
+                  </li>
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
                 </ul>
               </div>
               <div class="px-4 max-sm:px-0 max-sm:mx-[0px] my-4 w-full sm:w-auto">
                 <div>
+<<<<<<< HEAD
                   <h2 class="inline-block text-white mb-2.5   font-semibold	text-lg max-sm:text-[17px] ">
                     Find help (2/2)
                   </h2>
@@ -98,10 +129,38 @@ function Footer() {
                   <li>
                     <Link to="/find-help" class="hover:text-white">
                       Home safety & automation
+=======
+                  <h2 class="inline-block text-white mb-2.5 font-semibold text-lg max-sm:text-[17px]">
+                    Find help (2/2)
+                  </h2>
+                </div>
+                <ul class="leading-8 max-sm:leading-0 text-base mb-2.5 text-[#BBBBBB] font-medium max-sm:text-[14px]">
+                  <li>
+                    <Link to="#" class="hover:text-white">
+                      Lighting & electrical
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
                     </Link>
                   </li>
                   <li>
                     <Link to="#" class="hover:text-white">
+<<<<<<< HEAD
+=======
+                      Installations & mounting
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="#" class="hover:text-white">
+                      Home safety
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="#" class="hover:text-white">
+                      Home automation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services" class="hover:text-white">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
                       All service categories{" "}
                     </Link>
                   </li>
@@ -117,12 +176,20 @@ function Footer() {
               </div>
               <ul class="leading-8 max-sm:leading-0 text-base mb-2.5	text-[#BBBBBB] font-medium max-sm:text-[14px]	">
                 <li>
+<<<<<<< HEAD
                   <Link to="/find-help" class="hover:text-white">
+=======
+                  <Link to="/help-section" class="hover:text-white">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
                     Find help
                   </Link>
                 </li>
                 <li>
+<<<<<<< HEAD
                   <Link to="/recources-page" class="hover:text-white">
+=======
+                  <Link to="/become-partner" class="hover:text-white">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
                     Become a partner
                   </Link>
                 </li>
@@ -154,18 +221,31 @@ function Footer() {
       <div class=" md:flex md:flex-grow justify-center py-5	border-t border-b border-[#484848]">
         <ul class="flex justify-center space-x-4 max-sm:justify-around text-base	font-semibold	 text-[#BBBBBB]">
           <li>
+<<<<<<< HEAD
             <Link to="/" class="hover:text-secondary">
               Home{" "}
+=======
+            <Link to="/home-new" class="hover:text-secondary">
+              Home
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             </Link>
           </li>
 
           <li>
+<<<<<<< HEAD
             <Link to="/get-in-touch" class="hover:text-secondary">
+=======
+            <Link to="/privacy" class="hover:text-secondary">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
               Privacy
             </Link>
           </li>
           <li>
+<<<<<<< HEAD
             <Link to="/get-in-touch" class="hover:text-secondary">
+=======
+            <Link to="/terms-of-use" class="hover:text-secondary">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
               Terms of use
             </Link>
           </li>

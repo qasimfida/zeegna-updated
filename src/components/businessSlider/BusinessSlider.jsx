@@ -25,6 +25,10 @@ const BusinessSlider = () => {
 
       {/* Slider starts here */}
       <Swiper
+<<<<<<< HEAD
+=======
+        cssMode={true}
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
         navigation={{
           prevEl: ".swiper-button-fore",
           nextEl: ".swiper-button-back",
@@ -92,7 +96,11 @@ const BusinessSlider = () => {
             ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed"
             : "border border-black"
         }`}
+<<<<<<< HEAD
         onClick={currentIndex === 0 ? null : () => setCurrentIndex(currentIndex - 1)}
+=======
+        onClick={currentIndex === 0 ? null : () => prevRef.current.click()}
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
       >
         <IoArrowBack size={22} />
       </div>
@@ -105,7 +113,11 @@ const BusinessSlider = () => {
             ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed"
             : "border border-black"
         }`}
+<<<<<<< HEAD
         onClick={currentIndex === 2 ? null : () => setCurrentIndex(currentIndex + 1)}
+=======
+        onClick={currentIndex === 2 ? null : () => nextRef.current.click()}
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
       >
         <IoArrowForward size={22} />
       </div>

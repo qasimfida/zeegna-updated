@@ -8,7 +8,11 @@ const Form = () => {
   const [value, setValue] = useState("");
   return (
     <form className="bg-[#F7F7F7] mt-[30px] flex justify-center rounded-[30px] max-sm:rounded-[15px] w-full poppin">
+<<<<<<< HEAD
       <div className="md:w-[67%] max-sm:mx-[15px] pt-[44px] flex flex-col justify-center">
+=======
+      <div className="md:w-[67%] max-sm:mx-[15px] pt-[44px]  select-icon flex flex-col justify-center">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
         <select
           className="bg-transparent border border-gray-300 rounded-lg px-4 py-3	w-full text-gray-600 text-sm"
           defaultValue=""
@@ -26,6 +30,7 @@ const Form = () => {
           <FormInput placeholder="Email" />
           <FormInput placeholder="Phone Number" />
         </div>
+<<<<<<< HEAD
         <div className="flex flex-col justify-between md:flex-row pt-4 gap-3">
           <FormInput placeholder="Company Name" />
           <select
@@ -33,12 +38,28 @@ const Form = () => {
             defaultValue=""
           >
             <option value="please select a topic">Company category</option>
+=======
+        <div className="flex flex-col  select-icon   justify-between md:flex-row pt-4 gap-3">
+          <FormInput placeholder="Company Name" />
+          <select
+            className="bg-transparent border border-gray-300 rounded-lg px-4 py-3 md:w-[49%]	 text-gray-600 text-sm"
+            defaultValue=""
+          >
+            <option value="" disabled>
+              Company category
+            </option>
+
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             <option value="self">one</option>
             <option value="family">Two</option>
             <option value="friend">Three</option>
           </select>
         </div>
+<<<<<<< HEAD
         ;
+=======
+
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
         <ReactQuill
           theme="snow"
           value={value}

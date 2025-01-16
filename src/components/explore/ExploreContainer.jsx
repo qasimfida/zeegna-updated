@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import React, { useRef, useState, useEffect } from "react";
+=======
+import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom"; // For redirection
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
 import ExploreCard from "./ExploreCard";
 import ExploreData from "../../data/ExploreData";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,18 +14,37 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/grid";
 
+<<<<<<< HEAD
 function ExploreContainer() {
+=======
+function ExploreContainer({
+  title = "Explore help at home by city",
+  description = "From home repairs to cleaning to specialized care and more, find trusted professionals to keep your home running smoothly in your city.",
+  fontsize = "max-sm:text-[24px]",
+  background = "bg-white max-sm:mb-12",
+  marginTop = "mt-20 max-sm:mt-12 mb-20 ",
+  padding = "pt-0",
+  showDescription,
+}) {
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+<<<<<<< HEAD
   const handleSlideChange = (swiper) => {
     console.log({ swiper });
+=======
+  const navigate = useNavigate();
+
+  const handleSlideChange = (swiper) => {
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
     setCurrentIndex(swiper.activeIndex);
   };
 
   const handleNext = () => {
+<<<<<<< HEAD
     console.log(swiperRef?.current);
   };
 
@@ -46,6 +70,32 @@ function ExploreContainer() {
         </div>
 
         {/* Swiper for mobile and tablet */}
+=======
+    if (swiperRef?.current) {
+      swiperRef.current.slideNext();
+    }
+  };
+
+  return (
+    <div className={`${background} ${marginTop} poppin`}>
+      <div className="lg:mx-[70px] max-sm:mx-[16px] md:mx-7">
+        {/* Header Section */}
+        <div className="text-center">
+          <h2 className="font-semibold text-xl md:text-[27px] text-[#1C1C1C]">
+            {title}
+          </h2>
+
+          <div className="mx-auto w-24 h-1 bg-[#1C1C1C] mt-4"></div>
+          {showDescription && (
+            <p
+              className={`font-medium ${padding} md:text-[18px] max-sm:text-[16px] text-[#575757] mt-5 lg:w-[846px] mx-auto leading-5`}
+            >
+              {description}
+            </p>
+          )}
+        </div>
+
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
         <div className="block sm:hidden mt-12 relative">
           <Swiper
             direction="horizontal"
@@ -53,6 +103,13 @@ function ExploreContainer() {
             slidesPerGroup={1}
             spaceBetween={10}
             ref={swiperRef}
+<<<<<<< HEAD
+=======
+            grid={{
+              rows: 2,
+              fill: "row",
+            }}
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             loop={false}
             navigation={{
               prevEl: prevRef.current,
@@ -65,7 +122,11 @@ function ExploreContainer() {
             onSlideChange={handleSlideChange}
             mousewheel={true}
             keyboard={true}
+<<<<<<< HEAD
             modules={[Navigation]}
+=======
+            modules={[Navigation, Grid]}
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             className="h-full"
           >
             {ExploreData.map((card) => (
@@ -74,11 +135,16 @@ function ExploreContainer() {
                   image={card.image}
                   title={card.title}
                   bgColor={card.bgColor}
+<<<<<<< HEAD
+=======
+                  onClick={() => navigate(`/cities/${card.id}`)} // Dynamic redirection
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
                 />
               </SwiperSlide>
             ))}
           </Swiper>
 
+<<<<<<< HEAD
           {/* Navigation buttons */}
           <div className="flex justify-between mt-4">
             <div
@@ -107,6 +173,32 @@ function ExploreContainer() {
         </div>
 
         {/* Desktop Grid */}
+=======
+          <div
+            ref={prevRef}
+            className={`swiper-button-back absolute left-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full flex items-center justify-center ${
+              currentIndex === 0
+                ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed bg-white"
+                : "border border-black bg-white"
+            }`}
+            onClick={handleNext}
+          >
+            <IoArrowBack size={22} />
+          </div>
+          <div
+            ref={nextRef}
+            className={`swiper-button-forward absolute right-0 top-1/2 transform -translate-y-1/2 z-20 cursor-pointer p-2 rounded-full flex items-center justify-center ${
+              currentIndex === ExploreData.length - 1
+                ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed bg-white"
+                : "border border-black bg-white"
+            }`}
+            onClick={handleNext}
+          >
+            <IoArrowForward size={22} />
+          </div>
+        </div>
+
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
         <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-12 max-sm:mt-5 max-sm:gap-2.5">
           {ExploreData.map((card) => (
             <ExploreCard
@@ -114,6 +206,10 @@ function ExploreContainer() {
               image={card.image}
               title={card.title}
               bgColor={card.bgColor}
+<<<<<<< HEAD
+=======
+              onClick={() => navigate("/cities")}
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             />
           ))}
         </div>

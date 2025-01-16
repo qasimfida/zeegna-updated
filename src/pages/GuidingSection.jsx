@@ -9,7 +9,11 @@ import StayConnectedSection from "../components/stayConnected/StayConnected";
 function GuidingHeroSection() {
   return (
     <>
+<<<<<<< HEAD
       <div className="poppin  relative max-sm:overflow-hidden pb-[50px] h-[700px] max-sm:h-[720px]">
+=======
+      <div className=" poppin  relative max-sm:overflow-hidden pb-[50px] h-[700px] max-sm:h-[720px] bg-gradient-to-b from-[#FFF9C6]  via-[#FFF9C6] to-[#F3E677]  poppin  ">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
         <div class="flex justify-start pt-[16px] lg:pt-[30px] pl-[38px] max-sm:pl-[16px] mb-[30px] lg:mb-[37px] w-full text-sm font-medium">
           <a class="hover:underline text-black" href="/">
             Home

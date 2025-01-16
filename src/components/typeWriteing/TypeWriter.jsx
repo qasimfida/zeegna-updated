@@ -7,10 +7,19 @@ function Typewriter() {
     "Stair modifications",
     "Entryway adjustments",
     "Flooring improvements",
+<<<<<<< HEAD
     "Lighting and electrical",
     "Installations and mounting",
     "Home safety & automation"
 ];
+=======
+    "Lighting & electrical",
+    "Installations & mounting",
+    "Home safety",
+    "Home automation"
+  ];
+  
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [j, setJ] = useState(0);

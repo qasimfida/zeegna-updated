@@ -3,15 +3,24 @@ import PartnerSlider from "./PartnerSlider";
 import Netsales from "../netSales/Netsales";
 import rating from "../../../public/images/rating.png";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import PersonOne from "../../../public/images/personManOne.png"
 import PersonTwo from "../../../public/images/personWomen.png"
 import PersonThree from "../../../public/images/personManTwo.png"
 import PersonFour from "../../../public/images/personManFour.png"
 import PersonFive from "../../../public/images/personManThree.png"
+=======
+import PersonOne from "../../../public/images/personManOne.png";
+import PersonTwo from "../../../public/images/personWomen.png";
+import PersonThree from "../../../public/images/personManTwo.png";
+import PersonFour from "../../../public/images/personManFour.png";
+import PersonFive from "../../../public/images/personManThree.png";
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
 
 const PartnerContainer = () => {
   return (
     <div className="pt-[30px] max-sm:pt-[16px] pb-[50px] font-poppins">
+<<<<<<< HEAD
       <div className="flex justify-start md:pl-[38px] max-sm:pl-[16px] w-full text-sm font-medium">
         <Link
           to="/"
@@ -32,6 +41,9 @@ const PartnerContainer = () => {
         </Link>
       </div>
       <div className="flex flex-col items-center max-sm:pt-[50px]">
+=======
+      <div className="flex flex-col items-center md:pt-[150px] max-sm:pt-[50px] px-[29px] md:pb-[175px]">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
         <h1 className="text-[28px] sm:text-[48px] md:text-[64px] font-semibold font-poppins text-center max-sm:text-[28px]">
           Grow your business
         </h1>
@@ -45,6 +57,7 @@ const PartnerContainer = () => {
           </button>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="">
         {/* <img src={PersonOne} alt="" />
         <img src={PersonTwo} alt="" />
@@ -53,6 +66,8 @@ const PartnerContainer = () => {
         <img src={PersonFive} alt="" /> */}
         <PartnerSlider />
       </div>
+=======
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
     </div>
   );
 };

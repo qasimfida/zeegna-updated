@@ -7,7 +7,11 @@ const BusinessResults = () => {
     <>
       <div className="w-full py-[80px] max-sm:pl[16px] max-md:pl[57px] lg:px-[150px] font-poppins">
         <div className="flex flex-col items-center gap-3">
+<<<<<<< HEAD
           <h1 className="font-semibold text-center text-[27px] max-sm:text-[21px]">
+=======
+          <h1 className="text-[27px] font-semibold text-center">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             Trusted by providers, proven by results
           </h1>
           <div className="w-[100px] border border-black h-[2px]"></div>

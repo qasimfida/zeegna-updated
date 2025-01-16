@@ -81,11 +81,19 @@ const Contact = () => {
       {activeTab === 1 && <Form />}
       {activeTab === 2 && <Form />}
       {activeTab === 3 && <Salesform />}
+<<<<<<< HEAD
       <div className=" w-full flex gap-4 bg-[#f7f7f7] p-5 mb-[80px] max-sm:mb-[50px] rounded-[15px] mt-[24px]">
         <Clockicon />
         <div className="">
           <h1 className="text-[19px] font-semibold">Support Hours</h1>
           <p className="text-[#5E5E6F] text-sm font-medium">
+=======
+      <div className=" w-full flex gap-4 bg-[#f7f7f7] p-5 mb-[80px] md:h-[128px] max-sm:mb-[50px] rounded-[15px] mt-[24px]">
+        <Clockicon />
+        <div className="">
+          <h1 className="text-[19px] font-semibold">Support Hours</h1>
+          <p className="text-[#5E5E6F] text-[16px] font-medium">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             Please note that support tickets are reviewed Monday through Friday
             from 8:00 a.m to 5:000 p.m. EST, <br /> except for holidays
           </p>

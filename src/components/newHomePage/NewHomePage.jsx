@@ -13,7 +13,11 @@ function NewHomePage() {
             <div className="max-sm:hidden absolute lg:w-[338px] max-lg:bottom-[-13%] left-[0] ml-[24px] mt-[55px] max-sm:relative max-sm:w-full max-sm:ml-0 max-sm:mt-0 max-sm:flex max-sm:flex-col max-sm:items-center"></div>
             <div className="text-center max-sm:w-full">
               {/* Heading */}
+<<<<<<< HEAD
               <h1 className="text-[64px] xl:leading-[80px] font-semibold text-gray-800 mb-5 max-sm:text-[27px] poppin text-[64px] max-lg:text-[48px]">
+=======
+              <h1 className="text-[64px] xl:leading-[80px] font-semibold text-gray-800 mb-5 max-sm:text-[27px] poppin text-4xl max-lg:text-[48px]">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
                 Comfort. Choice. Home.
               </h1>
               <p className="text-2xl	font-medium	 mb-10 max-sm:mb-[20px] text-[#5E5E6F] max-sm:w-full	mx-auto max-sm:text-[18px] max-md:text-xl   leading-[38px]		">

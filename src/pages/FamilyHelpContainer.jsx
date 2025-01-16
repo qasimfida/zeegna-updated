@@ -5,9 +5,16 @@ import HelpCenterHeroSection from "../components/helpcenter/HelpCenterHeroSectio
 import CrossIcon from "../assets/icons/faqsDropDown/CrossIcon";
 import TickIcon from "../assets/icons/faqsDropDown/TickIcon";
 import NewTabs from "../components/helpcenterpartner/TabsNew";
+<<<<<<< HEAD
 
 function FamilyPartnerHelp() {
   
+=======
+import { FaCheck } from "react-icons/fa6";
+import { RxCross2 } from "react-icons/rx";
+
+function FamilyPartnerHelp() {
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
   return (
     <>
       <HelpCenterHeroSection
@@ -35,14 +42,22 @@ function FamilyPartnerHelp() {
           <Link to="/no-page">
             <button className="rounded-full flex items-center gap-4 bg-transparent border-[#1C1C1C] border-2 px-[45px] text-base font-medium py-[13px] text-black hover:bg-[#1C1C1C] hover:text-white">
               No
+<<<<<<< HEAD
               <CrossIcon />
+=======
+              <RxCross2 />
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             </button>
           </Link>
 
           <Link to="/yes-page">
             <button className="rounded-full flex items-center gap-4 px-[45px] py-[13px] text-base font-medium text-black border-[#1C1C1C] border-2 hover:bg-[#1C1C1C] hover:text-white">
               Yes
+<<<<<<< HEAD
               <TickIcon />
+=======
+              <FaCheck />
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             </button>
           </Link>
         </div>

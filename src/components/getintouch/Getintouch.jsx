@@ -3,7 +3,11 @@ import React from "react";
 const Getintouch = () => {
   return (
     <>
+<<<<<<< HEAD
       <section className="flex flex-col px-9 max-sm:px-[16px] poppin">
+=======
+      <section className="flex flex-col px-9 max-sm:px-[16px]  bg-[#F7F7F7] poppin">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
         <div className="pt-[20px]">
           <h3 className="text-[14px] font-medium text-black">
             Home | <span className="text-[#747474] ">Get in touch</span>

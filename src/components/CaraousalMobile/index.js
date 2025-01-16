@@ -1,0 +1,1 @@
+export { CaraousalMobile as default } from './CaraousalMobile';

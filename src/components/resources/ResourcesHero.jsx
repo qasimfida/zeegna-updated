@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
+<<<<<<< HEAD
 import { Link, useLocation } from "react-router-dom"; // import useLocation for pathname checking
+=======
+import { Link, useLocation } from "react-router-dom";
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
 import TwitterIcon from "../../assets/icons/resources/Twitter";
 import FacebookIcon from "../../assets/icons/resources/FacebookIcon";
 import LinkedinIcon from "../../assets/icons/resources/Linkedin";
@@ -7,9 +11,18 @@ import EmailIcon from "../../assets/icons/resources/Email";
 import LeftTick from "../../assets/icons/faqsDropDown/LeftTick";
 
 function ResourcesHero({
+<<<<<<< HEAD
   paraChange = "When it comes to aging or managing long-term health issues, home health care can be an absolute lifesaver. But what exactly is home health care? Put simply, it’s professional care provided in the comfort of your own home...",
   showSocialIcons = false,
   showReadMore = false,
+=======
+  paraChange = "Tips to create a safe and comfortable home for aging gracefully",
+  headingChange = "Your guide to aging at home",
+  showSocialIcons = false,
+  showReadMore = false,
+  showAuthorInfo = false,
+  showImg = false,
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
   extraThings,
 }) {
   const [isMdScreen, setIsMdScreen] = useState(false);
@@ -26,6 +39,7 @@ function ResourcesHero({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+<<<<<<< HEAD
   const truncatedText =
     "When it comes to aging or managing long-term health issues, home health care can...";
 
@@ -123,12 +137,100 @@ function ResourcesHero({
                   className="text-gray-500 hover:text-white"
                 />
               </Link>
+=======
+  return (
+    <div className="poppin py-[60px] md:pb-[100px]">
+      <div className="px-[16px] md:px-[300px] mx-auto max-sm:flex flex-col-reverse md:items-center max-sm:pb-[40px]">
+        <div className="mx-4 md:ml-[34px] md:mx-0">
+          {/* Heading Section */}
+          <div className="text-center text-[21px] font-semibold md:text-[27px] md:font-semibold">
+            <h1>{headingChange}</h1>
+            <p className="text-sm md:text-[16px] font-normal md:font-medium text-[#5E5E6F] lg:py-4 md:py-[10px] max-sm:pt-[25px]">
+              {paraChange}
+            </p>
+          </div>
+
+          {/* Social Icons and Author Info Section */}
+          <div className="flex md:flex-row md:items-center md:justify-between flex-col items-center gap-[20px]">
+            {showSocialIcons && (
+              <div className="flex space-x-4 items-center py-4">
+                <Link
+                  to="#"
+                  className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center transition duration-300 hover:bg-blue-200 hover:-translate-y-1"
+                >
+                  <FacebookIcon
+                    alt="Facebook Icon"
+                    className="text-gray-500 hover:text-white"
+                  />
+                </Link>
+                <Link
+                  to="#"
+                  className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center transition duration-300 hover:bg-blue-200 hover:-translate-y-1"
+                >
+                  <LinkedinIcon
+                    alt="LinkedIn Icon"
+                    className="text-gray-500 hover:text-white"
+                  />
+                </Link>
+                <Link
+                  to="#"
+                  className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center transition duration-300 hover:bg-blue-200 hover:-translate-y-1"
+                >
+                  <TwitterIcon
+                    alt="Twitter Icon"
+                    className="text-gray-500 hover:text-white"
+                  />
+                </Link>
+                <Link
+                  to="#"
+                  className="p-2.5 rounded-full border border-gray-500 flex justify-center items-center transition duration-300 hover:bg-blue-200 hover:-translate-y-1"
+                >
+                  <EmailIcon
+                    alt="Email Icon"
+                    className="text-gray-500 hover:text-white"
+                  />
+                </Link>
+              </div>
+            )}
+
+            {showAuthorInfo && (
+              <div className="flex max-sm:flex-col justify-between">
+                <div className="flex items-center">
+                  <img
+                    src="/images/image (3).png"
+                    alt="Author"
+                    className="w-16 h-16 rounded-full mr-4"
+                  />
+                  <div>
+                    <p className="font-semibold text-base text-[#5E5E6F]">
+                      By Kamala Harris
+                    </p>
+                    <p className="text-[#B6B9CE]">Chief Editor</p>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Image Section */}
+          {showImg && (
+            <div className="my-6">
+              <img
+                src="/images/ArticleHero.png"
+                alt="Article Hero"
+                className="w-full h-auto rounded-lg"
+              />
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             </div>
           )}
 
           {showReadMore && (
             <Link
+<<<<<<< HEAD
               to="/article"
+=======
+              to="/article-ms"
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
               className="flex items-center gap-2 bg-transparent text-[#109088] text-sm md:text-base font-semibold"
             >
               Read more
@@ -136,6 +238,7 @@ function ResourcesHero({
             </Link>
           )}
         </div>
+<<<<<<< HEAD
 
         {/* Image Section */}
         <div className="max-sm:ml-4 md:mx-0">
@@ -145,6 +248,8 @@ function ResourcesHero({
             alt="Resources"
           />
         </div>
+=======
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
       </div>
     </div>
   );

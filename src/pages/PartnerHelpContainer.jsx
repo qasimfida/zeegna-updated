@@ -6,6 +6,11 @@ import CrossIcon from "../assets/icons/faqsDropDown/CrossIcon";
 import PartnerTabs from "../components/helpcenterpartner/PartnerTabs";
 import Tabs from "../components/helpcenterpartner/TabsNew";
 import Header from "../layout/header/Header";
+<<<<<<< HEAD
+=======
+import { FaCheck } from "react-icons/fa6";
+import { RxCross2 } from "react-icons/rx";
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
 
 function PartnerHelpContainer() {
   return (
@@ -37,14 +42,22 @@ function PartnerHelpContainer() {
             {" "}
             <button className="rounded-full flex items-center gap-[7px] max-sm:px-[32px] bg-transparent border-[#1C1C1C] border-2 px-[45px] text-base font-medium py-[13px] text-black hover:bg-[#1C1C1C] hover:text-white">
               No
+<<<<<<< HEAD
               <CrossIcon />
+=======
+              <RxCross2 />
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             </button>
           </Link>
 
           <Link to="/yes-page">
             <button className="rounded-full flex items-center gap-[7px] max-sm:px-[32px] px-[45px] py-[13px] text-base font-medium text-black border-[#1C1C1C] border-2 hover:bg-[#1C1C1C] hover:text-white">
               Yes
+<<<<<<< HEAD
               <TickIcon />
+=======
+              <FaCheck />
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
             </button>
           </Link>
         </div>

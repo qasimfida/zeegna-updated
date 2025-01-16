@@ -14,6 +14,24 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 function Header({ styles = "" }) {
   const location = useLocation();
+<<<<<<< HEAD
+=======
+  const bgColor =
+    location.pathname === "/resources " ||
+    location.pathname === "/get-in-touch" ||
+    location.pathname === "/family-help-center" ||
+    location.pathname === "/partner-help-center"
+      ? "bg-[#F7F7F7]"
+      : location.pathname === "/help-center" ||
+        location.pathname === "/article" ||
+        location.pathname === "/help-section"
+      ? "bg-[#F7F7F7]"
+      : location.pathname === "/become-partner"
+      ? "bg-[#eefff0]"
+      : location.pathname === "/guiding-hero"
+      ? "bg-[#FFF9C6]"
+      : "bg-[#FFFDFD]";
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
 
   const isActive = (path) => location.pathname === path;
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +43,11 @@ function Header({ styles = "" }) {
   return (
     <Disclosure
       as="nav"
+<<<<<<< HEAD
       className={`max-sm	max-sm:top-0 max-sm:w-full max-sm:z-50 border-b poppin`}
+=======
+      className={`max-sm:sticky	max-sm:top-0 max-sm:w-full max-sm:z-50 border-b poppin`}
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
     >
       <div className="px-[37px] max-sm:px-[15px] lg:px-[37px]  max-sm:border-b">
         <div className="flex py-[18px] max-sm:py-[15px] justify-between">
@@ -39,9 +61,15 @@ function Header({ styles = "" }) {
           {/* Desktop Menu */}
           <div className="hidden lg:flex lg:space-x-8 text-[17px] font-semibold text-[#5E5E6F]">
             <Link
+<<<<<<< HEAD
               to="/find-help"
               className={`inline-flex items-center   px-1 pt-1 hover:border-gray-300 hover:text-gray-700 ${
                 isActive("/find-help") ? "text-[#109088]" : "text-[#5E5E6F]"
+=======
+              to="/help-section"
+              className={`inline-flex items-center   px-1 pt-1 hover:border-gray-300 hover:text-gray-700 ${
+                isActive("/help-section") ? "text-[#109088]" : "text-[#5E5E6F]"
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
               }`}
             >
               Find help
@@ -101,7 +129,11 @@ function Header({ styles = "" }) {
 
       {/* Mobile Menu */}
       {isOpen && (
+<<<<<<< HEAD
         <div className="lg:hidden pb-4 h-[90vh]">
+=======
+        <div className="lg:hidden pb-4 h-[90vh] bg-gradient-to-b from-white to-pink-200">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
           {/* Menu Items */}
           <div className="px-4 mb-[135px]">
             <Link

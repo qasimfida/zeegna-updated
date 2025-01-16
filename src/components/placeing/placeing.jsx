@@ -1,10 +1,17 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
 
 function PlacingHelpSection() {
   return (
     <div className="max-w-7xl mx-auto py-20 max-sm:py-[50px]  text-center poppin">
+<<<<<<< HEAD
       <h2 className="font-semibold text-[27px] max-sm:text-[21px]">
+=======
+      <h2 className="font-semibold  lg:text-[27px] max-sm:text-[24px]">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
         Placing help at everyone's reach{" "}
       </h2>
       <div className="w-20 h-[3px] bg-black mx-auto mt-4"></div>
@@ -29,12 +36,21 @@ function PlacingHelpSection() {
             <p class="mb-3 font-medium text-[#5E5E6F] text-xl max-sm:text-[16px]">
               Get the care you need to stay happy and healthy in your home
             </p>
+<<<<<<< HEAD
             <Link
               to="/find-help"
               class="inline-flex max-sm:flex  max-sm:justify-center items-center text-base font-medium text-center text-white bg-[#1C1C1C] px-[38px] py-[13px] rounded-full focus:ring-4 focus:outline-none hover:bg-white hover:text-black border-2 border-black mt-4 max-sm:py-[8px]"
             >
               Find help
             </Link>
+=======
+            <a
+              href="#"
+              class="inline-flex max-sm:flex  max-sm:justify-center items-center text-base font-medium text-center text-white bg-[#1C1C1C] px-[38px] py-[13px] rounded-full focus:ring-4 focus:outline-none hover:bg-white hover:text-black border-2 border-black mt-4 max-sm:py-[8px]"
+            >
+              Find help
+            </a>
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
           </div>
         </div>
 

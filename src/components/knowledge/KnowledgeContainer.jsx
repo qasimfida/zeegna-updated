@@ -4,12 +4,17 @@ import KnowledgeCard from "./KnowledgeCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Mousewheel, Keyboard } from "swiper/modules";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+<<<<<<< HEAD
 import {useNavigate} from 'react-router-dom';
 
 function KnowledgeContainer() {
 
   const navigate = useNavigate();
 
+=======
+
+function KnowledgeContainer() {
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
@@ -24,7 +29,11 @@ function KnowledgeContainer() {
       <div className="bg-[#F7F7F7] poppin">
         <div className="mx-4 lg:mx-[70px] py-20 max-sm:py-[50px] ">
           <div className="text-center">
+<<<<<<< HEAD
             <h2 className="font-semibold text-[27px] max-sm:text-[21px]">
+=======
+            <h2 className="font-semibold text-[27px] max-sm:text-[24px]">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
               Your knowledge hub
             </h2>
             <div className="mx-auto w-[100px] h-[3px] bg-[#1C1C1C] mt-2"></div>
@@ -113,7 +122,11 @@ function KnowledgeContainer() {
           </div>
 
           <div className="flex justify-center mt-[50px]">
+<<<<<<< HEAD
             <button className="rounded-full bg-transparent border-[#1C1C1C] border-2 px-[35.5px] py-[13px] text-[#1C1C1C] hover:bg-black hover:text-white font-medium" onClick={() => navigate("/resources")}>
+=======
+            <button className="rounded-full bg-transparent border-[#1C1C1C] border-2 px-[35.5px] py-[13px] text-[#1C1C1C] hover:bg-black hover:text-white font-medium">
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
               Read more
             </button>
           </div>

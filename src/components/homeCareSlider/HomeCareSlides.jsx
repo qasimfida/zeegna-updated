@@ -14,21 +14,38 @@ function HomeCareSlides({ activeTab, setActiveTab }) {
     { title: "Stair modifications" },
     { title: "Entryway adjustments" },
     { title: "Flooring improvements" },
+<<<<<<< HEAD
     { title: "Lighting and electrical" },
     { title: "Installations and mounting" },
     { title: "Home safety & automation" },
+=======
+    { title: "Lighting & electrical" },
+    { title: "Installations & mounting" },
+    { title: "Home safety" },
+    { title: "Home automation" },
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
   ];
 
   const handleSlideChange = (swiper) => {
     setActiveTab(swiper.activeIndex);
+<<<<<<< HEAD
     setCurrentIndex(swiper.activeIndex);
+=======
+    setCurrentIndex(swiper.activeIndex); 
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
   };
 
   const handleTabClick = (index) => {
     setActiveTab(index);
+<<<<<<< HEAD
     setCurrentIndex(index);
     if (swiperRef.current) {
       swiperRef.current.swiper.slideTo(index);
+=======
+    setCurrentIndex(index); 
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideTo(index); 
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
     }
   };
 
@@ -61,7 +78,11 @@ function HomeCareSlides({ activeTab, setActiveTab }) {
         {tabs.map((tab, index) => (
           <SwiperSlide key={index} className="flex items-center relative">
             <button
+<<<<<<< HEAD
               onClick={() => handleTabClick(index)}
+=======
+              onClick={() => handleTabClick(index)} 
+>>>>>>> b721efc6068edea2d6a10360c8ca969cfd1a22e9
               className={`px-3 max-sm:px-[10px] flex flex-col items-center transition-colors duration-300 relative`}
             >
               <span
