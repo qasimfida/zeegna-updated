@@ -1,0 +1,7 @@
+.swiper-slide{
+    transition-duration: 0ms;
+    transform: translate3d(0px, 0px, -0.826446px) rotateX(0deg) rotateY(0.0165289deg) scale(1);
+    z-index: 1;
+    margin-right: 50px;
+    width: 40vh;
+}
