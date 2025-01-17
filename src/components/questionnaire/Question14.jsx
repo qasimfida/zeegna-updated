@@ -1,5 +1,5 @@
 import React from "react";
-import QuestionnaireHeroSection from "../questionnaireHero/questionnaireHeroSection";
+import QuestionnaireHeroSection from "../questionnaireHero/QuestionnaireHeroSection";
 
 const Question14 = () => {
   const options = ["Yes", "No", "I’m not sure"];
