@@ -1,5 +1,5 @@
 import React from "react";
-import QuestionnaireHeroSection from "../questionnaireHero/questionnaireHeroSection";
+import QuestionnaireHeroSection from "../questionnaireHero/QuestionnaireHeroSection";
 
 const FundingMade2 = () => {
   const options = ["Own", "Rent"];

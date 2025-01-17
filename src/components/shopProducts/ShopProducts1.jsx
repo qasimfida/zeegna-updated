@@ -1,5 +1,5 @@
 import React from "react";
-import QuestionnaireHeroSection from "../questionnaireHero/questionnaireHeroSection";
+import QuestionnaireHeroSection from "../questionnaireHero/QuestionnaireHeroSection";
 
 const ShopProducts1 = () => {
   const options = ["Yes, connect me with home pros", "No", "I’m not sure"];
