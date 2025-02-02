@@ -41,7 +41,7 @@ function Searchbar() {
           type="search"
           id="default-search"
           className="w-full md:py-[18px] py-[15px] focus:outline-none pl-[20px] pr-[5px] 
-            md:text-[16px] text-[16px] sm:text-[16px] outline-none rounded-[30px] 
+            md:text-[16px] text-[16px] sm:text-[16px]  rounded-[30px] 
             bg-[#F7F7F7] max-w-full touch-action-manipulation appearance-none 
             -webkit-text-size-adjust-100"
           placeholder="What type of help do you need?"
