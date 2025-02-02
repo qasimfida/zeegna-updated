@@ -64,7 +64,10 @@ function Question2() {
             <input
               type="text"
               placeholder="Other (optional)"
-              className="border border-gray-400 rounded-[10px] bg-[#F7F7F7] text-[14px] text-black font-medium px-4 py-[14px]"
+              className="border border-gray-400 rounded-[10px] bg-[#F7F7F7] 
+              text-[16px] text-black font-medium px-4 py-[14px] 
+              w-full h-[50px] focus:outline-none max-w-full touch-action-manipulation 
+              appearance-none -webkit-text-size-adjust-100"
             />
           </div>
         </div>
