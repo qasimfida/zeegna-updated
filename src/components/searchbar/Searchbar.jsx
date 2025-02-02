@@ -46,7 +46,7 @@ function Searchbar() {
         <input
           type="search"
           id="default-search"
-          className="w-full md:py-[18px] py-[15px] focus:outline-none pl-[20px] pr-[5px] md:text-[16px] outline-none rounded-[30px] bg-[#F7F7F7] text-[14px]"
+          className="w-full md:py-[18px] py-[15px] focus:outline-none pl-[20px] pr-[5px] md:text-[16px] outline-none rounded-[30px] bg-[#F7F7F7] text-[14px] max-w-full touch-action-manipulation"
           placeholder="What type of help do you need?"
           value={searchValue}
           onFocus={showDropdown}
