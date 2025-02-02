@@ -47,9 +47,9 @@ const Form = () => {
           value={value}
           onChange={setValue}
           placeholder="Please enter your comments"
-          className="bg-transparent mt-4  rounded-t-[15px]  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 
-          appearance-none touch-action-manipulation	 text-[14px] font-medium"
+          className="bg-transparent mt-4 rounded-t-[15px] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 appearance-none touch-action-manipulation text-[14px] font-medium sm:text-[16px]"
         />
+
         <div
           className="flex items-center flex-col mt-3 max-sm:px-[10px] border-dashed rounded-lg border-[2px] border-[#B6B9CE] py-4 gap-[15px] cursor-pointer"
           onClick={() => document.getElementById("fileUpload").click()}
