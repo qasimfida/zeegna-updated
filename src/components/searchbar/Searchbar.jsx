@@ -38,7 +38,7 @@ function Searchbar() {
     <form className="max-w-[739px] mx-auto relative">
       <label
         htmlFor="default-search"
-        className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+        className="mb-2 text-sm font-medium  focus:outline-none text-gray-900 sr-only dark:text-white"
       >
         Search
       </label>
@@ -54,7 +54,7 @@ function Searchbar() {
           onChange={(e) => setSearchValue(e.target.value)}
           required
         />
-        <div className="bg-black md:w-[50px] w-[40px] h-[40px] absolute top-[7px] md:top-[5px] right-[5px] md:h-[50px] rounded-[50%] flex items-center justify-center">
+        <div className="bg-black md:w-[50px] w-[40px] h-[40px]  focus:outline-none absolute top-[7px] md:top-[5px] right-[5px] md:h-[50px] rounded-[50%] flex items-center justify-center">
           <SearchIcon />
         </div>
       </div>
