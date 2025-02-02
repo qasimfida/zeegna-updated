@@ -32,10 +32,15 @@ function Question20() {
               <input
                 type="text"
                 id="first-name"
-                className="text-[14px] text-[#5E5E6F] rounded-[10px] w-full px-[15px] py-[15px] border border-[#B6B9CE] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="text-[14px] text-[#5E5E6F] rounded-[10px] w-full px-[15px] py-[15px] border border-[#B6B9CE] 
+                focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 
+                appearance-none touch-action-manipulation"
                 placeholder="John"
                 value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
+                onChange={(e) =>
+                  setFirstName(e.target.value.replace(/[^a-zA-Z\s]/g, ""))
+                }
+                autoComplete="given-name"
                 required
               />
             </div>
@@ -43,17 +48,22 @@ function Question20() {
             <div className="mb-4">
               <label
                 htmlFor="last-name"
-                className="block text-sm font-semibold md:text-[18px] font-semibold mb-2"
+                className="block text-sm  md:text-[18px] font-semibold mb-2"
               >
                 Last name
               </label>
               <input
                 type="text"
                 id="last-name"
-                className="text-[14px] text-[#5E5E6F] rounded-[10px] w-full px-[15px] py-[15px] border border-[#B6B9CE] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="text-[14px] text-[#5E5E6F] rounded-[10px] w-full px-[15px] py-[15px] border border-[#B6B9CE] 
+                focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 
+                appearance-none touch-action-manipulation"
                 placeholder="Smith"
                 value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
+                onChange={(e) =>
+                  setLastName(e.target.value.replace(/[^a-zA-Z\s]/g, ""))
+                }
+                autoComplete="family-name"
                 required
               />
             </div>
@@ -68,10 +78,14 @@ function Question20() {
               <input
                 type="email"
                 id="email"
-                className="text-[14px] text-[#5E5E6F] rounded-[10px] w-full px-[15px] py-[15px] border border-[#B6B9CE] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="text-[14px] text-[#5E5E6F] rounded-[10px] w-full px-[15px] py-[15px] border border-[#B6B9CE] 
+                focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 
+                appearance-none touch-action-manipulation"
                 placeholder="xyz@gmail.com"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value.trim())}
+                autoComplete="email"
+                inputMode="email"
                 required
               />
             </div>

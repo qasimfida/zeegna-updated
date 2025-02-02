@@ -4,13 +4,15 @@ import { FaChevronRight } from "react-icons/fa";
 
 function EmailVerification() {
   const [code, setCode] = useState("");
-  const [isValid, setIsValid] = useState(false);
 
   const handleCodeChange = (e) => {
-    const value = e.target.value;
-    setCode(value);
-    setIsValid(value.length === 4 && /^[0-9]+$/.test(value));
+    const value = e.target.value.replace(/\D/g, "");
+    if (value.length <= 4) {
+      setCode(value);
+    }
   };
+
+  const isValid = code.length === 4;
 
   return (
     <div className="pt-[50px] pb-[100px] md:pt-[50px] md:pb-[215px] max-sm:px-[16px] flex items-center justify-center poppin">
@@ -36,8 +38,15 @@ function EmailVerification() {
             id="code"
             value={code}
             onChange={handleCodeChange}
-            className="text-[14px] text-[#5E5E6F] rounded-[10px] w-full px-[15px] py-[15px] border border-[#B6B9CE] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-            placeholder="Enter 4 digit code"
+            onKeyDown={(e) => {
+              if (!/[0-9]/.test(e.key) && e.key !== "Backspace") {
+                e.preventDefault();
+              }
+            }}
+            className="text-[14px] text-[#5E5E6F] rounded-[10px] w-full px-[15px] py-[15px] 
+            border border-[#B6B9CE] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 
+            appearance-none"
+            placeholder="Enter 4-digit code"
             maxLength={4}
             required
           />
