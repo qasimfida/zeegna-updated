@@ -41,15 +41,20 @@ function StayConnectedSection({ MarginTop = "md:mt-0" }) {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full px-4 py-[15px] border border-gray-300 bg-[#DFFFEE]  rounded-[10px] text-[14px] font-medium text-[#5E5E6F] h-[50px] focus:outline-none max-w-full touch-action-manipulation appearance-none 
-            -webkit-text-size-adjust-100 outline-none"
+                className="w-full px-4 py-[15px] border border-gray-300 bg-[#DFFFEE] 
+                           rounded-[10px] text-[16px] font-medium text-[#5E5E6F] h-[50px] focus:outline-none 
+                           max-w-full touch-action-manipulation appearance-none -webkit-text-size-adjust:100% 
+                           outline-none"
               />
+
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full px-4 py-[15px] focus:outline-none max-w-full touch-action-manipulation appearance-none 
-            -webkit-text-size-adjust-100 outline-none border border-gray-300 bg-[#DFFFEE]  rounded-[10px] text-[14px] font-medium text-[#5E5E6F] h-[50px]"
+                className="w-full px-4 py-[15px] focus:outline-none max-w-full touch-action-manipulation 
+                           appearance-none -webkit-text-size-adjust:100% outline-none border border-gray-300 
+                         bg-[#DFFFEE] rounded-[10px] text-[16px] font-medium text-[#5E5E6F] h-[50px]"
               />
+
               <button
                 type="submit"
                 className="bg-[#1C1C1C] text-white py-[13px] font-medium rounded-[27px] hover:bg-white border-2 border-black hover:text-black transition-colors"
