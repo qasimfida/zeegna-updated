@@ -95,7 +95,7 @@ const Contact = () => {
             className={`border border-[#e5dbdb] rounded-2xl p-[15px] cursor-pointer hover:bg-[#F8F8F8] ${
               activeTab === tabIndex ? "bg-[#F8F8F8] border-black" : ""
             }`}
-            onClick={() => handleTabClick(tabIndex)} // Handle tab click for grid view
+            onClick={() => handleTabClick(tabIndex)}
           >
             <div className="flex justify-between items-center">
               <div>

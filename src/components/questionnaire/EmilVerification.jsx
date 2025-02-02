@@ -47,7 +47,7 @@ function EmailVerification() {
             border border-[#B6B9CE] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 
             appearance-none"
             placeholder="Enter 4-digit code"
-            maxLength={4}
+            maxLength={4} // Ensures maximum of 4 digits
             required
           />
         </div>

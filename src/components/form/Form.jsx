@@ -27,7 +27,7 @@ const Form = () => {
           <FormInput placeholder="Name" />
           <FormInput placeholder="Last Name" />
         </div>
-        <div className="flex flex-col justify-between md:flex-row pt-4 gap-[15px]">
+        <div className="flex flex-col justify-between outline-none md:flex-row pt-4 gap-[15px]">
           <FormInput placeholder="Email" />
           <FormInput placeholder="Phone Number" />
         </div>
