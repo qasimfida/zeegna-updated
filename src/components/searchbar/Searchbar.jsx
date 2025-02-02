@@ -36,13 +36,6 @@ function Searchbar() {
 
   return (
     <form className="max-w-[739px] mx-auto relative">
-      <label
-        htmlFor="default-search"
-        className="mb-2 text-sm font-medium focus:outline-none text-gray-900 sr-only dark:text-white"
-      >
-        Search
-      </label>
-
       <div className="relative overflow-hidden">
         <input
           type="search"
