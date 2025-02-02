@@ -11,7 +11,7 @@ function FundMade() {
   const [selectedCardLink, setSelectedCardLink] = useState("");
   const [isOtherChecked, setIsOtherChecked] = useState(false);
   const [otherText, setOtherText] = useState("");
-  const [isChecked, setIsChecked] = useState(false); 
+  const [isChecked, setIsChecked] = useState(false); // State to manage radio button selection
 
   const navigate = useNavigate();
 

@@ -2,8 +2,8 @@ import React from "react";
 
 const HeaderIcon = () => (
   <svg
-    width="9"
-    height="16"
+    width="10"
+    height="14"
     viewBox="0 0 9 16"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

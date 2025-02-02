@@ -86,22 +86,25 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="#" class="hover:text-white">
+                    <Link to="/shop-products-1" class="hover:text-white">
                       Shop products
                     </Link>
                   </li>
                   <li>
-                    <Link to="#" class="hover:text-white">
+                    <Link to="/quiz" class="hover:text-white">
                       Home evaluation quiz
                     </Link>
                   </li>
                   <li>
-                    <Link to="#" class="hover:text-white">
+                    <Link to="/funding-made" class="hover:text-white">
                       Home mods funding
                     </Link>
                   </li>
                   <li>
-                    <Link to="/services" class="hover:text-white">
+                    <Link
+                      to="/services/bathroom-safety"
+                      class="hover:text-white"
+                    >
                       All service categories{" "}
                     </Link>
                   </li>

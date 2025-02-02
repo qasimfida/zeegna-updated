@@ -22,7 +22,7 @@ function ArticleCard({
             {description}
           </div>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: text }} />
+        
       </div>
     </div>
   );

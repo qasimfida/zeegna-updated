@@ -16,7 +16,7 @@ import new_major_image from "/images/knowledge6.png";
 const ArticalMSpage = () => {
   const { slug } = useParams();
 
-  // const article = KnowledgeData.find((item) => item.slug === slug);
+  const article = KnowledgeData.find((item) => item.slug === slug);
 
   return (
     <>
@@ -26,23 +26,21 @@ const ArticalMSpage = () => {
             href="/article-ms"
             class=" px-[19px] py-[5px] text-sm font-normal text-center text-[#5E5E6F] rounded-full bg-[#F9ECEC]"
           >
-            <p>Featured</p>
+            <p>{article.category}</p>
           </a>
         </div>
 
         <div className="md:mx-4 md:ml-[34px] md:mx-0">
           {/* Heading Section */}
           <div className="text-center text-[21px] font-semibold md:text-[27px] md:font-semibold">
-            <h1>
-              10 things you should know when choosing a home health provider
-            </h1>
+            <h1>{article.title}</h1>
 
             <div className="flex items-center justify-center text-center text-[#5E5E6F] mt-[25px] md:mt-[10px] text-[14px]">
-              <span>By Zeegna Team</span>
+              <span>by {article.author}</span>
               <span className="mx-2">•</span>
-              <span>APR 8, 2024</span>
+              <span>{article.date}</span>
               <span className="mx-2">•</span>
-              <span>5 min</span>
+              <span>{article.duration}</span>
             </div>
           </div>
         </div>
@@ -97,19 +95,20 @@ const ArticalMSpage = () => {
 
       <div className="bg-white lg:w-[840px] md:px-[27px] lg:px-0 px-[16px] mx-auto poppin">
         {/* Article Text */}
-        {ArticleData.map((card) => (
-          <ArticleCard
-            key={card.id}
-            title={card.title}
-            // title={card.content}
-            description={card.description}
-            Icon={card.Icon}
-            bgColor={card.bgColor}
-            chip={card.chip}
-            padding={card.padding}
-            borderRadius={card.borderRadius}
-          />
-        ))}
+
+        <div class="mx-auto mb-[30px] md:mt-[40px] mt-[30px] md:w-[840px] poppin bg-[#FDF5F5] p-[20px] rounded-[15px]">
+          <div class="text-[17px]">
+            <div class="mx-auto  poppin">
+              <h2 class="font-semibold text-[18px] pb-[10px]">Key Takeaways</h2>
+              <div class="text-[#5E5E6F] text-[16px] leading-6 font-medium">
+                {" "}
+                {article.key_takeaways}
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: article.content }} />
 
         {/* Social Media Share */}
       </div>

@@ -3,15 +3,9 @@ import homeNew from "../../../public/images/home-modification.png";
 import Installations from "../../assets/icons/newHomeIcons/Installations";
 import KitchenAccessibility from "../../assets/icons/newHomeIcons/KitchenAccessibility";
 import StairModification from "../../assets/icons/newHomeIcons/StairModification";
-import HomeSafetyNew from "../../assets/icons/newHomeIcons/HomeSafetyNew";
-import HomeAutomation from "../../assets/icons/newHomeIcons/HomeAutomation";
-import Lighting from "../../assets/icons/newHomeIcons/Lighting";
 import FlooringImprovement from "../../assets/icons/newHomeIcons/FlooringImprovement";
 import EntrywayAdjustments from "../../assets/icons/newHomeIcons/EntrywayAdjustments";
 import BathroomSafety from "../../assets/icons/newHomeIcons/BathroomSafety";
-import HomeModifications from "../../assets/icons/newHomeIcons/HomeModifications";
-import HomeCare from "../../assets/icons/newHomeIcons/HomeCare";
-import ProServices from "../../assets/icons/newHomeIcons/ProServices";
 import Larry from "../../../public/images/larry.png";
 import Angela from "../../../public/images/angelina.png";
 import Mark from "../../../public/images/mark.png";
@@ -158,7 +152,7 @@ const HomeModificationsContent = {
         "Stay safe with grab bars, non-slip floors, and walk-in tubs",
       Icon: BathroomSafety,
       bgColor: "bg-[#BFB5FE]",
-      path: "/home-modifications",
+      path: "bathroom-safety",
     },
     {
       id: 2,
@@ -167,6 +161,7 @@ const HomeModificationsContent = {
         "Kitchen remodel with senior-friendly appliances, shelves, and counters",
       Icon: KitchenAccessibility,
       bgColor: "bg-[#FEBCD5]",
+      path: "kitchen-accessibility",
     },
     {
       id: 3,
@@ -174,6 +169,7 @@ const HomeModificationsContent = {
       description: "Improve mobility with stairlifts, ramps, and handrails ",
       Icon: StairModification,
       bgColor: "bg-[#A9EEB8]",
+      path: "stair-modifications",
     },
     {
       id: 4,
@@ -182,6 +178,7 @@ const HomeModificationsContent = {
         "Widen doorways, add ramps, and improve lighting for safe entry",
       Icon: EntrywayAdjustments,
       bgColor: "bg-[#9DEFEB]",
+      path: "entryway-adjustments",
     },
     {
       id: 5,
@@ -190,6 +187,7 @@ const HomeModificationsContent = {
         "Safe and easy movement with slip-resistant flooring and ramps",
       Icon: FlooringImprovement,
       bgColor: "bg-[#F1AAF2]",
+      path: "flooring-improvements",
     },
     {
       id: 7,
@@ -198,6 +196,7 @@ const HomeModificationsContent = {
         "Add grab bars, railings, and mounted shelves for a more secure home.",
       Icon: Installations,
       bgColor: "bg-[#F2BBAA]",
+      path: "installation-and-mounting",
     },
   ],
   section10: {

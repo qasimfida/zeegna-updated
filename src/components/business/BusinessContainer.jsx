@@ -17,6 +17,7 @@ import CitiesContainer from "../cities/CitiesContainer";
 import FaqsContainer from "../faqs/FaqsContainer";
 import { BusinessBannerData } from "../../data/CitiesCardsData";
 import { faqsData } from "../../data/FaqsData";
+import BecomePartnerFaqData from "../../data/contents/BecomePartnerFaqData";
 
 const BusinessContainer = ({ title, description, Icon }) => {
   const isBusiness = true;
@@ -109,7 +110,7 @@ const BusinessContainer = ({ title, description, Icon }) => {
       </section>
       <FaqsContainer
         headingChange="Got questions? We've answers"
-        faqsData={faqsData}
+        faqsData={BecomePartnerFaqData}
       />
       {/* section 6 */}
       <section>
@@ -118,7 +119,7 @@ const BusinessContainer = ({ title, description, Icon }) => {
 
       {/* section 7 */}
       <section className="pt-[50px] md:pt-[80px] sm:px-[20px] md:px-[27px] lg:px-[70px] font-poppins md:pb-[80px] max-sm:px-[16px] max-sm:pb-[50px]">
-        <div className="flex flex-col md:flex-row items-center bg-[#E8FFF1] rounded-[40px] max-sm:rounded-[30px]  px-[15px] max-sm:py-[30px] md:px-[40px] lg:px-[80px] py-[35px]">
+        <div className="flex flex-col md:flex-row items-center bg-[#E8FFF1] rounded-[40px] max-sm:rounded-[20px]  px-[15px] max-sm:py-[30px] md:px-[40px] lg:px-[80px] py-[35px]">
           <div className="flex flex-col justify-between  max-sm:p-0 leading-normal md:w-2/3">
             <div className="lg:w-[430px] max-sm:text-center">
               <h5 className="mb-[10px] max-sm:mb-[10px] text-[24px]  font-semibold lg:w-[430px]">

@@ -72,7 +72,7 @@ function PopularContainer() {
           <div
             ref={nextRef}
             className={`swiper-button-forward absolute right-4 top-[50%] lg:top-[47%] transform -translate-y-[100%] z-20 cursor-pointer p-[8px] rounded-full flex items-center justify-center ${
-              currentIndex === PopularData.length - 1
+              currentIndex === PopularData.length - 1 
                 ? "border border-[#A7A7A7] text-[#A7A7A7] cursor-not-allowed bg-white"
                 : "border border-black bg-white"
             }`}

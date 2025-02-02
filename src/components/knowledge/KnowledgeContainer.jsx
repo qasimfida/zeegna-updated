@@ -4,12 +4,15 @@ import KnowledgeCard from "./KnowledgeCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Mousewheel, Keyboard } from "swiper/modules";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+import {useNavigate} from "react-router-dom";
 
-function KnowledgeContainer({ titleText }) {
+function KnowledgeContainer({ titleText, bg="bg-[#F7F7F7]" }) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const navigate = useNavigate();
 
   const handleSlideChange = (swiper) => {
     setCurrentIndex(swiper.activeIndex);
@@ -17,7 +20,7 @@ function KnowledgeContainer({ titleText }) {
 
   return (
     <>
-      <div className="bg-[#F7F7F7] poppin">
+      <div className={`${bg} poppin`}>
         <div className=" lg:mx-[70px] py-20 max-sm:py-[50px] ">
           <div className="text-center">
             <h2 className="font-semibold text-[27px] max-sm:text-[21px]">
@@ -102,7 +105,7 @@ function KnowledgeContainer({ titleText }) {
                 description={card.description}
                 Icon={card.Icon}
                 bgColor={card.bgColor}
-                chip={card.chip}
+                chip={card.category}
                 className={card.id === 4 ? "pb-2.5" : ""}
                 slug={card.slug}
               />
@@ -110,7 +113,7 @@ function KnowledgeContainer({ titleText }) {
           </div>
 
           <div className="flex justify-center mt-[30px] md:mt-[50px]">
-            <button className="rounded-full bg-transparent border-[#1C1C1C] border-2 px-[35.5px] py-[13px] max-sm:py-[8px] text-[#1C1C1C] hover:bg-black hover:text-white font-medium">
+            <button className="rounded-full bg-transparent border-[#1C1C1C] border-2 px-[35.5px] py-[13px] max-sm:py-[8px] text-[#1C1C1C] hover:bg-black hover:text-white font-medium" onClick={()=>navigate("/resources")}>
               Read more
             </button>
           </div>

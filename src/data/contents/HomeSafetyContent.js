@@ -22,6 +22,12 @@ import TaxSupport from "../../assets/icons/newHomeIcons/TaxSupport";
 import NotaryServices from "../../assets/icons/newHomeIcons/NotaryServices";
 import RetirementPlanning from "../../assets/icons/newHomeIcons/RetirementPlanning";
 import pro_services_seniors from "../../../public/images/pro_services_seniors.png";
+import FallDetection from "../../assets/icons/newHomeIcons/FallDetection";
+import SecurityCameras from "../../assets/icons/newHomeIcons/SecurityCameras";
+import MotionActivated from "../../assets/icons/newHomeIcons/MotionActivated";
+import SmartLocks from "../../assets/icons/newHomeIcons/SmartLocks";
+import VideoDoorbels from "../../assets/icons/newHomeIcons/VideoDoorbels";
+import AlarmSystems from "../../assets/icons/newHomeIcons/AlarmSystems";
 
 const HomeSafetyContent = {
   header: {
@@ -283,50 +289,55 @@ const HomeSafetyContent = {
       id: 1,
       title: "Fall detection systems ",
       description:
-        "Quick response in case of accidents with advanced monitoring solutions",
-      Icon: LongTermCareInsurance,
+        "Quick response in case of accidents with advanced monitoring solutions",
+      Icon: FallDetection,
       bgColor: "bg-[#BFB5FE]",
-      path: "/home-modifications",
+      path: "fall-detection-systems",
     },
     {
       id: 2,
       title: "Security cameras",
       description:
-        "Monitor your property with live video feeds and motion detection alerts",
-      Icon: EstatePlanning,
+        "Monitor your property with live video feeds and motion detection alerts",
+      Icon: SecurityCameras,
       bgColor: "bg-[#FEBCD5]",
+      path: "security-cameras",
     },
     {
       id: 3,
       title: "Smart locks",
       description:
-        "Control access to your home with secure, easy-to-use smart locks",
-      Icon: FinancialPlanning,
+        "Control access to your home with secure, easy-to-use smart locks",
+      Icon: SmartLocks,
       bgColor: "bg-[#A9EEB8]",
+      path: "smart-locks",
     },
     {
       id: 4,
-      title: "Motion-activated lighting",
+      title: "Smart lighting",
       description:
-        "Illuminate walkways and entry points for added safety and visibility",
-      Icon: TaxSupport,
+        "Illuminate walkways and entry points for added safety and visibility",
+      Icon: MotionActivated,
       bgColor: "bg-[#9DEFEB]",
+      path: "smart-lighting",
     },
     {
       id: 5,
       title: "Video doorbells",
       description:
         "See and communicate with visitors from anywhere with smart doorbells",
-      Icon: NotaryServices,
+      Icon: VideoDoorbels,
       bgColor: "bg-[#F1AAF2]",
+      path: "video-doorbells",
     },
     {
       id: 7,
       title: "Alarm systems",
       description:
-        "Protect your home with customizable security alarms and 24/7 monitoring",
-      Icon: RetirementPlanning,
+        "Protect your home with customizable security alarms and 24/7 monitoring",
+      Icon: AlarmSystems,
       bgColor: "bg-[#F2BBAA]",
+      path: "alarm-systems",
     },
   ],
   section10: {

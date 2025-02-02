@@ -149,7 +149,7 @@ const HomeMaintenanceContent = {
         "Extend the life of your appliances with regular checkups and repairs",
       Icon: ApplianceRepairs,
       bgColor: "bg-[#BFB5FE]",
-      path: "/home-modifications",
+      path: "appliance-repairs",
     },
     {
       id: 2,
@@ -158,6 +158,7 @@ const HomeMaintenanceContent = {
         "Keep wiring, outlets, and lighting fixtures in top shape for safety",
       Icon: ElectricalAndLighting,
       bgColor: "bg-[#FEBCD5]",
+      path: "electrical-and-lighting",
     },
     {
       id: 3,
@@ -166,14 +167,16 @@ const HomeMaintenanceContent = {
         "Address leaks, drips, and other plumbing issues to avoid damage",
       Icon: PlumbingRepairs,
       bgColor: "bg-[#A9EEB8]",
+      path: "plumbing-repairs",
     },
     {
       id: 4,
       title: "HVAC servicing",
       description:
-        "Keep your home comfortable with heating and cooling system tune-ups",
+        "Maintain a cozy home with heating and cooling system tune-ups",
       Icon: HVACServicing,
       bgColor: "bg-[#9DEFEB]",
+      path: "hvac-servicing",
     },
     {
       id: 5,
@@ -181,6 +184,7 @@ const HomeMaintenanceContent = {
       description: "Maintain a clean, healthy, and comfortable living space",
       Icon: PestControl,
       bgColor: "bg-[#F1AAF2]",
+      path: "pest-control",
     },
     {
       id: 7,
@@ -188,6 +192,7 @@ const HomeMaintenanceContent = {
       description: "Protect your home from leaks and water damage",
       Icon: RoofAndGutterServices,
       bgColor: "bg-[#F2BBAA]",
+      path: "roof-and-gutter-services",
     },
   ],
 };

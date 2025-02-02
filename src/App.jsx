@@ -3,7 +3,6 @@ import React from "react";
 import "./App.css";
 import NewHomeSection from "./pages/NewHomeSection";
 import ResourcesPage from "./pages/ResourcesPage";
-import ArticlePage from "./pages/ArticlePage";
 import GuidingHeroSection from "./pages/GuidingSection";
 import ExploreContainer from "./components/explore/ExploreContainer";
 import GuidingPlatform from "./components/guidingPageCompo/GuidingPlatform";
@@ -28,7 +27,6 @@ import LoginPages from "./pages/LoginPages";
 import ResetPassword from "./components/login/ResetPassword";
 import CheckYourEmail from "./components/login/CheckEmail";
 import NewPassword from "./components/login/NewPassword";
-import HelpCard from "./components/helpsection/Help";
 import ScrollToTop from "./components/scroll/ScrollTop";
 import HomeSafety from "./pages/HomeSafety";
 import HomeAutomation from "./pages/HomesAutomation";
@@ -107,21 +105,25 @@ function App() {
           <Route path="/delivery-form" element={<DeliveryForm />} />
           <Route path="/help-center" element={<HelpCardsGrid />} />
           <Route path="/become-partner" element={<BecomePartner />} />
-          <Route path="/family-help-center" element={<FamilyPartnerHelp />} />
+          <Route path="/all-services" element={<AllServicesCategories />} />
+          <Route
+            path="/help-center/family/:category"
+            element={<FamilyPartnerHelp />}
+          />
+          <Route
+            path="/help-center/partner/:category"
+            element={<PartnerHelpContainer />}
+          />
           <Route path="/home-safety" element={<HomeSafetyContainer />} />
           <Route path="/home-new" element={<HomePageNew />} />
           <Route path="/cities/:cityname" element={<CitiesPage />} />
           <Route path="/create-home" element={<CreateHomeCard />} />
-          <Route path="/services" element={<AllServicesCategories />} />
+          <Route path="/services/:service" element={<AllServicesCategories />} />
           <Route path="/new-resources" element={<ResourcesMS />} />
           <Route path="/resources/:slug" element={<ArticalMSpage />} />
           <Route path="/terms-of-use" element={<TermsOFUse />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/find-help" element={<FindHelp />} />
-          <Route
-            path="/partner-help-center"
-            element={<PartnerHelpContainer />}
-          />
 
           <Route path="/home-modifications" element={<HomeModifications />} />
           <Route path="/homes-safety" element={<HomeSafety />} />

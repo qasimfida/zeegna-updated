@@ -29,8 +29,7 @@ const ResourceMScard = ({
       </div>
       <div className="xl:h-[250px] max-sm:h-auto">
         <div className={`pl-[15px] pt-[15px] pb-[5px] pr-[25px] py-3`}>
-          <a
-            href="/article-ms"
+          <p 
             className={`inline-flex items-center px-[7px] py-[5px] text-sm font-normal text-center text-[#5E5E6F] rounded-full ${
               chip === "Home modifications"
                 ? "bg-[#BFB5FE]"
@@ -44,13 +43,15 @@ const ResourceMScard = ({
                 ? "bg-[#E9FFDC]"
                 : "bg-[#E9FFDC]"
             }`}
+
+            onClick={onClick}
           >
             {chip}
-          </a>
+          </p>
         </div>
 
         <div className="pl-[15px] pr-[25px] max-sm:p-[15px] max-sm:pt-0 ">
-          <a href="/article-ms" className="leading-[23px]">
+          <p className="leading-[23px]" onClick={onClick}>
             <h5
               className={`mb-2 text-[17px] font-semibold text-[#5E5E6F]  hover:text-[#109088] ${
                 id == 4 ? "pb-[27px]" : "pb-0"
@@ -58,7 +59,7 @@ const ResourceMScard = ({
             >
               {title}
             </h5>
-          </a>
+          </p>
 
           <p className="pb-[5px] max-sm:pb-[10px] font-medium	 text-base text-[#5E5E6F]">
             {trimmedDescription}

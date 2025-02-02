@@ -69,38 +69,7 @@ function Tabs() {
 
   return (
     <div className="w-full px-[16px] md:px-[70px] md:py-[40px] py-[30px] poppin flex flex-col md:flex-row md:gap-[50px]">
-      <div className="w-[343px] h-fit  pt-[18px] px-[20px] border border-[#EAEAF1] rounded-3xl">
-        <button
-          type="button"
-          className="flex items-center justify-between w-full pb-[18px] px-[15px] border-b border-[#EAEAF1]"
-          onClick={toggleTab}
-        >
-          <span className="flex text-lg font-medium text-[16px] text-black text-left">
-            Categories
-          </span>
-          <div
-            className={`transform transition-transform duration-200 ${
-              isOpen ? "rotate-180" : "rotate-0"
-            }`}
-          >
-            <DropDownIcon />
-          </div>
-        </button>
-        {isOpen && (
-          <div className="px-4 pb-5 sm:px-6 sm:pb-6 pt-[20px]">
-            {tabs.map((tab) => (
-              <div className="flex gap-[10px] pb-[15px] items-center group">
-                <div className="border-3 border-black bg-[#F9ECEC] hover:bg-[#F3B5B5] p-[17px] rounded-full group-hover:bg-[#F3B5B5]">
-                  {tab.icon}
-                </div>
-                <h2 className="hover:font-bold font-semibold text-[16px] cursor-pointer text-[#5E5E6F] group-hover:font-bold group-hover:text-[#5E5E6F]">
-                  {tab.title}
-                </h2>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
+      
       <div className="flex items-center justify-center flex-col md:w-[840px]">
         {data.map((item) => (
           <div

@@ -1,11 +1,10 @@
 import React from "react";
 
+
+
 function HomeCardNew({ title, description, Icon, bgColor, onClick }) {
   return (
-    <div
-      className="w-full  border border-[#DBDBE0] rounded-[15px] p-[15px] flex items-start gap-[15px] cursor-pointer hover:bg-[#EBEBF3]"
-      onClick={onClick}
-    >
+    <div className="w-full  border border-[#DBDBE0] rounded-[15px] p-[15px] flex items-start gap-[15px] cursor-pointer hover:bg-[#EBEBF3]" onClick={onClick}>
       {/* Icon Section */}
       <div className={`p-[15px] rounded-[12px] ${bgColor}`}>
         <Icon />

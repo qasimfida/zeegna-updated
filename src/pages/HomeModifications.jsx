@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CityScape from "../../public/images/HomeModification.png";
 import ExpertTipsContainer from "../components/expertTips/ExpertTips";
 import KnowledgeData from "../data/KnowledgeData";
@@ -27,29 +27,26 @@ import BannerTwo from "../components/banner2/BannerTwo";
 import HomeModeBlogData from "../data/HomeModBlogData";
 import HomeModePolpularData from "../data/HomeModePopularData";
 import { HomeModeFaqsData } from "../data/FaqsData";
+import Searchbar from "../components/searchbar/Searchbar";
 
 function HomeModifications() {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <div className="max-w-[849px] mx-auto text-center max-sm:mx-[16px] max-sm:text-left mt-[90px] mb-[60px] md:mt-[100px] md:mb-[175px]    md:px-0 lg:px-[121.5px] poppin">
+      <div className="mx-auto text-center max-sm:mx-[16px] max-sm:text-left mt-[90px] mb-[60px] md:mt-[100px] md:mb-[175px]    md:px-0 lg:px-[121.5px] poppin">
         <div className="flex flex-col items-center justify-center md:gap-[15px] gap-[10px]">
           <img src={CityScape} alt="cityscape" className="w-[27px] h-[27px]" />
 
           <h2 className="font-semibold text-[27px] max-sm:text-[21px] text-center">
             {HomeModificationsContent.header.title}
           </h2>
-          <p className="text-[#5E6E6F] text-[18px] font-medium  mb-[25px] md:px-[40px] text-center">
+          <p className="max-w-[739px] mx-auto text-[#5E6E6F] text-[18px] font-medium  mb-[25px] md:px-[40px] text-center">
             {HomeModificationsContent.header.description}
           </p>
         </div>
 
-        <button className="bg-[#1C1C1C] text-white py-[13px] border-2 px-9 rounded-full font-medium hover:text-black hover:bg-white hover:border-black mt-[5px] mb-[5px] ml-[5px] mr-[5px] max-sm:w-full">
-          {HomeModificationsContent.header.button1}
-        </button>
-
-        <button className="bg-white text-black py-[13px] px-9 rounded-full font-medium border-2 border-black hover:text-white hover:bg-[#1C1C1C] mt-[5px] md:mb-[5px] ml-[5px] mr-[5px] max-sm:w-full">
-          {HomeModificationsContent.header.button2}
-        </button>
+        <Searchbar />
       </div>
 
       <HomeHeroComp />
@@ -96,7 +93,7 @@ function HomeModifications() {
                   description={card.description}
                   Icon={card.Icon}
                   bgColor={card.bgColor}
-                  onClick={() => Navigate(card.path)}
+                  onClick={() => navigate(`/services/${card.path}`)}
                 />
               ))}
             </div>

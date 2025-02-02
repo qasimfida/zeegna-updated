@@ -17,6 +17,7 @@ import StayConnectedSection from "../components/stayConnected/StayConnected";
 import Larry from "../../public/images/larry.png";
 import Angela from "../../public/images/angelina.png";
 import Mark from "../../public/images/mark.png";
+import HomeBannerNew from "../components/homeBannerNew/HomeBannerNew";
 import { faqsData } from "../data/FaqsData";
 
 function HomePageNew() {
@@ -44,14 +45,21 @@ function HomePageNew() {
   return (
     <>
       <NewHomePage />
-
-      <NewHomeCardsContainer textSize="md:text-[27px] max-sm:text-[21px]" />
+      <section className="bg-[#F7F7F7] md:pb-[80px] pb-[50px]">
+        <NewHomeCardsContainer
+          textSize="md:text-[27px] max-sm:text-[21px]"
+          paddingBottom="md:pb-[20px]"
+          marginBtm="max-sm:mb-[10px] md:pt-[80px]"
+        />
+        <HomeBannerNew />
+      </section>
 
       <NewPopularContainer
         fontSize="text-[27px] max-sm:text-[21px] "
-        marginBottom="md:mb-[50px]"
+        marginBottom="md:mb-[0px]"
       />
       <PowerFUlContainer textSize="max-sm:text-[21px] text-[27px]" />
+
       <FindCareContainer
         headingText="Finding care just got simplified"
         fontSize="text-[27px] max-sm:text-[22px]"
@@ -61,8 +69,8 @@ function HomePageNew() {
         name={"Larry"}
         fontSize="text-[27px] max-sm:text-[22px]"
         textSize="text-[18px] max-sm:text-[18px]"
-        bg="bg-[#D2D4FF]"
-        img={true}
+        bg="bg-[#F7F7F7]"
+        img={false}
         top="top-[93%]"
         PaddingBottom="max-sm:pb-[35px]"
         MarginTop="mt-[55px] max-sm:!mt-[30px]"
@@ -78,12 +86,11 @@ function HomePageNew() {
         titleText={"Your guide to a safer living at home"}
       />
 
-      <section className=" md:mb-[80px]">
-        <PlacingHelpSection textSize="lg:text-[27px] max-sm:text-[21px]" />
+      <section className="md:my-[80px]">
+        <ExploreContainer marginTop="max-sm:mt-0" />
       </section>
-      <ExploreContainer marginTop="max-sm:mt-0" />
 
-      <StayConnectedSection MarginTop="md:mt-[80px]" />
+      <PlacingHelpSection textSize="lg:text-[27px] max-sm:text-[21px]" />
     </>
   );
 }

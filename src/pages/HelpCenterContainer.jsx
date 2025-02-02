@@ -7,6 +7,7 @@ import FaqsContainer from "../components/faqs/FaqsContainer";
 import HelpCenterHeroSection from "../components/helpcenter/HelpCenterHeroSection";
 import FaqsCard from "../components/faqs/Faqs";
 import HelpCenterFaqsContainer from "../components/helpcenter/HelpFaqsContainer";
+import BecomePartnerFaqData from "../data/contents/BecomePartnerFaqData";
 
 const HelpCardsGrid = () => {
   const [activeData, setActiveData] = useState(HelpCenterData);
@@ -21,7 +22,7 @@ const HelpCardsGrid = () => {
       setActiveFaqs(faqsData);
     } else if (type === "partners") {
       setActiveData(HelpCenterDataPartner);
-      setActiveFaqs(HelpCenterFaqs);
+      setActiveFaqs(BecomePartnerFaqData);
     }
   };
 
@@ -30,11 +31,11 @@ const HelpCardsGrid = () => {
     <div className="bg-white">
       <HelpCenterHeroSection changeTheHeading="We're happy to help" />
 
-      <div className="max-w-[1080px] mx-auto poppin flex items-center justify-center flex-col">
-        <div className="flex justify-between md:m-10 max-sm:my-[30px] p-[15px] bg-[#F7F7F7] md:w-[750px] md:gap-[15px] rounded-full gap-[10px] max-sm:mx-[16px]">
+      <div className="md:max-w-[1080px] mx-auto poppin flex items-center justify-center flex-col max-sm:mx-[16px]">
+        <div className="flex justify-between md:m-10 max-sm:my-[30px] p-[15px] bg-[#F7F7F7] md:w-[750px] md:gap-[15px] rounded-full gap-[10px] max-sm:w-full ">
           <button
             onClick={() => handleButtonClick("families")}
-            className={`rounded-full flex items-center justify-center gap-4 md:px-20 lg:w-96 text-base font-medium md:py-3.5 py-[13px] px-[36px] ${
+            className={`rounded-full flex items-center justify-center gap-4 md:px-20 lg:w-96 text-base font-medium md:py-3.5 py-[13px] px-[42px] ${
               activeButton === "families"
                 ? "bg-black text-white"
                 : "bg-[#EAEAEA] text-black"
@@ -44,7 +45,7 @@ const HelpCardsGrid = () => {
           </button>
           <button
             onClick={() => handleButtonClick("partners")}
-            className={`rounded-full flex items-center justify-center gap-4 md:px-20 lg:w-96 text-base font-medium md:py-3.5 py-[13px] px-[36px] ${
+            className={`rounded-full flex items-center justify-center gap-4 md:px-20 lg:w-96 text-base font-medium md:py-3.5 py-[13px] px-[42px] ${
               activeButton === "partners"
                 ? "bg-black text-white"
                 : "bg-[#EAEAEA] text-black"
@@ -54,7 +55,7 @@ const HelpCardsGrid = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] max-sm:mx-[16px] max-sm:gap-[16px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px]  max-sm:gap-[16px]">
           {activeData.map((card) => (
             <HelpCenterCard
               key={card.id}
@@ -67,7 +68,7 @@ const HelpCardsGrid = () => {
         </div>
 
         <HelpCenterFaqsContainer
-          headingChange="Top FAQs"
+          headingChange="Top frequently asked questions"
           childern={activeFaqs.map((faq) => (
             <FaqsCard
               key={faq.id}

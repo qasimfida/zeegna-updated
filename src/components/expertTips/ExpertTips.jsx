@@ -1,8 +1,11 @@
 import React from "react";
-import KnowledgeCard from "../knowledge/KnowledgeCard"; // Ensure this import is correct
+import KnowledgeCard from "../knowledge/KnowledgeCard";
+import { useNavigate } from "react-router-dom";
 
 function ExpertTipsContainer({ background, popularContent, title }) {
   const dataToDisplay = popularContent || [];
+
+  const navigate = useNavigate();
 
   return (
     <div className={`${background ? background : "bg-[#F7F7F7]"} poppin`}>
@@ -34,7 +37,7 @@ function ExpertTipsContainer({ background, popularContent, title }) {
 
         {/* Read More Button */}
         <div className="flex justify-center md:mt-[50px] max-sm:mt-[30px]">
-          <button className="rounded-full bg-transparent border-[#1C1C1C] border-2 px-[35.5px] py-[13px] text-[#1C1C1C] hover:bg-black hover:text-white font-medium">
+          <button className="rounded-full bg-transparent border-[#1C1C1C] border-2 px-[35.5px] py-[13px] text-[#1C1C1C] hover:bg-black hover:text-white font-medium" onClick={() => navigate("/resources")}>
             Read more
           </button>
         </div>

@@ -20,13 +20,13 @@ const PartnerContainer = () => {
         <h1 className="text-[28px] md:leading-[80px] leading-[40px] sm:text-[48px] md:text-[64px] font-semibold font-poppins text-center max-sm:text-[27px]">
           Grow your business
         </h1>
-        <p className="text-[24px] font-medium text-[#5E5E6F] text-center max-sm:text-[18px] md:w-[830px] ">
+        <p className="text-[20px] font-medium text-[#5E5E6F] text-center max-sm:text-[18px] md:w-[830px] ">
           Join a trusted network dedicated to transform homes into safer,
           smarter, and more accessible living spaces for families and seniors
         </p>
         <div className="flex justify-between">
           <button className=" border-2 border-[#1C1C1C] text-white bg-[#1C1C1C] font-medium rounded-full py-[13px] px-[80px]  cursor-pointer md:mt-[20px]  hover:bg-white hover:text-black font-poppins ">
-            Start today
+          Join our Partner Network
           </button>
         </div>
       </div>

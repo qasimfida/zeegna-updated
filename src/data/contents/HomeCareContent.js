@@ -145,43 +145,18 @@ const HomeCareContent = {
       description: "Help with bathing, dressing, grooming, and hygiene tasks.",
       Icon: PersonalCare,
       bgColor: "bg-[#BFB5FE]",
-      path: "/personal-care",
+      path: "personal-care",
     },
     {
       id: 2,
-      title: "Companionship",
+      title: "Companion care",
       description:
         "Social interaction and emotional support for seniors living alone.",
       Icon: Championship,
       bgColor: "bg-[#FEBCD5]",
-      path: "/companionship",
+      path: "companion-care",
     },
-    {
-      id: 3,
-      title: "Meal preparation",
-      description:
-        "Nutritious meals tailored to dietary needs and preferences.",
-      Icon: MealPreparation,
-      bgColor: "bg-[#A9EEB8]",
-      path: "/meal-preparation",
-    },
-    {
-      id: 4,
-      title: "Medication reminders",
-      description:
-        "Stay on top of daily health routines with friendly assistance.",
-      Icon: MedicationReminder,
-      bgColor: "bg-[#9DEFEB]",
-      path: "/medication-reminders",
-    },
-    {
-      id: 5,
-      title: "Mobility support",
-      description: "Help with moving around the house safely and comfortably.",
-      Icon: MobilitySupport,
-      bgColor: "bg-[#F1AAF2]",
-      path: "/mobility-support",
-    },
+
     {
       id: 7,
       title: "Transportation",
@@ -189,8 +164,34 @@ const HomeCareContent = {
         "Safe and reliable rides to appointments, errands, and more.",
       Icon: Transportation,
       bgColor: "bg-[#F2BBAA]",
-      path: "/transportation",
+      path: "transportation",
     },
+    {
+      id: 3,
+      title: "Skilled nursing",
+      description:
+        "Nutritious meals tailored to dietary needs and preferences.",
+      Icon: MealPreparation,
+      bgColor: "bg-[#A9EEB8]",
+      path: "skilled-nursing",
+    },
+    {
+      id: 4,
+      title: "Home health therapy",
+      description:
+        "Stay on top of daily health routines with friendly assistance.",
+      Icon: MedicationReminder,
+      bgColor: "bg-[#9DEFEB]",
+      path: "home-health-therapy",
+    },
+    {
+      id: 5,
+      title: "End of life planning",
+      description: "Help with moving around the house safely and comfortably.",
+      Icon: MobilitySupport,
+      bgColor: "bg-[#F1AAF2]",
+      path: "end-of-life-planning",
+    }
   ],
 };
 

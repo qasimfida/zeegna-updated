@@ -6,6 +6,7 @@ import CrossIcon from "../assets/icons/faqsDropDown/CrossIcon";
 import PartnerTabs from "../components/helpcenterpartner/PartnerTabs";
 import Tabs from "../components/helpcenterpartner/TabsNew";
 import Header from "../layout/header/Header";
+import PartnerHelpData from "../data/PartnerHelpData";
 import { FaCheck } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 
@@ -19,7 +20,7 @@ function PartnerHelpContainer() {
           <>
             <span className="mx-2">|</span>
             <Link
-              to="/partner-help-center"
+              to="/help-center/partner"
               className="hover:underline text-gray-500"
             >
               Partner help center
@@ -27,8 +28,23 @@ function PartnerHelpContainer() {
           </>
         }
       />
-      {/* <PartnerTabs /> */}
-      <Tabs />
+
+      <div class="md:border-b border-[#EAEAF1] mb-[30px]"></div>
+
+      <div className="mx-auto flex items-center justify-center max-sm:px-[16px] flex-col md:w-[840px]">
+        {PartnerHelpData.map((item) => (
+          <div
+            key={item.id}
+            className="px-[0px] md:px-[50px] py-[20px] flex flex-col gap-[10px]"
+          >
+            <h2 className="text-xl max-sm:text-[18px] font-semibold">
+              {item.title}
+            </h2>
+            <p className="text-gray-600">{item.description}</p>
+          </div>
+        ))}
+      </div>
+
       <div className="flex flex-col items-center max-sm:gap-[20px] md:mx-[70px] max-sm:rounded-[30px] justify-center mx-auto p-10	bg-[#DEFFED] rounded-[40px] mb-20 max-sm:text-center max-sm:py-[50px] max-sm:px-[5px] max-sm:mx-[16px] max-sm:mb-[50px]  poppin">
         <h1 className="text-2xl	 tracking-tight font-semibold sm:text md:text-">
           Did you find the help you were looking for?

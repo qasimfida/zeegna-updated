@@ -1,17 +1,3 @@
-import home_safety from "../../../public/images/HomeSafety.png";
-import home_modification from "../../../public/images/home_modification.png";
-import Installations from "../../assets/icons/newHomeIcons/Installations";
-import KitchenAccessibility from "../../assets/icons/newHomeIcons/KitchenAccessibility";
-import StairModification from "../../assets/icons/newHomeIcons/StairModification";
-import HomeSafetyNew from "../../assets/icons/newHomeIcons/HomeSafetyNew";
-import HomeAutomation from "../../assets/icons/newHomeIcons/HomeAutomation";
-import Lighting from "../../assets/icons/newHomeIcons/Lighting";
-import FlooringImprovement from "../../assets/icons/newHomeIcons/FlooringImprovement";
-import EntrywayAdjustments from "../../assets/icons/newHomeIcons/EntrywayAdjustments";
-import BathroomSafety from "../../assets/icons/newHomeIcons/BathroomSafety";
-import HomeModifications from "../../assets/icons/newHomeIcons/HomeModifications";
-import HomeCare from "../../assets/icons/newHomeIcons/HomeCare";
-import ProServices from "../../assets/icons/newHomeIcons/ProServices";
 import Nancy from "../../../public/images/nancy.png";
 import Bill from "../../../public/images/bill.png";
 import Brad from "../../../public/images/brad.png";
@@ -163,7 +149,7 @@ const ProfessionalServiceContent = {
         "Explore coverage options and find the best plan for your future.",
       Icon: LongTermCareInsurance,
       bgColor: "bg-[#BFB5FE]",
-      path: "/long-term-care-insurance",
+      path: "long-term-care",
     },
     {
       id: 2,
@@ -172,7 +158,7 @@ const ProfessionalServiceContent = {
         "Protect your legacy with tailored wills, trusts, and power of attorney.",
       Icon: EstatePlanning,
       bgColor: "bg-[#FEBCD5]",
-      path: "/estate-planning",
+      path: "estate-planning",
     },
     {
       id: 3,
@@ -181,7 +167,7 @@ const ProfessionalServiceContent = {
         "Receive guidance on retirement, investments, and budgeting.",
       Icon: FinancialPlanning,
       bgColor: "bg-[#A9EEB8]",
-      path: "/financial-planning",
+      path: "financial-planning",
     },
     {
       id: 4,
@@ -190,7 +176,7 @@ const ProfessionalServiceContent = {
         "Simplify tax filing and management with professional assistance.",
       Icon: TaxSupport,
       bgColor: "bg-[#9DEFEB]",
-      path: "/tax-support",
+      path: "tax-support",
     },
     {
       id: 5,
@@ -198,7 +184,7 @@ const ProfessionalServiceContent = {
       description: "Get important documents notarized quickly and securely.",
       Icon: NotaryServices,
       bgColor: "bg-[#F1AAF2]",
-      path: "/notary-services",
+      path: "notary-services",
     },
     {
       id: 7,
@@ -207,7 +193,7 @@ const ProfessionalServiceContent = {
         "Plan for a great retirement with evaluations and actionable insights.",
       Icon: RetirementPlanning,
       bgColor: "bg-[#F2BBAA]",
-      path: "/retirement-planning",
+      path: "retirement-planning",
     },
   ],
 };

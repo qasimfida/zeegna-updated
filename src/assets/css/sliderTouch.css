@@ -1,23 +1,9 @@
-.swiper1 .swiper-pagination-fraction,
-.swiper1 .swiper-pagination-custom,
-.swiper1 .swiper-horizontal > .swiper-pagination-bullets,
-.swiper1 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: var(--swiper-pagination-bottom, -5px);
-  top: var(--swiper-pagination-top);
-  left: 0;
-  width: 100%;
-  z-index: 99;
-  position: relative;
-  color: #999;
-}
-
 .swiper2 .swiper-pagination-fraction,
 .swiper2 .swiper-pagination-custom,
 .swiper2 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper2 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: var(--swiper-pagination-bottom, -5px);
-  top: var(--swiper-pagination-top, 0px);
-  left: 0;
+  bottom: var(--swiper-pagination-bottom, 39px);
+  left: 24%;
   width: 100%;
   z-index: 99;
   position: relative;
@@ -49,4 +35,17 @@
 .swiper2 .swiper-pagination-bullet:hover::before {
   background-color: #109088; /* Tomato color on hover */
   transform: scale(1.1); /* Slightly enlarge on hover */
+}
+@media screen and (max-width: 480px) {
+  .swiper2 .swiper-pagination-fraction,
+  .swiper2 .swiper-pagination-custom,
+  .swiper2 .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper2 .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, 8px);
+    left: 0%;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+    color: #999;
+  }
 }

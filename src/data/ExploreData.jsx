@@ -11,7 +11,7 @@ const ExploreData = [
     title: "Charlotte, NC",
     bgColor: "bg-[#BFB5FE]",
     chip: "Featured",
-    param: "charlotte",
+    param: "charlotte"
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const ExploreData = [
     Icon: HomeMaintance,
     bgColor: "bg-[#FEBCD5]",
     chip: "Most Popular",
-    param: "raleigh",
+    param: "raleigh"
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const ExploreData = [
     Icon: CarIcon,
     bgColor: "bg-[#A9EEB8]",
     chip: "Personal Care",
-    param: "winston-salem",
+    param: "winston-salem"
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const ExploreData = [
     Icon: MovingIcon,
     bgColor: "bg-[#9DEFEB]",
     chip: "Featured",
-    param: "greenville",
+    param: "greenville"
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const ExploreData = [
     Icon: WellNess,
     bgColor: "bg-[#F1AAF2]",
     chip: "Featured",
-    param: "charleston",
+    param: "charleston"
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ const ExploreData = [
     Icon: PersonalCareIcon,
     bgColor: "bg-[#AADCF2]",
     chip: "Featured",
-    param: "myrtle-beach",
+    param: "myrtle-beach"
   },
   {
     id: 7,
@@ -77,7 +77,7 @@ const ExploreData = [
     Icon: PersonalCareIcon,
     bgColor: "bg-[#AADCF2]",
     chip: "Featured",
-    param: "richmond",
+    param: "richmond"
   },
   {
     id: 8,
@@ -88,7 +88,7 @@ const ExploreData = [
     Icon: PersonalCareIcon,
     bgColor: "bg-[#AADCF2]",
     chip: "Featured",
-    param: "atlanta",
+    param: "atlanta"
   },
 ];
 

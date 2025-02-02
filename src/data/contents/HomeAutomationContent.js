@@ -159,22 +159,24 @@ const HomeAutomationContent = {
         "Track energy use and reduce costs while staying comfortable",
       Icon: EnergyMonitoring,
       bgColor: "bg-[#BFB5FE]",
-      path: "/home-modifications",
+      path: "energy-monitoring",
     },
     {
       id: 2,
-      title: "Smart plugs and outlets",
+      title: "Smart plugs",
       description: "Remotely control lights and appliances for convenience",
       Icon: SmartPlugs,
       bgColor: "bg-[#FEBCD5]",
+      path: "smart-plugs",
     },
     {
       id: 3,
-      title: "Voice-controlled assistants",
+      title: "Voice assistants",
       description:
         "Handle tasks and control devices with simple voice commands",
       Icon: VoiceAssistant,
       bgColor: "bg-[#A9EEB8]",
+      path: "voice-assistants",
     },
     {
       id: 4,
@@ -183,6 +185,7 @@ const HomeAutomationContent = {
         "Get instant notifications for smoke, leaks, or motion detection",
       Icon: HomeAlerts,
       bgColor: "bg-[#9DEFEB]",
+      path: "home-alerts",
     },
     {
       id: 5,
@@ -190,6 +193,7 @@ const HomeAutomationContent = {
       description: "View live video feeds and receive alerts to stay connected",
       Icon: RemoteMonitoring,
       bgColor: "bg-[#F1AAF2]",
+      path: "remote-monitoring",
     },
     {
       id: 7,
@@ -198,6 +202,7 @@ const HomeAutomationContent = {
         "Make daily tasks easier with connected, time-saving appliances",
       Icon: SmartAppliance,
       bgColor: "bg-[#F2BBAA]",
+      path: "smart-appliances",
     },
   ],
 };

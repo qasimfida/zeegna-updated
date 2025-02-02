@@ -26,11 +26,24 @@ import BannerTwo from "../components/banner2/BannerTwo";
 import home_maintenance_icon from "../../public/images/home_maintenance_icon.png";
 import HomeMainPopularData from "../data/HomeMainPopularData";
 import HomeMainBlogData from "../data/HomeMainBlogData";
+import Searchbar from "../components/searchbar/Searchbar";
+
+
+
+
+
+
+
+
 
 function HomeMaintenance() {
+
+  const navigate = useNavigate();
+
+  
   return (
     <div>
-      <div className="max-w-[849px] mx-auto text-center max-sm:mx-[16px] max-sm:text-left mt-[90px] mb-[60px] md:mt-[100px] md:mb-[175px]    md:px-0 lg:px-[121.5px] poppin">
+      <div className="mx-auto text-center max-sm:mx-[16px] max-sm:text-left mt-[90px] mb-[60px] md:mt-[100px] md:mb-[175px]    md:px-0 lg:px-[121.5px] poppin">
         <div className="flex flex-col items-center justify-center md:gap-[15px] gap-[10px]">
           <img
             src={home_maintenance_icon}
@@ -41,18 +54,12 @@ function HomeMaintenance() {
           <h2 className="font-semibold text-[27px] max-sm:text-[21px] text-center">
             {HomeMaintenanceContent.header.title}
           </h2>
-          <p className="text-[#5E6E6F] text-[18px] font-medium  mb-[25px] md:px-[40px] text-center">
+          <p className="max-w-[849px] mx-auto text-[#5E6E6F] text-[18px] font-medium  mb-[25px] md:px-[40px] text-center">
             {HomeMaintenanceContent.header.description}
           </p>
         </div>
 
-        <button className="bg-[#1C1C1C] text-white py-[13px] border-2 px-9 rounded-full font-medium hover:text-black hover:bg-white hover:border-black md:mt-[5px] md:mb-[5px] mb-[10px] md:ml-[5px] md:mr-[5px] max-sm:w-full">
-          {HomeMaintenanceContent.header.button1}
-        </button>
-
-        <button className="bg-white text-black py-[13px] px-9 rounded-full font-medium border-2 border-black hover:text-white hover:bg-[#1C1C1C] md:mt-[5px] md:mb-[5px] md:ml-[5px] md:mr-[5px] max-sm:w-full">
-          {HomeMaintenanceContent.header.button2}
-        </button>
+        <Searchbar />
       </div>
 
       {/* Content Section */}
@@ -98,7 +105,7 @@ function HomeMaintenance() {
                   description={card.description}
                   Icon={card.Icon}
                   bgColor={card.bgColor}
-                  onClick={() => Navigate(card.path)}
+                  onClick={() => navigate(`/services/${card.path}`)}
                 />
               ))}
             </div>

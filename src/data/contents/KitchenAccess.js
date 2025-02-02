@@ -2,15 +2,14 @@ import home_modification from "../../../public/images/home_modification.jpg";
 import Installations from "../../assets/icons/newHomeIcons/Installations";
 import KitchenAccessibility from "../../assets/icons/newHomeIcons/KitchenAccessibility";
 import StairModification from "../../assets/icons/newHomeIcons/StairModification";
-import HomeSafetyNew from "../../assets/icons/newHomeIcons/HomeSafetyNew";
-import HomeAutomation from "../../assets/icons/newHomeIcons/HomeAutomation";
-import Lighting from "../../assets/icons/newHomeIcons/Lighting";
 import FlooringImprovement from "../../assets/icons/newHomeIcons/FlooringImprovement";
 import EntrywayAdjustments from "../../assets/icons/newHomeIcons/EntrywayAdjustments";
 import BathroomSafety from "../../assets/icons/newHomeIcons/BathroomSafety";
-import HomeModifications from "../../assets/icons/newHomeIcons/HomeModifications";
-import HomeCare from "../../assets/icons/newHomeIcons/HomeCare";
-import ProServices from "../../assets/icons/newHomeIcons/ProServices";
+
+
+
+
+
 
 const KitchenAccess={
     header: {

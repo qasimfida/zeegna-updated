@@ -5,6 +5,9 @@ import Facebook from "../../assets/icons/headerIcons/Facebook";
 import Twitter from "../../assets/icons/headerIcons/Twitter";
 import Linkedin from "../../assets/icons/headerIcons/Linkedin";
 import HeaderIcon from "../../assets/icons/footerIcons/LeftArrowIcon";
+import Xicon from "../../assets/icons/headerIcons/Twitter";
+import { FaXTwitter } from "react-icons/fa6";
+
 import {
   Disclosure,
   DisclosureButton,
@@ -34,7 +37,7 @@ function Header({ styles = "" }) {
   return (
     <Disclosure
       as="nav"
-      className={`max-sm:sticky	max-sm:top-0 max-sm:w-full max-sm:z-50 border-b poppin`}
+      className={`max-sm:top-0 max-sm:w-full max-sm:z-50 border-b poppin`}
     >
       <div className="px-[37px] max-sm:px-[15px] lg:px-[37px]  max-sm:border-b">
         <div className="flex py-[18px] max-sm:py-[15px] justify-between">
@@ -110,20 +113,20 @@ function Header({ styles = "" }) {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden pb-4 h-[90vh] bg-gradient-to-b from-white to-pink-200">
+        <div className="lg:hidden pb-4  ">
           {/* Menu Items */}
-          <div className="px-4 mb-[135px]">
+          <div className="px-4 mb-[30px]">
             <Link
-              to="/help-section"
-              className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b"
+              to="/"
+              className=" w-full py-[15px]  text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
               onClick={togglePanel}
             >
-              Find Help
+              Home
               <HeaderIcon />
             </Link>
             <Link
               to="/resources"
-              className="block w-full py-[15px] text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b"
+              className=" w-full py-[15px] text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
               onClick={togglePanel}
             >
               Resources
@@ -131,18 +134,74 @@ function Header({ styles = "" }) {
             </Link>
             <Link
               to="/become-partner"
-              className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b"
+              className=" w-full py-[15px]  text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
               onClick={togglePanel}
             >
               Become a Partner
               <HeaderIcon />
             </Link>
             <Link
-              to="/all-services"
-              className="block w-full py-[15px]  text-[24px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b"
+              to="/home-modifications"
+              className=" w-full py-[15px]  text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
+              onClick={togglePanel}
+            >
+              Home modifications
+              <HeaderIcon />
+            </Link>
+            <Link
+              to="/homes-safety"
+              className=" w-full py-[15px]  text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
+              onClick={togglePanel}
+            >
+              Home safety
+              <HeaderIcon />
+            </Link>
+            <Link
+              to="/homes-automation"
+              className=" w-full py-[15px]  text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
+              onClick={togglePanel}
+            >
+              Home automation
+              <HeaderIcon />
+            </Link>{" "}
+            <Link
+              to="/homes-care"
+              className=" w-full py-[15px]  text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
+              onClick={togglePanel}
+            >
+              Home care
+              <HeaderIcon />
+            </Link>{" "}
+            <Link
+              to="/home-maintenance"
+              className=" w-full py-[15px]  text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
+              onClick={togglePanel}
+            >
+              Home maintenance
+              <HeaderIcon />
+            </Link>{" "}
+            <Link
+              to="/professional-service"
+              className=" w-full py-[15px]  text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
+              onClick={togglePanel}
+            >
+              Professional services
+              <HeaderIcon />
+            </Link>
+            <Link
+              to="/services/bathroom-safety"
+              className=" w-full py-[15px]  text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
               onClick={togglePanel}
             >
               All service categories
+              <HeaderIcon />
+            </Link>
+            <Link
+              to="/help-center"
+              className=" w-full py-[15px]  text-[18px] text-black font-semibold flex justify-between items-center hover:text-gray-700 border-b border-[#EAEAF1]"
+              onClick={togglePanel}
+            >
+              Help center
               <HeaderIcon />
             </Link>
           </div>
@@ -167,7 +226,7 @@ function Header({ styles = "" }) {
               <Facebook />
             </a>
             <a href="#" className="text-black">
-              {/* <Twitter /> */}
+              <FaXTwitter className="w-[24px] h-[24px]" />
             </a>
           </div>
         </div>

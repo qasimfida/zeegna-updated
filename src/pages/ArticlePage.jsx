@@ -12,16 +12,21 @@ import StayConnectedSection from "../components/stayConnected/StayConnected";
 import KnowledgeData from "../data/KnowledgeData";
 import ArticleCard from "../components/article/ArticleCard";
 
+
 const redirectTo = (url) => {
   window.open(url, "_blank");
 };
 
 function ArticlePage() {
+
   const { slug } = useParams();
+
+
 
   const article = KnowledgeData.find((item) => item.slug === slug);
 
   console.log(article);
+
 
   return (
     <>
@@ -58,13 +63,13 @@ function ArticlePage() {
 
         {/* Article Text */}
         <ArticleCard
-          key={article.id}
-          heading={article.title}
-          text={article.content}
-          bgColor={article.bgColor}
-          padding={article.padding}
-          borderRadius={article.borderRadius}
-        />
+            key={article.id}
+            heading={article.title}
+            text={article.content}
+            bgColor={article.bgColor}
+            padding={article.padding}
+            borderRadius={article.borderRadius}
+          />
 
         {/* Social Media Share */}
         <div className="flex space-x-4 items-center justify-center cursor-pointer border-t pt-10 max-sm:flex-col max-sm:gap-4">

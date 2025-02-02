@@ -18,7 +18,6 @@ import NewPopularData from "../data/NewHomePopularData";
 import Benefits from "../components/bathroomRemodel/Benefits";
 import Features from "../components/bathroomRemodel/Features";
 import HomeCareContent from "../data/contents/HomeCareContent";
-import { useNavigate } from "react-router-dom";
 import HomeCardNew from "../components/newHomeCard/HomeCardsNew";
 import NewPopularContainer from "../components/newHomePopularService/NewPopularContainer";
 import HomeHeroComp from "../components/homeHeroComp/HomeHeroComp";
@@ -26,11 +25,25 @@ import BannerTwo from "../components/banner2/BannerTwo";
 import HomeCarePopularData from "../data/HomeCarePopularData";
 import HomeCareBlogData from "../data/HomeCareBlogData";
 import home_care_icon from "../../public/images/home_care_icon.png";
+import Searchbar from "../components/searchbar/Searchbar";
+import {useNavigate} from "react-router-dom"
+
+
+
+
+
+
 
 function HomeCare() {
+
+
+  const navigate=useNavigate();
+
+
+
   return (
     <div>
-      <div className="max-w-[849px] mx-auto text-center max-sm:mx-[16px] max-sm:text-left mt-[90px] mb-[60px] md:mt-[100px] md:mb-[175px]    md:px-0 lg:px-[121.5px] poppin">
+      <div className="mx-auto text-center max-sm:mx-[16px] max-sm:text-left mt-[90px] mb-[60px] md:mt-[100px] md:mb-[175px]    md:px-0 lg:px-[121.5px] poppin">
         <div className="flex flex-col items-center justify-center md:gap-[15px] gap-[10px]">
           <img
             src={home_care_icon}
@@ -41,18 +54,12 @@ function HomeCare() {
           <h2 className="font-semibold text-[27px] max-sm:text-[21px] text-center">
             {HomeCareContent.header.title}
           </h2>
-          <p className="text-[#5E6E6F] text-[18px] font-medium  mb-[25px] md:px-[40px] text-center">
+          <p className="max-w-[849px] mx-auto text-[#5E6E6F] text-[18px] font-medium  mb-[25px] md:px-[40px] text-center">
             {HomeCareContent.header.description}
           </p>
         </div>
 
-        <button className="bg-[#1C1C1C] text-white py-[13px] border-2 px-9 rounded-full font-medium hover:text-black hover:bg-white hover:border-black md:mt-[5px] md:mb-[5px] mb-[10px] md:ml-[5px] md:mr-[5px] max-sm:w-full">
-          {HomeCareContent.header.button1}
-        </button>
-
-        <button className="bg-white text-black py-[13px] px-9 rounded-full font-medium border-2 border-black hover:text-white hover:bg-[#1C1C1C] md:mt-[5px] md:mb-[5px] md:ml-[5px] md:mr-[5px] max-sm:w-full">
-          {HomeCareContent.header.button2}
-        </button>
+        <Searchbar />
       </div>
 
       {/* Content Section */}
@@ -98,7 +105,7 @@ function HomeCare() {
                   description={card.description}
                   Icon={card.Icon}
                   bgColor={card.bgColor}
-                  onClick={() => Navigate(card.path)}
+                  onClick={() => navigate(`/services/${card.path}`)}
                 />
               ))}
             </div>

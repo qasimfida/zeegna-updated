@@ -2,15 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import DotIcon from "../../assets/icons/doticon/DotIcon";
 
-const KnowledgeCard = ({
-  image,
-  title,
-  description,
-  chip,
-  id,
-  className,
-  slug,
-}) => {
+const KnowledgeCard = ({ image, title, description, chip, id, className, slug }) => {
   const navigate = useNavigate();
   const maxLength = 131;
   const trimmedDescription =

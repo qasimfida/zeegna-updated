@@ -1,37 +1,36 @@
 import React from "react";
 import CityScape from "../../public/images/cityscape.png";
 import ExpertTipsContainer from "../components/expertTips/ExpertTips";
-import StayConnectedSection from "../components/stayConnected/StayConnected";
-import HomeSafetyContainer from "../components/homesafety/HomeSafetyContainer";
-import CreateHomeCard from "../components/createHome/CreateHomeCard";
-import AllServicesHero from "../components/allServices/AllServicesHero";
 import FindCareContainer from "../components/findcare/FindCareConatiner";
 import HeroSlider from "../components/homepage/HeroSlider";
 import FaqsContainer from "../components/faqs/FaqsContainer";
-import ExploreContainer from "../components/explore/ExploreContainer";
-import AllServicesData from "../data/AllServicesData";
-import BathroomRemodelContainer from "../components/bathroomRemodel/BathroomRemodelContainer";
-import { useParams } from "react-router-dom";
-import HomeSafetyData from "../data/HomeSafetyData";
-import person1 from "/images/person1.png";
-import NewPopularData from "../data/NewHomePopularData";
 import Benefits from "../components/bathroomRemodel/Benefits";
 import Features from "../components/bathroomRemodel/Features";
-// import HomeModificationsContent from "../data/contents/HomeModificationsContent";
 import HomeAutomationContent from "../data/contents/HomeAutomationContent";
-import { useNavigate } from "react-router-dom";
 import HomeCardNew from "../components/newHomeCard/HomeCardsNew";
 import NewPopularContainer from "../components/newHomePopularService/NewPopularContainer";
-import HomeHeroComp from "../components/homeHeroComp/HomeHeroComp";
 import BannerTwo from "../components/banner2/BannerTwo";
 import home_automation_icon from "../../public/images/home_automation_icon.png";
 import HomeAutomationPopularData from "../data/HomeAutomationPopularData";
 import HomeAutomationBlog from "../data/HomeAutomationBlog";
+import Searchbar from "../components/searchbar/Searchbar";
+import {useNavigate } from "react-router-dom";
+
+
+
+
+
+
 
 function HomesAutomation() {
+
+  const navigate = useNavigate();
+
+
+
   return (
     <div>
-      <div className="max-w-[849px] mx-auto text-center max-sm:mx-[16px] max-sm:text-left mt-[90px] mb-[60px] md:mt-[100px] md:mb-[175px]    md:px-0 lg:px-[121.5px] poppin">
+      <div className="mx-auto text-center max-sm:mx-[16px] max-sm:text-left mt-[90px] mb-[60px] md:mt-[100px] md:mb-[175px]    md:px-0 lg:px-[121.5px] poppin">
         <div className="flex flex-col items-center justify-center md:gap-[15px] gap-[10px]">
           <img
             src={home_automation_icon}
@@ -42,18 +41,12 @@ function HomesAutomation() {
           <h2 className="font-semibold text-[27px] max-sm:text-[21px] text-center">
             {HomeAutomationContent.header.title}
           </h2>
-          <p className="text-[#5E6E6F] text-[18px] font-medium  mb-[25px] md:px-[40px] text-center">
+          <p className="max-w-[849px] mx-auto text-[#5E6E6F] text-[18px] font-medium  mb-[25px] md:px-[40px] text-center">
             {HomeAutomationContent.header.description}
           </p>
         </div>
 
-        <button className="bg-[#1C1C1C] text-white py-[13px] border-2 px-9 rounded-full font-medium hover:text-black hover:bg-white hover:border-black md:mt-[5px] md:mb-[5px] mb-[10px] md:ml-[5px] md:mr-[5px] max-sm:w-full">
-          {HomeAutomationContent.header.button1}
-        </button>
-
-        <button className="bg-white text-black py-[13px] px-9 rounded-full font-medium border-2 border-black hover:text-white hover:bg-[#1C1C1C] md:mt-[5px] md:mb-[5px] md:ml-[5px] md:mr-[5px] max-sm:w-full">
-          {HomeAutomationContent.header.button2}
-        </button>
+        <Searchbar />
       </div>
 
       {/* Content Section */}
@@ -100,7 +93,7 @@ function HomesAutomation() {
                   description={card.description}
                   Icon={card.Icon}
                   bgColor={card.bgColor}
-                  onClick={() => Navigate(card.path)}
+                  onClick={() => navigate(`/services/${card.path}`)}
                 />
               ))}
             </div>

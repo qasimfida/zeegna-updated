@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import {
+  Link,
+  useLocation,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -16,24 +21,78 @@ import ProfessionalServiceIcon from "../../assets/icons/resourceMSicons/Professi
 import AllArticlesIcon from "../../assets/icons/resourceMSicons/AllArticlesIcon";
 import MostPopularIcon from "../../assets/icons/resourceMSicons/MostPopularIcon";
 
+
+
+const tabs = [
+  {
+    title: "All articles",
+    icon: <AllArticlesIcon className="h-10 w-10 bg-black rounded-full p-10" />,
+  },
+  {
+    title: "Most popular",
+    icon: <MostPopularIcon className="h-10 w-10 bg-black rounded-full p-10" />,
+  },
+  {
+    title: "Home Modifications",
+    icon: (
+      <HomeModificationIcon className="h-10 w-10 bg-black rounded-full p-10" />
+    ),
+  },
+  {
+    title: "Home Safety",
+    icon: <HomeSafetyIcon className="h-10 w-10 bg-black rounded-full p-10" />,
+  },
+  {
+    title: "Home automation",
+    icon: <HomeAutomation className="h-10 w-10 bg-black rounded-full p-10" />,
+  },
+  {
+    title: "Home care",
+    icon: <HomeCareIcon className="h-10 w-10 bg-black rounded-full p-10" />,
+  },
+  {
+    title: "Home maintenance",
+    icon: <HomeMaintainIcon className="h-10 w-10 bg-black rounded-full p-10" />,
+  },
+  {
+    title: "Professional services",
+    icon: (
+      <ProfessionalServiceIcon className="h-10 w-10 bg-black rounded-full p-10" />
+    ),
+  },
+];
+
 function ResourceMStwo() {
   const [activeTab, setActiveTab] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+
   const swiperRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const navigate = useNavigate();
 
-  const cardsPerPage = activeTab === 0 ? 50 : 5;
+  const cardsPerPage = 10;
 
-  const generateMoreCards = (data, repeatTimes) => {
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const generateMoreCards = () => {
     let extendedData = [];
-    for (let i = 0; i < repeatTimes; i++) {
-      extendedData = [...extendedData, ...data];
+
+    for (let i = 0; i < 100; i++) {
+      let category = tabs[Math.floor(Math.random() * tabs.length)].title;
+      extendedData.push({
+        ...KnowledgeData[Math.floor(Math.random() * KnowledgeData.length)],
+        category,
+      });
     }
+
     return extendedData;
   };
+
+  const generatedData = generateMoreCards();
+
+  const [currentArticles, setCurrentArticles] = useState(KnowledgeData);
 
   const handleSlideChange = (swiper) => {
     setActiveTab(swiper.activeIndex);
@@ -52,12 +111,19 @@ function ResourceMStwo() {
     }
   };
 
-  const handleTabClick = (index) => {
-    if (index !== activeTab) {
-      setActiveTab(index);
-      setCurrentPage(1);
-    }
+  const handleTabClick = (category) => {
+
+    setSearchParams({ category });
+
+    let filtered = generatedData.filter((card) => card.category === category);
+
+   
+
+    setCurrentArticles([...filtered]);
+
+    console.log("currentArticles", currentArticles);
   };
+
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
@@ -67,73 +133,6 @@ function ResourceMStwo() {
     const startIndex = (currentPage - 1) * cardsPerPage;
     return data.slice(startIndex, startIndex + cardsPerPage);
   };
-
-  const getFilteredData = () => {
-    const tabChips = [
-      "Most popular",
-      "Home modifications",
-      "Home safety",
-      "Home automation",
-      "Home care",
-      "Home maintenance",
-      "Professional services",
-    ];
-
-    const extendedData = generateMoreCards(KnowledgeData, 4);
-
-    if (activeTab === 0) {
-      return extendedData;
-    }
-
-    return extendedData.filter((card) => card.chip === tabChips[activeTab - 1]);
-  };
-
-  const tabs = [
-    {
-      title: "All articles",
-      icon: (
-        <AllArticlesIcon className="h-10 w-10 bg-black rounded-full p-10" />
-      ),
-    },
-    {
-      title: "Most popular",
-      icon: (
-        <MostPopularIcon className="h-10 w-10 bg-black rounded-full p-10" />
-      ),
-    },
-    {
-      title: "Home Modifications",
-      icon: (
-        <HomeModificationIcon className="h-10 w-10 bg-black rounded-full p-10" />
-      ),
-    },
-    {
-      title: "Home Safety",
-      icon: <HomeSafetyIcon className="h-10 w-10 bg-black rounded-full p-10" />,
-    },
-    {
-      title: "Home automation",
-      icon: <HomeAutomation className="h-10 w-10 bg-black rounded-full p-10" />,
-    },
-    {
-      title: "Home care",
-      icon: <HomeCareIcon className="h-10 w-10 bg-black rounded-full p-10" />,
-    },
-    {
-      title: "Home maintenance",
-      icon: (
-        <HomeMaintainIcon className="h-10 w-10 bg-black rounded-full p-10" />
-      ),
-    },
-    {
-      title: "Professional services",
-      icon: (
-        <ProfessionalServiceIcon className="h-10 w-10 bg-black rounded-full p-10" />
-      ),
-    },
-  ];
-
-  const filteredData = getFilteredData();
 
   return (
     <div className="pb-[80px] max-sm:pt-[20px] max-sm:pb-0 poppin relative">
@@ -174,16 +173,18 @@ function ResourceMStwo() {
             className="!w-fit mx-[46px] max-sm:mx-[12px]"
           >
             <button
-              onClick={() => handleTabClick(index)}
+              onClick={() => handleTabClick(tab.title)}
               className={`flex flex-col items-center text-[14px] font-semibold transition-colors duration-300 ${
-                activeTab === index
+                tab.title === searchParams.get("category")
                   ? "text-[#5E5E6F] font-bold"
                   : "text-[#5E5E6F]"
               }`}
             >
               <span
                 className={`h-[45px] w-[45px] rounded-full flex items-center justify-center mb-2 ${
-                  activeTab === index ? "bg-[#F3B5B5]" : "bg-[#F9ECEC]"
+                  tab.title === searchParams.get("category")
+                    ? "bg-[#F3B5B5]"
+                    : "bg-[#F9ECEC]"
                 }`}
               >
                 {tab.icon}
@@ -228,12 +229,12 @@ function ResourceMStwo() {
 
       <div className="pb-[40px] pt-[50px] max-sm:py-[40px] max-sm:pb-[50px] rounded-lg bg-white">
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-[20px] max-sm:gap-[25px] px-[70px] max-md:px-[27px] max-sm:px-[16px] justify-center poppin">
-          {paginate(filteredData).map((card) => (
+          {currentArticles.map((card) => (
             <ResourceMScard
               key={card.id}
               image={card.image}
               title={card.title}
-              chip={card.chip}
+              chip={card.category}
               description={card.description}
               Icon={card.Icon}
               onClick={() => navigate(`/resources/${card.slug}`)}
@@ -241,7 +242,7 @@ function ResourceMStwo() {
           ))}
         </div>
         <Pagination
-          totalCards={filteredData.length}
+          totalCards={currentArticles.length}
           cardsPerPage={cardsPerPage}
           currentPage={currentPage}
           onPageChange={handlePageChange}
@@ -304,3 +305,4 @@ function Pagination({ totalCards, cardsPerPage, currentPage, onPageChange }) {
 }
 
 export default ResourceMStwo;
+

@@ -7,7 +7,7 @@ function BannerTwo({ content }) {
         <h2 className="text-[24px] max-sm:text-[21px] font-semibold mb-[10px]  ">
           {content.title}
         </h2>
-        <p className="text-[16px] font-medium max-sm:text-left leading-5	 ">
+        <p className="text-[16px] text-[#575757] font-medium max-sm:text-left leading-5">
           {content.description}
         </p>
         <button className="px-[21px] text-[16px] py-[13px] border-2 bg-black text-white rounded-full border-black font-medium  hover:text-black hover:bg-white md:mt-[30px] mt-[20px] max-sm:mb-[30px] max-sm:w-full ">

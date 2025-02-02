@@ -9,12 +9,14 @@ function NewHomeCardsContainer({
   title = "Solutions for aging at home",
   subtitle = "Trusted services to support your safety and independence at home",
   backGroundColor = "bg-[#F7F7F7]",
+  paddingBottom = "max-sm:pb-0 pb-20",
+  marginBtm = "md:pt-[80px] max-sm:pb-[50px]",
 }) {
   const Navigate = useNavigate();
 
   return (
-    <div className={`${backGroundColor}  md:pt-[80px] max-sm:pb-[50px] `}>
-      <div className="md:px-2 md:mx-[70px] pb-20 poppin max-sm:pb-0">
+    <div className={`${backGroundColor} ${marginBtm}  `}>
+      <div className={`md:px-2 md:mx-[70px] ${paddingBottom}  poppin`}>
         <div className="text-center max-sm:px-[16px]">
           <h2
             className={`font-semibold ${textSize}  max-sm:pt-[50px]  leading-[30px]`}

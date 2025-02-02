@@ -6,7 +6,7 @@ import PartnerContainer from "../components/becomePartnerSlider/PartnerContainer
 function BecomePartner() {
   return (
     <>
-      <PartnerContainer />
+     <PartnerContainer/>
       <BusinessContainer />
     </>
   );
