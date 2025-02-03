@@ -47,7 +47,7 @@ const Form = () => {
           value={value}
           onChange={setValue}
           placeholder="Please enter your comments"
-          className="bg-transparent mt-4 rounded-t-[15px] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 appearance-none touch-action-manipulation text-[14px] font-medium sm:text-[16px]"
+          className=" bg-transparent mt-4 rounded-t-[15px] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 appearance-none touch-action-manipulation text-[14px] font-medium sm:text-[16px]"
         />
 
         <div
